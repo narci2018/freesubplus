@@ -5,7 +5,170 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - 345ms-29Mbps",
+      "tag": "🇯🇵 日本 (Japan) 01 - 372ms-6Mbps",
+      "server": "103.76.85.156",
+      "server_port": 443,
+      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
+          "short_id": "41dd2ebdd7e0a61a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 - 695ms-10Mbps",
+      "server": "38.244.20.41",
+      "server_port": 443,
+      "uuid": "2869896f-424d-481a-bd68-f2fcae11b0c4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA",
+          "short_id": "802db6d56acb5d79"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 - 722ms-10Mbps",
+      "server": "38.244.20.149",
+      "server_port": 443,
+      "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA",
+          "short_id": "0631f6666e3e7035"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - 769ms-15Mbps",
+      "server": "202.144.192.76",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - 775ms-7Mbps",
+      "server": "46.17.42.166",
+      "server_port": 50111,
+      "method": "aes-256-gcm",
+      "password": "6b39ae3234dfd68b"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06 - 819ms-7Mbps",
+      "server": "217.60.98.56",
+      "server_port": 443,
+      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "west.blackbigdog.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 07 - 851ms-2Mbps",
+      "server": "3.144.113.215",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 08 - 1055ms-1Mbps",
+      "server": "150.230.23.127",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "O0YzhVbSI6dkXq8u2erAigGyzED8wS+gjA6IoAv7p3M="
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 09 - 1107ms-1Mbps",
+      "server": "51.194.251.114",
+      "server_port": 61592,
+      "uuid": "BD1F7E5E-9E0B-4919-A7F1-84BC9E69426D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "store.storeimages.cdn-apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jnu0rNHECTe_v7H9Fmgg0iUSepHz4QQQRPW0XpX5URs",
+          "short_id": "1359c9bf9f7442e5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 10 - 1163ms-10Mbps",
+      "server": "undef.network",
+      "server_port": 2052,
+      "uuid": "f5267873-5379-409e-b67a-145ea54deb70",
+      "transport": {
+        "type": "ws",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
+        "headers": {
+          "Host": "uwu.blueknightnet.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - 1347ms-30Mbps",
       "server": "kr3-r.link-t7.com",
       "server_port": 10048,
       "uuid": "7134DB35-F254-4468-BA00-D9C099CF5AF7",
@@ -28,119 +191,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 614ms-16Mbps",
-      "server": "202.144.192.76",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
-      "tls": {
-        "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 - 697ms-10Mbps",
-      "server": "38.244.20.149",
-      "server_port": 443,
-      "uuid": "a2e2d5e7-5d23-40d8-baad-088b9e26b9c2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HR3BRJLZP0CBPG3r4aTXk0JhAzkyKoEW8WnW8xtHtCA",
-          "short_id": "0631f6666e3e7035"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - 724ms-7Mbps",
-      "server": "38.244.20.41",
-      "server_port": 443,
-      "uuid": "2869896f-424d-481a-bd68-f2fcae11b0c4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EZgb6P-QQtBeVAWDh1vjvR5Qg1dRk2uYkUG1hMz-qnA",
-          "short_id": "802db6d56acb5d79"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - 790ms-7Mbps",
-      "server": "46.17.42.166",
-      "server_port": 50111,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 06 - 843ms-6Mbps",
-      "server": "3.144.113.215",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07 - 1037ms-9Mbps",
-      "server": "217.60.98.56",
-      "server_port": 443,
-      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "west.blackbigdog.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 08 - 1192ms-2Mbps",
-      "server": "38.54.6.46",
-      "server_port": 36712,
-      "password": "CompanyHy2_2026!",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 09 - 1414ms-5Mbps",
+      "tag": "🇩🇪 德国 (Germany) 12 - 1385ms-6Mbps",
       "server": "199.232.78.101",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -158,6 +210,7 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
           "Host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net"
         }
@@ -165,7 +218,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 10 - 1551ms-0.8Mbps",
+      "tag": "🇩🇪 德国 (Germany) 13 - 1524ms-4Mbps",
       "server": "151.101.56.101",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -183,31 +236,62 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "path": "@mehrosaboran",
         "headers": {
           "Host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - 5375ms-4Mbps",
-      "server": "103.76.85.156",
-      "server_port": 443,
-      "uuid": "4082b282-dc67-40df-b114-f70d71d61f6f",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 14 - 1752ms-3Mbps",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SsqcoKQAh4wOwKVxQcS4QGb_8xiHJ_IgzsEoTsEPDj8",
-          "short_id": "41dd2ebdd7e0a61a"
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - 1781ms-3Mbps",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 16 - 2691ms-1Mbps",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 17 - 3197ms-0.6Mbps",
+      "server": "38.54.6.46",
+      "server_port": 36712,
+      "password": "CompanyHy2_2026!",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
       }
     },
     {
@@ -215,34 +299,46 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - 345ms-29Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 614ms-16Mbps",
-        "🇺🇸 美国 (United States) 03 - 697ms-10Mbps",
-        "🇺🇸 美国 (United States) 04 - 724ms-7Mbps",
-        "🇷🇺 俄罗斯 (Russia) 05 - 790ms-7Mbps",
-        "🇺🇸 美国 (United States) 06 - 843ms-6Mbps",
-        "🇳🇱 荷兰 (Netherlands) 07 - 1037ms-9Mbps",
-        "🇺🇸 美国 (United States) 08 - 1192ms-2Mbps",
-        "🇩🇪 德国 (Germany) 09 - 1414ms-5Mbps",
-        "🇩🇪 德国 (Germany) 10 - 1551ms-0.8Mbps",
-        "🇯🇵 日本 (Japan) 11 - 5375ms-4Mbps"
+        "🇯🇵 日本 (Japan) 01 - 372ms-6Mbps",
+        "🇺🇸 美国 (United States) 02 - 695ms-10Mbps",
+        "🇺🇸 美国 (United States) 03 - 722ms-10Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 04 - 769ms-15Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 775ms-7Mbps",
+        "🇳🇱 荷兰 (Netherlands) 06 - 819ms-7Mbps",
+        "🇺🇸 美国 (United States) 07 - 851ms-2Mbps",
+        "🇳🇱 荷兰 (Netherlands) 08 - 1055ms-1Mbps",
+        "🇺🇸 美国 (United States) 09 - 1107ms-1Mbps",
+        "🇩🇪 德国 (Germany) 10 - 1163ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 11 - 1347ms-30Mbps",
+        "🇩🇪 德国 (Germany) 12 - 1385ms-6Mbps",
+        "🇩🇪 德国 (Germany) 13 - 1524ms-4Mbps",
+        "🇫🇷 法国 (France) 14 - 1752ms-3Mbps",
+        "🇬🇧 英国 (United Kingdom) 15 - 1781ms-3Mbps",
+        "🇺🇸 美国 (United States) 16 - 2691ms-1Mbps",
+        "🇺🇸 美国 (United States) 17 - 3197ms-0.6Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - 345ms-29Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 614ms-16Mbps",
-        "🇺🇸 美国 (United States) 03 - 697ms-10Mbps",
-        "🇺🇸 美国 (United States) 04 - 724ms-7Mbps",
-        "🇷🇺 俄罗斯 (Russia) 05 - 790ms-7Mbps",
-        "🇺🇸 美国 (United States) 06 - 843ms-6Mbps",
-        "🇳🇱 荷兰 (Netherlands) 07 - 1037ms-9Mbps",
-        "🇺🇸 美国 (United States) 08 - 1192ms-2Mbps",
-        "🇩🇪 德国 (Germany) 09 - 1414ms-5Mbps",
-        "🇩🇪 德国 (Germany) 10 - 1551ms-0.8Mbps",
-        "🇯🇵 日本 (Japan) 11 - 5375ms-4Mbps"
+        "🇯🇵 日本 (Japan) 01 - 372ms-6Mbps",
+        "🇺🇸 美国 (United States) 02 - 695ms-10Mbps",
+        "🇺🇸 美国 (United States) 03 - 722ms-10Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 04 - 769ms-15Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 775ms-7Mbps",
+        "🇳🇱 荷兰 (Netherlands) 06 - 819ms-7Mbps",
+        "🇺🇸 美国 (United States) 07 - 851ms-2Mbps",
+        "🇳🇱 荷兰 (Netherlands) 08 - 1055ms-1Mbps",
+        "🇺🇸 美国 (United States) 09 - 1107ms-1Mbps",
+        "🇩🇪 德国 (Germany) 10 - 1163ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 11 - 1347ms-30Mbps",
+        "🇩🇪 德国 (Germany) 12 - 1385ms-6Mbps",
+        "🇩🇪 德国 (Germany) 13 - 1524ms-4Mbps",
+        "🇫🇷 法国 (France) 14 - 1752ms-3Mbps",
+        "🇬🇧 英国 (United Kingdom) 15 - 1781ms-3Mbps",
+        "🇺🇸 美国 (United States) 16 - 2691ms-1Mbps",
+        "🇺🇸 美国 (United States) 17 - 3197ms-0.6Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
