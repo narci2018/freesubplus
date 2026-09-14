@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps",
       "server": "143.246.193.215",
       "server_port": 443,
       "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
@@ -15,7 +15,7 @@
         "server_name": "www.blocket.se",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,78 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps",
+      "server": "193.42.39.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps",
+      "server": "150.241.72.76",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "austria-2.moritech.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps",
+      "server": "austria-3.moritech.net",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "austria-3.moritech.net",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps"
+        "🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps",
+        "🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps",
+        "🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps",
+        "🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps"
+        "🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps",
+        "🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps",
+        "🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps",
+        "🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

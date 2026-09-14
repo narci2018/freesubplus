@@ -4,8 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 挪威 (Norway) 01 - 739ms-4Mbps
-  server: 89.185.81.65
+- name: 🇳🇴 挪威 (Norway) 01 - 563ms-13Mbps
+  server: 151.242.168.125
+  port: 390
+  udp: true
+  type: vless
+  uuid: 7b363f9c-3df9-4b60-a789-9cd36be0bdfe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
+    short-id: b545fe8c5e22f92d
+  servername: bowandbead.com
+  client-fingerprint: qq
+- name: 🇳🇴 挪威 (Norway) 02 - 787ms-5Mbps
+  server: aldebaran.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -15,18 +28,33 @@ proxies:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
     short-id: '7606'
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇳🇴 挪威 (Norway) 03 - 1102ms-4Mbps
+  server: 31.76.5.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: norway-2.moritech.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 挪威 (Norway) 01 - 739ms-4Mbps
+  - 🇳🇴 挪威 (Norway) 01 - 563ms-13Mbps
+  - 🇳🇴 挪威 (Norway) 02 - 787ms-5Mbps
+  - 🇳🇴 挪威 (Norway) 03 - 1102ms-4Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 挪威 (Norway) 01 - 739ms-4Mbps
+  - 🇳🇴 挪威 (Norway) 01 - 563ms-13Mbps
+  - 🇳🇴 挪威 (Norway) 02 - 787ms-5Mbps
+  - 🇳🇴 挪威 (Norway) 03 - 1102ms-4Mbps
 rules:
 - MATCH,PROXIES

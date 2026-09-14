@@ -4,24 +4,86 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps
+- name: 🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps
   server: 65.109.215.118
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps
+  server: 31.76.88.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+  tls: true
+  servername: cf5.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf5.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps
+  server: prep.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps
+  server: 87.239.249.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
+    short-id: 91af08b1ce1f
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps
+  server: staging.lastilhame.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5a018643df03
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps
+  - 🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps
+  - 🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps
 rules:
 - MATCH,PROXIES

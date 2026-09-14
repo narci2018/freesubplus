@@ -4,21 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 - 480ms-33Mbps
+- name: 🇫🇷 法国 (France) 01 - 299ms-8Mbps
+  server: 13.39.182.161
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 02 - 309ms-17Mbps
+  server: 13.39.182.161
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - 380ms-13Mbps
+  server: 45.144.28.39
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: usejh2.neobo-tooth.ru
+- name: 🇫🇷 法国 (France) 04 - 382ms-15Mbps
   server: 15.237.218.241
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇫🇷 法国 (France) 02 - 522ms-9Mbps
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇫🇷 法国 (France) 03 - 616ms-11Mbps
+- name: 🇫🇷 法国 (France) 05 - 394ms-17Mbps
   server: 45.144.28.39
   port: 2083
   udp: true
@@ -30,56 +46,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇫🇷 法国 (France) 04 - 619ms-9Mbps
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 05 - 640ms-8Mbps
-  server: 45.144.28.39
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 法国 (France) 06 - 654ms-10Mbps
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 07 - 661ms-14Mbps
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - 662ms-10Mbps
-  server: 162.19.10.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 09 - 672ms-9Mbps
+- name: 🇫🇷 法国 (France) 06 - 418ms-5Mbps
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -91,8 +58,75 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
   servername: fuck.rkn
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 10 - 6609ms-5Mbps
-  server: 104.16.72.2
+- name: 🇫🇷 法国 (France) 07 - 426ms-18Mbps
+  server: 13.37.25.107
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 08 - 431ms-14Mbps
+  server: 13.37.25.107
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 09 - 432ms-4Mbps
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 10 - 482ms-13Mbps
+  server: 35.181.166.40
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - 491ms-19Mbps
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 12 - 498ms-19Mbps
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 13 - 508ms-15Mbps
+  server: 162.19.10.99
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 14 - 572ms-7Mbps
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 15 - 819ms-11Mbps
+  server: 185.220.100.168
   port: 443
   udp: true
   type: trojan
@@ -102,35 +136,88 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 16 - 844ms-12Mbps
+  server: 62.210.91.10
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 17 - 861ms-12Mbps
+  server: 194.76.154.31
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 18 - 1214ms-16Mbps
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 - 480ms-33Mbps
-  - 🇫🇷 法国 (France) 02 - 522ms-9Mbps
-  - 🇫🇷 法国 (France) 03 - 616ms-11Mbps
-  - 🇫🇷 法国 (France) 04 - 619ms-9Mbps
-  - 🇫🇷 法国 (France) 05 - 640ms-8Mbps
-  - 🇫🇷 法国 (France) 06 - 654ms-10Mbps
-  - 🇫🇷 法国 (France) 07 - 661ms-14Mbps
-  - 🇫🇷 法国 (France) 08 - 662ms-10Mbps
-  - 🇫🇷 法国 (France) 09 - 672ms-9Mbps
-  - 🇫🇷 法国 (France) 10 - 6609ms-5Mbps
+  - 🇫🇷 法国 (France) 01 - 299ms-8Mbps
+  - 🇫🇷 法国 (France) 02 - 309ms-17Mbps
+  - 🇫🇷 法国 (France) 03 - 380ms-13Mbps
+  - 🇫🇷 法国 (France) 04 - 382ms-15Mbps
+  - 🇫🇷 法国 (France) 05 - 394ms-17Mbps
+  - 🇫🇷 法国 (France) 06 - 418ms-5Mbps
+  - 🇫🇷 法国 (France) 07 - 426ms-18Mbps
+  - 🇫🇷 法国 (France) 08 - 431ms-14Mbps
+  - 🇫🇷 法国 (France) 09 - 432ms-4Mbps
+  - 🇫🇷 法国 (France) 10 - 482ms-13Mbps
+  - 🇫🇷 法国 (France) 11 - 491ms-19Mbps
+  - 🇫🇷 法国 (France) 12 - 498ms-19Mbps
+  - 🇫🇷 法国 (France) 13 - 508ms-15Mbps
+  - 🇫🇷 法国 (France) 14 - 572ms-7Mbps
+  - 🇫🇷 法国 (France) 15 - 819ms-11Mbps
+  - 🇫🇷 法国 (France) 16 - 844ms-12Mbps
+  - 🇫🇷 法国 (France) 17 - 861ms-12Mbps
+  - 🇫🇷 法国 (France) 18 - 1214ms-16Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 - 480ms-33Mbps
-  - 🇫🇷 法国 (France) 02 - 522ms-9Mbps
-  - 🇫🇷 法国 (France) 03 - 616ms-11Mbps
-  - 🇫🇷 法国 (France) 04 - 619ms-9Mbps
-  - 🇫🇷 法国 (France) 05 - 640ms-8Mbps
-  - 🇫🇷 法国 (France) 06 - 654ms-10Mbps
-  - 🇫🇷 法国 (France) 07 - 661ms-14Mbps
-  - 🇫🇷 法国 (France) 08 - 662ms-10Mbps
-  - 🇫🇷 法国 (France) 09 - 672ms-9Mbps
-  - 🇫🇷 法国 (France) 10 - 6609ms-5Mbps
+  - 🇫🇷 法国 (France) 01 - 299ms-8Mbps
+  - 🇫🇷 法国 (France) 02 - 309ms-17Mbps
+  - 🇫🇷 法国 (France) 03 - 380ms-13Mbps
+  - 🇫🇷 法国 (France) 04 - 382ms-15Mbps
+  - 🇫🇷 法国 (France) 05 - 394ms-17Mbps
+  - 🇫🇷 法国 (France) 06 - 418ms-5Mbps
+  - 🇫🇷 法国 (France) 07 - 426ms-18Mbps
+  - 🇫🇷 法国 (France) 08 - 431ms-14Mbps
+  - 🇫🇷 法国 (France) 09 - 432ms-4Mbps
+  - 🇫🇷 法国 (France) 10 - 482ms-13Mbps
+  - 🇫🇷 法国 (France) 11 - 491ms-19Mbps
+  - 🇫🇷 法国 (France) 12 - 498ms-19Mbps
+  - 🇫🇷 法国 (France) 13 - 508ms-15Mbps
+  - 🇫🇷 法国 (France) 14 - 572ms-7Mbps
+  - 🇫🇷 法国 (France) 15 - 819ms-11Mbps
+  - 🇫🇷 法国 (France) 16 - 844ms-12Mbps
+  - 🇫🇷 法国 (France) 17 - 861ms-12Mbps
+  - 🇫🇷 法国 (France) 18 - 1214ms-16Mbps
 rules:
 - MATCH,PROXIES

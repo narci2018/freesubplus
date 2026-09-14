@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - 491ms-11Mbps",
+      "server": "46.17.42.166",
+      "server_port": 50111,
+      "method": "aes-256-gcm",
+      "password": "6b39ae3234dfd68b"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - 938ms-4Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - 718ms-12Mbps",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -17,7 +25,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - 1091ms-10Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - 733ms-13Mbps",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - 936ms-16Mbps",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -28,31 +48,38 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - 1305ms-0.9Mbps",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs="
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - 2754ms-0.6Mbps",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - 1111ms-24Mbps",
+      "server": "46.8.200.91",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
+        "server_name": "cf3.rumedia-cdn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/casc",
+        "headers": {
+          "Host": "cf3.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - 1738ms-0.7Mbps",
+      "server": "els1.mangshe.xyz",
+      "server_port": 2056,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
       }
     },
     {
@@ -60,20 +87,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - 938ms-4Mbps",
-        "🇷🇺 俄罗斯 (Russia) 02 - 1091ms-10Mbps",
-        "🇷🇺 俄罗斯 (Russia) 03 - 1305ms-0.9Mbps",
-        "🇷🇺 俄罗斯 (Russia) 04 - 2754ms-0.6Mbps"
+        "🇷🇺 俄罗斯 (Russia) 01 - 491ms-11Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 718ms-12Mbps",
+        "🇷🇺 俄罗斯 (Russia) 03 - 733ms-13Mbps",
+        "🇷🇺 俄罗斯 (Russia) 04 - 936ms-16Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 1111ms-24Mbps",
+        "🇷🇺 俄罗斯 (Russia) 06 - 1738ms-0.7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - 938ms-4Mbps",
-        "🇷🇺 俄罗斯 (Russia) 02 - 1091ms-10Mbps",
-        "🇷🇺 俄罗斯 (Russia) 03 - 1305ms-0.9Mbps",
-        "🇷🇺 俄罗斯 (Russia) 04 - 2754ms-0.6Mbps"
+        "🇷🇺 俄罗斯 (Russia) 01 - 491ms-11Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 718ms-12Mbps",
+        "🇷🇺 俄罗斯 (Russia) 03 - 733ms-13Mbps",
+        "🇷🇺 俄罗斯 (Russia) 04 - 936ms-16Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 1111ms-24Mbps",
+        "🇷🇺 俄罗斯 (Russia) 06 - 1738ms-0.7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

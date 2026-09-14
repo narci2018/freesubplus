@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps
+- name: 🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps
   server: 143.246.193.215
   port: 443
   udp: true
@@ -15,18 +15,59 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: randomized
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps
+  server: 150.241.72.76
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: austria-2.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps
+  server: austria-3.moritech.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: austria-3.moritech.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps
+  - 🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps
+  - 🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps
+  - 🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps
+  - 🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - 706ms-9Mbps
+  - 🇸🇪 瑞典 (Sweden) 01 - 534ms-12Mbps
+  - 🇸🇪 瑞典 (Sweden) 02 - 557ms-2Mbps
+  - 🇸🇪 瑞典 (Sweden) 03 - 586ms-13Mbps
+  - 🇸🇪 瑞典 (Sweden) 04 - 940ms-10Mbps
 rules:
 - MATCH,PROXIES

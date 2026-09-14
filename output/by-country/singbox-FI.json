@@ -5,25 +5,122 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps",
       "server": "65.109.215.118",
       "server_port": 1080,
       "method": "chacha20-ietf-poly1305",
       "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps",
+      "server": "31.76.88.10",
+      "server_port": 443,
+      "uuid": "03c48eca-e0aa-4e18-998c-1f53f1de293c",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf5.rumedia-cdn.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf5.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps",
+      "server": "prep.wwwinternetvideo.click",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps",
+      "server": "87.239.249.137",
+      "server_port": 443,
+      "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY",
+          "short_id": "91af08b1ce1f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps",
+      "server": "staging.lastilhame.monster",
+      "server_port": 443,
+      "uuid": "594d466e-8ac3-4fda-b1d1-eeb817853518",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "5a018643df03"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps"
+        "🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps",
+        "🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps",
+        "🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps",
+        "🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps",
+        "🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 - 552ms-8Mbps"
+        "🇫🇮 芬兰 (Finland) 01 - 508ms-9Mbps",
+        "🇫🇮 芬兰 (Finland) 02 - 752ms-10Mbps",
+        "🇫🇮 芬兰 (Finland) 03 - 1002ms-9Mbps",
+        "🇫🇮 芬兰 (Finland) 04 - 1676ms-4Mbps",
+        "🇫🇮 芬兰 (Finland) 05 - 1924ms-4Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
