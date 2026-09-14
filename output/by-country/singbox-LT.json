@@ -5,35 +5,35 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - 579ms-9Mbps",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - 589ms-9Mbps",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 579ms-9Mbps",
+        "🇱🇹 立陶宛 (Lithuania) 02 - 589ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 579ms-9Mbps",
+        "🇱🇹 立陶宛 (Lithuania) 02 - 589ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
