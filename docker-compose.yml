@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  freesub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: freesub-webui
+    restart: unless-stopped
+    ports:
+      - "18168:18168"
+    volumes:
+      # 持久化挂载：配置文件、产物订阅文件与运行时数据库
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Shanghai
+      - PORT=18168
+      - DATA_DIR=/app/data
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
