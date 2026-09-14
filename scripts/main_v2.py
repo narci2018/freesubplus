@@ -959,37 +959,100 @@ def extract_nodes_from_text(text: str) -> set:
     return results
 
 
-def fetch_raw_nodes(on_result_cb=None) -> list:
+def extract_cf_ips_from_text(text: str) -> list:
+    """从纯文本中提取 Cloudflare Anycast Clean IP 地址 (兼容 1.2.3.4 或 1.2.3.4:443#tag 格式)"""
+    if not text:
+        return []
+    ips = set()
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith(("#", "//")):
+            continue
+        m = re.match(r"^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})", line)
+        if m:
+            ip = m.group(1)
+            if not ip.startswith(("127.", "192.168.", "10.", "0.", "255.")):
+                ips.add(ip)
+    return list(ips)
+
+
+def fetch_raw_nodes(on_result_cb=None, front_proxy: str = None) -> list:
     nodes = set()
     print("[*] 抓取全部订阅源 ...")
 
+    # 创建独立的直连会话 (严格直连出海)
+    direct_session = requests.Session()
+    direct_session.trust_env = False
+    direct_session.headers.update({"User-Agent": USER_AGENT, "Accept": "*/*"})
+
+    # 创建前置代理会话 (如果配置了 front_proxy)
+    proxy_session = None
+    if front_proxy and front_proxy.strip():
+        proxy_session = requests.Session()
+        proxy_session.trust_env = False
+        p_url = front_proxy.strip()
+        # 核心修复: 将 socks5:// 自动转为 socks5h://，让代理执行远程 DNS 解析，彻底避免国内 DNS 污染阻断
+        if p_url.startswith("socks5://"):
+            p_url = "socks5h://" + p_url[len("socks5://"):]
+        elif p_url.startswith("socks4://"):
+            p_url = "socks4a://" + p_url[len("socks4://"):]
+        proxy_session.proxies = {"http": p_url, "https": p_url}
+        proxy_session.headers.update({"User-Agent": USER_AGENT, "Accept": "*/*"})
+
     def _fetch(url):
-        last_err = None
-        # 重试 2 次 (网络抖动/GFW 间歇性重置; 退避 3s)
-        for attempt in range(3):
+        # 尝试 1: 先直连更新
+        direct_err = None
+        try:
+            r = direct_session.get(url, timeout=20)
+            if r.status_code == 200:
+                got = extract_nodes_from_text(r.text)
+                cf_ips = extract_cf_ips_from_text(r.text) if not got else []
+                return url, got, cf_ips, None, "直连"
+            direct_err = f"HTTP {r.status_code}"
+        except Exception as e:
+            direct_err = str(e)[:70]
+
+        # 尝试 2: 直连失败，再使用代理更新 (前置代理出海)
+        if proxy_session:
             try:
-                r = http_get(url, timeout=30)
+                r = proxy_session.get(url, timeout=25)
                 if r.status_code == 200:
                     got = extract_nodes_from_text(r.text)
-                    return url, got, None
-                last_err = f"HTTP {r.status_code}"
+                    cf_ips = extract_cf_ips_from_text(r.text) if not got else []
+                    return url, got, cf_ips, None, "前置代理"
+                proxy_err = f"HTTP {r.status_code}"
             except Exception as e:
-                last_err = str(e)[:70]
-            if attempt < 2:
-                time.sleep(3)
-        return url, set(), last_err
+                proxy_err = str(e)[:70]
+            # 两次尝试均失败才算失败
+            return url, set(), [], f"直连失败({direct_err}) & 代理失败({proxy_err})", "失败"
+        else:
+            # 未配置前置代理时进行第 2 次直连重试 (退避 2 秒)
+            time.sleep(2)
+            try:
+                r = direct_session.get(url, timeout=20)
+                if r.status_code == 200:
+                    got = extract_nodes_from_text(r.text)
+                    cf_ips = extract_cf_ips_from_text(r.text) if not got else []
+                    return url, got, cf_ips, None, "直连重试"
+                retry_err = f"HTTP {r.status_code}"
+            except Exception as e:
+                retry_err = str(e)[:70]
+            return url, set(), [], f"直连重试失败: {retry_err}", "失败"
 
     with ThreadPoolExecutor(MAX_WORKERS_FETCH) as ex:
         futs = [ex.submit(_fetch, u) for u in SOURCE_URLS]
         for f in as_completed(futs):
-            url, got, err = f.result()
+            url, got, cf_ips, err, via = f.result()
             if err:
                 print(f"[!] 拉取失败 {url} → {err}")
+            elif cf_ips:
+                print(f"[+] [{via}] {url} → 提取到 {len(cf_ips)} 个 Cloudflare 优选 IP (已载入引擎)")
             else:
-                print(f"[+] {url} → {len(got)} 节点")
+                print(f"[+] [{via}] {url} → {len(got)} 节点")
+
             if on_result_cb:
                 try:
-                    on_result_cb(url, not bool(err), len(got), str(err) if err else "")
+                    on_result_cb(url, not bool(err), len(got), len(cf_ips), str(err) if err else "", via, cf_ips)
                 except Exception:
                     pass
             nodes.update(got)

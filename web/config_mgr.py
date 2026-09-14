@@ -2,6 +2,7 @@ import os
 import json
 import uuid
 import copy
+import urllib.parse
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +47,16 @@ DEFAULT_CONFIG = {
         "probe_timeout": 12,
         "speed_test_budget": 5.0,
         "min_speed_kbps": 70
+    },
+    "github_sync": {
+        "enabled": False,
+        "token": "",
+        "repo": "",
+        "branch": "main",
+        "target_dir": "output",
+        "last_sync_time": None,
+        "last_sync_status": "未配置",
+        "cdn_links": {}
     },
     "sources": [
         {
@@ -230,6 +241,57 @@ class ConfigManager:
                 self.save_config({"sources": sources})
                 return True
         return False
+
+    def get_sources_sorted(self) -> list:
+        """获取按成功次数降序、失败次数升序排列的订阅源列表"""
+        sources = copy.deepcopy(self._config.get("sources", []))
+        sources.sort(key=lambda s: (-s.get("success_count", 0), s.get("fail_count", 0)))
+        return sources
+
+    def add_sources_batch(self, raw_urls: list, name_prefix: str = "") -> dict:
+        """批量录入订阅源，自动去重、过滤无效链接并生成名称"""
+        sources = self._config.setdefault("sources", [])
+        existing_urls = {s.get("url", "").strip().rstrip("/").lower() for s in sources}
+        added = []
+        skipped = 0
+
+        for line in raw_urls:
+            u = line.strip()
+            if not u or not u.startswith(("http://", "https://")):
+                continue
+            norm_u = u.rstrip("/").lower()
+            if norm_u in existing_urls:
+                skipped += 1
+                continue
+
+            existing_urls.add(norm_u)
+            parsed = urllib.parse.urlparse(u)
+            domain = parsed.netloc or "订阅源"
+            path_part = parsed.path.strip("/").split("/")[-1] or ""
+            if path_part:
+                auto_name = f"{domain} ({path_part})"
+            else:
+                auto_name = domain
+
+            if name_prefix:
+                auto_name = f"{name_prefix} - {auto_name}"
+
+            new_source = {
+                "id": f"src_{uuid.uuid4().hex[:8]}",
+                "name": auto_name,
+                "url": u,
+                "enabled": True,
+                "last_fetched_count": 0,
+                "last_status": "未测试",
+                "success_count": 0,
+                "fail_count": 0
+            }
+            sources.append(new_source)
+            added.append(new_source)
+
+        if added:
+            self.save_config({"sources": sources})
+        return {"added_count": len(added), "skipped_count": skipped, "added": added}
 
     def delete_source(self, source_id: str) -> bool:
         sources = self._config.get("sources", [])

@@ -22,6 +22,13 @@ class CloudflareOptimizer:
     def __init__(self):
         self._tested_clean_ips = []
         self._last_test_time = 0
+        self._dynamic_ips = set()
+
+    def add_dynamic_clean_ips(self, ip_list: list):
+        """动态加入从订阅源中提取的优选 IP"""
+        for ip in ip_list:
+            if ip and re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", ip.strip()):
+                self._dynamic_ips.add(ip.strip())
 
     def is_cloudflare_node(self, outbound: dict) -> bool:
         """判断一个节点是否属于 Cloudflare 代理（Workers/Pages 反代）"""
@@ -82,6 +89,9 @@ class CloudflareOptimizer:
         for ip in cfg.get("custom_ips", []):
             if ip and re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", ip.strip()):
                 ips.add(ip.strip())
+
+        # 混合从订阅源中动态提取的优选 IP
+        ips.update(self._dynamic_ips)
 
         # 若在线拉取失败，兜底内置列表
         if not ips:

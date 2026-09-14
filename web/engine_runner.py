@@ -187,14 +187,32 @@ class EngineRunner:
 
             # 3. 抓取订阅源
             self.current_stage = "fetching"
-            log_buffer.write(f"[*] 开始抓取 {len(active_urls)} 个活动订阅源...")
+            front_proxy = cfg.get("network", {}).get("front_proxy", "").strip()
+            proxy_hint = f" (配置前置代理: {front_proxy})" if front_proxy else " (先直连，失败走系统代理)"
+            log_buffer.write(f"[*] 开始抓取 {len(active_urls)} 个活动订阅源{proxy_hint}...")
 
-            def _on_source_result(src_url, success, count, err_msg):
-                config_mgr.record_source_fetch_result(src_url, success, count, err_msg)
-                status_txt = f"解析到 {count} 个节点" if success else f"失败: {err_msg[:40]}"
-                log_buffer.write(f"    {'[✓]' if success else '[✗]'} {src_url} → {status_txt}")
+            def _on_source_result(src_url, success, count, cf_count=0, err_msg="", via="", cf_ips=None):
+                if success:
+                    if count > 0:
+                        status_txt = f"解析到 {count} 个代理节点"
+                        config_mgr.record_source_fetch_result(src_url, True, count, status_txt)
+                    elif cf_count > 0:
+                        status_txt = f"提取到 {cf_count} 个CF优选IP (已注入引擎)"
+                        config_mgr.record_source_fetch_result(src_url, True, cf_count, status_txt)
+                        # 动态将提取到的优选 IP 注入到优选引擎池
+                        if cf_ips and cf_optimizer:
+                            cf_optimizer.add_dynamic_clean_ips(cf_ips)
+                    else:
+                        status_txt = "成功连接 (0个节点/优选IP)"
+                        config_mgr.record_source_fetch_result(src_url, True, 0, status_txt)
+                else:
+                    status_txt = f"失败: {err_msg[:45]}"
+                    config_mgr.record_source_fetch_result(src_url, False, 0, status_txt)
 
-            raw_nodes = mv.fetch_raw_nodes(on_result_cb=_on_source_result)
+                via_tag = f"[{via}] " if via else ""
+                log_buffer.write(f"    {'[✓]' if success else '[✗]'} {via_tag}{src_url} → {status_txt}")
+
+            raw_nodes = mv.fetch_raw_nodes(on_result_cb=_on_source_result, front_proxy=front_proxy)
             log_buffer.write(f"[+] 初始抓取去重前总数: {len(raw_nodes)}")
 
             # 4. 解析协议
@@ -283,6 +301,44 @@ class EngineRunner:
                     "last_residential_count": res_out
                 }
             })
+
+            # 自动同步至 GitHub (若启用)
+            gh_cfg = cfg.get("github_sync", {})
+            if gh_cfg.get("enabled") and gh_cfg.get("token") and gh_cfg.get("repo"):
+                log_buffer.write("[*] 检测到 GitHub 云端同步已开启，正在向 GitHub 推送订阅并刷新 CDN 缓存...")
+                try:
+                    try:
+                        import web.github_sync as github_sync
+                    except ImportError:
+                        import github_sync
+                    sync_res = github_sync.sync_files_to_github(
+                        token=gh_cfg.get("token", ""),
+                        repo=gh_cfg.get("repo", ""),
+                        branch=gh_cfg.get("branch", "main"),
+                        target_dir=gh_cfg.get("target_dir", "output"),
+                        local_dir=config_mgr.get_output_dir(),
+                        log_cb=log_buffer.write
+                    )
+                    cdn_links = github_sync.generate_cdn_links(
+                        repo=gh_cfg.get("repo", ""),
+                        branch=gh_cfg.get("branch", "main"),
+                        target_dir=gh_cfg.get("target_dir", "output")
+                    )
+                    config_mgr.save_config({
+                        "github_sync": {
+                            "last_sync_time": now_iso,
+                            "last_sync_status": sync_res.get("message", "已同步"),
+                            "cdn_links": cdn_links
+                        }
+                    })
+                except Exception as sync_err:
+                    log_buffer.write(f"    [!] GitHub 自动同步异常: {sync_err}")
+                    config_mgr.save_config({
+                        "github_sync": {
+                            "last_sync_time": now_iso,
+                            "last_sync_status": f"同步失败: {str(sync_err)[:40]}"
+                        }
+                    })
 
             log_buffer.write(f"🎉 === 测活完成! 耗时: {duration}s, 存活总数: {total_out}, 住宅IP: {res_out} ===")
 

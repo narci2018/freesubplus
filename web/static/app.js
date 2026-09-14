@@ -1,5 +1,87 @@
 const { createApp, ref, computed, onMounted, nextTick, watch } = Vue;
 
+const RECOMMENDED_SOURCES = [
+  "https://zip.cm.edu.kg/all.txt",
+  "https://bestcf.pages.dev/domain/all.txt",
+  "https://bestcf.pages.dev/domain/mini.txt",
+  "https://bestcf.pages.dev/domain/Domain-Asia.txt",
+  "https://bestcf.pages.dev/vps789/top10.txt",
+  "https://bestcf.pages.dev/vps789/top20.txt",
+  "https://bestcf.pages.dev/vps789/top50.txt",
+  "https://bestcf.pages.dev/vps789/top100.txt",
+  "https://bestcf.pages.dev/domain/Domain-AI-VPS789.txt",
+  "https://bestcf.pages.dev/domain/ygkkk/all.txt",
+  "https://bestcf.pages.dev/domain/qms/all.txt",
+  "https://bestcf.pages.dev/domain/fiatnorm/all.txt",
+  "https://bestcf.pages.dev/domain/senflare/all.txt",
+  "https://bestcf.pages.dev/domain/wuya/all.txt",
+  "https://bestcf.pages.dev/domain/ircf/all.txt",
+  "https://bestcf.pages.dev/domain/Domain-TOP.txt",
+  "https://bestcf.pages.dev/wetest/ipv4.txt",
+  "https://bestcf.pages.dev/uouin/all.txt",
+  "https://bestcf.pages.dev/xinyitang3/ipv4.txt",
+  "https://bestcf.pages.dev/luoli/all.txt",
+  "https://bestcf.pages.dev/cfyes/ipv4.txt",
+  "https://bestcf.pages.dev/cfyes/ipv6.txt",
+  "https://addressesapi.090227.xyz/CloudFlareYes",
+  "https://bestcf.pages.dev/tiancheng/all.txt",
+  "https://bestcf.pages.dev/tiancheng/mini.txt",
+  "https://bestcf.pages.dev/tiancheng/hk.txt",
+  "https://bestcf.pages.dev/tiancheng/sg.txt",
+  "https://bestcf.pages.dev/tiancheng/jp.txt",
+  "https://bestcf.pages.dev/tiancheng/kr.txt",
+  "https://bestcf.pages.dev/tiancheng/us.txt",
+  "https://bestcf.pages.dev/s5gy/all.txt",
+  "https://bestcf.pages.dev/s5gy/mini.txt",
+  "https://bestcf.pages.dev/s5gy/hk.txt",
+  "https://bestcf.pages.dev/s5gy/sg.txt",
+  "https://bestcf.pages.dev/s5gy/jp.txt",
+  "https://bestcf.pages.dev/s5gy/kr.txt",
+  "https://bestcf.pages.dev/s5gy/us.txt",
+  "https://bestcf.pages.dev/s5gy/tw.txt",
+  "https://bestcf.pages.dev/gslege/Cfxyz.txt",
+  "https://bestcf.pages.dev/gslege/SG.txt",
+  "https://bestcf.pages.dev/gslege/DE.txt",
+  "https://bestcf.pages.dev/gslege/US.txt",
+  "https://cf.junzhen.qzz.io/best_ips.txt",
+  "https://cf.junzhen.qzz.io/best_ips_bj.txt",
+  "https://raw.githubusercontent.com/svip-s/cloudflare_ip/refs/heads/main/best_ips.txt",
+  "https://raw.githubusercontent.com/love-ztm/cfip/refs/heads/main/best_ips.txt",
+  "https://raw.githubusercontent.com/love-ztm/cfip/refs/heads/main/ubest_ips.txt",
+  "https://bestcf.pages.dev/zhixuanwang/ipv4-onlyip.txt",
+  "https://addressesapi.090227.xyz/ip.164746.xyz",
+  "https://bestcf.pages.dev/vvhan/ipv4.txt",
+  "https://bestcf.pages.dev/vvhan/ipv6.txt",
+  "https://bestcf.pages.dev/nirevil/ipv4.txt",
+  "https://bestcf.pages.dev/nirevil/ipv6.txt",
+  "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt",
+  "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv6.txt",
+  "https://raw.githubusercontent.com/yuanxiawan/cfipv4db/refs/heads/main/cfip.txt",
+  "https://bestcf.pages.dev/cmliu/all.txt",
+  "https://bestcf.pages.dev/cmliu2/all.txt",
+  "https://bestcf.pages.dev/moistr/all.txt",
+  "https://bestcf.pages.dev/lzj/all.txt",
+  "https://bestcf.pages.dev/lajiao/all.txt",
+  "https://bestcf.pages.dev/kristi/all.txt",
+  "https://raw.githubusercontent.com/joname1/BestCFip/refs/heads/main/ipv4.txt",
+  "https://raw.githubusercontent.com/joname1/BestCFip/refs/heads/main/ipv6.txt",
+  "https://raw.githubusercontent.com/Senflare/Senflare-IP/refs/heads/main/IPlist-Pro.txt",
+  "https://bestcf.pages.dev/ircf/ipv4.txt",
+  "https://raw.githubusercontent.com/einsitang/my-fast-cf-ip/refs/heads/master/fastips.txt",
+  "https://raw.githubusercontent.com/hubbylei/bestcf/refs/heads/main/bestcf.txt",
+  "https://raw.githubusercontent.com/gshtwy/CF-DNS-Clone/refs/heads/main/wetest-cloudflare-v4.txt",
+  "https://warp-masque-bestip.pages.dev/?ips=50&level=all&port=random",
+  "https://warp-masque-bestip.pages.dev/?ips=50&level=p0&port=random",
+  "https://warp-masque-bestip.pages.dev/?ips=50&level=198&port=random",
+  "https://warp-masque-bestip.pages.dev/?ips=50&level=193&port=random",
+  "https://warp-masque-bestip.pages.dev/?ips=50&level=192&port=random",
+  "https://bestcf.pages.dev/random-region/mix2.txt",
+  "https://090227.pages.dev/bestcf?isp=all&ips=20",
+  "https://randomip.pages.dev/?c=all&n=50&p=random",
+  "https://bestcf.pages.dev/tiancheng2/all.txt",
+  "https://bestcf.pages.dev/tiancheng3/all.txt"
+];
+
 createApp({
   setup() {
     const currentTab = ref('dashboard');
@@ -35,7 +117,8 @@ createApp({
       scheduler: { enabled: true, interval_hours: 6 },
       naming_rule: { template: '{flag} {cname} {idx:02d}{tag}{risk_tag} - {lat_str}-{spd_str}' },
       cf_clean_ip: { enabled: true, custom_ips: [], top_n_to_use: 3 },
-      network: { front_proxy: '', max_workers: 32 }
+      network: { front_proxy: '', max_workers: 32 },
+      github_sync: { enabled: false, token: '', repo: '', branch: 'main', target_dir: 'output', cdn_links: {} }
     });
 
     const sources = ref([]);
@@ -46,10 +129,244 @@ createApp({
     const showAddModal = ref(false);
     const newSource = ref({ name: '', url: '' });
 
+    // Toast
     const toast = ref({ show: false, message: '' });
     const showToast = (msg) => {
       toast.value = { show: true, message: msg };
       setTimeout(() => { toast.value.show = false; }, 3000);
+    };
+
+    // --- 节点列表弹窗状态 ---
+    const showNodesModal = ref(false);
+    const nodesModalFilter = ref('all');
+    const nodesList = ref([]);
+    const loadingNodes = ref(false);
+    const nodesSearch = ref('');
+    const nodesProtoFilter = ref('ALL');
+    const nodesPage = ref(1);
+    const nodesPerPage = 50;
+
+    const availableProtos = computed(() => {
+      const set = new Set();
+      nodesList.value.forEach(n => { if (n.proto) set.add(n.proto); });
+      return Array.from(set).sort();
+    });
+
+    const filteredNodes = computed(() => {
+      let list = nodesList.value;
+      const kw = nodesSearch.value.trim().toLowerCase();
+      if (kw) {
+        list = list.filter(n => 
+          (n.tag && n.tag.toLowerCase().includes(kw)) ||
+          (n.server && n.server.toLowerCase().includes(kw)) ||
+          (n.proto && n.proto.toLowerCase().includes(kw)) ||
+          (String(n.port).includes(kw))
+        );
+      }
+      if (nodesProtoFilter.value !== 'ALL') {
+        list = list.filter(n => n.proto === nodesProtoFilter.value);
+      }
+      return list;
+    });
+
+    const totalNodesPages = computed(() => Math.ceil(filteredNodes.value.length / nodesPerPage) || 1);
+
+    const paginatedNodes = computed(() => {
+      const start = (nodesPage.value - 1) * nodesPerPage;
+      return filteredNodes.value.slice(start, start + nodesPerPage);
+    });
+
+    const openNodesModal = async (filter) => {
+      nodesModalFilter.value = filter;
+      showNodesModal.value = true;
+      loadingNodes.value = true;
+      nodesSearch.value = '';
+      nodesProtoFilter.value = 'ALL';
+      nodesPage.value = 1;
+      nextTick(() => { lucide.createIcons(); });
+      try {
+        const r = await fetch(`/api/nodes?filter=${filter}`);
+        if (r.ok) {
+          const d = await r.json();
+          nodesList.value = d.nodes || [];
+        }
+      } catch (e) {
+        showToast('获取节点列表失败: ' + e);
+      } finally {
+        loadingNodes.value = false;
+        nextTick(() => { lucide.createIcons(); });
+      }
+    };
+
+    const copyAllFilteredNodes = () => {
+      const uris = filteredNodes.value.map(n => n.raw_uri || `${n.proto.toLowerCase()}://${n.server}:${n.port}#${encodeURIComponent(n.tag)}`).filter(Boolean);
+      if (!uris.length) {
+        showToast('当前无可用节点链接');
+        return;
+      }
+      copyText(uris.join('\n'));
+      showToast(`已成功复制 ${uris.length} 个节点链接到剪贴板！`);
+    };
+
+    const copyNodeUri = (node) => {
+      const uri = node.raw_uri || `${node.proto.toLowerCase()}://${node.server}:${node.port}#${encodeURIComponent(node.tag)}`;
+      copyText(uri);
+    };
+
+    const getProtoBadgeClass = (proto) => {
+      const p = (proto || '').toUpperCase();
+      if (p.includes('VLESS')) return 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30';
+      if (p.includes('VMESS')) return 'bg-indigo-500/20 text-indigo-300 border border-indigo-500/30';
+      if (p.includes('SS') || p.includes('SHADOWSOCKS')) return 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+      if (p.includes('TROJAN')) return 'bg-amber-500/20 text-amber-300 border border-amber-500/30';
+      if (p.includes('HYSTERIA') || p.includes('TUIC')) return 'bg-rose-500/20 text-rose-300 border border-rose-500/30';
+      return 'bg-slate-800 text-slate-300 border border-white/10';
+    };
+
+    // --- 批量导入订阅源弹窗状态 ---
+    const showBatchModal = ref(false);
+    const batchUrlsText = ref('');
+    const batchPrefix = ref('');
+
+    const openBatchSourceModal = () => {
+      showBatchModal.value = true;
+      nextTick(() => { lucide.createIcons(); });
+    };
+
+    const fillRecommendedSources = () => {
+      batchUrlsText.value = RECOMMENDED_SOURCES.join('\n');
+      showToast(`已填入 ${RECOMMENDED_SOURCES.length} 个优质订阅源`);
+    };
+
+    const getBatchUrlCount = () => {
+      return batchUrlsText.value.split('\n').map(s => s.trim()).filter(s => s.startsWith('http://') || s.startsWith('https://')).length;
+    };
+
+    const confirmBatchAddSources = async () => {
+      const urls = batchUrlsText.value.split('\n').map(s => s.trim()).filter(s => s.startsWith('http://') || s.startsWith('https://'));
+      if (!urls.length) {
+        showToast('请在文本框中输入至少一个合法的 HTTP/HTTPS 链接');
+        return;
+      }
+      try {
+        const r = await fetch('/api/sources/batch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ urls: urls, prefix: batchPrefix.value })
+        });
+        const res = await r.json();
+        if (r.ok) {
+          showToast(`导入成功！新增 ${res.added_count} 个订阅源 (跳过重复 ${res.skipped_count} 个)`);
+          showBatchModal.value = false;
+          batchUrlsText.value = '';
+          fetchSources();
+        } else {
+          showToast('导入失败: ' + res.detail);
+        }
+      } catch (e) {
+        showToast('批量导入异常: ' + e);
+      }
+    };
+
+    // --- GitHub 同步弹窗状态 ---
+    const showGitHubModal = ref(false);
+    const testingGitHub = ref(false);
+    const syncingGitHub = ref(false);
+    const ghForm = ref({
+      enabled: false,
+      token: '',
+      repo: '',
+      branch: 'main',
+      target_dir: 'output'
+    });
+
+    const openGitHubModal = async () => {
+      showGitHubModal.value = true;
+      nextTick(() => { lucide.createIcons(); });
+      try {
+        const r = await fetch('/api/github-sync');
+        if (r.ok) {
+          const d = await r.json();
+          const cfg = d.config || {};
+          ghForm.value = {
+            enabled: cfg.enabled || false,
+            token: cfg.token || '',
+            repo: cfg.repo || '',
+            branch: cfg.branch || 'main',
+            target_dir: cfg.target_dir || 'output'
+          };
+        }
+      } catch (e) {}
+    };
+
+    const getJsdelivrUrl = (filename) => {
+      const repo = (ghForm.value.repo || '').trim().replace(/^\/|\/$/g, '');
+      const branch = (ghForm.value.branch || 'main').trim();
+      const dir = (ghForm.value.target_dir || 'output').trim().replace(/^\/|\/$/g, '');
+      const path = dir ? `${dir}/${filename}` : filename;
+      return `https://cdn.jsdelivr.net/gh/${repo}@${branch}/${path}`;
+    };
+
+    const testGitHubConnection = async () => {
+      if (!ghForm.value.token || !ghForm.value.repo) {
+        showToast('请先输入 GitHub Token 和仓库名称');
+        return;
+      }
+      testingGitHub.value = true;
+      try {
+        const r = await fetch('/api/github-sync/test', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(ghForm.value)
+        });
+        const res = await r.json();
+        if (res.status === 'ok') {
+          showToast(res.message);
+        } else {
+          showToast('连接失败: ' + res.message);
+        }
+      } catch (e) {
+        showToast('测试网络异常: ' + e);
+      } finally {
+        testingGitHub.value = false;
+      }
+    };
+
+    const saveGitHubConfig = async () => {
+      try {
+        const r = await fetch('/api/github-sync', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(ghForm.value)
+        });
+        if (r.ok) {
+          showToast('GitHub 同步配置已成功保存！');
+          fetchConfig();
+          showGitHubModal.value = false;
+        } else {
+          showToast('保存失败');
+        }
+      } catch (e) {
+        showToast('保存异常: ' + e);
+      }
+    };
+
+    const syncGitHubNow = async () => {
+      syncingGitHub.value = true;
+      try {
+        const r = await fetch('/api/github-sync/now', { method: 'POST' });
+        const res = await r.json();
+        if (r.ok && res.status === 'ok') {
+          showToast(res.message);
+          fetchStatus();
+        } else {
+          showToast('同步失败: ' + (res.message || res.detail));
+        }
+      } catch (e) {
+        showToast('同步异常: ' + e);
+      } finally {
+        syncingGitHub.value = false;
+      }
     };
 
     const nameTags = [
@@ -103,7 +420,7 @@ createApp({
         document.execCommand('copy');
         document.body.removeChild(inp);
       }
-      showToast('订阅链接已复制到剪贴板！');
+      showToast('链接已复制到剪贴板！');
     };
 
     const stageName = (st) => {
@@ -123,9 +440,9 @@ createApp({
     };
 
     const getLogColor = (line) => {
-      if (line.includes('[错误]') || line.includes('❌')) return 'text-red-400';
-      if (line.includes('🎉') || line.includes('[+]')) return 'text-emerald-400';
-      if (line.includes('🚀') || line.includes('===') || line.includes('优选')) return 'text-cyan-300 font-bold';
+      if (line.includes('[错误]') || line.includes('❌') || line.includes('[✗]')) return 'text-red-400';
+      if (line.includes('🎉') || line.includes('[+]') || line.includes('[✓]')) return 'text-emerald-400';
+      if (line.includes('🚀') || line.includes('===') || line.includes('优选') || line.includes('[⚡]')) return 'text-cyan-300 font-bold';
       if (line.includes('进度:')) return 'text-indigo-300';
       return 'text-slate-300';
     };
@@ -164,7 +481,18 @@ createApp({
     const fetchSources = async () => {
       try {
         const r = await fetch('/api/sources');
-        if (r.ok) sources.value = await r.json();
+        if (r.ok) {
+          const list = await r.json();
+          // 按成功次数降序排列，按失败次数升序排列
+          sources.value = list.sort((a, b) => {
+            const scA = a.success_count || 0;
+            const scB = b.success_count || 0;
+            if (scB !== scA) return scB - scA;
+            const fcA = a.fail_count || 0;
+            const fcB = b.fail_count || 0;
+            return fcA - fcB;
+          });
+        }
       } catch (e) {}
     };
 
@@ -231,6 +559,7 @@ createApp({
     const openAddSourceModal = () => {
       newSource.value = { name: '', url: '' };
       showAddModal.value = true;
+      nextTick(() => { lucide.createIcons(); });
     };
 
     const confirmAddSource = async () => {
@@ -427,7 +756,17 @@ createApp({
       logs, customIpsText, showAddModal, newSource, toast, nameTags, previewNodeName,
       subUrl, copyText, stageName, getLogColor, clearLogs, insertTag,
       triggerRun, toggleSource, deleteSource, openAddSourceModal, confirmAddSource,
-      testSource, saveNamingRule, saveCleanIpConfig, saveGlobalSettings, testCleanIps
+      testSource, saveNamingRule, saveCleanIpConfig, saveGlobalSettings, testCleanIps,
+      // Nodes modal
+      showNodesModal, nodesModalFilter, nodesList, loadingNodes, nodesSearch, nodesProtoFilter,
+      nodesPage, nodesPerPage, availableProtos, filteredNodes, totalNodesPages, paginatedNodes,
+      openNodesModal, copyAllFilteredNodes, copyNodeUri, getProtoBadgeClass,
+      // Batch modal
+      showBatchModal, batchUrlsText, batchPrefix, openBatchSourceModal, fillRecommendedSources,
+      getBatchUrlCount, confirmBatchAddSources,
+      // GitHub modal
+      showGitHubModal, testingGitHub, syncingGitHub, ghForm, openGitHubModal,
+      getJsdelivrUrl, testGitHubConnection, saveGitHubConfig, syncGitHubNow
     };
   }
 }).mount('#app');
