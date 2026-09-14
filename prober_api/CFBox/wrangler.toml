@@ -1,0 +1,12 @@
+name = "cfbox"
+compatibility_date = "2024-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 绑定 KV 命名空间（变量名必须为 K）
+[[kv_namespaces]]
+binding = "K"
+id = "e449a3e06069430d80fea61750d73fa6"
+
+# 环境变量（U 为进入 CFBox 面板的管理 UUID）
+[vars]
+U = "07d2aca9-c060-4039-b265-454fc8510d4c"

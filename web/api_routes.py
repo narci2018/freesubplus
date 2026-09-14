@@ -33,6 +33,10 @@ class BatchAddSourceRequest(BaseModel):
     prefix: str = ""
 
 
+class BatchDeleteSourcesRequest(BaseModel):
+    ids: list
+
+
 class UpdateSourceRequest(BaseModel):
     name: str = None
     url: str = None
@@ -266,6 +270,18 @@ async def delete_source(source_id: str):
     return {"status": "ok"}
 
 
+@router.post("/api/sources/batch-delete")
+async def batch_delete_sources(req: BatchDeleteSourcesRequest):
+    if not req.ids:
+        raise HTTPException(status_code=400, detail="请至少选择一个订阅源")
+    deleted_count = config_mgr.delete_sources_batch(req.ids)
+    return {
+        "status": "ok",
+        "deleted_count": deleted_count,
+        "sources": config_mgr.get_sources_sorted()
+    }
+
+
 @router.post("/api/sources/{source_id}/toggle")
 async def toggle_source(source_id: str):
     sources = config_mgr.get_config().get("sources", [])
@@ -281,13 +297,10 @@ async def toggle_source(source_id: str):
 async def test_source(req: TestSourceRequest):
     import requests
     import main_v2 as mv
+    from web.engine_runner import check_and_normalize_proxy
 
     cfg = config_mgr.get_config()
-    front_proxy = cfg.get("network", {}).get("front_proxy", "").strip()
-    if front_proxy.startswith("socks5://"):
-        front_proxy = "socks5h://" + front_proxy[len("socks5://"):]
-    elif front_proxy.startswith("socks4://"):
-        front_proxy = "socks4a://" + front_proxy[len("socks4://"):]
+    raw_front_proxy = cfg.get("network", {}).get("front_proxy", "").strip()
 
     res_text = None
     via = "直连"
@@ -303,25 +316,46 @@ async def test_source(req: TestSourceRequest):
     except Exception as e:
         err_msg = f"直连异常: {str(e)[:60]}"
 
-    # 2. 直连失败，若配置了代理则通过代理重试
-    if res_text is None and front_proxy:
-        via = "前置代理"
-        try:
-            proxies = {"http": front_proxy, "https": front_proxy}
-            r = requests.get(req.url, proxies=proxies, timeout=20)
-            if r.status_code == 200:
-                res_text = r.text
-            else:
-                err_msg = f"{err_msg} & 代理 HTTP {r.status_code}"
-        except Exception as e:
-            err_msg = f"{err_msg} & 代理异常: {str(e)[:60]}"
+    # 2. 直连失败，若配置了代理则进行探测并使用代理重试
+    if res_text is None and raw_front_proxy:
+        proxy_ok, real_proxy, p_msg = check_and_normalize_proxy(raw_front_proxy)
+        if proxy_ok:
+            if real_proxy.startswith("socks5://"):
+                real_proxy = "socks5h://" + real_proxy[len("socks5://"):]
+            elif real_proxy.startswith("socks4://"):
+                real_proxy = "socks4a://" + real_proxy[len("socks4://"):]
+            try:
+                proxies = {"http": real_proxy, "https": real_proxy}
+                r = requests.get(req.url, proxies=proxies, timeout=20)
+                if r.status_code == 200:
+                    res_text = r.text
+                    via = "前置代理"
+                else:
+                    err_msg = f"{err_msg} & 代理 HTTP {r.status_code}"
+            except Exception as e:
+                err_msg = f"{err_msg} & 代理异常: {str(e)[:60]}"
+        else:
+            err_msg = f"{err_msg} & 代理不可达({p_msg})"
+
+    # 3. 若均失败且为 GitHub 链接，尝试国内加速镜像
+    if res_text is None and ("github.com" in req.url or "raw.githubusercontent.com" in req.url):
+        for m_prefix in ("https://ghfast.top/", "https://ghproxy.net/"):
+            try:
+                m_url = f"{m_prefix}{req.url}"
+                r = requests.get(m_url, timeout=15)
+                if r.status_code == 200:
+                    res_text = r.text
+                    via = "国内加速镜像"
+                    err_msg = ""
+                    break
+            except Exception:
+                pass
 
     if res_text is None:
         config_mgr.record_source_fetch_result(req.url, False, 0, err_msg)
         return {"status": "error", "message": err_msg}
 
     nodes = mv.extract_nodes_from_text(res_text)
-    cf_ips = mv.extract_cf_ips_from_text(res_text) if not nodes else []
 
     if nodes:
         msg = f"[{via}] 成功提取到 {len(nodes)} 个代理节点"
@@ -333,19 +367,8 @@ async def test_source(req: TestSourceRequest):
             "message": msg,
             "sample": list(nodes)[:3]
         }
-    elif cf_ips:
-        msg = f"[{via}] 识别为 Cloudflare 优选 IP 库，成功提取 {len(cf_ips)} 个优选 IP"
-        config_mgr.record_source_fetch_result(req.url, True, len(cf_ips), msg)
-        cf_optimizer.add_dynamic_clean_ips(cf_ips)
-        return {
-            "status": "ok",
-            "type": "clean_ips",
-            "node_count": len(cf_ips),
-            "message": msg,
-            "sample": list(cf_ips)[:3]
-        }
     else:
-        msg = f"[{via}] 成功响应，但未识别到有效节点或优选 IP"
+        msg = f"[{via}] 成功响应，但未识别到有效的代理节点 (vless/vmess/ss/trojan/hy2 等)"
         config_mgr.record_source_fetch_result(req.url, False, 0, msg)
         return {"status": "error", "message": msg}
 

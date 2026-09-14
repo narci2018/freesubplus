@@ -128,6 +128,8 @@ createApp({
     const customIpsText = ref('');
     const showAddModal = ref(false);
     const newSource = ref({ name: '', url: '' });
+    const showEditModal = ref(false);
+    const editSourceForm = ref({ id: '', name: '', url: '', enabled: true });
 
     // Toast
     const toast = ref({ show: false, message: '' });
@@ -492,6 +494,7 @@ createApp({
             const fcB = b.fail_count || 0;
             return fcA - fcB;
           });
+          nextTick(() => { lucide.createIcons(); });
         }
       } catch (e) {}
     };
@@ -545,12 +548,55 @@ createApp({
       } catch (e) {}
     };
 
+    // --- 批量选中与删除订阅源 ---
+    const selectedSourceIds = ref([]);
+
+    const isAllSourcesSelected = computed(() => {
+      if (!sources.value || sources.value.length === 0) return false;
+      return sources.value.length === selectedSourceIds.value.length;
+    });
+
+    const toggleSelectAllSources = () => {
+      if (isAllSourcesSelected.value) {
+        selectedSourceIds.value = [];
+      } else {
+        selectedSourceIds.value = sources.value.map(s => s.id);
+      }
+    };
+
+    const batchDeleteSources = async () => {
+      const count = selectedSourceIds.value.length;
+      if (count === 0) {
+        showToast('请先勾选需要删除的订阅源');
+        return;
+      }
+      if (!confirm(`确定要批量删除选中的 ${count} 个订阅源吗？删除后不可撤销。`)) return;
+      try {
+        const r = await fetch('/api/sources/batch-delete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ids: selectedSourceIds.value })
+        });
+        const res = await r.json();
+        if (r.ok && res.status === 'ok') {
+          showToast(`已成功批量删除 ${res.deleted_count} 个订阅源！`);
+          selectedSourceIds.value = [];
+          fetchSources();
+        } else {
+          showToast('批量删除失败: ' + (res.detail || '未知错误'));
+        }
+      } catch (e) {
+        showToast('批量删除异常: ' + e);
+      }
+    };
+
     const deleteSource = async (id) => {
       if (!confirm('确认删除此订阅源吗？')) return;
       try {
         const r = await fetch(`/api/sources/${id}`, { method: 'DELETE' });
         if (r.ok) {
           showToast('已删除订阅源');
+          selectedSourceIds.value = selectedSourceIds.value.filter(item => item !== id);
           fetchSources();
         }
       } catch (e) {}
@@ -577,6 +623,45 @@ createApp({
         }
       } catch (e) {
         showToast('添加失败');
+      }
+    };
+
+    const openEditSourceModal = (src) => {
+      editSourceForm.value = {
+        id: src.id,
+        name: src.name || '',
+        url: src.url || '',
+        enabled: src.enabled !== false
+      };
+      showEditModal.value = true;
+      nextTick(() => { lucide.createIcons(); });
+    };
+
+    const confirmEditSource = async () => {
+      if (!editSourceForm.value.url) {
+        showToast('订阅源链接不能为空');
+        return;
+      }
+      try {
+        const r = await fetch(`/api/sources/${editSourceForm.value.id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: editSourceForm.value.name,
+            url: editSourceForm.value.url,
+            enabled: editSourceForm.value.enabled
+          })
+        });
+        if (r.ok) {
+          showToast('订阅源修改已保存！');
+          showEditModal.value = false;
+          fetchSources();
+        } else {
+          const res = await r.json();
+          showToast('修改失败: ' + (res.detail || '未知错误'));
+        }
+      } catch (e) {
+        showToast('保存修改异常: ' + e);
       }
     };
 
@@ -753,9 +838,10 @@ createApp({
 
     return {
       currentTab, tabs, status, stats, config, sources, cleanIps, testingCf,
-      logs, customIpsText, showAddModal, newSource, toast, nameTags, previewNodeName,
+      logs, customIpsText, showAddModal, newSource, showEditModal, editSourceForm, toast, nameTags, previewNodeName,
       subUrl, copyText, stageName, getLogColor, clearLogs, insertTag,
       triggerRun, toggleSource, deleteSource, openAddSourceModal, confirmAddSource,
+      openEditSourceModal, confirmEditSource,
       testSource, saveNamingRule, saveCleanIpConfig, saveGlobalSettings, testCleanIps,
       // Nodes modal
       showNodesModal, nodesModalFilter, nodesList, loadingNodes, nodesSearch, nodesProtoFilter,
@@ -764,6 +850,8 @@ createApp({
       // Batch modal
       showBatchModal, batchUrlsText, batchPrefix, openBatchSourceModal, fillRecommendedSources,
       getBatchUrlCount, confirmBatchAddSources,
+      // Batch selection & delete
+      selectedSourceIds, isAllSourcesSelected, toggleSelectAllSources, batchDeleteSources,
       // GitHub modal
       showGitHubModal, testingGitHub, syncingGitHub, ghForm, openGitHubModal,
       getJsdelivrUrl, testGitHubConnection, saveGitHubConfig, syncGitHubNow

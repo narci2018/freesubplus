@@ -959,23 +959,6 @@ def extract_nodes_from_text(text: str) -> set:
     return results
 
 
-def extract_cf_ips_from_text(text: str) -> list:
-    """从纯文本中提取 Cloudflare Anycast Clean IP 地址 (兼容 1.2.3.4 或 1.2.3.4:443#tag 格式)"""
-    if not text:
-        return []
-    ips = set()
-    for line in text.splitlines():
-        line = line.strip()
-        if not line or line.startswith(("#", "//")):
-            continue
-        m = re.match(r"^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})", line)
-        if m:
-            ip = m.group(1)
-            if not ip.startswith(("127.", "192.168.", "10.", "0.", "255.")):
-                ips.add(ip)
-    return list(ips)
-
-
 def fetch_raw_nodes(on_result_cb=None, front_proxy: str = None) -> list:
     nodes = set()
     print("[*] 抓取全部订阅源 ...")
@@ -1006,8 +989,7 @@ def fetch_raw_nodes(on_result_cb=None, front_proxy: str = None) -> list:
             r = direct_session.get(url, timeout=20)
             if r.status_code == 200:
                 got = extract_nodes_from_text(r.text)
-                cf_ips = extract_cf_ips_from_text(r.text) if not got else []
-                return url, got, cf_ips, None, "直连"
+                return url, got, None, "直连"
             direct_err = f"HTTP {r.status_code}"
         except Exception as e:
             direct_err = str(e)[:70]
@@ -1018,41 +1000,62 @@ def fetch_raw_nodes(on_result_cb=None, front_proxy: str = None) -> list:
                 r = proxy_session.get(url, timeout=25)
                 if r.status_code == 200:
                     got = extract_nodes_from_text(r.text)
-                    cf_ips = extract_cf_ips_from_text(r.text) if not got else []
-                    return url, got, cf_ips, None, "前置代理"
+                    return url, got, None, "前置代理"
                 proxy_err = f"HTTP {r.status_code}"
             except Exception as e:
                 proxy_err = str(e)[:70]
-            # 两次尝试均失败才算失败
-            return url, set(), [], f"直连失败({direct_err}) & 代理失败({proxy_err})", "失败"
+            # 尝试 3: 若包含 GitHub 资源，尝试国内高速反代镜像兜底
+            if "github.com" in url or "raw.githubusercontent.com" in url:
+                for m_prefix in ("https://ghfast.top/", "https://ghproxy.net/"):
+                    try:
+                        m_url = f"{m_prefix}{url}"
+                        r = direct_session.get(m_url, timeout=18)
+                        if r.status_code == 200:
+                            got = extract_nodes_from_text(r.text)
+                            return url, got, None, "镜像加速"
+                    except Exception:
+                        pass
+
+            # 全部尝试均失败
+            return url, set(), f"直连失败({direct_err}) & 代理失败({proxy_err})", "失败"
         else:
-            # 未配置前置代理时进行第 2 次直连重试 (退避 2 秒)
-            time.sleep(2)
+            # 未配置前置代理时进行第 2 次直连重试 (退避 1.5 秒)
+            time.sleep(1.5)
             try:
                 r = direct_session.get(url, timeout=20)
                 if r.status_code == 200:
                     got = extract_nodes_from_text(r.text)
-                    cf_ips = extract_cf_ips_from_text(r.text) if not got else []
-                    return url, got, cf_ips, None, "直连重试"
+                    return url, got, None, "直连重试"
                 retry_err = f"HTTP {r.status_code}"
             except Exception as e:
                 retry_err = str(e)[:70]
-            return url, set(), [], f"直连重试失败: {retry_err}", "失败"
+
+            # 尝试 3: 若包含 GitHub 资源，尝试国内高速反代镜像兜底
+            if "github.com" in url or "raw.githubusercontent.com" in url:
+                for m_prefix in ("https://ghfast.top/", "https://ghproxy.net/"):
+                    try:
+                        m_url = f"{m_prefix}{url}"
+                        r = direct_session.get(m_url, timeout=18)
+                        if r.status_code == 200:
+                            got = extract_nodes_from_text(r.text)
+                            return url, got, None, "镜像加速"
+                    except Exception:
+                        pass
+
+            return url, set(), f"直连重试失败: {retry_err}", "失败"
 
     with ThreadPoolExecutor(MAX_WORKERS_FETCH) as ex:
         futs = [ex.submit(_fetch, u) for u in SOURCE_URLS]
         for f in as_completed(futs):
-            url, got, cf_ips, err, via = f.result()
+            url, got, err, via = f.result()
             if err:
                 print(f"[!] 拉取失败 {url} → {err}")
-            elif cf_ips:
-                print(f"[+] [{via}] {url} → 提取到 {len(cf_ips)} 个 Cloudflare 优选 IP (已载入引擎)")
             else:
                 print(f"[+] [{via}] {url} → {len(got)} 节点")
 
             if on_result_cb:
                 try:
-                    on_result_cb(url, not bool(err), len(got), len(cf_ips), str(err) if err else "", via, cf_ips)
+                    on_result_cb(url, not bool(err), len(got), str(err) if err else "", via)
                 except Exception:
                     pass
             nodes.update(got)
@@ -1156,29 +1159,7 @@ def build_test_config(outbound: dict, socks_port: int, chain_relay: dict = None)
         outbounds.append(relay)
         node["detour"] = "chain-relay"
 
-    # ══ 前置代理 (链式) ═════════════════════════════════════════════
-    # 模拟 GitHub Actions 海外视角:
-    #   - 本地大陆开发机: 经前置代理(默认 v2rayN 127.0.0.1:10808)出海 → 等效 CI 视角
-    #     (大陆直连目标节点会被 GFW 拦截, 造成本地假死 ≠ 节点死亡)
-    #   - GitHub Actions: FRONT_PROXY 为空 → 直连 (Azure US 本就是海外视角)
-    # 用法: 环境变量 FRONT_PROXY=socks5://127.0.0.1:10808
-    front = os.environ.get("FRONT_PROXY", "").strip()
-    if front and not chain_relay:
-        # 解析 socks5://host:port → socks outbound
-        m = re.match(r"^(socks5h?|http)://([^:]+):(\d+)$", front)
-        if m:
-            scheme, fhost, fport = m.groups()
-            ftype = "socks" if scheme.startswith("socks5") else "http"
-            front_out = {
-                "type": ftype, "tag": "front-proxy",
-                "server": fhost, "server_port": int(fport),
-            }
-            if ftype == "socks":
-                front_out["version"] = "5"
-            outbounds.append(front_out)
-            # 节点出站流量经前置代理 (detour 链式)
-            node["detour"] = "front-proxy"
-            print_once("_FRONT_ENABLED", f"[*] 前置代理已启用: {front} (模拟 CI 海外视角)")
+    # 注意: 节点测活与测速严格使用本地网络 100% 直连测试，绝不套前置代理，确保测速与延迟数据绝对真实准确
 
     config = {
         "log": {"level": "warn"},   # 实测: silent 不是合法级别 (trace/debug/info/warn/error/fatal/panic)
@@ -1204,8 +1185,8 @@ def print_once(key: str, msg: str):
         print(msg)
 
 
-def test_single_node(item, keep_alive_check=True):
-    """返回 dict 或 None; 含: 活性/延迟/出口IP/国家/ASN/ISP/速度/MITM"""
+def test_single_node(item, keep_alive_check=True, return_reason=False):
+    """返回 dict 或 None (若 return_reason=True 则返回 (dict/None, reason_str))"""
     raw, outbound, server, port, proto = item
     socks_port = _alloc_socks_port()
     task_id = uuid.uuid4().hex[:10]
@@ -1231,9 +1212,11 @@ def test_single_node(item, keep_alive_check=True):
                              capture_output=True, text=True, timeout=15,
                              creationflags=(subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0))
         if chk.returncode != 0:
-            return None  # 配置级错误 → 该节点无法被 sing-box 使用, 必淘汰
+            return (None, "schema_err") if return_reason else None
+    except FileNotFoundError:
+        return (None, "bin_missing") if return_reason else None
     except Exception:
-        pass  # check 本身失败不阻止后续 run 尝试
+        pass  # check 本身超时或异常不阻止后续 run 尝试
 
     proc = None
     result = None
@@ -1256,7 +1239,7 @@ def test_single_node(item, keep_alive_check=True):
             except Exception:
                 time.sleep(0.15)
         if not ready:
-            return None
+            return (None, "start_fail") if return_reason else None
 
         proxies = {"http": f"socks5h://127.0.0.1:{socks_port}",
                    "https": f"socks5h://127.0.0.1:{socks_port}"}
@@ -1275,7 +1258,7 @@ def test_single_node(item, keep_alive_check=True):
             except Exception:
                 continue
         if alive_hits == 0:
-            return None
+            return (None, "timeout_or_blocked") if return_reason else None
 
         # --- 2) 真实出口 IP (多路冗余) ---
         exit_ip, exit_country, exit_asn, exit_asn_org, exit_isp = None, None, None, None, None
@@ -1387,9 +1370,9 @@ def test_single_node(item, keep_alive_check=True):
             "speed_bps": speed_bps,
             "is_stalled": is_stalled,
         }
-        return result
-    except Exception:
-        return None
+        return (result, "ok") if return_reason else result
+    except Exception as e:
+        return (None, f"probe_err: {str(e)[:25]}") if return_reason else None
     finally:
         if proc and proc.poll() is None:
             proc.kill()
@@ -2039,14 +2022,34 @@ def classify_and_export(test_results: list):
             m = re.match(r"AS(\d+)", asn)
             asn = int(m.group(1)) if m else None
 
-        # 在线情报缺失 → 离线 mmdb 兜底
+        rec = ip_api_info.get(exit_ip, {})
+
+        # ══ 核心权威校准: 测活完成后重新检查节点出口 IP 国家信息 ══
+        # 很多节点入口为 CDN 节点 (如香港 Anycast)，但真实出口在欧美 (如 ping0.cc 显示美国)。
+        # 优先以出口 IP 的全球权威解析结果 (ip-api 及 MaxMind GeoLite2) 为准进行纠偏。
+        verified_country = None
+        if rec and rec.get("countryCode"):
+            verified_country = rec["countryCode"].strip().upper()
+        if not verified_country and country_reader and exit_ip:
+            off_c, off_asn, off_org = offline_ip_lookup(exit_ip, country_reader, asn_reader)
+            if off_c and off_c not in ("OTHER", "ZZ"):
+                verified_country = off_c.strip().upper()
+
+        if verified_country and verified_country not in ("OTHER", "ZZ"):
+            if country and country.upper() != verified_country:
+                print(f"[*] 国家信息校准: 出口IP {exit_ip} 识别纠正 {country} → {verified_country}")
+            country = verified_country
+        elif not country:
+            country = online_country
+
+        # 在线情报缺失 → 离线 mmdb 兜底 ASN 与 Org
         if country_reader and (not country or not asn):
             off_c, off_asn, off_org = offline_ip_lookup(exit_ip, country_reader, asn_reader)
             country = country or off_c
             asn = asn or off_asn
             org = org or off_org
 
-        # ★ 出口 IP 查不到国家 (云内网/中转隧道) → 回退用入口服务器 IP 定位国家
+        # ★ 出口 IP 彻底查不到国家 (云内网/中转隧道) → 回退用入口服务器 IP 定位国家
         #    (中转节点出口常是内网地址, mmdb 也查不到; 入口国 ≠ 出口国但至少给用户可用地区)
         if (not country or country in ("OTHER", "ZZ")) and r.get("server"):
             srv_ip = r["server"] if is_ip_literal(r["server"]) else resolve_host(r["server"])
@@ -2056,7 +2059,6 @@ def classify_and_export(test_results: list):
                     country = off_c
                     asn, org = asn or srv_asn, org or srv_org
 
-        rec = ip_api_info.get(exit_ip, {})
         net_type, confidence = classify_network_type(
             exit_ip, country, asn, org, rec or None)
 

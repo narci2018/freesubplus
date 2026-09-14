@@ -1,0 +1,13 @@
+services:
+  prober-api:
+    build: .
+    container_name: prober-api
+    restart: unless-stopped
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./:/app
+    ulimits:
+      nofile:
+        soft: 65535
+        hard: 65535

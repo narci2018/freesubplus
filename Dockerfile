@@ -24,11 +24,12 @@ RUN pip install --no-cache-dir -r requirements-web.txt
 COPY scripts /app/scripts
 COPY web /app/web
 
-# 创建运行时与持久化数据目录
-RUN mkdir -p /app/data /app/runtime
+# 复制本地已下载好的运行组件（sing-box 内核与 GeoLite2 离线数据库直接本地 COPY，避免每次打包重复联网下载）
+COPY runtime /app/runtime
+RUN chmod +x /app/runtime/sing-box* 2>/dev/null || true
 
-# 预先拉取运行组件（sing-box 内核与 GeoLite 数据库直接内置进镜像，开箱即用）
-RUN python scripts/download_assets.py --runtime-dir=/app/runtime
+# 创建持久化数据目录并作组件就绪检测（本地已存在则瞬间跳过，秒级构建）
+RUN mkdir -p /app/data && python scripts/download_assets.py --runtime-dir=/app/runtime
 
 # 暴露 WebUI 与订阅直链服务端口
 EXPOSE 18168

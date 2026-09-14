@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自建订阅源扫描器</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; color: #334155; line-height: 1.6; padding: 20px; margin: 0; }
+        
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: black;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 25px; }
+        h1 { margin: 0; color: #0f172a; font-size: 1.75rem; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; color: #475569; }
+        input, textarea, select { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: monospace; box-sizing: border-box; }
+        textarea { height: 150px; resize: vertical; }
+        
+        .btn { padding: 10px 20px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .btn-primary { background: #3b82f6; color: white; }
+        .btn-primary:hover { background: #2563eb; }
+        .btn-primary:disabled { background: #94a3b8; cursor: not-allowed; }
+        .btn-success { background: #10b981; color: white; }
+        .btn-success:hover { background: #059669; }
+        .btn-secondary { background: #64748b; color: white; }
+        .btn-secondary:hover { background: #475569; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        .progress-container { width: 100%; background-color: #f1f5f9; border-radius: 6px; overflow: hidden; margin-top: 15px; display: none; height: 8px; }
+        .progress-bar { height: 100%; background-color: #3b82f6; width: 0%; transition: width 0.3s; }
+        .progress-text { text-align: center; margin-top: 8px; font-size: 14px; color: #64748b; }
+        
+        .toast { visibility: hidden; min-width: 250px; background-color: #333; color: #fff; text-align: center; border-radius: 6px; padding: 16px; position: fixed; z-index: 1000; left: 50%; bottom: 30px; transform: translateX(-50%); }
+        .toast.show { visibility: visible; animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+        
+        @keyframes fadein { from {bottom: 0; opacity: 0;} to {bottom: 30px; opacity: 1;} }
+        @keyframes fadeout { from {bottom: 30px; opacity: 1;} to {bottom: 0; opacity: 0;} }
+        
+        .help-text { font-size: 13px; color: #64748b; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-flex">
+            <h1>🛠️ 自建订阅源扫描器</h1>
+            <a href="/" class="btn btn-secondary" style="text-decoration: none;">🏠 返回主页</a>
+        </div>
+        
+        <div class="grid">
+            <div class="form-group">
+                <label>目标国家选择</label>
+                <select id="countrySelect" onchange="loadZones()">
+                    <option value="ALL">全部国家（ALL）</option>
+                    <option value="CUSTOM">自定义（CUSTOM）</option>
+
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>测试端口</label>
+                <input type="text" id="ports" value="443, 8443, 2053, 2083, 2087, 2096">
+                <div class="help-text">支持多个端口，用英文逗号分隔</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>目标国家网段列表</label>
+            <textarea id="cidrs" placeholder="加载中..."></textarea>
+            <div class="help-text">CIDR 格式网段，每行一个。更改国家会自动重新加载。</div>
+        </div>
+        
+        <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+            <button class="btn btn-primary" onclick="startScan()" id="scanBtn">🚀 开始深度寻找</button>
+            <button class="btn btn-success" onclick="createCron()">📅 创建定时任务</button>
+            <button class="btn btn-secondary" onclick="openTokenModal()">🔑 设置GITHUB_TOKEN</button>
+            <button class="btn btn-secondary" onclick="openJobsModal()">📋 查看定时任务</button>
+        </div>
+        
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="progress-text" id="progressText" style="display: none;"></div>
+        
+        <div class="form-group" style="margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <label style="margin: 0;">CF IP 优选列表</label>
+                <span id="foundCount" style="font-size: 13px; color: #10b981; font-weight: bold;"></span>
+            </div>
+            <textarea id="results" style="height: 300px; background: #f8fafc;" readonly placeholder="等待扫描结果..."></textarea>
+            <div class="help-text">
+                将右侧链接填入您的订阅源列表中即可使用： <code id="localSubLink">http://.../api/local_sub</code>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="tokenModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTokenModal()">&times;</span>
+            <h2>设置 GITHUB_TOKEN</h2>
+            <div class="form-group">
+                <label>GitHub Personal Access Token (需勾选 gist 权限)</label>
+                <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxx">
+            </div>
+            <button class="btn btn-primary" onclick="saveToken()">💾 保存并关闭</button>
+        </div>
+    </div>
+
+    <div id="jobsModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <span class="close" onclick="closeJobsModal()">&times;</span>
+            <h2>📋 当前定时任务列表</h2>
+            <div id="jobsList">加载中...</div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script>
+        document.getElementById('localSubLink').innerText = window.location.origin + '/api/local_sub';
+        
+        function showToast(msg) {
+            const x = document.getElementById("toast");
+            x.innerText = msg;
+            x.className = "toast show";
+            setTimeout(() => { x.className = x.className.replace("show", ""); }, 3000);
+        }
+
+        window.__loadedCidrs = [];
+        async function loadZones() {
+            const country = document.getElementById('countrySelect').value;
+            if (country === 'CUSTOM') {
+                document.getElementById('cidrs').value = '';
+                document.getElementById('cidrs').placeholder = '请输入自定义的 CIDR 网段，每行一个...';
+                window.__loadedCidrs = [];
+                return;
+            }
+            try {
+                document.getElementById('cidrs').value = '正在加载网段数据...';
+                const res = await fetch(`/api/custom_sub/zone/${country}`);
+                const data = await res.json();
+                window.__loadedCidrs = data.cidrs;
+                if (data.cidrs.length > 3000) {
+                    document.getElementById('cidrs').value = data.cidrs.slice(0, 3000).join('\n') + `\n\n... (为防止页面卡顿，仅显示前3000条，共隐形加载 ${data.cidrs.length} 个网段，不影响后续扫描)`;
+                } else {
+                    document.getElementById('cidrs').value = data.cidrs.join('\n');
+                }
+            } catch(e) {
+                console.error(e);
+                document.getElementById('cidrs').value = '加载失败：请求被拦截或网络错误。\n\n（注意：如果您选择了“安道尔(AD)”，绝大多数浏览器的广告拦截插件会因为路径包含 /AD 而错误地拦截此请求。请关闭去广告插件后重试！）';
+            }
+        }
+        
+        async function startScan() {
+            let cidrs = [];
+            const rawVal = document.getElementById('cidrs').value;
+            if (rawVal.includes('为防止页面卡顿')) {
+                cidrs = window.__loadedCidrs;
+            } else {
+                cidrs = rawVal.split('\n').map(s => s.trim()).filter(s => s);
+            }
+            const ports = document.getElementById('ports').value.split(',').map(s => parseInt(s.trim())).filter(s => !isNaN(s));
+            const country = document.getElementById('countrySelect').value;
+            
+            const selectEl = document.getElementById('countrySelect');
+            const optText = selectEl.options[selectEl.selectedIndex].text;
+            const countryName = optText.split('（')[0];
+            
+            if (cidrs.length === 0) {
+                showToast("网段列表不能为空");
+                return;
+            }
+            if (ports.length === 0) {
+                showToast("测试端口不能为空");
+                return;
+            }
+            
+            document.getElementById('scanBtn').disabled = true;
+            document.getElementById('scanBtn').innerText = '扫描中...';
+            
+            try {
+                const res = await fetch('/api/custom_sub/scan', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({cidrs: cidrs, ports: ports, country: country, country_name: countryName})
+                });
+                
+                if (res.ok) {
+                    startPolling();
+                } else {
+                    showToast("启动扫描失败");
+                    document.getElementById('scanBtn').disabled = false;
+                    document.getElementById('scanBtn').innerText = '🚀 开始深度寻找';
+                }
+            } catch(e) {
+                console.error(e);
+                showToast("网络错误");
+                document.getElementById('scanBtn').disabled = false;
+                document.getElementById('scanBtn').innerText = '🚀 开始深度寻找';
+            }
+        }
+        
+        let pollInterval;
+        function startPolling() {
+            document.getElementById('progressContainer').style.display = 'block';
+            document.getElementById('results').value = '';
+            
+            pollInterval = setInterval(async () => {
+                try {
+                    const res = await fetch('/api/custom_sub/progress');
+                    const data = await res.json();
+                    
+                    let pct = 0;
+                    if (data.total > 0) {
+                        pct = (data.scanned / data.total) * 100;
+                    }
+                    document.getElementById('progressBar').style.width = pct + '%';
+                    document.getElementById('progressText').style.display = 'block';
+                    document.getElementById('progressText').innerText = `进度: ${data.scanned} / ${data.total}`;
+                    
+                    if (data.results && data.results.length > 0) {
+                        document.getElementById('results').value = data.results.join('\n') + '\n';
+                        document.getElementById('foundCount').innerText = `共找到 ${data.results.length} 个优选IP`;
+                    }
+                    
+                    if (!data.is_running && data.total > 0) {
+                        clearInterval(pollInterval);
+                        document.getElementById('scanBtn').disabled = false;
+                        document.getElementById('scanBtn').innerText = '🚀 开始深度寻找';
+                        document.getElementById('progressText').innerText += " (扫描完成)";
+                    }
+                } catch(e) {
+                    console.error(e);
+                }
+            }, 3000);
+        }
+        
+        // Token Modal
+        async function openTokenModal() {
+            const res = await fetch('/api/config/github');
+            const data = await res.json();
+            document.getElementById('githubToken').value = data.github_token || '';
+            document.getElementById('tokenModal').style.display = 'block';
+        }
+        function closeTokenModal() { document.getElementById('tokenModal').style.display = 'none'; }
+        async function saveToken() {
+            const val = document.getElementById('githubToken').value.trim();
+            const res = await fetch('/api/config/github', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({github_token: val})
+            });
+            if (res.ok) {
+                showToast("GITHUB_TOKEN 保存成功");
+                closeTokenModal();
+            }
+        }
+        
+        // Jobs Modal
+        async function openJobsModal() {
+            document.getElementById('jobsModal').style.display = 'block';
+            await renderJobs();
+        }
+        function closeJobsModal() { document.getElementById('jobsModal').style.display = 'none'; }
+        
+        async function renderJobs() {
+            const res = await fetch('/api/custom_sub/jobs');
+            const jobs = await res.json();
+            
+            const listDiv = document.getElementById('jobsList');
+            if (Object.keys(jobs).length === 0) {
+                listDiv.innerHTML = "<p>暂无定时任务</p>";
+                return;
+            }
+            
+            let html = '<table style="width:100%; text-align:left; border-collapse: collapse;">';
+            html += '<tr style="border-bottom:1px solid #ccc;"><th>任务名称</th><th>Cron 参数</th><th>状态</th><th>成果</th><th>操作</th></tr>';
+            
+            for (let jobId in jobs) {
+                const j = jobs[jobId];
+                
+                let gistLink = "暂无";
+                if (j.gist_url) {
+                    gistLink = `<a href="${j.gist_url}" target="_blank" style="color:#3498db; text-decoration:none;">🔗 Github订阅</a><br><a href="/api/custom_sub/jobs/${j.job_id}/download" download style="color:#2ecc71; text-decoration:none; font-size:12px;">⬇️ 下载本地文件</a>`;
+                } else if ((j.run_count || 0) > 0 || (j.fail_count || 0) > 0) {
+                    gistLink = `<a href="/api/custom_sub/jobs/${j.job_id}/download" download style="color:#2ecc71; text-decoration:none; font-size:12px;">⬇️ 下载本地文件</a>`;
+                }
+                
+                let stats = `成功${j.run_count}次 / 失败${j.fail_count}次`;
+                if (j.status === "running") stats = `<span style="color:red">运行中</span> ` + stats;
+                
+                html += `<tr style="border-bottom:1px solid #eee; padding:10px 0;">
+                    <td>${j.job_id}<br><small style="color:gray">${j.country_name}</small></td>
+                    <td>
+                        <input type="text" id="cron_${j.job_id}" value="${j.cron}" style="width:100px;">
+                        <button onclick="updateJob('${j.job_id}')" style="padding:2px 5px; font-size:12px;">保存</button>
+                    </td>
+                    <td>${stats}</td>
+                    <td>${gistLink}</td>
+                    <td>
+                        <button onclick="toggleJob('${j.job_id}', ${!j.enabled})" style="padding:2px 5px; font-size:12px; background-color:${j.enabled?'#e74c3c':'#2ecc71'}; color:white; border:none; border-radius:3px;">${j.enabled?'停止':'启动'}</button>
+                        <button onclick="executeJob('${j.job_id}')" style="padding:2px 5px; font-size:12px; background-color:#f39c12; color:white; border:none; border-radius:3px;">马上执行</button>
+                        <button onclick="deleteJob('${j.job_id}')" style="padding:2px 5px; font-size:12px; background-color:#95a5a6; color:white; border:none; border-radius:3px;">删除</button>
+                    </td>
+                </tr>`;
+            }
+            html += "</table>";
+            listDiv.innerHTML = html;
+        }
+        
+        async function updateJob(jobId) {
+            const cronVal = document.getElementById('cron_' + jobId).value;
+            const jobsReq = await fetch('/api/custom_sub/jobs');
+            const jobs = await jobsReq.json();
+            const j = jobs[jobId];
+            
+            await fetch(`/api/custom_sub/jobs/${jobId}`, {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({cron: cronVal, enabled: j.enabled})
+            });
+            showToast("任务参数已更新");
+            renderJobs();
+        }
+        
+        async function toggleJob(jobId, enable) {
+            const jobsReq = await fetch('/api/custom_sub/jobs');
+            const jobs = await jobsReq.json();
+            const j = jobs[jobId];
+            
+            await fetch(`/api/custom_sub/jobs/${jobId}`, {
+                method: 'PUT',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({cron: j.cron, enabled: enable})
+            });
+            showToast(enable ? "任务已开启" : "任务已停止");
+            renderJobs();
+        }
+        
+        async function deleteJob(jobId) {
+            if(!confirm(`确定要删除定时任务 ${jobId} 吗？`)) return;
+            try {
+                await fetch(`/api/custom_sub/jobs/${jobId}`, { method: 'DELETE' });
+                showToast("已删除任务 " + jobId);
+                openJobsModal();
+            } catch(e) { console.error(e); }
+        }
+
+        async function executeJob(jobId) {
+            try {
+                await fetch(`/api/custom_sub/jobs/${jobId}/execute`, { method: 'POST' });
+                showToast("已下发后台执行指令：" + jobId);
+                setTimeout(openJobsModal, 1000);
+            } catch(e) { console.error(e); }
+        }
+
+        async function createCron() {
+            let cidrs = [];
+            const rawVal = document.getElementById('cidrs').value;
+            if (rawVal.includes('为防止页面卡顿')) {
+                cidrs = window.__loadedCidrs;
+            } else {
+                cidrs = rawVal.split('\n').map(s => s.trim()).filter(s => s);
+            }
+            const ports = document.getElementById('ports').value.split(',').map(s => parseInt(s.trim())).filter(s => !isNaN(s));
+            const country = document.getElementById('countrySelect').value;
+            
+            const selectEl = document.getElementById('countrySelect');
+            const optText = selectEl.options[selectEl.selectedIndex].text;
+            const countryName = optText.split('（')[0];
+            
+            if (cidrs.length === 0 || ports.length === 0) {
+                showToast("网段或端口不能为空");
+                return;
+            }
+            
+            const res = await fetch('/api/custom_sub/jobs', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({cidrs: cidrs, ports: ports, country: country, country_name: countryName, cron: '0 0 * * 0'})
+            });
+            if (res.ok) {
+                showToast(`定时任务创建成功！请点击"查看定时任务"管理它。`);
+            } else {
+                showToast(`创建失败。`);
+            }
+        }
+        
+        // Initial check for running task
+        fetch('/api/custom_sub/progress').then(res => res.json()).then(data => {
+            if (data.is_running) {
+                document.getElementById('scanBtn').disabled = true;
+                document.getElementById('scanBtn').innerText = '扫描中...';
+                startPolling();
+            }
+        });
+        
+        loadZones();
+    </script>
+</body>
+</html>

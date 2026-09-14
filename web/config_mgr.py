@@ -43,6 +43,7 @@ DEFAULT_CONFIG = {
     },
     "network": {
         "front_proxy": "",
+        "node_test_detour": False,
         "max_workers": 32,
         "probe_timeout": 12,
         "speed_test_budget": 5.0,
@@ -301,6 +302,16 @@ class ConfigManager:
             self.save_config({"sources": sources})
             return True
         return False
+
+    def delete_sources_batch(self, source_ids: list) -> int:
+        ids_set = set(source_ids)
+        sources = self._config.get("sources", [])
+        orig_len = len(sources)
+        sources = [s for s in sources if s["id"] not in ids_set]
+        deleted_count = orig_len - len(sources)
+        if deleted_count > 0:
+            self.save_config({"sources": sources})
+        return deleted_count
 
     def record_source_fetch_result(self, url: str, success: bool, count: int = 0, status_msg: str = ""):
         """记录单次订阅源拉取结果，自增成功/失败计数并更新状态"""

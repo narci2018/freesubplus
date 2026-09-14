@@ -9,9 +9,13 @@ services:
     restart: unless-stopped
     ports:
       - "18168:18168"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       # 持久化挂载：配置文件、产物订阅文件与运行时数据库
       - ./data:/app/data
+      - ./web:/app/web
+      - ./scripts:/app/scripts
     environment:
       - TZ=Asia/Shanghai
       - PORT=18168

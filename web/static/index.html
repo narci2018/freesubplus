@@ -300,6 +300,10 @@
             <p class="text-xs text-slate-400">管理定时拉取的外部节点池与接口链接，支持 Base64、明文及 Workers 反代源</p>
           </div>
           <div class="flex items-center space-x-2">
+            <button v-if="selectedSourceIds.length > 0" @click="batchDeleteSources" class="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs font-bold bg-rose-500 hover:bg-rose-400 text-white shadow-lg shadow-rose-500/20 transition-all">
+              <i data-lucide="trash-2" class="w-4 h-4"></i>
+              <span>批量删除 ({{ selectedSourceIds.length }})</span>
+            </button>
             <button @click="openBatchSourceModal" class="flex items-center space-x-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-cyan-300 border border-cyan-500/20 transition-all">
               <i data-lucide="layers" class="w-4 h-4"></i>
               <span>批量导入订阅源</span>
@@ -311,35 +315,69 @@
           </div>
         </div>
 
+        <!-- Selection Banner (批量选中操作条) -->
+        <div v-if="selectedSourceIds.length > 0" class="flex items-center justify-between px-4 py-2.5 bg-rose-500/10 border border-rose-500/30 rounded-xl text-xs text-rose-300 shadow-lg">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="check-square" class="w-4 h-4 text-rose-400"></i>
+            <span>已选中 <strong class="text-white text-sm">{{ selectedSourceIds.length }}</strong> 个订阅源</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <button @click="selectedSourceIds = []" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-all font-semibold">
+              取消选择
+            </button>
+            <button @click="batchDeleteSources" class="px-3.5 py-1 rounded-lg bg-rose-500 hover:bg-rose-400 text-white font-bold transition-all shadow-md shadow-rose-500/30">
+              确认批量删除
+            </button>
+          </div>
+        </div>
+
         <!-- Sources Table -->
         <div class="glass-panel rounded-2xl overflow-hidden">
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
               <thead class="bg-slate-900/90 text-slate-400 border-b border-white/5 uppercase font-mono">
                 <tr>
-                  <th class="px-5 py-3.5">状态</th>
-                  <th class="px-5 py-3.5">名称</th>
-                  <th class="px-5 py-3.5">订阅源链接</th>
-                  <th class="px-5 py-3.5">
+                  <th class="px-3 py-3.5 w-10 text-center">
+                    <input type="checkbox" :checked="isAllSourcesSelected" @change="toggleSelectAllSources" 
+                           class="rounded bg-slate-950 border-slate-700 text-cyan-500 focus:ring-0 focus:ring-offset-0 cursor-pointer w-4 h-4" title="全选 / 取消全选">
+                  </th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">状态</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">名称</th>
+                  <th class="px-4 py-3.5 text-center whitespace-nowrap">操作</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">
                     <span>成功 / 失败</span>
                     <span class="text-[10px] text-slate-500 block font-normal">(成功↓ 失败↑)</span>
                   </th>
-                  <th class="px-5 py-3.5">上次抓取结果</th>
-                  <th class="px-5 py-3.5 text-center">操作</th>
+                  <th class="px-4 py-3.5 whitespace-nowrap">上次抓取结果</th>
+                  <th class="px-4 py-3.5">订阅源链接</th>
                 </tr>
               </thead>
               <tbody class="divide-y divide-white/5">
-                <tr v-for="src in sources" :key="src.id" class="hover:bg-slate-800/20 transition-colors">
-                  <td class="px-5 py-3.5">
+                <tr v-for="src in sources" :key="src.id" :class="{'bg-cyan-500/5': selectedSourceIds.includes(src.id)}" class="hover:bg-slate-800/20 transition-colors">
+                  <td class="px-3 py-3.5 text-center">
+                    <input type="checkbox" :value="src.id" v-model="selectedSourceIds" 
+                           class="rounded bg-slate-950 border-slate-700 text-cyan-500 focus:ring-0 focus:ring-offset-0 cursor-pointer w-4 h-4">
+                  </td>
+                  <td class="px-4 py-3.5 whitespace-nowrap">
                     <button @click="toggleSource(src.id)" 
                             :class="src.enabled ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40' : 'bg-slate-800 text-slate-500 border-slate-700'"
                             class="px-2.5 py-1 rounded-full text-[11px] font-semibold border transition-all">
                       {{ src.enabled ? '已启用' : '已停用' }}
                     </button>
                   </td>
-                  <td class="px-5 py-3.5 font-bold text-white whitespace-nowrap">{{ src.name }}</td>
-                  <td class="px-5 py-3.5 font-mono text-slate-300 max-w-xs truncate" :title="src.url">{{ src.url }}</td>
-                  <td class="px-5 py-3.5 whitespace-nowrap">
+                  <td class="px-4 py-3.5 font-bold text-white whitespace-nowrap">{{ src.name }}</td>
+                  <td class="px-4 py-3.5 text-center whitespace-nowrap space-x-1.5">
+                    <button @click="testSource(src)" class="inline-flex items-center px-2.5 py-1 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/30 text-cyan-300 text-xs border border-cyan-500/40 transition-all shadow-sm font-semibold" title="测试连通性">
+                      <i data-lucide="activity" class="w-3.5 h-3.5 mr-1 text-cyan-400"></i> 测试
+                    </button>
+                    <button @click="openEditSourceModal(src)" class="inline-flex items-center px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/30 text-amber-300 text-xs border border-amber-500/40 transition-all shadow-sm font-semibold" title="编辑订阅源">
+                      <i data-lucide="edit-3" class="w-3.5 h-3.5 mr-1 text-amber-400"></i> 编辑
+                    </button>
+                    <button @click="deleteSource(src.id)" class="inline-flex items-center px-2.5 py-1 rounded-lg bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 text-xs border border-rose-500/40 transition-all shadow-sm font-semibold" title="删除订阅源">
+                      <i data-lucide="trash-2" class="w-3.5 h-3.5 mr-1 text-rose-400"></i> 删除
+                    </button>
+                  </td>
+                  <td class="px-4 py-3.5 whitespace-nowrap">
                     <span class="inline-flex items-center px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono text-xs border border-emerald-500/20" title="拉取成功次数">
                       成功 {{ src.success_count || 0 }}
                     </span>
@@ -347,19 +385,12 @@
                       失败 {{ src.fail_count || 0 }}
                     </span>
                   </td>
-                  <td class="px-5 py-3.5 whitespace-nowrap">
+                  <td class="px-4 py-3.5 whitespace-nowrap">
                     <span :class="src.last_status && src.last_status.startsWith('成功') ? 'text-emerald-400' : (src.last_status && src.last_status.startsWith('失败') ? 'text-rose-400' : 'text-slate-400')" class="text-xs font-mono">
                       {{ src.last_status || '未测试' }}
                     </span>
                   </td>
-                  <td class="px-5 py-3.5 text-center whitespace-nowrap space-x-2">
-                    <button @click="testSource(src)" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 transition-all" title="测试连通性">
-                      <i data-lucide="activity" class="w-3.5 h-3.5"></i>
-                    </button>
-                    <button @click="deleteSource(src.id)" class="p-1.5 rounded-lg bg-slate-800 hover:bg-red-500/20 text-red-400 transition-all" title="删除">
-                      <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
-                    </button>
-                  </td>
+                  <td class="px-4 py-3.5 font-mono text-slate-300 max-w-sm truncate" :title="src.url">{{ src.url }}</td>
                 </tr>
               </tbody>
             </table>
@@ -517,8 +548,8 @@
 
             <!-- Front Proxy -->
             <div class="pt-4 space-y-1.5">
-              <label class="text-sm font-semibold text-slate-200">前置代理出海 (可选链式 Detour)</label>
-              <p class="text-xs text-slate-400">如果本地网络彻底无法连接目标节点，可指定本地已有翻墙客户端（如 socks5://127.0.0.1:10808）作为跳板</p>
+              <label class="text-sm font-semibold text-slate-200">上游拉取前置代理 (可选)</label>
+              <p class="text-xs text-slate-400">仅用于拉取 GitHub、Workers 等海外被墙订阅源（支持 socks5:// 或 http://，如 socks5://127.0.0.1:10808）。<span class="text-cyan-400 font-medium">注意：节点测延迟与测速永远采用本地 100% 直连，确保本地直连可用性真实可信。</span></p>
               <input type="text" v-model="config.network.front_proxy" placeholder="例: socks5://127.0.0.1:10808"
                      class="w-full bg-black/40 border border-white/10 rounded-lg px-3.5 py-2 text-xs font-mono text-cyan-300 focus:outline-none">
             </div>
@@ -563,6 +594,45 @@
         <div class="flex justify-end space-x-2 pt-2">
           <button @click="showAddModal = false" class="px-4 py-2 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:text-white">取消</button>
           <button @click="confirmAddSource" class="px-4 py-2 rounded-lg text-xs font-bold bg-cyan-500 hover:bg-cyan-400 text-slate-950">确定添加</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Edit Source (编辑订阅源) -->
+    <div v-if="showEditModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+      <div class="glass-panel w-full max-w-lg p-6 rounded-2xl space-y-4 border-amber-500/30">
+        <div class="flex items-center justify-between">
+          <h4 class="text-base font-bold text-white flex items-center space-x-2">
+            <i data-lucide="edit-3" class="w-4 h-4 text-amber-400"></i>
+            <span>编辑上游订阅源</span>
+          </h4>
+          <button @click="showEditModal = false" class="p-1.5 rounded-lg text-slate-400 hover:text-white bg-slate-800">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+        <div class="space-y-3">
+          <div>
+            <label class="text-xs text-slate-400">订阅源名称</label>
+            <input type="text" v-model="editSourceForm.name" placeholder="例如: 某公益节点池" 
+                   class="w-full mt-1 bg-black/40 border border-white/10 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-cyan-500/50">
+          </div>
+          <div>
+            <label class="text-xs text-slate-400">订阅源链接 (HTTP / HTTPS)</label>
+            <input type="text" v-model="editSourceForm.url" placeholder="https://..." 
+                   class="w-full mt-1 bg-black/40 border border-white/10 rounded-lg px-3 py-2 text-xs font-mono text-cyan-300 focus:outline-none focus:border-cyan-500/50">
+          </div>
+          <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/60 border border-white/5">
+            <div>
+              <span class="text-xs font-bold text-slate-200 block">启用此订阅源</span>
+              <span class="text-[11px] text-slate-400">关闭后定时任务与手动测活将跳过此源</span>
+            </div>
+            <input type="checkbox" id="edit_source_enabled" v-model="editSourceForm.enabled" class="toggle-checkbox hidden">
+            <label for="edit_source_enabled" class="toggle-label block w-11 h-5 rounded-full bg-slate-800 cursor-pointer relative transition-all border border-white/10"></label>
+          </div>
+        </div>
+        <div class="flex justify-end space-x-2 pt-2 border-t border-white/5">
+          <button @click="showEditModal = false" class="px-4 py-2 rounded-lg text-xs font-semibold bg-slate-800 text-slate-400 hover:text-white">取消</button>
+          <button @click="confirmEditSource" class="px-4 py-2 rounded-lg text-xs font-bold bg-amber-500 hover:bg-amber-400 text-slate-950">保存修改</button>
         </div>
       </div>
     </div>
@@ -841,6 +911,6 @@
 
   </div>
 
-  <script src="/static/app.js"></script>
+  <script src="/static/app.js?v=2.2"></script>
 </body>
 </html>
