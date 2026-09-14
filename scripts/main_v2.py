@@ -48,6 +48,22 @@ except ImportError as e:
     print(f"[!] 缺少依赖: {e} — 请先 pip install -r requirements.txt")
     sys.exit(1)
 
+
+def raise_file_descriptor_limit(target: int = 65535):
+    """自动将 Linux / Docker 环境的文件描述符限制提升到上限，杜绝 Too many open files 错误"""
+    try:
+        import resource
+        soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+        new_soft = min(target, hard) if hard > 0 else target
+        if new_soft > soft:
+            resource.setrlimit(resource.RLIMIT_NOFILE, (new_soft, hard))
+            return new_soft
+        return soft
+    except Exception:
+        return None
+
+raise_file_descriptor_limit()
+
 # ══════════════════════════════════════════════════════════════════
 # 配置
 # ══════════════════════════════════════════════════════════════════
