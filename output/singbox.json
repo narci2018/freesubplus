@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - 328ms-31Mbps",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - 349ms-29Mbps",
       "server": "kr3-r.link-t7.com",
       "server_port": 10048,
       "uuid": "7134DB35-F254-4468-BA00-D9C099CF5AF7",
@@ -29,31 +29,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 778ms-7Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - 855ms-7Mbps",
       "server": "46.17.42.166",
       "server_port": 50111,
       "method": "aes-256-gcm",
       "password": "6b39ae3234dfd68b"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 03 - 964ms-6Mbps",
-      "server": "3.144.113.215",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 04 - 975ms-6Mbps",
-      "server": "18.191.124.183",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 03 - 1142ms-2Mbps",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 05 - 1116ms-8Mbps",
+      "tag": "🇺🇸 美国 (United States) 04 - 1210ms-6Mbps",
       "server": "38.54.6.46",
       "server_port": 36712,
       "password": "CompanyHy2_2026!",
@@ -65,7 +61,33 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 06 - 1396ms-1Mbps",
+      "tag": "🇩🇪 德国 (Germany) 05 - 1380ms-5Mbps",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-11.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 06 - 1431ms-6Mbps",
       "server": "199.232.78.160",
       "server_port": 443,
       "password": "MiTiVPN",
@@ -86,66 +108,87 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 07 - 1441ms-2Mbps",
-      "server": "62.210.7.139",
-      "server_port": 60111,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 07 - 1505ms-8Mbps",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - 1561ms-3Mbps",
+      "server": "151.101.56.101",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/des---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-5.global.ssl.fastly.net"
+        }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 08 - 1661ms-1Mbps",
-      "server": "setlor.rehan-iogsar.ir",
-      "server_port": 4680,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "1JvlmtT4v8y1yGczDtT6Ww==:aCtpeMietGsJY50h6jDW6w=="
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 09 - 1744ms-8Mbps",
-      "server": "198.46.215.223",
-      "server_port": 4443,
-      "password": "31329f25",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy.bingtao.xyz",
-        "insecure": true
-      }
+      "tag": "🇺🇸 美国 (United States) 09 - 1900ms-4Mbps",
+      "server": "18.191.124.183",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - 328ms-31Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 778ms-7Mbps",
-        "🇺🇸 美国 (United States) 03 - 964ms-6Mbps",
-        "🇺🇸 美国 (United States) 04 - 975ms-6Mbps",
-        "🇺🇸 美国 (United States) 05 - 1116ms-8Mbps",
-        "🇩🇪 德国 (Germany) 06 - 1396ms-1Mbps",
-        "🇫🇷 法国 (France) 07 - 1441ms-2Mbps",
-        "🇩🇪 德国 (Germany) 08 - 1661ms-1Mbps",
-        "🇺🇸 美国 (United States) 09 - 1744ms-8Mbps"
+        "🇰🇷 韩国 (South Korea) 01 - 349ms-29Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 855ms-7Mbps",
+        "🇫🇷 法国 (France) 03 - 1142ms-2Mbps",
+        "🇺🇸 美国 (United States) 04 - 1210ms-6Mbps",
+        "🇩🇪 德国 (Germany) 05 - 1380ms-5Mbps",
+        "🇩🇪 德国 (Germany) 06 - 1431ms-6Mbps",
+        "🇫🇷 法国 (France) 07 - 1505ms-8Mbps",
+        "🇬🇧 英国 (United Kingdom) 08 - 1561ms-3Mbps",
+        "🇺🇸 美国 (United States) 09 - 1900ms-4Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - 328ms-31Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 778ms-7Mbps",
-        "🇺🇸 美国 (United States) 03 - 964ms-6Mbps",
-        "🇺🇸 美国 (United States) 04 - 975ms-6Mbps",
-        "🇺🇸 美国 (United States) 05 - 1116ms-8Mbps",
-        "🇩🇪 德国 (Germany) 06 - 1396ms-1Mbps",
-        "🇫🇷 法国 (France) 07 - 1441ms-2Mbps",
-        "🇩🇪 德国 (Germany) 08 - 1661ms-1Mbps",
-        "🇺🇸 美国 (United States) 09 - 1744ms-8Mbps"
+        "🇰🇷 韩国 (South Korea) 01 - 349ms-29Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 855ms-7Mbps",
+        "🇫🇷 法国 (France) 03 - 1142ms-2Mbps",
+        "🇺🇸 美国 (United States) 04 - 1210ms-6Mbps",
+        "🇩🇪 德国 (Germany) 05 - 1380ms-5Mbps",
+        "🇩🇪 德国 (Germany) 06 - 1431ms-6Mbps",
+        "🇫🇷 法国 (France) 07 - 1505ms-8Mbps",
+        "🇬🇧 英国 (United Kingdom) 08 - 1561ms-3Mbps",
+        "🇺🇸 美国 (United States) 09 - 1900ms-4Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
