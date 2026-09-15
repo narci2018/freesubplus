@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇩🇿 DZ 01 - 821ms-11Mbps",
-      "server": "85.204.107.173",
+      "tag": "🇩🇿 DZ 01 - 830ms-10Mbps",
+      "server": "85.204.107.170",
       "server_port": 8443,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇿 DZ 01 - 821ms-11Mbps"
+        "🇩🇿 DZ 01 - 830ms-10Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇿 DZ 01 - 821ms-11Mbps"
+        "🇩🇿 DZ 01 - 830ms-10Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,15 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 01 - 990ms-5Mbps",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - 1004ms-5Mbps",
+      "tag": "🇿🇦 南非 (South Africa) 01 - 961ms-5Mbps",
       "server": "139.84.247.164",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -21,7 +13,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 03 - 1022ms-5Mbps",
+      "tag": "🇿🇦 南非 (South Africa) 02 - 1015ms-6Mbps",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 03 - 1020ms-5Mbps",
       "server": "102.133.165.160",
       "server_port": 16233,
       "method": "chacha20-ietf-poly1305",
@@ -32,18 +32,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 南非 (South Africa) 01 - 990ms-5Mbps",
-        "🇿🇦 南非 (South Africa) 02 - 1004ms-5Mbps",
-        "🇿🇦 南非 (South Africa) 03 - 1022ms-5Mbps"
+        "🇿🇦 南非 (South Africa) 01 - 961ms-5Mbps",
+        "🇿🇦 南非 (South Africa) 02 - 1015ms-6Mbps",
+        "🇿🇦 南非 (South Africa) 03 - 1020ms-5Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 南非 (South Africa) 01 - 990ms-5Mbps",
-        "🇿🇦 南非 (South Africa) 02 - 1004ms-5Mbps",
-        "🇿🇦 南非 (South Africa) 03 - 1022ms-5Mbps"
+        "🇿🇦 南非 (South Africa) 01 - 961ms-5Mbps",
+        "🇿🇦 南非 (South Africa) 02 - 1015ms-6Mbps",
+        "🇿🇦 南非 (South Africa) 03 - 1020ms-5Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,40 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 01 - 1015ms-6Mbps",
-      "server": "65.2.178.161",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - 1019ms-6Mbps",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - 1048ms-10Mbps",
+      "tag": "🇮🇳 印度 (India) 01 - 1015ms-3Mbps",
       "server": "5.253.42.163",
       "server_port": 40443,
       "uuid": "15fd22d1-8931-4d41-af37-8ba6711e93fe",
@@ -47,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -57,14 +25,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - 1023ms-5Mbps",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 04 - 1255ms-7Mbps",
+      "tag": "🇮🇳 印度 (India) 03 - 1027ms-7Mbps",
       "server": "vpn-in-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
@@ -73,20 +61,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - 1015ms-6Mbps",
-        "🇮🇳 印度 (India) 02 - 1019ms-6Mbps",
-        "🇮🇳 印度 (India) 03 - 1048ms-10Mbps",
-        "🇮🇳 印度 (India) 04 - 1255ms-7Mbps"
+        "🇮🇳 印度 (India) 01 - 1015ms-3Mbps",
+        "🇮🇳 印度 (India) 02 - 1023ms-5Mbps",
+        "🇮🇳 印度 (India) 03 - 1027ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - 1015ms-6Mbps",
-        "🇮🇳 印度 (India) 02 - 1019ms-6Mbps",
-        "🇮🇳 印度 (India) 03 - 1048ms-10Mbps",
-        "🇮🇳 印度 (India) 04 - 1255ms-7Mbps"
+        "🇮🇳 印度 (India) 01 - 1015ms-3Mbps",
+        "🇮🇳 印度 (India) 02 - 1023ms-5Mbps",
+        "🇮🇳 印度 (India) 03 - 1027ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

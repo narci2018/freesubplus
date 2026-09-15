@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
-  server: 31.76.7.154
-  port: 7443
+- name: 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
+  server: 78.159.247.246
+  port: 443
   udp: true
   type: vless
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
-  flow: xtls-rprx-vision
+  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
   tls: true
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: ya.ru
+  servername: sb2.hat.onl
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sb2.hat.onl
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
 rules:
 - MATCH,PROXIES

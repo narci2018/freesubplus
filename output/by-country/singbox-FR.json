@@ -4,32 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 01 - 487ms-4Mbps",
-      "server": "15.237.218.241",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - 602ms-12Mbps",
-      "server": "45.144.28.39",
-      "server_port": 2083,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "usejh2.neobo-tooth.ru",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - 613ms-10Mbps",
+      "tag": "🇫🇷 法国 (France) 01 - 611ms-9Mbps",
       "server": "62.210.91.2",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -39,7 +15,7 @@
         "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -49,8 +25,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 02 - 618ms-8Mbps",
+      "server": "194.76.154.31",
+      "server_port": 40443,
+      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
+          "short_id": "a8ae"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 03 - 621ms-9Mbps",
+      "server": "51.255.13.232",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 04 - 625ms-14Mbps",
+      "tag": "🇫🇷 法国 (France) 04 - 624ms-16Mbps",
       "server": "62.210.124.146",
       "server_port": 22000,
       "password": "dongtaiwang.com",
@@ -62,83 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - 636ms-9Mbps",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 06 - 650ms-14Mbps",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 - 659ms-10Mbps",
-      "server": "194.76.154.31",
-      "server_port": 40443,
-      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
-          "short_id": "a8ae"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 08 - 662ms-11Mbps",
-      "server": "35.181.166.40",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "35.181.166.40",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 09 - 739ms-10Mbps",
-      "server": "vpn-fr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-fr-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 10 - 757ms-9Mbps",
+      "tag": "🇫🇷 法国 (France) 05 - 670ms-10Mbps",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -148,7 +76,7 @@
         "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -158,36 +86,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - 766ms-10Mbps",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12 - 790ms-6Mbps",
-      "server": "45.144.28.39",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 13 - 824ms-10Mbps",
-      "server": "104.18.8.83",
+      "tag": "🇫🇷 法国 (France) 06 - 726ms-9Mbps",
+      "server": "104.18.9.83",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -207,69 +108,63 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 14 - 902ms-0.8Mbps",
-      "server": "62.210.7.139",
-      "server_port": 60111,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 07 - 783ms-6Mbps",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "62.210.7.139",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 15 - 1042ms-2Mbps",
-      "server": "152.228.162.19",
-      "server_port": 80,
-      "uuid": "5ce84688-f535-46ad-a512-37b17becf6ea",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "akamaized.net"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 16 - 1186ms-4Mbps",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "173.212.201.85",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17 - 4257ms-2Mbps",
-      "server": "81.95.4.189",
-      "server_port": 443,
-      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "bab-6.site",
+        "server_name": "www.calmlunch.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/vws/",
+        "path": "/assignment",
         "headers": {
-          "Host": "bab-6.site"
+          "Host": "www.calmlunch.com"
         }
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 08 - 792ms-10Mbps",
+      "server": "cassiopeia.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "e4371581-c418-4770-b09a-d630f18290a6",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc",
+          "short_id": "5d96"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 09 - 877ms-11Mbps",
+      "server": "vpn-fr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-fr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 18 - 13051ms-8Mbps",
+      "tag": "🇫🇷 法国 (France) 10 - 913ms-5Mbps",
       "server": "185.220.100.168",
       "server_port": 443,
       "password": "humanity",
@@ -287,52 +182,94 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 11 - 1034ms-3Mbps",
+      "server": "152.228.162.19",
+      "server_port": 80,
+      "uuid": "25f86cb1-2140-4085-abcb-c3a0ea7a4be0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 12 - 1192ms-10Mbps",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 13 - 14552ms-5Mbps",
+      "server": "194.76.155.80",
+      "server_port": 40443,
+      "uuid": "588456a5-f724-46a7-a08b-5d336d9f8f56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic",
+          "short_id": "e496c7fe1cefc9ff"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 - 487ms-4Mbps",
-        "🇫🇷 法国 (France) 02 - 602ms-12Mbps",
-        "🇫🇷 法国 (France) 03 - 613ms-10Mbps",
-        "🇫🇷 法国 (France) 04 - 625ms-14Mbps",
-        "🇫🇷 法国 (France) 05 - 636ms-9Mbps",
-        "🇫🇷 法国 (France) 06 - 650ms-14Mbps",
-        "🇫🇷 法国 (France) 07 - 659ms-10Mbps",
-        "🇫🇷 法国 (France) 08 - 662ms-11Mbps",
-        "🇫🇷 法国 (France) 09 - 739ms-10Mbps",
-        "🇫🇷 法国 (France) 10 - 757ms-9Mbps",
-        "🇫🇷 法国 (France) 11 - 766ms-10Mbps",
-        "🇫🇷 法国 (France) 12 - 790ms-6Mbps",
-        "🇫🇷 法国 (France) 13 - 824ms-10Mbps",
-        "🇫🇷 法国 (France) 14 - 902ms-0.8Mbps",
-        "🇫🇷 法国 (France) 15 - 1042ms-2Mbps",
-        "🇫🇷 法国 (France) 16 - 1186ms-4Mbps",
-        "🇫🇷 法国 (France) 17 - 4257ms-2Mbps",
-        "🇫🇷 法国 (France) 18 - 13051ms-8Mbps"
+        "🇫🇷 法国 (France) 01 - 611ms-9Mbps",
+        "🇫🇷 法国 (France) 02 - 618ms-8Mbps",
+        "🇫🇷 法国 (France) 03 - 621ms-9Mbps",
+        "🇫🇷 法国 (France) 04 - 624ms-16Mbps",
+        "🇫🇷 法国 (France) 05 - 670ms-10Mbps",
+        "🇫🇷 法国 (France) 06 - 726ms-9Mbps",
+        "🇫🇷 法国 (France) 07 - 783ms-6Mbps",
+        "🇫🇷 法国 (France) 08 - 792ms-10Mbps",
+        "🇫🇷 法国 (France) 09 - 877ms-11Mbps",
+        "🇫🇷 法国 (France) 10 - 913ms-5Mbps",
+        "🇫🇷 法国 (France) 11 - 1034ms-3Mbps",
+        "🇫🇷 法国 (France) 12 - 1192ms-10Mbps",
+        "🇫🇷 法国 (France) 13 - 14552ms-5Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 - 487ms-4Mbps",
-        "🇫🇷 法国 (France) 02 - 602ms-12Mbps",
-        "🇫🇷 法国 (France) 03 - 613ms-10Mbps",
-        "🇫🇷 法国 (France) 04 - 625ms-14Mbps",
-        "🇫🇷 法国 (France) 05 - 636ms-9Mbps",
-        "🇫🇷 法国 (France) 06 - 650ms-14Mbps",
-        "🇫🇷 法国 (France) 07 - 659ms-10Mbps",
-        "🇫🇷 法国 (France) 08 - 662ms-11Mbps",
-        "🇫🇷 法国 (France) 09 - 739ms-10Mbps",
-        "🇫🇷 法国 (France) 10 - 757ms-9Mbps",
-        "🇫🇷 法国 (France) 11 - 766ms-10Mbps",
-        "🇫🇷 法国 (France) 12 - 790ms-6Mbps",
-        "🇫🇷 法国 (France) 13 - 824ms-10Mbps",
-        "🇫🇷 法国 (France) 14 - 902ms-0.8Mbps",
-        "🇫🇷 法国 (France) 15 - 1042ms-2Mbps",
-        "🇫🇷 法国 (France) 16 - 1186ms-4Mbps",
-        "🇫🇷 法国 (France) 17 - 4257ms-2Mbps",
-        "🇫🇷 法国 (France) 18 - 13051ms-8Mbps"
+        "🇫🇷 法国 (France) 01 - 611ms-9Mbps",
+        "🇫🇷 法国 (France) 02 - 618ms-8Mbps",
+        "🇫🇷 法国 (France) 03 - 621ms-9Mbps",
+        "🇫🇷 法国 (France) 04 - 624ms-16Mbps",
+        "🇫🇷 法国 (France) 05 - 670ms-10Mbps",
+        "🇫🇷 法国 (France) 06 - 726ms-9Mbps",
+        "🇫🇷 法国 (France) 07 - 783ms-6Mbps",
+        "🇫🇷 法国 (France) 08 - 792ms-10Mbps",
+        "🇫🇷 法国 (France) 09 - 877ms-11Mbps",
+        "🇫🇷 法国 (France) 10 - 913ms-5Mbps",
+        "🇫🇷 法国 (France) 11 - 1034ms-3Mbps",
+        "🇫🇷 法国 (France) 12 - 1192ms-10Mbps",
+        "🇫🇷 法国 (France) 13 - 14552ms-5Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

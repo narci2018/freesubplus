@@ -4,21 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 633ms-9Mbps
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - 685ms-8Mbps
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - 792ms-12Mbps
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
   server: 104.165.205.42
   port: 8443
   udp: true
@@ -26,36 +12,17 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: 104.165.205.42
   skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - 998ms-8Mbps
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 633ms-9Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - 685ms-8Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - 792ms-12Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - 998ms-8Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 633ms-9Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - 685ms-8Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - 792ms-12Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - 998ms-8Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
 rules:
 - MATCH,PROXIES
