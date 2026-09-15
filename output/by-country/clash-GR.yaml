@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01 - 578ms-12Mbps
+- name: 🇬🇷 希腊 (Greece) 01 - 694ms-10Mbps
   server: 185.126.238.87
   port: 2083
   udp: true
@@ -13,17 +13,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: security.debian.org
+- name: 🇬🇷 希腊 (Greece) 02 - 960ms-8Mbps
+  server: 91.186.216.100
+  port: 7005
+  udp: true
+  type: vless
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  tls: true
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01 - 578ms-12Mbps
+  - 🇬🇷 希腊 (Greece) 01 - 694ms-10Mbps
+  - 🇬🇷 希腊 (Greece) 02 - 960ms-8Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01 - 578ms-12Mbps
+  - 🇬🇷 希腊 (Greece) 01 - 694ms-10Mbps
+  - 🇬🇷 希腊 (Greece) 02 - 960ms-8Mbps
 rules:
 - MATCH,PROXIES

@@ -4,58 +4,72 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 波兰 (Poland) 01 - 349ms-6Mbps
-  server: 217.30.10.44
-  port: 9071
+- name: 🇵🇱 波兰 (Poland) 01 - 224ms-10Mbps
+  server: 104.25.146.77
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 02 - 351ms-14Mbps
-  server: 217.30.10.44
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 03 - 382ms-14Mbps
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 04 - 384ms-14Mbps
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 05 - 401ms-11Mbps
+  type: vless
+  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
+  tls: true
+  servername: khoda.ak-khoda.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: khoda.ak-khoda.workers.dev
+- name: 🇵🇱 波兰 (Poland) 02 - 504ms-10Mbps
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 06 - 440ms-14Mbps
+- name: 🇵🇱 波兰 (Poland) 03 - 523ms-9Mbps
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 04 - 524ms-9Mbps
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 05 - 544ms-10Mbps
   server: 217.30.10.44
   port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 07 - 490ms-20Mbps
-  server: 45.192.12.93
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 06 - 548ms-9Mbps
+  server: 217.30.10.44
+  port: 9095
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 08 - 523ms-15Mbps
-  server: 185.223.57.10
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 07 - 556ms-9Mbps
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 08 - 559ms-9Mbps
+  server: 217.30.10.44
+  port: 9041
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇵🇱 波兰 (Poland) 09 - 654ms-11Mbps
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -68,14 +82,56 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 09 - 528ms-11Mbps
-  server: 51.83.192.80
-  port: 8388
+- name: 🇵🇱 波兰 (Poland) 10 - 702ms-9Mbps
+  server: 144.31.5.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 11 - 714ms-2Mbps
+  server: 144.31.5.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl4.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 12 - 737ms-9Mbps
+  server: 54.37.136.194
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  tls: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 13 - 740ms-15Mbps
+  server: pl.i-love-russia.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 02af180d-7cb9-428f-83d2-8aca4d23d041
+  sni: pl.i-love-russia.online
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 14 - 807ms-9Mbps
+  server: 194.61.121.93
+  port: 7538
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇵🇱 波兰 (Poland) 10 - 619ms-1Mbps
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: 🇵🇱 波兰 (Poland) 15 - 816ms-3Mbps
   server: 150.251.113.34
   port: 443
   udp: true
@@ -88,14 +144,7 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - 718ms-0.7Mbps
-  server: 194.61.121.93
-  port: 7538
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-- name: 🇵🇱 波兰 (Poland) 12 - 804ms-12Mbps
+- name: 🇵🇱 波兰 (Poland) 16 - 890ms-7Mbps
   server: 151.242.2.81
   port: 443
   udp: true
@@ -110,18 +159,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
-- name: 🇵🇱 波兰 (Poland) 13 - 2310ms-2Mbps
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 14 - 2548ms-0.9Mbps
+- name: 🇵🇱 波兰 (Poland) 17 - 925ms-0.9Mbps
   server: 144.31.2.33
   port: 443
   udp: true
@@ -132,43 +170,68 @@ proxies:
   servername: pl3.moritech.net
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 18 - 1072ms-8Mbps
+  server: go.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 19 - 2426ms-8Mbps
+  server: 51.83.192.80
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 波兰 (Poland) 01 - 349ms-6Mbps
-  - 🇵🇱 波兰 (Poland) 02 - 351ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 03 - 382ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 04 - 384ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 05 - 401ms-11Mbps
-  - 🇵🇱 波兰 (Poland) 06 - 440ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 07 - 490ms-20Mbps
-  - 🇵🇱 波兰 (Poland) 08 - 523ms-15Mbps
-  - 🇵🇱 波兰 (Poland) 09 - 528ms-11Mbps
-  - 🇵🇱 波兰 (Poland) 10 - 619ms-1Mbps
-  - 🇵🇱 波兰 (Poland) 11 - 718ms-0.7Mbps
-  - 🇵🇱 波兰 (Poland) 12 - 804ms-12Mbps
-  - 🇵🇱 波兰 (Poland) 13 - 2310ms-2Mbps
-  - 🇵🇱 波兰 (Poland) 14 - 2548ms-0.9Mbps
+  - 🇵🇱 波兰 (Poland) 01 - 224ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 02 - 504ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 03 - 523ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 04 - 524ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 05 - 544ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 06 - 548ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 07 - 556ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 08 - 559ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 09 - 654ms-11Mbps
+  - 🇵🇱 波兰 (Poland) 10 - 702ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 11 - 714ms-2Mbps
+  - 🇵🇱 波兰 (Poland) 12 - 737ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 13 - 740ms-15Mbps
+  - 🇵🇱 波兰 (Poland) 14 - 807ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 15 - 816ms-3Mbps
+  - 🇵🇱 波兰 (Poland) 16 - 890ms-7Mbps
+  - 🇵🇱 波兰 (Poland) 17 - 925ms-0.9Mbps
+  - 🇵🇱 波兰 (Poland) 18 - 1072ms-8Mbps
+  - 🇵🇱 波兰 (Poland) 19 - 2426ms-8Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 (Poland) 01 - 349ms-6Mbps
-  - 🇵🇱 波兰 (Poland) 02 - 351ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 03 - 382ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 04 - 384ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 05 - 401ms-11Mbps
-  - 🇵🇱 波兰 (Poland) 06 - 440ms-14Mbps
-  - 🇵🇱 波兰 (Poland) 07 - 490ms-20Mbps
-  - 🇵🇱 波兰 (Poland) 08 - 523ms-15Mbps
-  - 🇵🇱 波兰 (Poland) 09 - 528ms-11Mbps
-  - 🇵🇱 波兰 (Poland) 10 - 619ms-1Mbps
-  - 🇵🇱 波兰 (Poland) 11 - 718ms-0.7Mbps
-  - 🇵🇱 波兰 (Poland) 12 - 804ms-12Mbps
-  - 🇵🇱 波兰 (Poland) 13 - 2310ms-2Mbps
-  - 🇵🇱 波兰 (Poland) 14 - 2548ms-0.9Mbps
+  - 🇵🇱 波兰 (Poland) 01 - 224ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 02 - 504ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 03 - 523ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 04 - 524ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 05 - 544ms-10Mbps
+  - 🇵🇱 波兰 (Poland) 06 - 548ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 07 - 556ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 08 - 559ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 09 - 654ms-11Mbps
+  - 🇵🇱 波兰 (Poland) 10 - 702ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 11 - 714ms-2Mbps
+  - 🇵🇱 波兰 (Poland) 12 - 737ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 13 - 740ms-15Mbps
+  - 🇵🇱 波兰 (Poland) 14 - 807ms-9Mbps
+  - 🇵🇱 波兰 (Poland) 15 - 816ms-3Mbps
+  - 🇵🇱 波兰 (Poland) 16 - 890ms-7Mbps
+  - 🇵🇱 波兰 (Poland) 17 - 925ms-0.9Mbps
+  - 🇵🇱 波兰 (Poland) 18 - 1072ms-8Mbps
+  - 🇵🇱 波兰 (Poland) 19 - 2426ms-8Mbps
 rules:
 - MATCH,PROXIES

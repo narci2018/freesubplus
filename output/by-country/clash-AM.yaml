@@ -4,29 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - 2003ms-5Mbps
-  server: 77.91.68.70
-  port: 55983
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - 613ms-1Mbps
+  server: 172.67.67.178
+  port: 443
   udp: true
   type: vless
-  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  reality-opts:
-    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
-    short-id: 0e
-  servername: yahoo.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - 2003ms-5Mbps
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - 613ms-1Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - 2003ms-5Mbps
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - 613ms-1Mbps
 rules:
 - MATCH,PROXIES

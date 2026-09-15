@@ -4,15 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - 653ms-16Mbps
-  server: 85.204.107.181
+- name: 🇦🇪 阿联酋 (UAE) 01 - 850ms-11Mbps
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 02 - 837ms-8Mbps
+- name: 🇦🇪 阿联酋 (UAE) 02 - 1122ms-6Mbps
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -21,21 +21,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - 653ms-16Mbps
-  - 🇦🇪 阿联酋 (UAE) 02 - 837ms-8Mbps
+  - 🇦🇪 阿联酋 (UAE) 01 - 850ms-11Mbps
+  - 🇦🇪 阿联酋 (UAE) 02 - 1122ms-6Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - 653ms-16Mbps
-  - 🇦🇪 阿联酋 (UAE) 02 - 837ms-8Mbps
+  - 🇦🇪 阿联酋 (UAE) 01 - 850ms-11Mbps
+  - 🇦🇪 阿联酋 (UAE) 02 - 1122ms-6Mbps
 rules:
 - MATCH,PROXIES

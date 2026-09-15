@@ -4,20 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 598ms-11Mbps
-  server: 195.123.213.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - 641ms-17Mbps
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 820ms-14Mbps
   server: 104.165.205.42
   port: 8443
   udp: true
@@ -25,7 +12,7 @@ proxies:
   password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - 760ms-14Mbps
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - 852ms-14Mbps
   server: 104.165.205.40
   port: 8443
   udp: true
@@ -33,21 +20,34 @@ proxies:
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - 882ms-9Mbps
+  server: 131.123.25.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4360f941-b541-01ac-8507-2de3763e0cfd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: fr.convert-flow.net
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 598ms-11Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - 641ms-17Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - 760ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 820ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 852ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 882ms-9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 598ms-11Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 02 - 641ms-17Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - 760ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 820ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 852ms-14Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 882ms-9Mbps
 rules:
 - MATCH,PROXIES

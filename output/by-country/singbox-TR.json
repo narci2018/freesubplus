@@ -5,7 +5,29 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - 738ms-9Mbps",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - 275ms-6Mbps",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "path": "/axch1mttbxz2k55y01",
+        "headers": {
+          "Host": "index.harmonica01.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - 652ms-8Mbps",
+      "server": "188.132.174.236",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - 893ms-7Mbps",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -26,17 +48,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - 2654ms-7Mbps",
-      "server": "shop.neexbyte.ir",
-      "server_port": 8443,
-      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - 926ms-8Mbps",
+      "server": "199.232.78.159",
+      "server_port": 443,
+      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
       "tls": {
         "enabled": true,
-        "server_name": "shop.neexbyte.ir",
+        "server_name": "global.fastly.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "BechBad.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - 1751ms-6Mbps",
+      "server": "172.67.151.109",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
+      "tls": {
+        "enabled": true,
+        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
+        "headers": {
+          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
+        }
       }
     },
     {
@@ -44,16 +93,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - 738ms-9Mbps",
-        "🇹🇷 土耳其 (Turkey) 02 - 2654ms-7Mbps"
+        "🇹🇷 土耳其 (Turkey) 01 - 275ms-6Mbps",
+        "🇹🇷 土耳其 (Turkey) 02 - 652ms-8Mbps",
+        "🇹🇷 土耳其 (Turkey) 03 - 893ms-7Mbps",
+        "🇹🇷 土耳其 (Turkey) 04 - 926ms-8Mbps",
+        "🇹🇷 土耳其 (Turkey) 05 - 1751ms-6Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - 738ms-9Mbps",
-        "🇹🇷 土耳其 (Turkey) 02 - 2654ms-7Mbps"
+        "🇹🇷 土耳其 (Turkey) 01 - 275ms-6Mbps",
+        "🇹🇷 土耳其 (Turkey) 02 - 652ms-8Mbps",
+        "🇹🇷 土耳其 (Turkey) 03 - 893ms-7Mbps",
+        "🇹🇷 土耳其 (Turkey) 04 - 926ms-8Mbps",
+        "🇹🇷 土耳其 (Turkey) 05 - 1751ms-6Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
