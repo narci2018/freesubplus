@@ -5,347 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - 146ms-8Mbps",
-      "server": "45.207.156.204",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.207.156.204:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_12.62ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 - 154ms-19Mbps",
-      "server": "85.121.51.14",
-      "server_port": 2096,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@85.121.51.14:2096?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.66ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 03 - 176ms-19Mbps",
-      "server": "38.207.176.130",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@38.207.176.130:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_14.98ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 - 182ms-3Mbps",
-      "server": "23.141.12.134",
-      "server_port": 8443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@23.141.12.134:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_12.92ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - 189ms-9Mbps",
-      "server": "85.121.245.35",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@85.121.245.35:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_12.53ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 06 - 194ms-19Mbps",
-      "server": "47.57.233.212",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.57.233.212:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.32ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 - 195ms-19Mbps",
-      "server": "193.134.209.123",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@193.134.209.123:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_13.72ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 08 - 196ms-8Mbps",
-      "server": "45.152.67.18",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.152.67.18:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#GB_%E8%8B%B1%E5%9B%BD_14.09ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 09 - 198ms-13Mbps",
-      "server": "85.121.245.177",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@85.121.245.177:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_10.85ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - 216ms-8Mbps",
-      "server": "155.117.224.63",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@155.117.224.63:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_9.76ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - 217ms-8Mbps",
+      "tag": "🇺🇸 美国 (United States) 01 - 215ms-37Mbps",
       "server": "38.207.179.77",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
@@ -379,11 +39,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - 218ms-19Mbps",
-      "server": "191.223.217.68",
-      "server_port": 8443,
+      "tag": "🇺🇸 美国 (United States) 02 - 226ms-37Mbps",
+      "server": "47.57.233.212",
+      "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@191.223.217.68:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_11.39ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.57.233.212:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.32ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -413,7 +73,41 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 13 - 231ms-19Mbps",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - 258ms-37Mbps",
+      "server": "155.117.224.63",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@155.117.224.63:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_9.76ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 04 - 282ms-37Mbps",
       "server": "185.155.235.58",
       "server_port": 8443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
@@ -447,11 +141,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 14 - 244ms-8Mbps",
-      "server": "68.64.183.37",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - 302ms-37Mbps",
+      "server": "38.207.176.130",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@68.64.183.37:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_18.46ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@38.207.176.130:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_14.98ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -481,45 +175,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 15 - 290ms-11Mbps",
-      "server": "167.148.203.71",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@167.148.203.71:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_16.33ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 16 - 353ms-19Mbps",
-      "server": "45.136.14.61",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - 317ms-37Mbps",
+      "server": "157.230.39.201",
       "server_port": 2053,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.136.14.61:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.89ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@157.230.39.201:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.57ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -549,419 +209,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - 356ms-10Mbps",
-      "server": "161.118.196.58",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@161.118.196.58:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.87ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 18 - 373ms-8Mbps",
-      "server": "47.239.241.168",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.239.241.168:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.45ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - 384ms-8Mbps",
-      "server": "161.118.244.3",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@161.118.244.3:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.02ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 20 - 391ms-8Mbps",
-      "server": "206.189.43.222",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@206.189.43.222:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.07ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 21 - 391ms-19Mbps",
-      "server": "8.210.40.146",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@8.210.40.146:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.93ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 22 - 402ms-19Mbps",
-      "server": "207.148.115.152",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@207.148.115.152:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.80ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 23 - 403ms-8Mbps",
-      "server": "50.114.59.107",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@50.114.59.107:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_61.72ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 24 - 403ms-8Mbps",
-      "server": "52.194.151.107",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@52.194.151.107:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.11ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 25 - 405ms-8Mbps",
-      "server": "18.182.63.120",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@18.182.63.120:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.24ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 26 - 406ms-9Mbps",
-      "server": "188.166.245.164",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@188.166.245.164:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_51.43ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 27 - 421ms-8Mbps",
-      "server": "139.59.127.117",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.59.127.117:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_47.97ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 28 - 422ms-8Mbps",
-      "server": "64.204.49.223",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@64.204.49.223:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_84.50ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 29 - 422ms-8Mbps",
-      "server": "45.207.156.69",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - 364ms-37Mbps",
+      "server": "140.245.107.0",
       "server_port": 8443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.207.156.69:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_10.54ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@140.245.107.0:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.66ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -991,11 +243,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 30 - 423ms-8Mbps",
-      "server": "202.144.192.41",
+      "tag": "🇺🇸 美国 (United States) 08 - 369ms-24Mbps",
+      "server": "104.238.150.161",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@202.144.192.41:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_60.64ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@104.238.150.161:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_58.40ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -1025,1979 +277,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 31 - 424ms-7Mbps",
-      "server": "139.59.101.96",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.59.101.96:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.09ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 32 - 429ms-8Mbps",
-      "server": "13.231.221.179",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@13.231.221.179:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.66ms-02",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 33 - 432ms-19Mbps",
-      "server": "206.189.34.99",
-      "server_port": 2053,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@206.189.34.99:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.68ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 34 - 434ms-2Mbps",
-      "server": "45.153.246.5",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.153.246.5:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_55.93ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 35 - 437ms-8Mbps",
-      "server": "137.220.225.111",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@137.220.225.111:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.70ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 36 - 439ms-19Mbps",
-      "server": "152.70.86.199",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@152.70.86.199:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_68.79ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 37 - 451ms-8Mbps",
-      "server": "2.26.201.194",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@2.26.201.194:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_69.17ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 38 - 452ms-8Mbps",
-      "server": "139.180.202.209",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.180.202.209:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.50ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 39 - 452ms-19Mbps",
-      "server": "137.220.225.56",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@137.220.225.56:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.41ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 40 - 462ms-19Mbps",
-      "server": "45.8.115.250",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.8.115.250:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_70.12ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 41 - 463ms-8Mbps",
-      "server": "107.148.118.151",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@107.148.118.151:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_69.92ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 42 - 465ms-19Mbps",
-      "server": "188.166.190.246",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@188.166.190.246:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_47.60ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 43 - 471ms-18Mbps",
-      "server": "156.243.244.138",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@156.243.244.138:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.55ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 44 - 501ms-12Mbps",
-      "server": "202.61.72.83",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@202.61.72.83:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#MY_%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A_60.50ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 45 - 507ms-3Mbps",
-      "server": "206.189.155.153",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@206.189.155.153:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.47ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 46 - 564ms-8Mbps",
-      "server": "172.232.240.6",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@172.232.240.6:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#ID_%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A_52.38ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 47 - 593ms-19Mbps",
-      "server": "202.182.114.28",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@202.182.114.28:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_63.97ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 48 - 600ms-19Mbps",
-      "server": "178.128.118.19",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@178.128.118.19:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.84ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 49 - 634ms-19Mbps",
-      "server": "45.32.251.225",
-      "server_port": 2053,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.32.251.225:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.66ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 50 - 649ms-19Mbps",
-      "server": "142.91.109.150",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@142.91.109.150:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.85ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 51 - 665ms-8Mbps",
-      "server": "45.66.128.2",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.66.128.2:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_85.21ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 52 - 766ms-19Mbps",
-      "server": "50.7.21.174",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@50.7.21.174:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.43ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 53 - 779ms-6Mbps",
-      "server": "5.223.95.244",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@5.223.95.244:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_47.05ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 54 - 790ms-8Mbps",
-      "server": "101.142.129.72",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@101.142.129.72:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_93.64ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 55 - 814ms-19Mbps",
-      "server": "207.57.131.117",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@207.57.131.117:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_14.91ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 56 - 841ms-11Mbps",
-      "server": "108.61.160.16",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@108.61.160.16:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.21ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 57 - 882ms-19Mbps",
-      "server": "45.95.212.215",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.95.212.215:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.83ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 58 - 930ms-19Mbps",
-      "server": "139.84.156.127",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.84.156.127:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#IN_%E5%8D%B0%E5%BA%A6_79.84ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 59 - 933ms-8Mbps",
-      "server": "5.34.220.83",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@5.34.220.83:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_82.81ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 60 - 995ms-8Mbps",
-      "server": "85.149.211.122",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@85.149.211.122:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_51.40ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 61 - 1002ms-19Mbps",
-      "server": "64.227.146.37",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@64.227.146.37:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#IN_%E5%8D%B0%E5%BA%A6_86.61ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 62 - 1050ms-19Mbps",
-      "server": "168.144.44.150",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@168.144.44.150:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_45.31ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 63 - 1107ms-0.5Mbps",
-      "server": "129.212.229.72",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@129.212.229.72:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.40ms-02",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 64 - 1109ms-12Mbps",
-      "server": "5.199.166.152",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@5.199.166.152:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_43.60ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 65 - 1125ms-19Mbps",
-      "server": "43.159.4.80",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@43.159.4.80:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_15.24ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 66 - 1141ms-10Mbps",
-      "server": "43.160.220.86",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@43.160.220.86:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_44.90ms-02",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 67 - 1177ms-7Mbps",
-      "server": "216.23.123.64",
-      "server_port": 30718,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@216.23.123.64:30718?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_56.69ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 68 - 1213ms-12Mbps",
-      "server": "129.225.147.112",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@129.225.147.112:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_64.96ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 69 - 1222ms-3Mbps",
-      "server": "52.221.4.213",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@52.221.4.213:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_84.54ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 70 - 1238ms-19Mbps",
-      "server": "140.235.39.162",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@140.235.39.162:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#TW_%E5%8F%B0%E6%B9%BE_22.92ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 71 - 1239ms-8Mbps",
-      "server": "77.93.90.177",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@77.93.90.177:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_45.60ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 72 - 1272ms-8Mbps",
-      "server": "161.118.210.121",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@161.118.210.121:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_50.09ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 73 - 1279ms-8Mbps",
-      "server": "139.84.156.84",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.84.156.84:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#IN_%E5%8D%B0%E5%BA%A6_92.58ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 74 - 1408ms-8Mbps",
-      "server": "156.246.95.196",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@156.246.95.196:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_60.85ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 75 - 1441ms-19Mbps",
-      "server": "139.162.72.62",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.162.72.62:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_71.10ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 76 - 1453ms-10Mbps",
-      "server": "43.160.220.72",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@43.160.220.72:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.65ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 77 - 1471ms-9Mbps",
-      "server": "149.118.48.187",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@149.118.48.187:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.41ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 78 - 1476ms-3Mbps",
-      "server": "5.253.28.110",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@5.253.28.110:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#CY_%E5%A1%9E%E6%B5%A6%E8%B7%AF%E6%96%AF_91.22ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 79 - 1492ms-19Mbps",
-      "server": "35.72.179.15",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@35.72.179.15:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_88.07ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 80 - 1600ms-0.8Mbps",
-      "server": "18.140.28.73",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@18.140.28.73:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_89.03ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 81 - 1602ms-8Mbps",
-      "server": "222.167.138.95",
-      "server_port": 8443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@222.167.138.95:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_59.73ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 82 - 1611ms-12Mbps",
-      "server": "142.91.109.199",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@142.91.109.199:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_70.03ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 83 - 1628ms-19Mbps",
-      "server": "83.147.13.193",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@83.147.13.193:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#TW_%E5%8F%B0%E6%B9%BE_23.02ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 84 - 1713ms-19Mbps",
-      "server": "43.169.19.179",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@43.169.19.179:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_56.54ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 85 - 1723ms-19Mbps",
-      "server": "45.144.137.68",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.144.137.68:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.25ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 86 - 1788ms-10Mbps",
-      "server": "140.245.114.190",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@140.245.114.190:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_49.69ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 87 - 1933ms-12Mbps",
-      "server": "45.207.156.146",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.207.156.146:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_12.94ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 88 - 2064ms-11Mbps",
-      "server": "152.42.232.186",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@152.42.232.186:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_45.37ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 89 - 2271ms-19Mbps",
+      "tag": "🇯🇵 日本 (Japan) 09 - 375ms-10Mbps",
       "server": "5.34.220.81",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
@@ -3031,11 +311,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 90 - 2512ms-8Mbps",
-      "server": "158.51.110.159",
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - 381ms-37Mbps",
+      "server": "152.42.212.65",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@158.51.110.159:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_68.07ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@152.42.212.65:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.54ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -3065,177 +345,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 91 - 2849ms-8Mbps",
-      "server": "47.254.229.161",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.254.229.161:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#MY_%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A_55.26ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 92 - 2927ms-19Mbps",
-      "server": "47.75.104.211",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.75.104.211:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_18.38ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 93 - 3206ms-19Mbps",
-      "server": "47.83.14.42",
-      "server_port": 8443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@47.83.14.42:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_11.31ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 94 - 3500ms-19Mbps",
-      "server": "177.3.89.196",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@177.3.89.196:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.63ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 95 - 3593ms-8Mbps",
-      "server": "178.239.117.27",
-      "server_port": 443,
-      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@178.239.117.27:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_65.33ms-01",
-      "raw_params": {
-        "encryption": "none",
-        "security": "tls",
-        "sni": "love.tk168.cc.cd",
-        "fp": "chrome",
-        "type": "ws",
-        "host": "love.tk168.cc.cd",
-        "path": "/?ed=2048",
-        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "love.tk168.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "love.tk168.cc.cd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 96 - 3670ms-9Mbps",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - 385ms-14Mbps",
       "server": "157.66.26.194",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
@@ -3269,11 +379,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 97 - 4983ms-19Mbps",
-      "server": "8.222.155.193",
+      "tag": "🇯🇵 日本 (Japan) 12 - 389ms-37Mbps",
+      "server": "202.182.114.28",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@8.222.155.193:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_43.75ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@202.182.114.28:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_63.97ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -3303,11 +413,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 98 - 4999ms-19Mbps",
-      "server": "45.202.255.219",
+      "tag": "🇺🇸 美国 (United States) 13 - 393ms-37Mbps",
+      "server": "45.144.137.68",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.202.255.219:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_76.46ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.144.137.68:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.25ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -3337,11 +447,11 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 99 - 7820ms-0.3Mbps",
-      "server": "154.83.95.129",
+      "tag": "🇯🇵 日本 (Japan) 14 - 399ms-20Mbps",
+      "server": "131.186.41.103",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@154.83.95.129:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_60.78ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@131.186.41.103:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.04ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -3371,7 +481,1129 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 100 - 8384ms-12Mbps",
+      "tag": "🇺🇸 美国 (United States) 15 - 403ms-37Mbps",
+      "server": "52.194.151.107",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@52.194.151.107:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_66.11ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 16 - 404ms-37Mbps",
+      "server": "2.26.201.194",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@2.26.201.194:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_69.17ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 17 - 423ms-12Mbps",
+      "server": "172.66.1.154",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@172.66.1.154:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_58.22ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 18 - 428ms-37Mbps",
+      "server": "209.97.161.7",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@209.97.161.7:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_45.49ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 19 - 432ms-18Mbps",
+      "server": "23.249.18.144",
+      "server_port": 8581,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@23.249.18.144:8581?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_63.96ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - 434ms-37Mbps",
+      "server": "139.59.115.38",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@139.59.115.38:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_51.29ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21 - 440ms-37Mbps",
+      "server": "5.34.220.80",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@5.34.220.80:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.15ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 22 - 467ms-42Mbps",
+      "server": "207.148.115.152",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@207.148.115.152:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.80ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 23 - 471ms-24Mbps",
+      "server": "138.2.44.32",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@138.2.44.32:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_68.20ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 24 - 477ms-37Mbps",
+      "server": "137.220.225.111",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@137.220.225.111:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.70ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 25 - 486ms-37Mbps",
+      "server": "149.28.19.44",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@149.28.19.44:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_60.25ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 26 - 488ms-37Mbps",
+      "server": "107.148.118.151",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@107.148.118.151:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_69.92ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 27 - 491ms-31Mbps",
+      "server": "134.185.85.155",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@134.185.85.155:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_46.38ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 28 - 495ms-15Mbps",
+      "server": "45.32.251.225",
+      "server_port": 2053,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.32.251.225:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_61.66ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 29 - 497ms-34Mbps",
+      "server": "45.32.52.204",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.32.52.204:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_60.23ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 30 - 505ms-37Mbps",
+      "server": "129.225.147.112",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@129.225.147.112:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_64.96ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 31 - 512ms-37Mbps",
+      "server": "43.174.194.1",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@43.174.194.1:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_57.62ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 32 - 516ms-37Mbps",
+      "server": "192.124.176.70",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@192.124.176.70:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_44.16ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 33 - 518ms-17Mbps",
+      "server": "142.91.109.199",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@142.91.109.199:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_70.03ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 34 - 522ms-37Mbps",
+      "server": "172.237.0.160",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@172.237.0.160:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_74.83ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 35 - 532ms-21Mbps",
+      "server": "101.142.129.72",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@101.142.129.72:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_93.64ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 36 - 560ms-16Mbps",
+      "server": "45.77.180.114",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.77.180.114:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_56.52ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 37 - 590ms-16Mbps",
+      "server": "143.198.209.123",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@143.198.209.123:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_52.46ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 38 - 595ms-37Mbps",
+      "server": "132.226.10.72",
+      "server_port": 2083,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@132.226.10.72:2083?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_80.18ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 39 - 598ms-10Mbps",
+      "server": "152.42.196.47",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@152.42.196.47:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.81ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 40 - 601ms-34Mbps",
+      "server": "154.19.187.190",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@154.19.187.190:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.99ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 41 - 617ms-18Mbps",
+      "server": "96.9.211.91",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@96.9.211.91:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_79.44ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 42 - 639ms-37Mbps",
+      "server": "137.220.225.56",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@137.220.225.56:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_59.41ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 43 - 643ms-37Mbps",
+      "server": "168.107.40.4",
+      "server_port": 8443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@168.107.40.4:8443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#KR_%E9%9F%A9%E5%9B%BD_71.75ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 44 - 678ms-37Mbps",
+      "server": "8.220.214.146",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@8.220.214.146:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#KR_%E9%9F%A9%E5%9B%BD_91.85ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 45 - 683ms-37Mbps",
+      "server": "68.64.183.37",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@68.64.183.37:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#US_%E7%BE%8E%E5%9B%BD_18.46ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 46 - 762ms-14Mbps",
+      "server": "108.165.100.62",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@108.165.100.62:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_61.52ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 47 - 766ms-37Mbps",
+      "server": "31.57.172.215",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@31.57.172.215:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_65.53ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 48 - 775ms-37Mbps",
       "server": "141.164.37.50",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
@@ -3405,11 +1637,283 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 101 - 8951ms-19Mbps",
-      "server": "104.238.161.103",
+      "tag": "🇺🇸 美国 (United States) 49 - 823ms-37Mbps",
+      "server": "103.96.74.18",
+      "server_port": 16000,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@103.96.74.18:16000?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_96.71ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 50 - 845ms-16Mbps",
+      "server": "104.238.149.235",
       "server_port": 443,
       "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
-      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@104.238.161.103:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_57.69ms-01",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@104.238.149.235:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#JP_%E6%97%A5%E6%9C%AC_65.63ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 51 - 877ms-37Mbps",
+      "server": "45.207.156.204",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.207.156.204:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_12.62ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 52 - 898ms-37Mbps",
+      "server": "8.222.155.193",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@8.222.155.193:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_43.75ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 53 - 902ms-37Mbps",
+      "server": "45.136.14.61",
+      "server_port": 2053,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@45.136.14.61:2053?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.89ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 54 - 916ms-37Mbps",
+      "server": "64.227.146.37",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@64.227.146.37:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#IN_%E5%8D%B0%E5%BA%A6_86.61ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 55 - 965ms-37Mbps",
+      "server": "178.128.118.19",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@178.128.118.19:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_48.84ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 56 - 966ms-37Mbps",
+      "server": "8.210.40.146",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@8.210.40.146:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#HK_%E9%A6%99%E6%B8%AF_13.93ms-01",
+      "raw_params": {
+        "encryption": "none",
+        "security": "tls",
+        "sni": "love.tk168.cc.cd",
+        "fp": "chrome",
+        "type": "ws",
+        "host": "love.tk168.cc.cd",
+        "path": "/?ed=2048",
+        "ech": "cloudflare-ech.com+https://223.5.5.5/dns-query"
+      },
+      "tls": {
+        "enabled": true,
+        "server_name": "love.tk168.cc.cd",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "love.tk168.cc.cd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 57 - 971ms-37Mbps",
+      "server": "140.245.127.48",
+      "server_port": 443,
+      "uuid": "07d2aca9-c060-4039-b265-454fc8510d4c",
+      "raw_uri": "vless://07d2aca9-c060-4039-b265-454fc8510d4c@140.245.127.48:443?encryption=none&security=tls&sni=love.tk168.cc.cd&fp=chrome&type=ws&host=love.tk168.cc.cd&path=%2F%3Fed%3D2048&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_51.05ms-01",
       "raw_params": {
         "encryption": "none",
         "security": "tls",
@@ -3442,214 +1946,126 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - 146ms-8Mbps",
-        "🇺🇸 美国 (United States) 02 - 154ms-19Mbps",
-        "🇺🇸 美国 (United States) 03 - 176ms-19Mbps",
-        "🇺🇸 美国 (United States) 04 - 182ms-3Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 05 - 189ms-9Mbps",
-        "🇺🇸 美国 (United States) 06 - 194ms-19Mbps",
-        "🇺🇸 美国 (United States) 07 - 195ms-19Mbps",
-        "🇺🇸 美国 (United States) 08 - 196ms-8Mbps",
-        "🇺🇸 美国 (United States) 09 - 198ms-13Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 10 - 216ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 11 - 217ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 12 - 218ms-19Mbps",
-        "🇺🇸 美国 (United States) 13 - 231ms-19Mbps",
-        "🇺🇸 美国 (United States) 14 - 244ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 15 - 290ms-11Mbps",
-        "🇺🇸 美国 (United States) 16 - 353ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 17 - 356ms-10Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 18 - 373ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 19 - 384ms-8Mbps",
-        "🇺🇸 美国 (United States) 20 - 391ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 21 - 391ms-19Mbps",
-        "🇯🇵 日本 (Japan) 22 - 402ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 23 - 403ms-8Mbps",
-        "🇺🇸 美国 (United States) 24 - 403ms-8Mbps",
-        "🇯🇵 日本 (Japan) 25 - 405ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 26 - 406ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 27 - 421ms-8Mbps",
-        "🇯🇵 日本 (Japan) 28 - 422ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 29 - 422ms-8Mbps",
-        "🇯🇵 日本 (Japan) 30 - 423ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 31 - 424ms-7Mbps",
-        "🇯🇵 日本 (Japan) 32 - 429ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 33 - 432ms-19Mbps",
-        "🇺🇸 美国 (United States) 34 - 434ms-2Mbps",
-        "🇯🇵 日本 (Japan) 35 - 437ms-8Mbps",
-        "🇯🇵 日本 (Japan) 36 - 439ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 37 - 451ms-8Mbps",
-        "🇯🇵 日本 (Japan) 38 - 452ms-8Mbps",
-        "🇯🇵 日本 (Japan) 39 - 452ms-19Mbps",
-        "🇯🇵 日本 (Japan) 40 - 462ms-19Mbps",
-        "🇯🇵 日本 (Japan) 41 - 463ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 42 - 465ms-19Mbps",
-        "🇺🇸 美国 (United States) 43 - 471ms-18Mbps",
-        "🇲🇾 马来西亚 (Malaysia) 44 - 501ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 45 - 507ms-3Mbps",
-        "🇮🇩 印尼 (Indonesia) 46 - 564ms-8Mbps",
-        "🇯🇵 日本 (Japan) 47 - 593ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 48 - 600ms-19Mbps",
-        "🇯🇵 日本 (Japan) 49 - 634ms-19Mbps",
-        "🇺🇸 美国 (United States) 50 - 649ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 51 - 665ms-8Mbps",
-        "🇺🇸 美国 (United States) 52 - 766ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 53 - 779ms-6Mbps",
-        "🇺🇸 美国 (United States) 54 - 790ms-8Mbps",
-        "🇺🇸 美国 (United States) 55 - 814ms-19Mbps",
-        "🇯🇵 日本 (Japan) 56 - 841ms-11Mbps",
-        "🇺🇸 美国 (United States) 57 - 882ms-19Mbps",
-        "🇮🇳 印度 (India) 58 - 930ms-19Mbps",
-        "🇯🇵 日本 (Japan) 59 - 933ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 60 - 995ms-8Mbps",
-        "🇺🇸 美国 (United States) 61 - 1002ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 62 - 1050ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 63 - 1107ms-0.5Mbps",
-        "🇸🇬 新加坡 (Singapore) 64 - 1109ms-12Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 65 - 1125ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 66 - 1141ms-10Mbps",
-        "🇺🇸 美国 (United States) 67 - 1177ms-7Mbps",
-        "🇺🇸 美国 (United States) 68 - 1213ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 69 - 1222ms-3Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 70 - 1238ms-19Mbps",
-        "🇺🇸 美国 (United States) 71 - 1239ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 72 - 1272ms-8Mbps",
-        "🇮🇳 印度 (India) 73 - 1279ms-8Mbps",
-        "🇺🇸 美国 (United States) 74 - 1408ms-8Mbps",
-        "🇯🇵 日本 (Japan) 75 - 1441ms-19Mbps",
-        "🇺🇸 美国 (United States) 76 - 1453ms-10Mbps",
-        "🇸🇬 新加坡 (Singapore) 77 - 1471ms-9Mbps",
-        "🇮🇳 印度 (India) 78 - 1476ms-3Mbps",
-        "🇯🇵 日本 (Japan) 79 - 1492ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 80 - 1600ms-0.8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 81 - 1602ms-8Mbps",
-        "🇯🇵 日本 (Japan) 82 - 1611ms-12Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 83 - 1628ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 84 - 1713ms-19Mbps",
-        "🇺🇸 美国 (United States) 85 - 1723ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 86 - 1788ms-10Mbps",
-        "🇺🇸 美国 (United States) 87 - 1933ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 88 - 2064ms-11Mbps",
-        "🇯🇵 日本 (Japan) 89 - 2271ms-19Mbps",
-        "🇯🇵 日本 (Japan) 90 - 2512ms-8Mbps",
-        "🇺🇸 美国 (United States) 91 - 2849ms-8Mbps",
-        "🇺🇸 美国 (United States) 92 - 2927ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 93 - 3206ms-19Mbps",
-        "🇯🇵 日本 (Japan) 94 - 3500ms-19Mbps",
-        "🇺🇸 美国 (United States) 95 - 3593ms-8Mbps",
-        "🇻🇳 越南 (Vietnam) 96 - 3670ms-9Mbps",
-        "🇺🇸 美国 (United States) 97 - 4983ms-19Mbps",
-        "🇯🇵 日本 (Japan) 98 - 4999ms-19Mbps",
-        "🇺🇸 美国 (United States) 99 - 7820ms-0.3Mbps",
-        "🇰🇷 韩国 (South Korea) 100 - 8384ms-12Mbps",
-        "🇯🇵 日本 (Japan) 101 - 8951ms-19Mbps"
+        "🇺🇸 美国 (United States) 01 - 215ms-37Mbps",
+        "🇺🇸 美国 (United States) 02 - 226ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 03 - 258ms-37Mbps",
+        "🇺🇸 美国 (United States) 04 - 282ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 05 - 302ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 06 - 317ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 07 - 364ms-37Mbps",
+        "🇺🇸 美国 (United States) 08 - 369ms-24Mbps",
+        "🇯🇵 日本 (Japan) 09 - 375ms-10Mbps",
+        "🇸🇬 新加坡 (Singapore) 10 - 381ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 11 - 385ms-14Mbps",
+        "🇯🇵 日本 (Japan) 12 - 389ms-37Mbps",
+        "🇺🇸 美国 (United States) 13 - 393ms-37Mbps",
+        "🇯🇵 日本 (Japan) 14 - 399ms-20Mbps",
+        "🇺🇸 美国 (United States) 15 - 403ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 16 - 404ms-37Mbps",
+        "🇺🇸 美国 (United States) 17 - 423ms-12Mbps",
+        "🇺🇸 美国 (United States) 18 - 428ms-37Mbps",
+        "🇺🇸 美国 (United States) 19 - 432ms-18Mbps",
+        "🇸🇬 新加坡 (Singapore) 20 - 434ms-37Mbps",
+        "🇯🇵 日本 (Japan) 21 - 440ms-37Mbps",
+        "🇯🇵 日本 (Japan) 22 - 467ms-42Mbps",
+        "🇯🇵 日本 (Japan) 23 - 471ms-24Mbps",
+        "🇺🇸 美国 (United States) 24 - 477ms-37Mbps",
+        "🇯🇵 日本 (Japan) 25 - 486ms-37Mbps",
+        "🇯🇵 日本 (Japan) 26 - 488ms-37Mbps",
+        "🇺🇸 美国 (United States) 27 - 491ms-31Mbps",
+        "🇯🇵 日本 (Japan) 28 - 495ms-15Mbps",
+        "🇯🇵 日本 (Japan) 29 - 497ms-34Mbps",
+        "🇺🇸 美国 (United States) 30 - 505ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 31 - 512ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 32 - 516ms-37Mbps",
+        "🇯🇵 日本 (Japan) 33 - 518ms-17Mbps",
+        "🇯🇵 日本 (Japan) 34 - 522ms-37Mbps",
+        "🇺🇸 美国 (United States) 35 - 532ms-21Mbps",
+        "🇺🇸 美国 (United States) 36 - 560ms-16Mbps",
+        "🇸🇬 新加坡 (Singapore) 37 - 590ms-16Mbps",
+        "🇯🇵 日本 (Japan) 38 - 595ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 39 - 598ms-10Mbps",
+        "🇯🇵 日本 (Japan) 40 - 601ms-34Mbps",
+        "🇸🇬 新加坡 (Singapore) 41 - 617ms-18Mbps",
+        "🇯🇵 日本 (Japan) 42 - 639ms-37Mbps",
+        "🇺🇸 美国 (United States) 43 - 643ms-37Mbps",
+        "🇺🇸 美国 (United States) 44 - 678ms-37Mbps",
+        "🇺🇸 美国 (United States) 45 - 683ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 46 - 762ms-14Mbps",
+        "🇺🇸 美国 (United States) 47 - 766ms-37Mbps",
+        "🇺🇸 美国 (United States) 48 - 775ms-37Mbps",
+        "🇺🇸 美国 (United States) 49 - 823ms-37Mbps",
+        "🇯🇵 日本 (Japan) 50 - 845ms-16Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 51 - 877ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 52 - 898ms-37Mbps",
+        "🇺🇸 美国 (United States) 53 - 902ms-37Mbps",
+        "🇮🇳 印度 (India) 54 - 916ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 55 - 965ms-37Mbps",
+        "🇺🇸 美国 (United States) 56 - 966ms-37Mbps",
+        "🇺🇸 美国 (United States) 57 - 971ms-37Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - 146ms-8Mbps",
-        "🇺🇸 美国 (United States) 02 - 154ms-19Mbps",
-        "🇺🇸 美国 (United States) 03 - 176ms-19Mbps",
-        "🇺🇸 美国 (United States) 04 - 182ms-3Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 05 - 189ms-9Mbps",
-        "🇺🇸 美国 (United States) 06 - 194ms-19Mbps",
-        "🇺🇸 美国 (United States) 07 - 195ms-19Mbps",
-        "🇺🇸 美国 (United States) 08 - 196ms-8Mbps",
-        "🇺🇸 美国 (United States) 09 - 198ms-13Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 10 - 216ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 11 - 217ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 12 - 218ms-19Mbps",
-        "🇺🇸 美国 (United States) 13 - 231ms-19Mbps",
-        "🇺🇸 美国 (United States) 14 - 244ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 15 - 290ms-11Mbps",
-        "🇺🇸 美国 (United States) 16 - 353ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 17 - 356ms-10Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 18 - 373ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 19 - 384ms-8Mbps",
-        "🇺🇸 美国 (United States) 20 - 391ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 21 - 391ms-19Mbps",
-        "🇯🇵 日本 (Japan) 22 - 402ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 23 - 403ms-8Mbps",
-        "🇺🇸 美国 (United States) 24 - 403ms-8Mbps",
-        "🇯🇵 日本 (Japan) 25 - 405ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 26 - 406ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 27 - 421ms-8Mbps",
-        "🇯🇵 日本 (Japan) 28 - 422ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 29 - 422ms-8Mbps",
-        "🇯🇵 日本 (Japan) 30 - 423ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 31 - 424ms-7Mbps",
-        "🇯🇵 日本 (Japan) 32 - 429ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 33 - 432ms-19Mbps",
-        "🇺🇸 美国 (United States) 34 - 434ms-2Mbps",
-        "🇯🇵 日本 (Japan) 35 - 437ms-8Mbps",
-        "🇯🇵 日本 (Japan) 36 - 439ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 37 - 451ms-8Mbps",
-        "🇯🇵 日本 (Japan) 38 - 452ms-8Mbps",
-        "🇯🇵 日本 (Japan) 39 - 452ms-19Mbps",
-        "🇯🇵 日本 (Japan) 40 - 462ms-19Mbps",
-        "🇯🇵 日本 (Japan) 41 - 463ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 42 - 465ms-19Mbps",
-        "🇺🇸 美国 (United States) 43 - 471ms-18Mbps",
-        "🇲🇾 马来西亚 (Malaysia) 44 - 501ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 45 - 507ms-3Mbps",
-        "🇮🇩 印尼 (Indonesia) 46 - 564ms-8Mbps",
-        "🇯🇵 日本 (Japan) 47 - 593ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 48 - 600ms-19Mbps",
-        "🇯🇵 日本 (Japan) 49 - 634ms-19Mbps",
-        "🇺🇸 美国 (United States) 50 - 649ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 51 - 665ms-8Mbps",
-        "🇺🇸 美国 (United States) 52 - 766ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 53 - 779ms-6Mbps",
-        "🇺🇸 美国 (United States) 54 - 790ms-8Mbps",
-        "🇺🇸 美国 (United States) 55 - 814ms-19Mbps",
-        "🇯🇵 日本 (Japan) 56 - 841ms-11Mbps",
-        "🇺🇸 美国 (United States) 57 - 882ms-19Mbps",
-        "🇮🇳 印度 (India) 58 - 930ms-19Mbps",
-        "🇯🇵 日本 (Japan) 59 - 933ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 60 - 995ms-8Mbps",
-        "🇺🇸 美国 (United States) 61 - 1002ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 62 - 1050ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 63 - 1107ms-0.5Mbps",
-        "🇸🇬 新加坡 (Singapore) 64 - 1109ms-12Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 65 - 1125ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 66 - 1141ms-10Mbps",
-        "🇺🇸 美国 (United States) 67 - 1177ms-7Mbps",
-        "🇺🇸 美国 (United States) 68 - 1213ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 69 - 1222ms-3Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 70 - 1238ms-19Mbps",
-        "🇺🇸 美国 (United States) 71 - 1239ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 72 - 1272ms-8Mbps",
-        "🇮🇳 印度 (India) 73 - 1279ms-8Mbps",
-        "🇺🇸 美国 (United States) 74 - 1408ms-8Mbps",
-        "🇯🇵 日本 (Japan) 75 - 1441ms-19Mbps",
-        "🇺🇸 美国 (United States) 76 - 1453ms-10Mbps",
-        "🇸🇬 新加坡 (Singapore) 77 - 1471ms-9Mbps",
-        "🇮🇳 印度 (India) 78 - 1476ms-3Mbps",
-        "🇯🇵 日本 (Japan) 79 - 1492ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 80 - 1600ms-0.8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 81 - 1602ms-8Mbps",
-        "🇯🇵 日本 (Japan) 82 - 1611ms-12Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 83 - 1628ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 84 - 1713ms-19Mbps",
-        "🇺🇸 美国 (United States) 85 - 1723ms-19Mbps",
-        "🇸🇬 新加坡 (Singapore) 86 - 1788ms-10Mbps",
-        "🇺🇸 美国 (United States) 87 - 1933ms-12Mbps",
-        "🇸🇬 新加坡 (Singapore) 88 - 2064ms-11Mbps",
-        "🇯🇵 日本 (Japan) 89 - 2271ms-19Mbps",
-        "🇯🇵 日本 (Japan) 90 - 2512ms-8Mbps",
-        "🇺🇸 美国 (United States) 91 - 2849ms-8Mbps",
-        "🇺🇸 美国 (United States) 92 - 2927ms-19Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 93 - 3206ms-19Mbps",
-        "🇯🇵 日本 (Japan) 94 - 3500ms-19Mbps",
-        "🇺🇸 美国 (United States) 95 - 3593ms-8Mbps",
-        "🇻🇳 越南 (Vietnam) 96 - 3670ms-9Mbps",
-        "🇺🇸 美国 (United States) 97 - 4983ms-19Mbps",
-        "🇯🇵 日本 (Japan) 98 - 4999ms-19Mbps",
-        "🇺🇸 美国 (United States) 99 - 7820ms-0.3Mbps",
-        "🇰🇷 韩国 (South Korea) 100 - 8384ms-12Mbps",
-        "🇯🇵 日本 (Japan) 101 - 8951ms-19Mbps"
+        "🇺🇸 美国 (United States) 01 - 215ms-37Mbps",
+        "🇺🇸 美国 (United States) 02 - 226ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 03 - 258ms-37Mbps",
+        "🇺🇸 美国 (United States) 04 - 282ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 05 - 302ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 06 - 317ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 07 - 364ms-37Mbps",
+        "🇺🇸 美国 (United States) 08 - 369ms-24Mbps",
+        "🇯🇵 日本 (Japan) 09 - 375ms-10Mbps",
+        "🇸🇬 新加坡 (Singapore) 10 - 381ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 11 - 385ms-14Mbps",
+        "🇯🇵 日本 (Japan) 12 - 389ms-37Mbps",
+        "🇺🇸 美国 (United States) 13 - 393ms-37Mbps",
+        "🇯🇵 日本 (Japan) 14 - 399ms-20Mbps",
+        "🇺🇸 美国 (United States) 15 - 403ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 16 - 404ms-37Mbps",
+        "🇺🇸 美国 (United States) 17 - 423ms-12Mbps",
+        "🇺🇸 美国 (United States) 18 - 428ms-37Mbps",
+        "🇺🇸 美国 (United States) 19 - 432ms-18Mbps",
+        "🇸🇬 新加坡 (Singapore) 20 - 434ms-37Mbps",
+        "🇯🇵 日本 (Japan) 21 - 440ms-37Mbps",
+        "🇯🇵 日本 (Japan) 22 - 467ms-42Mbps",
+        "🇯🇵 日本 (Japan) 23 - 471ms-24Mbps",
+        "🇺🇸 美国 (United States) 24 - 477ms-37Mbps",
+        "🇯🇵 日本 (Japan) 25 - 486ms-37Mbps",
+        "🇯🇵 日本 (Japan) 26 - 488ms-37Mbps",
+        "🇺🇸 美国 (United States) 27 - 491ms-31Mbps",
+        "🇯🇵 日本 (Japan) 28 - 495ms-15Mbps",
+        "🇯🇵 日本 (Japan) 29 - 497ms-34Mbps",
+        "🇺🇸 美国 (United States) 30 - 505ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 31 - 512ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 32 - 516ms-37Mbps",
+        "🇯🇵 日本 (Japan) 33 - 518ms-17Mbps",
+        "🇯🇵 日本 (Japan) 34 - 522ms-37Mbps",
+        "🇺🇸 美国 (United States) 35 - 532ms-21Mbps",
+        "🇺🇸 美国 (United States) 36 - 560ms-16Mbps",
+        "🇸🇬 新加坡 (Singapore) 37 - 590ms-16Mbps",
+        "🇯🇵 日本 (Japan) 38 - 595ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 39 - 598ms-10Mbps",
+        "🇯🇵 日本 (Japan) 40 - 601ms-34Mbps",
+        "🇸🇬 新加坡 (Singapore) 41 - 617ms-18Mbps",
+        "🇯🇵 日本 (Japan) 42 - 639ms-37Mbps",
+        "🇺🇸 美国 (United States) 43 - 643ms-37Mbps",
+        "🇺🇸 美国 (United States) 44 - 678ms-37Mbps",
+        "🇺🇸 美国 (United States) 45 - 683ms-37Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 46 - 762ms-14Mbps",
+        "🇺🇸 美国 (United States) 47 - 766ms-37Mbps",
+        "🇺🇸 美国 (United States) 48 - 775ms-37Mbps",
+        "🇺🇸 美国 (United States) 49 - 823ms-37Mbps",
+        "🇯🇵 日本 (Japan) 50 - 845ms-16Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 51 - 877ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 52 - 898ms-37Mbps",
+        "🇺🇸 美国 (United States) 53 - 902ms-37Mbps",
+        "🇮🇳 印度 (India) 54 - 916ms-37Mbps",
+        "🇸🇬 新加坡 (Singapore) 55 - 965ms-37Mbps",
+        "🇺🇸 美国 (United States) 56 - 966ms-37Mbps",
+        "🇺🇸 美国 (United States) 57 - 971ms-37Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
