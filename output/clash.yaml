@@ -4,22 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 - 184ms-10Mbps
-  server: 43.175.131.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - 196ms-7Mbps
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - 179ms-5Mbps
   server: 68.64.179.129
   port: 443
   udp: true
@@ -34,8 +19,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 03 - 202ms-5Mbps
-  server: 45.152.64.16
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - 238ms-12Mbps
+  server: 45.207.156.146
   port: 443
   udp: true
   type: vless
@@ -49,22 +34,7 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 04 - 203ms-0.7Mbps
-  server: 68.64.182.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 05 - 205ms-9Mbps
+- name: 🇺🇸 美国 (United States) 03 - 239ms-6Mbps
   server: 38.207.176.130
   port: 443
   udp: true
@@ -79,8 +49,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - 257ms-0.6Mbps
-  server: 207.57.132.107
+- name: 🇺🇸 美国 (United States) 04 - 317ms-7Mbps
+  server: 192.124.176.70
   port: 443
   udp: true
   type: vless
@@ -94,8 +64,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 07 - 261ms-10Mbps
-  server: 45.152.64.39
+- name: 🇺🇸 美国 (United States) 05 - 332ms-8Mbps
+  server: 172.236.140.241
   port: 443
   udp: true
   type: vless
@@ -109,38 +79,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇰🇷 韩国 (South Korea) 08 - 298ms-34Mbps
-  server: kr3-r.link-t7.com
-  port: 10048
-  udp: true
-  type: vless
-  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 🇰🇷 韩国 (South Korea) 09 - 311ms-33Mbps
-  server: kr4-r.link-t7.com
-  port: 10049
-  udp: true
-  type: vless
-  uuid: 7134DB35-F254-4468-BA00-D9C099CF5AF7
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 🇺🇸 美国 (United States) 10 - 364ms-10Mbps
-  server: 149.104.25.194
+- name: 🇺🇸 美国 (United States) 06 - 351ms-9Mbps
+  server: 47.57.233.212
   port: 443
   udp: true
   type: vless
@@ -154,8 +94,38 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 11 - 386ms-10Mbps
-  server: 45.192.204.72
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - 383ms-7Mbps
+  server: 191.223.217.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - 383ms-6Mbps
+  server: 47.76.171.37
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇯🇵 日本 (Japan) 09 - 410ms-8Mbps
+  server: 139.162.70.21
   port: 443
   udp: true
   type: vless
@@ -169,8 +139,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 12 - 589ms-1Mbps
-  server: 38.147.171.13
+- name: 🇸🇬 新加坡 (Singapore) 10 - 418ms-9Mbps
+  server: 77.93.90.177
   port: 443
   udp: true
   type: vless
@@ -184,46 +154,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇮🇳 印度 (India) 13 - 606ms-10Mbps
-  server: 65.2.178.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 14 - 614ms-11Mbps
-  server: 65.2.191.73
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 15 - 734ms-9Mbps
-  server: 129.151.69.214
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Mugk0D+By809yuKRT7iJbLeu37gwDKouQWai+3oCYk=
-- name: 🇺🇸 美国 (United States) 16 - 740ms-7Mbps
-  server: 165.140.217.56
-  port: 443
-  udp: true
-  type: vmess
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 17 - 807ms-8Mbps
-  server: 3.144.113.215
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇹🇼 中国台湾 (Taiwan) 18 - 943ms-1Mbps
-  server: 103.137.22.71
+- name: 🇯🇵 日本 (Japan) 11 - 422ms-11Mbps
+  server: 154.19.187.190
   port: 443
   udp: true
   type: vless
@@ -237,8 +169,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 19 - 964ms-7Mbps
-  server: 151.242.189.162
+- name: 🇯🇵 日本 (Japan) 12 - 431ms-11Mbps
+  server: 52.194.151.107
   port: 443
   udp: true
   type: vless
@@ -252,15 +184,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 20 - 1009ms-22Mbps
-  server: 18.226.104.155
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 21 - 1051ms-5Mbps
-  server: 193.41.5.1
+- name: 🇸🇬 新加坡 (Singapore) 13 - 441ms-4Mbps
+  server: 139.59.114.19
   port: 443
   udp: true
   type: vless
@@ -274,16 +199,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇫🇷 法国 (France) 22 - 1055ms-4Mbps
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - 1075ms-17Mbps
-  server: 198.13.33.64
+- name: 🇸🇬 新加坡 (Singapore) 14 - 446ms-7Mbps
+  server: 206.189.158.106
   port: 443
   udp: true
   type: vless
@@ -297,8 +214,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇦 乌克兰 (Ukraine) 24 - 1101ms-2Mbps
-  server: 91.196.163.130
+- name: 🇯🇵 日本 (Japan) 15 - 456ms-7Mbps
+  server: 137.220.225.56
   port: 443
   udp: true
   type: vless
@@ -312,14 +229,172 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇷🇺 俄罗斯 (Russia) 25 - 1104ms-2Mbps
-  server: 81.163.27.63
-  port: 30269
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - 469ms-9Mbps
+  server: 43.159.4.80
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Istocnik-@V2SPEED_VPNS
-- name: 🇮🇳 印度 (India) 26 - 1105ms-2Mbps
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇸🇬 新加坡 (Singapore) 17 - 480ms-7Mbps
+  server: 45.92.158.145
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - 489ms-6Mbps
+  server: 85.121.51.14
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇸🇬 新加坡 (Singapore) 19 - 500ms-9Mbps
+  server: 129.212.232.220
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 20 - 605ms-8Mbps
+  server: 18.140.28.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇯🇵 日本 (Japan) 21 - 658ms-11Mbps
+  server: 74.222.12.91
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - 691ms-9Mbps
+  server: 45.8.186.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇯🇵 日本 (Japan) 23 - 1105ms-11Mbps
+  server: 82.22.26.141
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇮🇳 印度 (India) 24 - 1239ms-6Mbps
+  server: 139.84.156.127
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - 2149ms-10Mbps
+  server: 156.226.168.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 26 - 2500ms-8Mbps
+  server: 137.220.225.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇮🇳 印度 (India) 27 - 3519ms-5Mbps
   server: 5.253.28.110
   port: 443
   udp: true
@@ -334,23 +409,8 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 27 - 1133ms-4Mbps
-  server: 2.27.109.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: b82330a7-c64a-46a4-b109-e71b63cb26c4
-  tls: true
-  servername: thus-k.netnode.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /t.me/daily_free_vpn
-    headers:
-      Host: thus-k.netnode.cc.cd
-- name: 🇭🇰 中国香港 (Hong Kong) 28 - 1178ms-4Mbps
-  server: 95.182.95.75
+- name: 🇸🇬 新加坡 (Singapore) 28 - 4720ms-8Mbps
+  server: 50.7.21.174
   port: 443
   udp: true
   type: vless
@@ -364,537 +424,71 @@ proxies:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇪🇸 西班牙 (Spain) 29 - 1238ms-0.6Mbps
-  server: 151.242.159.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇪🇸 西班牙 (Spain) 30 - 1316ms-5Mbps
-  server: 141.253.194.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇳🇱 荷兰 (Netherlands) 31 - 1392ms-9Mbps
-  server: apikml-production-2e4a.up.railway.app
-  port: 443
-  udp: true
-  type: vless
-  uuid: d8c37123-3cfa-493f-a58e-74ed5b7412b1
-  tls: true
-  servername: apikml-production-2e4a.up.railway.app
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/d8c37123-3cfa-493f-a58e-74ed5b7412b1
-    headers:
-      Host: apikml-production-2e4a.up.railway.app
-- name: 🇦🇹 奥地利 (Austria) 32 - 1422ms-0.7Mbps
-  server: 193.124.56.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 33 - 1449ms-6Mbps
-  server: 38.207.179.77
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇧🇬 保加利亚 (Bulgaria) 34 - 1460ms-1Mbps
-  server: 62.171.228.112
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇲🇽 墨西哥 (Mexico) 35 - 1497ms-6Mbps
-  server: 216.238.79.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇬🇷 希腊 (Greece) 36 - 1532ms-6Mbps
-  server: 83.147.216.8
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇲🇾 马来西亚 (Malaysia) 37 - 1541ms-5Mbps
-  server: 47.254.229.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇩🇪 德国 (Germany) 38 - 1573ms-6Mbps
-  server: 84.22.150.244
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 39 - 1574ms-0.8Mbps
-  server: 188.220.205.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇧🇾 白俄罗斯 (Belarus) 40 - 1579ms-0.6Mbps
-  server: 191.44.32.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 41 - 1667ms-8Mbps
-  server: www.wto.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: hk.152568.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /cdn/packages/runtime-core.tar.gz
-    headers:
-      Host: hk.152568.xyz
-- name: 🇺🇸 美国 (United States) 42 - 1674ms-5Mbps
-  server: 213.176.112.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇲🇰 MK 43 - 1675ms-5Mbps
-  server: 89.185.82.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 44 - 1683ms-6Mbps
-  server: 46.8.194.76
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 45 - 1718ms-4Mbps
-  server: 188.241.54.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 46 - 1971ms-5Mbps
-  server: 203.202.232.211
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇩🇪 德国 (Germany) 47 - 2009ms-1Mbps
-  server: 45.136.57.82
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇦🇺 澳大利亚 (Australia) 48 - 2440ms-4Mbps
-  server: 139.84.205.230
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇹🇷 土耳其 (Turkey) 49 - 3010ms-5Mbps
-  server: trexnet1.trexnet.cfd
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12726f0b-ff88-4082-85c2-a18e5356f41c
-  tls: true
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  servername: www.upwork.com
-  client-fingerprint: chrome
-- name: 🇺🇦 乌克兰 (Ukraine) 50 - 3558ms-6Mbps
-  server: 193.41.5.121
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇦🇹 奥地利 (Austria) 51 - 3645ms-1Mbps
-  server: 95.163.176.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 52 - 3892ms-1Mbps
-  server: 168.110.112.196
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇷🇴 罗马尼亚 (Romania) 53 - 4252ms-4Mbps
-  server: 185.163.45.40
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇮🇪 爱尔兰 (Ireland) 54 - 4710ms-6Mbps
-  server: 63.32.194.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 55 - 9694ms-5Mbps
-  server: 141.11.87.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇸🇬 新加坡 (Singapore) 56 - 10915ms-2Mbps
-  server: mszz.mangshe.xyz
-  port: 20562
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 - 184ms-10Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 02 - 196ms-7Mbps
-  - 🇺🇸 美国 (United States) 03 - 202ms-5Mbps
-  - 🇺🇸 美国 (United States) 04 - 203ms-0.7Mbps
-  - 🇺🇸 美国 (United States) 05 - 205ms-9Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 06 - 257ms-0.6Mbps
-  - 🇺🇸 美国 (United States) 07 - 261ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 08 - 298ms-34Mbps
-  - 🇰🇷 韩国 (South Korea) 09 - 311ms-33Mbps
-  - 🇺🇸 美国 (United States) 10 - 364ms-10Mbps
-  - 🇺🇸 美国 (United States) 11 - 386ms-10Mbps
-  - 🇺🇸 美国 (United States) 12 - 589ms-1Mbps
-  - 🇮🇳 印度 (India) 13 - 606ms-10Mbps
-  - 🇮🇳 印度 (India) 14 - 614ms-11Mbps
-  - 🇬🇧 英国 (United Kingdom) 15 - 734ms-9Mbps
-  - 🇺🇸 美国 (United States) 16 - 740ms-7Mbps
-  - 🇺🇸 美国 (United States) 17 - 807ms-8Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 18 - 943ms-1Mbps
-  - 🇺🇸 美国 (United States) 19 - 964ms-7Mbps
-  - 🇺🇸 美国 (United States) 20 - 1009ms-22Mbps
-  - 🇺🇸 美国 (United States) 21 - 1051ms-5Mbps
-  - 🇫🇷 法国 (France) 22 - 1055ms-4Mbps
-  - 🇯🇵 日本 (Japan) 23 - 1075ms-17Mbps
-  - 🇺🇦 乌克兰 (Ukraine) 24 - 1101ms-2Mbps
-  - 🇷🇺 俄罗斯 (Russia) 25 - 1104ms-2Mbps
-  - 🇮🇳 印度 (India) 26 - 1105ms-2Mbps
-  - 🇺🇸 美国 (United States) 27 - 1133ms-4Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 28 - 1178ms-4Mbps
-  - 🇪🇸 西班牙 (Spain) 29 - 1238ms-0.6Mbps
-  - 🇪🇸 西班牙 (Spain) 30 - 1316ms-5Mbps
-  - 🇳🇱 荷兰 (Netherlands) 31 - 1392ms-9Mbps
-  - 🇦🇹 奥地利 (Austria) 32 - 1422ms-0.7Mbps
-  - 🇺🇸 美国 (United States) 33 - 1449ms-6Mbps
-  - 🇧🇬 保加利亚 (Bulgaria) 34 - 1460ms-1Mbps
-  - 🇲🇽 墨西哥 (Mexico) 35 - 1497ms-6Mbps
-  - 🇬🇷 希腊 (Greece) 36 - 1532ms-6Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 37 - 1541ms-5Mbps
-  - 🇩🇪 德国 (Germany) 38 - 1573ms-6Mbps
-  - 🇺🇸 美国 (United States) 39 - 1574ms-0.8Mbps
-  - 🇧🇾 白俄罗斯 (Belarus) 40 - 1579ms-0.6Mbps
-  - 🇺🇸 美国 (United States) 41 - 1667ms-8Mbps
-  - 🇺🇸 美国 (United States) 42 - 1674ms-5Mbps
-  - 🇲🇰 MK 43 - 1675ms-5Mbps
-  - 🇺🇸 美国 (United States) 44 - 1683ms-6Mbps
-  - 🇺🇸 美国 (United States) 45 - 1718ms-4Mbps
-  - 🇺🇸 美国 (United States) 46 - 1971ms-5Mbps
-  - 🇩🇪 德国 (Germany) 47 - 2009ms-1Mbps
-  - 🇦🇺 澳大利亚 (Australia) 48 - 2440ms-4Mbps
-  - 🇹🇷 土耳其 (Turkey) 49 - 3010ms-5Mbps
-  - 🇺🇦 乌克兰 (Ukraine) 50 - 3558ms-6Mbps
-  - 🇦🇹 奥地利 (Austria) 51 - 3645ms-1Mbps
-  - 🇺🇸 美国 (United States) 52 - 3892ms-1Mbps
-  - 🇷🇴 罗马尼亚 (Romania) 53 - 4252ms-4Mbps
-  - 🇮🇪 爱尔兰 (Ireland) 54 - 4710ms-6Mbps
-  - 🇺🇸 美国 (United States) 55 - 9694ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 56 - 10915ms-2Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 179ms-5Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 238ms-12Mbps
+  - 🇺🇸 美国 (United States) 03 - 239ms-6Mbps
+  - 🇺🇸 美国 (United States) 04 - 317ms-7Mbps
+  - 🇺🇸 美国 (United States) 05 - 332ms-8Mbps
+  - 🇺🇸 美国 (United States) 06 - 351ms-9Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 07 - 383ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 383ms-6Mbps
+  - 🇯🇵 日本 (Japan) 09 - 410ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 10 - 418ms-9Mbps
+  - 🇯🇵 日本 (Japan) 11 - 422ms-11Mbps
+  - 🇯🇵 日本 (Japan) 12 - 431ms-11Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 441ms-4Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 446ms-7Mbps
+  - 🇯🇵 日本 (Japan) 15 - 456ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 16 - 469ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 17 - 480ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 18 - 489ms-6Mbps
+  - 🇸🇬 新加坡 (Singapore) 19 - 500ms-9Mbps
+  - 🇺🇸 美国 (United States) 20 - 605ms-8Mbps
+  - 🇯🇵 日本 (Japan) 21 - 658ms-11Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 22 - 691ms-9Mbps
+  - 🇯🇵 日本 (Japan) 23 - 1105ms-11Mbps
+  - 🇮🇳 印度 (India) 24 - 1239ms-6Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 25 - 2149ms-10Mbps
+  - 🇺🇸 美国 (United States) 26 - 2500ms-8Mbps
+  - 🇮🇳 印度 (India) 27 - 3519ms-5Mbps
+  - 🇸🇬 新加坡 (Singapore) 28 - 4720ms-8Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 - 184ms-10Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 02 - 196ms-7Mbps
-  - 🇺🇸 美国 (United States) 03 - 202ms-5Mbps
-  - 🇺🇸 美国 (United States) 04 - 203ms-0.7Mbps
-  - 🇺🇸 美国 (United States) 05 - 205ms-9Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 06 - 257ms-0.6Mbps
-  - 🇺🇸 美国 (United States) 07 - 261ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 08 - 298ms-34Mbps
-  - 🇰🇷 韩国 (South Korea) 09 - 311ms-33Mbps
-  - 🇺🇸 美国 (United States) 10 - 364ms-10Mbps
-  - 🇺🇸 美国 (United States) 11 - 386ms-10Mbps
-  - 🇺🇸 美国 (United States) 12 - 589ms-1Mbps
-  - 🇮🇳 印度 (India) 13 - 606ms-10Mbps
-  - 🇮🇳 印度 (India) 14 - 614ms-11Mbps
-  - 🇬🇧 英国 (United Kingdom) 15 - 734ms-9Mbps
-  - 🇺🇸 美国 (United States) 16 - 740ms-7Mbps
-  - 🇺🇸 美国 (United States) 17 - 807ms-8Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 18 - 943ms-1Mbps
-  - 🇺🇸 美国 (United States) 19 - 964ms-7Mbps
-  - 🇺🇸 美国 (United States) 20 - 1009ms-22Mbps
-  - 🇺🇸 美国 (United States) 21 - 1051ms-5Mbps
-  - 🇫🇷 法国 (France) 22 - 1055ms-4Mbps
-  - 🇯🇵 日本 (Japan) 23 - 1075ms-17Mbps
-  - 🇺🇦 乌克兰 (Ukraine) 24 - 1101ms-2Mbps
-  - 🇷🇺 俄罗斯 (Russia) 25 - 1104ms-2Mbps
-  - 🇮🇳 印度 (India) 26 - 1105ms-2Mbps
-  - 🇺🇸 美国 (United States) 27 - 1133ms-4Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 28 - 1178ms-4Mbps
-  - 🇪🇸 西班牙 (Spain) 29 - 1238ms-0.6Mbps
-  - 🇪🇸 西班牙 (Spain) 30 - 1316ms-5Mbps
-  - 🇳🇱 荷兰 (Netherlands) 31 - 1392ms-9Mbps
-  - 🇦🇹 奥地利 (Austria) 32 - 1422ms-0.7Mbps
-  - 🇺🇸 美国 (United States) 33 - 1449ms-6Mbps
-  - 🇧🇬 保加利亚 (Bulgaria) 34 - 1460ms-1Mbps
-  - 🇲🇽 墨西哥 (Mexico) 35 - 1497ms-6Mbps
-  - 🇬🇷 希腊 (Greece) 36 - 1532ms-6Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 37 - 1541ms-5Mbps
-  - 🇩🇪 德国 (Germany) 38 - 1573ms-6Mbps
-  - 🇺🇸 美国 (United States) 39 - 1574ms-0.8Mbps
-  - 🇧🇾 白俄罗斯 (Belarus) 40 - 1579ms-0.6Mbps
-  - 🇺🇸 美国 (United States) 41 - 1667ms-8Mbps
-  - 🇺🇸 美国 (United States) 42 - 1674ms-5Mbps
-  - 🇲🇰 MK 43 - 1675ms-5Mbps
-  - 🇺🇸 美国 (United States) 44 - 1683ms-6Mbps
-  - 🇺🇸 美国 (United States) 45 - 1718ms-4Mbps
-  - 🇺🇸 美国 (United States) 46 - 1971ms-5Mbps
-  - 🇩🇪 德国 (Germany) 47 - 2009ms-1Mbps
-  - 🇦🇺 澳大利亚 (Australia) 48 - 2440ms-4Mbps
-  - 🇹🇷 土耳其 (Turkey) 49 - 3010ms-5Mbps
-  - 🇺🇦 乌克兰 (Ukraine) 50 - 3558ms-6Mbps
-  - 🇦🇹 奥地利 (Austria) 51 - 3645ms-1Mbps
-  - 🇺🇸 美国 (United States) 52 - 3892ms-1Mbps
-  - 🇷🇴 罗马尼亚 (Romania) 53 - 4252ms-4Mbps
-  - 🇮🇪 爱尔兰 (Ireland) 54 - 4710ms-6Mbps
-  - 🇺🇸 美国 (United States) 55 - 9694ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 56 - 10915ms-2Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 179ms-5Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 238ms-12Mbps
+  - 🇺🇸 美国 (United States) 03 - 239ms-6Mbps
+  - 🇺🇸 美国 (United States) 04 - 317ms-7Mbps
+  - 🇺🇸 美国 (United States) 05 - 332ms-8Mbps
+  - 🇺🇸 美国 (United States) 06 - 351ms-9Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 07 - 383ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 383ms-6Mbps
+  - 🇯🇵 日本 (Japan) 09 - 410ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 10 - 418ms-9Mbps
+  - 🇯🇵 日本 (Japan) 11 - 422ms-11Mbps
+  - 🇯🇵 日本 (Japan) 12 - 431ms-11Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 441ms-4Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 446ms-7Mbps
+  - 🇯🇵 日本 (Japan) 15 - 456ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 16 - 469ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 17 - 480ms-7Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 18 - 489ms-6Mbps
+  - 🇸🇬 新加坡 (Singapore) 19 - 500ms-9Mbps
+  - 🇺🇸 美国 (United States) 20 - 605ms-8Mbps
+  - 🇯🇵 日本 (Japan) 21 - 658ms-11Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 22 - 691ms-9Mbps
+  - 🇯🇵 日本 (Japan) 23 - 1105ms-11Mbps
+  - 🇮🇳 印度 (India) 24 - 1239ms-6Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 25 - 2149ms-10Mbps
+  - 🇺🇸 美国 (United States) 26 - 2500ms-8Mbps
+  - 🇮🇳 印度 (India) 27 - 3519ms-5Mbps
+  - 🇸🇬 新加坡 (Singapore) 28 - 4720ms-8Mbps
 rules:
 - MATCH,PROXIES
