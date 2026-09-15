@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps",
+      "tag": "🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps",
       "server": "31.76.7.154",
       "server_port": 7443,
       "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps"
+        "🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps"
+        "🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

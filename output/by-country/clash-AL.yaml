@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - 621ms-8Mbps
+- name: 🇦🇱 AL 01 - 1393ms-7Mbps
   server: 130.49.189.158
   port: 43558
   udp: true
@@ -16,12 +16,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - 621ms-8Mbps
+  - 🇦🇱 AL 01 - 1393ms-7Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - 621ms-8Mbps
+  - 🇦🇱 AL 01 - 1393ms-7Mbps
 rules:
 - MATCH,PROXIES

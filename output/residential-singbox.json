@@ -4,32 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps",
-      "server": "104.24.30.89",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 502ms-10Mbps",
-      "server": "36.224.152.189",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - 487ms-9Mbps",
+      "server": "R3MRCG001287H3P.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
@@ -39,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 502ms-10Mbps"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - 487ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 502ms-10Mbps"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - 487ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

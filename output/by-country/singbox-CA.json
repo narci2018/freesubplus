@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - 243ms-30Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 01 - 190ms-26Mbps",
       "server": "149.22.95.183",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -13,84 +13,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - 275ms-19Mbps",
-      "server": "51.222.200.165",
-      "server_port": 5000,
+      "tag": "🇨🇦 加拿大 (Canada) 02 - 300ms-21Mbps",
+      "server": "166.88.130.218",
+      "server_port": 7018,
       "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - 276ms-5Mbps",
-      "server": "51.222.107.43",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
+      "password": "fbcec76953a2d173"
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - 292ms-16Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - 354ms-20Mbps",
       "server": "23.162.200.198",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - 295ms-75Mbps",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - 323ms-23Mbps",
-      "server": "216.152.147.28",
-      "server_port": 443,
-      "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
-          "short_id": "b9f8d3f8"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - 323ms-17Mbps",
-      "server": "51.222.141.125",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - 329ms-6Mbps",
-      "server": "51.79.49.116",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - 333ms-13Mbps",
-      "server": "51.222.12.127",
-      "server_port": 445,
-      "method": "aes-256-gcm",
-      "password": "zDNVedRFPQexG9v"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - 352ms-21Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - 398ms-19Mbps",
       "server": "15.223.122.197",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -101,16 +40,41 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - 386ms-13Mbps",
-      "server": "51.79.85.185",
-      "server_port": 8118,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - 450ms-9Mbps",
+      "server": "184.107.106.68",
+      "server_port": 443,
+      "uuid": "716426fa-bcb7-4eb9-b460-36399ebf740d",
+      "tls": {
+        "enabled": true,
+        "server_name": "lizca2.footballfantasyforum.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 12 - 423ms-15Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - 459ms-23Mbps",
+      "server": "216.152.147.28",
+      "server_port": 443,
+      "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
+          "short_id": "b9f8d3f8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - 469ms-20Mbps",
       "server": "130.107.73.148",
       "server_port": 41373,
       "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce",
@@ -131,7 +95,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 13 - 453ms-17Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - 514ms-16Mbps",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -141,7 +105,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -151,52 +115,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - 455ms-18Mbps",
-      "server": "51.222.155.32",
-      "server_port": 5003,
-      "method": "aes-256-gcm",
-      "password": "g5MeD6Ft3CWlJId"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - 475ms-17Mbps",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - 478ms-19Mbps",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 17 - 527ms-16Mbps",
-      "server": "51.79.64.198",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 18 - 595ms-16Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - 562ms-17Mbps",
       "server": "158.69.112.254",
       "server_port": 443,
       "uuid": "661f395d-b153-4199-a04b-693f5fe7f261",
@@ -217,7 +137,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 19 - 608ms-16Mbps",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - 634ms-16Mbps",
       "server": "66.70.179.124",
       "server_port": 443,
       "uuid": "c8f9e08d-7d07-4059-9f71-0b014b9e0ec7",
@@ -227,7 +147,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -237,64 +157,122 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - 827ms-20Mbps",
+      "server": "vpn-ca-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 20 - 1428ms-16Mbps",
-      "server": "51.222.136.236",
+      "tag": "🇨🇦 加拿大 (Canada) 12 - 972ms-18Mbps",
+      "server": "51.222.141.125",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 13 - 1143ms-8Mbps",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - 1647ms-15Mbps",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - 2829ms-23Mbps",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - 4625ms-3Mbps",
+      "server": "51.79.49.116",
       "server_port": 8882,
       "method": "aes-256-gcm",
       "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - 5740ms-5Mbps",
+      "server": "51.79.85.185",
+      "server_port": 8118,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - 243ms-30Mbps",
-        "🇨🇦 加拿大 (Canada) 02 - 275ms-19Mbps",
-        "🇨🇦 加拿大 (Canada) 03 - 276ms-5Mbps",
-        "🇨🇦 加拿大 (Canada) 04 - 292ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 05 - 295ms-75Mbps",
-        "🇨🇦 加拿大 (Canada) 06 - 323ms-23Mbps",
-        "🇨🇦 加拿大 (Canada) 07 - 323ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 08 - 329ms-6Mbps",
-        "🇨🇦 加拿大 (Canada) 09 - 333ms-13Mbps",
-        "🇨🇦 加拿大 (Canada) 10 - 352ms-21Mbps",
-        "🇨🇦 加拿大 (Canada) 11 - 386ms-13Mbps",
-        "🇨🇦 加拿大 (Canada) 12 - 423ms-15Mbps",
-        "🇨🇦 加拿大 (Canada) 13 - 453ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 14 - 455ms-18Mbps",
-        "🇨🇦 加拿大 (Canada) 15 - 475ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 16 - 478ms-19Mbps",
-        "🇨🇦 加拿大 (Canada) 17 - 527ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 18 - 595ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 19 - 608ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 20 - 1428ms-16Mbps"
+        "🇨🇦 加拿大 (Canada) 01 - 190ms-26Mbps",
+        "🇨🇦 加拿大 (Canada) 02 - 300ms-21Mbps",
+        "🇨🇦 加拿大 (Canada) 03 - 354ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 04 - 398ms-19Mbps",
+        "🇨🇦 加拿大 (Canada) 05 - 450ms-9Mbps",
+        "🇨🇦 加拿大 (Canada) 06 - 459ms-23Mbps",
+        "🇨🇦 加拿大 (Canada) 07 - 469ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 08 - 514ms-16Mbps",
+        "🇨🇦 加拿大 (Canada) 09 - 562ms-17Mbps",
+        "🇨🇦 加拿大 (Canada) 10 - 634ms-16Mbps",
+        "🇨🇦 加拿大 (Canada) 11 - 827ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 12 - 972ms-18Mbps",
+        "🇨🇦 加拿大 (Canada) 13 - 1143ms-8Mbps",
+        "🇨🇦 加拿大 (Canada) 14 - 1647ms-15Mbps",
+        "🇨🇦 加拿大 (Canada) 15 - 2829ms-23Mbps",
+        "🇨🇦 加拿大 (Canada) 16 - 4625ms-3Mbps",
+        "🇨🇦 加拿大 (Canada) 17 - 5740ms-5Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - 243ms-30Mbps",
-        "🇨🇦 加拿大 (Canada) 02 - 275ms-19Mbps",
-        "🇨🇦 加拿大 (Canada) 03 - 276ms-5Mbps",
-        "🇨🇦 加拿大 (Canada) 04 - 292ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 05 - 295ms-75Mbps",
-        "🇨🇦 加拿大 (Canada) 06 - 323ms-23Mbps",
-        "🇨🇦 加拿大 (Canada) 07 - 323ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 08 - 329ms-6Mbps",
-        "🇨🇦 加拿大 (Canada) 09 - 333ms-13Mbps",
-        "🇨🇦 加拿大 (Canada) 10 - 352ms-21Mbps",
-        "🇨🇦 加拿大 (Canada) 11 - 386ms-13Mbps",
-        "🇨🇦 加拿大 (Canada) 12 - 423ms-15Mbps",
-        "🇨🇦 加拿大 (Canada) 13 - 453ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 14 - 455ms-18Mbps",
-        "🇨🇦 加拿大 (Canada) 15 - 475ms-17Mbps",
-        "🇨🇦 加拿大 (Canada) 16 - 478ms-19Mbps",
-        "🇨🇦 加拿大 (Canada) 17 - 527ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 18 - 595ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 19 - 608ms-16Mbps",
-        "🇨🇦 加拿大 (Canada) 20 - 1428ms-16Mbps"
+        "🇨🇦 加拿大 (Canada) 01 - 190ms-26Mbps",
+        "🇨🇦 加拿大 (Canada) 02 - 300ms-21Mbps",
+        "🇨🇦 加拿大 (Canada) 03 - 354ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 04 - 398ms-19Mbps",
+        "🇨🇦 加拿大 (Canada) 05 - 450ms-9Mbps",
+        "🇨🇦 加拿大 (Canada) 06 - 459ms-23Mbps",
+        "🇨🇦 加拿大 (Canada) 07 - 469ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 08 - 514ms-16Mbps",
+        "🇨🇦 加拿大 (Canada) 09 - 562ms-17Mbps",
+        "🇨🇦 加拿大 (Canada) 10 - 634ms-16Mbps",
+        "🇨🇦 加拿大 (Canada) 11 - 827ms-20Mbps",
+        "🇨🇦 加拿大 (Canada) 12 - 972ms-18Mbps",
+        "🇨🇦 加拿大 (Canada) 13 - 1143ms-8Mbps",
+        "🇨🇦 加拿大 (Canada) 14 - 1647ms-15Mbps",
+        "🇨🇦 加拿大 (Canada) 15 - 2829ms-23Mbps",
+        "🇨🇦 加拿大 (Canada) 16 - 4625ms-3Mbps",
+        "🇨🇦 加拿大 (Canada) 17 - 5740ms-5Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,25 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps",
-      "server": "104.24.30.89",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - 896ms-7Mbps",
+      "server": "104.16.71.213",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/assignment",
         "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -31,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps"
+        "🌐 其他地区 (Other) 01 - 896ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - 181ms-10Mbps"
+        "🌐 其他地区 (Other) 01 - 896ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,49 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 - 602ms-9Mbps
+- name: 🇫🇮 芬兰 (Finland) 01 - 641ms-8Mbps
   server: 65.109.215.118
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇫🇮 芬兰 (Finland) 02 - 623ms-9Mbps
-  server: 65.109.205.148
-  port: 9097
-  udp: true
-  type: vless
-  uuid: Channel:telegram:TurboConfigs
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 03 - 718ms-8Mbps
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - 727ms-8Mbps
-  server: fl.windconnect.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
-    short-id: 3c6ec7b2d73a28b6
-  servername: fl.windconnect.pro
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 05 - 732ms-9Mbps
+- name: 🇫🇮 芬兰 (Finland) 02 - 743ms-8Mbps
   server: 31.77.199.182
   port: 443
   udp: true
@@ -59,7 +24,48 @@ proxies:
     short-id: abcd1234
   servername: fi2.yservice.help
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - 919ms-8Mbps
+- name: 🇫🇮 芬兰 (Finland) 03 - 776ms-9Mbps
+  server: 151.101.56.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  tls: true
+  servername: global.fastly.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 芬兰 (Finland) 04 - 798ms-7Mbps
+  server: fl.windconnect.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  servername: fl.windconnect.pro
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 05 - 828ms-11Mbps
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-se-02.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: se02-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 06 - 1036ms-8Mbps
   server: 31.76.88.10
   port: 443
   udp: true
@@ -74,27 +80,87 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 07 - 1305ms-6Mbps
+  server: prep.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - 1792ms-4Mbps
+  server: 107.181.151.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - 1931ms-4Mbps
+  server: 87.239.249.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
+    short-id: 91af08b1ce1f
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - 2044ms-3Mbps
+  server: staging.lastilhame.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5a018643df03
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 - 602ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 02 - 623ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 03 - 718ms-8Mbps
-  - 🇫🇮 芬兰 (Finland) 04 - 727ms-8Mbps
-  - 🇫🇮 芬兰 (Finland) 05 - 732ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 06 - 919ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 01 - 641ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 02 - 743ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 03 - 776ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 04 - 798ms-7Mbps
+  - 🇫🇮 芬兰 (Finland) 05 - 828ms-11Mbps
+  - 🇫🇮 芬兰 (Finland) 06 - 1036ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 07 - 1305ms-6Mbps
+  - 🇫🇮 芬兰 (Finland) 08 - 1792ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 09 - 1931ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 10 - 2044ms-3Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 - 602ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 02 - 623ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 03 - 718ms-8Mbps
-  - 🇫🇮 芬兰 (Finland) 04 - 727ms-8Mbps
-  - 🇫🇮 芬兰 (Finland) 05 - 732ms-9Mbps
-  - 🇫🇮 芬兰 (Finland) 06 - 919ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 01 - 641ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 02 - 743ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 03 - 776ms-9Mbps
+  - 🇫🇮 芬兰 (Finland) 04 - 798ms-7Mbps
+  - 🇫🇮 芬兰 (Finland) 05 - 828ms-11Mbps
+  - 🇫🇮 芬兰 (Finland) 06 - 1036ms-8Mbps
+  - 🇫🇮 芬兰 (Finland) 07 - 1305ms-6Mbps
+  - 🇫🇮 芬兰 (Finland) 08 - 1792ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 09 - 1931ms-4Mbps
+  - 🇫🇮 芬兰 (Finland) 10 - 2044ms-3Mbps
 rules:
 - MATCH,PROXIES

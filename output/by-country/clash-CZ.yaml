@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps
+- name: 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
   server: 31.76.7.154
   port: 7443
   udp: true
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - 780ms-9Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1231ms-8Mbps
 rules:
 - MATCH,PROXIES

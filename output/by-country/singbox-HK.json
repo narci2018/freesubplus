@@ -4,42 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - 788ms-8Mbps",
-      "server": "156.226.168.221",
-      "server_port": 35193,
-      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-          "short_id": "e8daed2d"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 - 686ms-8Mbps",
+      "server": "103.136.150.95",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "XTy3WkCf95LVBY7x"
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 809ms-10Mbps",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 709ms-10Mbps",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - 752ms-9Mbps",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - 830ms-9Mbps",
-      "server": "vj37-1936vtw.fincore.top",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - 807ms-9Mbps",
+      "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
       "flow": "xtls-rprx-vision",
@@ -48,7 +47,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -58,44 +57,61 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - 897ms-9Mbps",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - 837ms-8Mbps",
+      "server": "hk-1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "e016d072-ed97-40d4-a83f-04c00f8df2a5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8",
+          "short_id": "d5b538acf8a93540"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - 1007ms-9Mbps",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - 926ms-9Mbps",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "https://t.me/wangcai2рҹүрҹү",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - 3103ms-1Mbps",
-      "server": "156.245.232.239",
-      "server_port": 35043,
-      "uuid": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - 1231ms-2Mbps",
+      "server": "47.238.210.5",
+      "server_port": 13779,
+      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "tls": {
+        "enabled": true,
+        "server_name": "tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
+          "short_id": "af1bdd293097b664"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - 15741ms-0.6Mbps",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - 1290ms-0.7Mbps",
       "server": "mz.hkychina.com",
       "server_port": 8443,
       "password": "HysTeria2026!Proxy",
@@ -106,30 +122,69 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - 2888ms-0.6Mbps",
+      "server": "156.226.168.221",
+      "server_port": 35193,
+      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
+          "short_id": "e8daed2d"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - 3779ms-9Mbps",
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "119.246.1.143",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 - 788ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 809ms-10Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 03 - 830ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 04 - 897ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 05 - 1007ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 06 - 3103ms-1Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 07 - 15741ms-0.6Mbps"
+        "🇭🇰 中国香港 (Hong Kong) 01 - 686ms-8Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 02 - 709ms-10Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 03 - 752ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 04 - 807ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 05 - 837ms-8Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 06 - 926ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 07 - 1231ms-2Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 08 - 1290ms-0.7Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 09 - 2888ms-0.6Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 10 - 3779ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 - 788ms-8Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 02 - 809ms-10Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 03 - 830ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 04 - 897ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 05 - 1007ms-9Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 06 - 3103ms-1Mbps",
-        "🇭🇰 中国香港 (Hong Kong) 07 - 15741ms-0.6Mbps"
+        "🇭🇰 中国香港 (Hong Kong) 01 - 686ms-8Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 02 - 709ms-10Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 03 - 752ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 04 - 807ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 05 - 837ms-8Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 06 - 926ms-9Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 07 - 1231ms-2Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 08 - 1290ms-0.7Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 09 - 2888ms-0.6Mbps",
+        "🇭🇰 中国香港 (Hong Kong) 10 - 3779ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

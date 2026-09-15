@@ -5,58 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - 549ms-9Mbps",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - 630ms-8Mbps",
       "server": "144.31.243.2",
       "server_port": 16015,
       "method": "chacha20-ietf-poly1305",
       "password": "J1InuU6QRT5JOh1mQfkjU2"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - 583ms-9Mbps",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - 2008ms-0.6Mbps",
-      "server": "lith.2clash.ru",
-      "server_port": 443,
-      "uuid": "8e403675-d020-4801-9520-9cba4bbfda0e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lith.2clash.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - 549ms-9Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 02 - 583ms-9Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 03 - 2008ms-0.6Mbps"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 630ms-8Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - 549ms-9Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 02 - 583ms-9Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 03 - 2008ms-0.6Mbps"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 630ms-8Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

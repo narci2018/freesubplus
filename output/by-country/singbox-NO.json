@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01 - 529ms-9Mbps",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - 685ms-9Mbps",
+      "tag": "🇳🇴 挪威 (Norway) 01 - 691ms-8Mbps",
       "server": "89.185.81.65",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
@@ -22,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -33,27 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 03 - 720ms-8Mbps",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 04 - 744ms-8Mbps",
+      "tag": "🇳🇴 挪威 (Norway) 02 - 756ms-8Mbps",
       "server": "151.242.168.125",
       "server_port": 390,
       "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
@@ -74,42 +46,51 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 05 - 840ms-8Mbps",
-      "server": "31.76.5.157",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇳🇴 挪威 (Norway) 03 - 831ms-8Mbps",
+      "server": "46.29.238.88",
+      "server_port": 40443,
+      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
       "tls": {
         "enabled": true,
-        "server_name": "norway-2.moritech.net",
-        "insecure": true,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
+          "short_id": "f7b2"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 04 - 1260ms-7Mbps",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - 529ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 02 - 685ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 03 - 720ms-8Mbps",
-        "🇳🇴 挪威 (Norway) 04 - 744ms-8Mbps",
-        "🇳🇴 挪威 (Norway) 05 - 840ms-8Mbps"
+        "🇳🇴 挪威 (Norway) 01 - 691ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 02 - 756ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 03 - 831ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 04 - 1260ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - 529ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 02 - 685ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 03 - 720ms-8Mbps",
-        "🇳🇴 挪威 (Norway) 04 - 744ms-8Mbps",
-        "🇳🇴 挪威 (Norway) 05 - 840ms-8Mbps"
+        "🇳🇴 挪威 (Norway) 01 - 691ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 02 - 756ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 03 - 831ms-8Mbps",
+        "🇳🇴 挪威 (Norway) 04 - 1260ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

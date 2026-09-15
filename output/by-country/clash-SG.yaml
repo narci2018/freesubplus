@@ -4,29 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 - 141ms-10Mbps
-  server: 104.17.3.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  tls: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 02 - 573ms-8Mbps
-  server: 176.97.64.144
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TFElG2FVqyqG
-- name: 🇸🇬 新加坡 (Singapore) 03 - 622ms-9Mbps
+- name: 🇸🇬 新加坡 (Singapore) 01 - 594ms-9Mbps
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -34,82 +12,35 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04 - 803ms-8Mbps
-  server: 91.192.81.214
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 02 - 604ms-8Mbps
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 03 - 610ms-7Mbps
+  server: 176.97.64.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: TFElG2FVqyqG
+- name: 🇸🇬 新加坡 (Singapore) 04 - 773ms-3Mbps
+  server: sg-1.gsafevpnapi.com
+  port: 20270
   udp: true
   type: vless
-  uuid: 607801ac-dbdd-4938-a167-129015d9978e
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
-    short-id: d1742269
-  servername: www.cloudflare.com
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 05 - 823ms-9Mbps
-  server: 47.129.241.226
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 06 - 826ms-7Mbps
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 07 - 830ms-7Mbps
-  server: 163.128.99.36
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1a049739-b873-4242-9a2b-239951eb2dd3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4S52pKhsJA4gK-_MLW8_R8TTeZsS4pH7ef6St-aKVBQ
-    short-id: ab1df8505f6e0072
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 - 853ms-8Mbps
-  server: 54.151.142.26
-  port: 443
-  udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - 868ms-5Mbps
-  server: 46.137.202.178
-  port: 12512
-  udp: true
-  type: vless
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 10 - 877ms-11Mbps
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 11 - 971ms-7Mbps
+- name: 🇸🇬 新加坡 (Singapore) 05 - 781ms-8Mbps
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -121,36 +52,58 @@ proxies:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - 989ms-5Mbps
-  server: 54.251.224.5
-  port: 26017
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 06 - 794ms-8Mbps
+  server: 54.151.142.26
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 07 - 821ms-7Mbps
+  server: 217.217.254.126
+  port: 2053
   udp: true
   type: vless
-  uuid: d318cdac-0033-4b6e-98bf-35116e79c93f
-  flow: xtls-rprx-vision
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   tls: true
   reality-opts:
-    public-key: cy4ePzAdSz4pqRmAXXchMIgSoSKo8qjq2qLk5805LRA
-    short-id: af1c2e33b0c7dad7
-  servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 13 - 1008ms-10Mbps
-  server: 91.193.58.45
-  port: 2096
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 08 - 839ms-8Mbps
+  server: 47.129.241.226
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 47.129.241.226
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 09 - 848ms-5Mbps
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - 987ms-10Mbps
+  server: 104.16.10.199
+  port: 443
   udp: true
   type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  servername: free-server.techsonic.dev
+  servername: u.srilankangrill.online
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /
     headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 - 1021ms-9Mbps
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 11 - 1015ms-9Mbps
   server: support.zoom.us
   port: 80
   udp: true
@@ -161,7 +114,35 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 15 - 1036ms-1Mbps
+- name: 🇸🇬 新加坡 (Singapore) 12 - 1061ms-0.9Mbps
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 13 - 1115ms-10Mbps
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  tls: true
+  servername: u.srilankangrill.online
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 14 - 1123ms-3Mbps
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -173,84 +154,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - 1090ms-10Mbps
-  server: 141.193.213.20
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 17 - 1093ms-12Mbps
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 18 - 1203ms-8Mbps
-  server: 104.17.159.153
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: singapore.36109178.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /static/media/video-chunk.f4v
-    headers:
-      Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 19 - 1281ms-8Mbps
-  server: 104.17.52.155
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
-  tls: true
-  servername: singapore.36109178.xyz
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /static/media/video-chunk.f4v
-    headers:
-      Host: singapore.36109178.xyz
-- name: 🇸🇬 新加坡 (Singapore) 20 - 1337ms-8Mbps
-  server: mszz.mangshe.xyz
-  port: 20562
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 21 - 1676ms-6Mbps
-  server: 116.251.217.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 22 - 2399ms-1Mbps
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 15 - 1171ms-2Mbps
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -263,84 +168,97 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - 2552ms-8Mbps
-  server: msjp.mangshe.xyz
+- name: 🇸🇬 新加坡 (Singapore) 16 - 1235ms-7Mbps
+  server: 13.212.32.171
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - 1306ms-1Mbps
+  server: 91.192.81.214
+  port: 443
+  udp: true
+  type: vless
+  uuid: 607801ac-dbdd-4938-a167-129015d9978e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
+    short-id: d1742269
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 18 - 1681ms-7Mbps
+  server: 104.16.86.10
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  servername: singapore.36109178.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /static/media/video-chunk.f4v
+    headers:
+      Host: singapore.36109178.xyz
+- name: 🇸🇬 新加坡 (Singapore) 19 - 17186ms-5Mbps
+  server: mszz.mangshe.xyz
   port: 20562
   udp: true
   type: hysteria2
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 24 - 2705ms-0.7Mbps
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 - 141ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 02 - 573ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 03 - 622ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 04 - 803ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 05 - 823ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 06 - 826ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 07 - 830ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 08 - 853ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 09 - 868ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 10 - 877ms-11Mbps
-  - 🇸🇬 新加坡 (Singapore) 11 - 971ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 12 - 989ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 13 - 1008ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 14 - 1021ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 15 - 1036ms-1Mbps
-  - 🇸🇬 新加坡 (Singapore) 16 - 1090ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 17 - 1093ms-12Mbps
-  - 🇸🇬 新加坡 (Singapore) 18 - 1203ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 19 - 1281ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 20 - 1337ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 21 - 1676ms-6Mbps
-  - 🇸🇬 新加坡 (Singapore) 22 - 2399ms-1Mbps
-  - 🇸🇬 新加坡 (Singapore) 23 - 2552ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 24 - 2705ms-0.7Mbps
+  - 🇸🇬 新加坡 (Singapore) 01 - 594ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 02 - 604ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 03 - 610ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 04 - 773ms-3Mbps
+  - 🇸🇬 新加坡 (Singapore) 05 - 781ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 06 - 794ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 07 - 821ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 08 - 839ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 09 - 848ms-5Mbps
+  - 🇸🇬 新加坡 (Singapore) 10 - 987ms-10Mbps
+  - 🇸🇬 新加坡 (Singapore) 11 - 1015ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 12 - 1061ms-0.9Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 1115ms-10Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 1123ms-3Mbps
+  - 🇸🇬 新加坡 (Singapore) 15 - 1171ms-2Mbps
+  - 🇸🇬 新加坡 (Singapore) 16 - 1235ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 17 - 1306ms-1Mbps
+  - 🇸🇬 新加坡 (Singapore) 18 - 1681ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 19 - 17186ms-5Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 - 141ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 02 - 573ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 03 - 622ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 04 - 803ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 05 - 823ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 06 - 826ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 07 - 830ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 08 - 853ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 09 - 868ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 10 - 877ms-11Mbps
-  - 🇸🇬 新加坡 (Singapore) 11 - 971ms-7Mbps
-  - 🇸🇬 新加坡 (Singapore) 12 - 989ms-5Mbps
-  - 🇸🇬 新加坡 (Singapore) 13 - 1008ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 14 - 1021ms-9Mbps
-  - 🇸🇬 新加坡 (Singapore) 15 - 1036ms-1Mbps
-  - 🇸🇬 新加坡 (Singapore) 16 - 1090ms-10Mbps
-  - 🇸🇬 新加坡 (Singapore) 17 - 1093ms-12Mbps
-  - 🇸🇬 新加坡 (Singapore) 18 - 1203ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 19 - 1281ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 20 - 1337ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 21 - 1676ms-6Mbps
-  - 🇸🇬 新加坡 (Singapore) 22 - 2399ms-1Mbps
-  - 🇸🇬 新加坡 (Singapore) 23 - 2552ms-8Mbps
-  - 🇸🇬 新加坡 (Singapore) 24 - 2705ms-0.7Mbps
+  - 🇸🇬 新加坡 (Singapore) 01 - 594ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 02 - 604ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 03 - 610ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 04 - 773ms-3Mbps
+  - 🇸🇬 新加坡 (Singapore) 05 - 781ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 06 - 794ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 07 - 821ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 08 - 839ms-8Mbps
+  - 🇸🇬 新加坡 (Singapore) 09 - 848ms-5Mbps
+  - 🇸🇬 新加坡 (Singapore) 10 - 987ms-10Mbps
+  - 🇸🇬 新加坡 (Singapore) 11 - 1015ms-9Mbps
+  - 🇸🇬 新加坡 (Singapore) 12 - 1061ms-0.9Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 1115ms-10Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 1123ms-3Mbps
+  - 🇸🇬 新加坡 (Singapore) 15 - 1171ms-2Mbps
+  - 🇸🇬 新加坡 (Singapore) 16 - 1235ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 17 - 1306ms-1Mbps
+  - 🇸🇬 新加坡 (Singapore) 18 - 1681ms-7Mbps
+  - 🇸🇬 新加坡 (Singapore) 19 - 17186ms-5Mbps
 rules:
 - MATCH,PROXIES
