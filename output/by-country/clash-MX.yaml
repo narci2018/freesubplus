@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - 926ms-7Mbps
-  server: 130.49.189.158
-  port: 43558
+- name: 🇲🇽 墨西哥 (Mexico) 01 - 9179ms-27Mbps
+  server: 64.177.90.30
+  port: 8388
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - 926ms-7Mbps
+  - 🇲🇽 墨西哥 (Mexico) 01 - 9179ms-27Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - 926ms-7Mbps
+  - 🇲🇽 墨西哥 (Mexico) 01 - 9179ms-27Mbps
 rules:
 - MATCH,PROXIES

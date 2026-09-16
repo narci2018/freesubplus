@@ -4,55 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - 187ms-14Mbps
-  server: 172.64.32.103
-  port: 8880
+- name: 🇺🇸 美国 (United States) 01 (家宽) - 158ms-3Mbps
+  server: 23.252.104.131
+  port: 54321
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 592ms-9Mbps
-  server: R3MRCG001287H3P.cybervena.com
+  type: ss
+  cipher: aes-256-gcm
+  password: Proxy2024
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 530ms-9Mbps
+  server: 61.231.19.116
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 606ms-7Mbps
+  server: r3mrcg001287h3p.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 1200ms-8Mbps
-  server: 82259754d625.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 82259754d625.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 82259754d625.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - 187ms-14Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 592ms-9Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 1200ms-8Mbps
+  - 🇺🇸 美国 (United States) 01 (家宽) - 158ms-3Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 530ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 606ms-7Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - 187ms-14Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 592ms-9Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 1200ms-8Mbps
+  - 🇺🇸 美国 (United States) 01 (家宽) - 158ms-3Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 530ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 606ms-7Mbps
 rules:
 - MATCH,PROXIES

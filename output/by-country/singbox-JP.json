@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 01 - 392ms-10Mbps",
+      "tag": "🇯🇵 日本 (Japan) 01 - 423ms-11Mbps",
       "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -13,23 +13,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - 399ms-11Mbps",
+      "tag": "🇯🇵 日本 (Japan) 02 - 424ms-11Mbps",
       "server": "149.22.87.204",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 03 - 409ms-11Mbps",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 04 - 425ms-12Mbps",
+      "tag": "🇯🇵 日本 (Japan) 03 - 424ms-11Mbps",
       "server": "45.32.57.118",
       "server_port": 4433,
       "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
@@ -37,15 +29,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 05 - 472ms-11Mbps",
+      "tag": "🇯🇵 日本 (Japan) 04 - 432ms-11Mbps",
+      "server": "149.22.87.241",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 05 - 550ms-10Mbps",
       "server": "jp-2.gsafevpnapi.com",
       "server_port": 31870,
       "method": "aes-256-gcm",
-      "password": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55"
+      "password": "2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 06 - 547ms-11Mbps",
+      "tag": "🇯🇵 日本 (Japan) 06 - 576ms-10Mbps",
       "server": "154.31.114.248",
       "server_port": 50159,
       "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
@@ -66,7 +66,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 07 - 566ms-10Mbps",
+      "tag": "🇯🇵 日本 (Japan) 07 - 602ms-9Mbps",
       "server": "84.247.155.196",
       "server_port": 443,
       "method": "aes-256-gcm",
@@ -74,72 +74,9 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 08 - 570ms-11Mbps",
-      "server": "jp4.miyazono-kaori.com",
-      "server_port": 443,
-      "uuid": "f3c10b66-6a02-499f-9ed5-e518be4dde61",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bandainamcoent.co.jp",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA",
-          "short_id": "f75fbd5b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - 582ms-11Mbps",
-      "server": "jp1.miyazono-kaori.com",
-      "server_port": 443,
-      "uuid": "f3c10b66-6a02-499f-9ed5-e518be4dde61",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.capcom.co.jp",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0gYZJnHAz7yMRQjZH5Twd9ETHfKjzQimUgbzb1yLlhM",
-          "short_id": "df9232eff6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - 586ms-12Mbps",
-      "server": "jp2.miyazono-kaori.com",
-      "server_port": 443,
-      "uuid": "f3c10b66-6a02-499f-9ed5-e518be4dde61",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.capcom.co.jp",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es",
-          "short_id": "21fa8a1ebf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - 701ms-5Mbps",
+      "tag": "🇯🇵 日本 (Japan) 08 - 632ms-5Mbps",
       "server": "3.114.220.22",
-      "server_port": 18007,
+      "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -147,7 +84,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -157,39 +94,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - 750ms-9Mbps",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "0c4f2fbc-df76-4320-bc6d-52e1df96ae25",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 13 - 869ms-12Mbps",
-      "server": "oc.imfun.fun",
-      "server_port": 18112,
-      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 09 - 662ms-10Mbps",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - 963ms-11Mbps",
+      "tag": "🇯🇵 日本 (Japan) 10 - 701ms-11Mbps",
       "server": "31.76.91.72",
       "server_port": 2087,
       "uuid": "524e00ce-ed89-481d-b4a4-6d7017f884e3",
@@ -213,7 +127,70 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - 1200ms-3Mbps",
+      "tag": "🇯🇵 日本 (Japan) 11 - 718ms-10Mbps",
+      "server": "207.148.112.220",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/discuss?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12 - 749ms-9Mbps",
+      "server": "210.152.85.154",
+      "server_port": 19364,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/collect/user/products?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 13 - 760ms-2Mbps",
+      "server": "3.114.220.22",
+      "server_port": 18007,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 14 - 927ms-2Mbps",
       "server": "3.114.220.22",
       "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -223,7 +200,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -234,87 +211,62 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 16 - 1214ms-2Mbps",
+      "tag": "🇯🇵 日本 (Japan) 15 - 1070ms-0.6Mbps",
       "server": "137.220.221.179",
       "server_port": 443,
       "uuid": "a16a3336-c9ab-489f-9b85-c973f5e2cfa4"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 17 - 1833ms-11Mbps",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18 - 3347ms-1Mbps",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 16 - 3682ms-9Mbps",
+      "server": "168.110.60.104",
+      "server_port": 18112,
+      "uuid": "ad45f8f6-0f0a-4cc4-b907-c4582407dc94",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 - 392ms-10Mbps",
-        "🇯🇵 日本 (Japan) 02 - 399ms-11Mbps",
-        "🇯🇵 日本 (Japan) 03 - 409ms-11Mbps",
-        "🇯🇵 日本 (Japan) 04 - 425ms-12Mbps",
-        "🇯🇵 日本 (Japan) 05 - 472ms-11Mbps",
-        "🇯🇵 日本 (Japan) 06 - 547ms-11Mbps",
-        "🇯🇵 日本 (Japan) 07 - 566ms-10Mbps",
-        "🇯🇵 日本 (Japan) 08 - 570ms-11Mbps",
-        "🇯🇵 日本 (Japan) 09 - 582ms-11Mbps",
-        "🇯🇵 日本 (Japan) 10 - 586ms-12Mbps",
-        "🇯🇵 日本 (Japan) 11 - 701ms-5Mbps",
-        "🇯🇵 日本 (Japan) 12 - 750ms-9Mbps",
-        "🇯🇵 日本 (Japan) 13 - 869ms-12Mbps",
-        "🇯🇵 日本 (Japan) 14 - 963ms-11Mbps",
-        "🇯🇵 日本 (Japan) 15 - 1200ms-3Mbps",
-        "🇯🇵 日本 (Japan) 16 - 1214ms-2Mbps",
-        "🇯🇵 日本 (Japan) 17 - 1833ms-11Mbps",
-        "🇯🇵 日本 (Japan) 18 - 3347ms-1Mbps"
+        "🇯🇵 日本 (Japan) 01 - 423ms-11Mbps",
+        "🇯🇵 日本 (Japan) 02 - 424ms-11Mbps",
+        "🇯🇵 日本 (Japan) 03 - 424ms-11Mbps",
+        "🇯🇵 日本 (Japan) 04 - 432ms-11Mbps",
+        "🇯🇵 日本 (Japan) 05 - 550ms-10Mbps",
+        "🇯🇵 日本 (Japan) 06 - 576ms-10Mbps",
+        "🇯🇵 日本 (Japan) 07 - 602ms-9Mbps",
+        "🇯🇵 日本 (Japan) 08 - 632ms-5Mbps",
+        "🇯🇵 日本 (Japan) 09 - 662ms-10Mbps",
+        "🇯🇵 日本 (Japan) 10 - 701ms-11Mbps",
+        "🇯🇵 日本 (Japan) 11 - 718ms-10Mbps",
+        "🇯🇵 日本 (Japan) 12 - 749ms-9Mbps",
+        "🇯🇵 日本 (Japan) 13 - 760ms-2Mbps",
+        "🇯🇵 日本 (Japan) 14 - 927ms-2Mbps",
+        "🇯🇵 日本 (Japan) 15 - 1070ms-0.6Mbps",
+        "🇯🇵 日本 (Japan) 16 - 3682ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 - 392ms-10Mbps",
-        "🇯🇵 日本 (Japan) 02 - 399ms-11Mbps",
-        "🇯🇵 日本 (Japan) 03 - 409ms-11Mbps",
-        "🇯🇵 日本 (Japan) 04 - 425ms-12Mbps",
-        "🇯🇵 日本 (Japan) 05 - 472ms-11Mbps",
-        "🇯🇵 日本 (Japan) 06 - 547ms-11Mbps",
-        "🇯🇵 日本 (Japan) 07 - 566ms-10Mbps",
-        "🇯🇵 日本 (Japan) 08 - 570ms-11Mbps",
-        "🇯🇵 日本 (Japan) 09 - 582ms-11Mbps",
-        "🇯🇵 日本 (Japan) 10 - 586ms-12Mbps",
-        "🇯🇵 日本 (Japan) 11 - 701ms-5Mbps",
-        "🇯🇵 日本 (Japan) 12 - 750ms-9Mbps",
-        "🇯🇵 日本 (Japan) 13 - 869ms-12Mbps",
-        "🇯🇵 日本 (Japan) 14 - 963ms-11Mbps",
-        "🇯🇵 日本 (Japan) 15 - 1200ms-3Mbps",
-        "🇯🇵 日本 (Japan) 16 - 1214ms-2Mbps",
-        "🇯🇵 日本 (Japan) 17 - 1833ms-11Mbps",
-        "🇯🇵 日本 (Japan) 18 - 3347ms-1Mbps"
+        "🇯🇵 日本 (Japan) 01 - 423ms-11Mbps",
+        "🇯🇵 日本 (Japan) 02 - 424ms-11Mbps",
+        "🇯🇵 日本 (Japan) 03 - 424ms-11Mbps",
+        "🇯🇵 日本 (Japan) 04 - 432ms-11Mbps",
+        "🇯🇵 日本 (Japan) 05 - 550ms-10Mbps",
+        "🇯🇵 日本 (Japan) 06 - 576ms-10Mbps",
+        "🇯🇵 日本 (Japan) 07 - 602ms-9Mbps",
+        "🇯🇵 日本 (Japan) 08 - 632ms-5Mbps",
+        "🇯🇵 日本 (Japan) 09 - 662ms-10Mbps",
+        "🇯🇵 日本 (Japan) 10 - 701ms-11Mbps",
+        "🇯🇵 日本 (Japan) 11 - 718ms-10Mbps",
+        "🇯🇵 日本 (Japan) 12 - 749ms-9Mbps",
+        "🇯🇵 日本 (Japan) 13 - 760ms-2Mbps",
+        "🇯🇵 日本 (Japan) 14 - 927ms-2Mbps",
+        "🇯🇵 日本 (Japan) 15 - 1070ms-0.6Mbps",
+        "🇯🇵 日本 (Japan) 16 - 3682ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

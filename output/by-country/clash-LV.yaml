@@ -4,7 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 884ms-8Mbps
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 612ms-16Mbps
+  server: 104.165.205.40
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - 670ms-16Mbps
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - 750ms-9Mbps
   server: atomic-prase23893.my-vm.work
   port: 8088
   udp: true
@@ -20,12 +36,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 884ms-8Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 612ms-16Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 670ms-16Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 750ms-9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 884ms-8Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 612ms-16Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 670ms-16Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 750ms-9Mbps
 rules:
 - MATCH,PROXIES

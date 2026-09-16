@@ -4,20 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01 - 849ms-15Mbps
-  server: 2.56.124.241
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - 722ms-10Mbps
+  server: lt.aether-runet.top
   port: 443
   udp: true
   type: vless
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
-    short-id: 72104d27a0f5f62e
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - 1124ms-7Mbps
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
+  client-fingerprint: ''
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - 1087ms-12Mbps
   server: 144.31.243.2
   port: 16015
   udp: true
@@ -29,14 +29,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01 - 849ms-15Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 02 - 1124ms-7Mbps
+  - 🇱🇹 立陶宛 (Lithuania) 01 - 722ms-10Mbps
+  - 🇱🇹 立陶宛 (Lithuania) 02 - 1087ms-12Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01 - 849ms-15Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 02 - 1124ms-7Mbps
+  - 🇱🇹 立陶宛 (Lithuania) 01 - 722ms-10Mbps
+  - 🇱🇹 立陶宛 (Lithuania) 02 - 1087ms-12Mbps
 rules:
 - MATCH,PROXIES

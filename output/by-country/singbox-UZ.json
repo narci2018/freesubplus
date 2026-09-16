@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps",
+      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1179ms-3Mbps",
       "server": "189.74.97.47",
       "server_port": 2087,
       "uuid": "894fe9f0-b998-49c0-8003-a5007de921e1",
@@ -15,18 +15,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 3142ms-1.0Mbps",
+      "server": "189.74.97.43",
+      "server_port": 2087,
+      "uuid": "10f7eb2d-d96d-4778-9d36-aff11e9d6629",
+      "transport": {
+        "type": "ws",
+        "path": "/73b6faea2d00"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1179ms-3Mbps",
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 3142ms-1.0Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1179ms-3Mbps",
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 3142ms-1.0Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

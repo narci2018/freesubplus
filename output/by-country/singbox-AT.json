@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - 496ms-10Mbps",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - 444ms-11Mbps",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,22 +13,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - 708ms-10Mbps",
-      "server": "152.53.1.40",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - 788ms-10Mbps",
+      "server": "50.7.37.157",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "at-dedic.failspace.top",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -37,16 +33,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - 496ms-10Mbps",
-        "🇦🇹 奥地利 (Austria) 02 - 708ms-10Mbps"
+        "🇦🇹 奥地利 (Austria) 01 - 444ms-11Mbps",
+        "🇦🇹 奥地利 (Austria) 02 - 788ms-10Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - 496ms-10Mbps",
-        "🇦🇹 奥地利 (Austria) 02 - 708ms-10Mbps"
+        "🇦🇹 奥地利 (Austria) 01 - 444ms-11Mbps",
+        "🇦🇹 奥地利 (Austria) 02 - 788ms-10Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

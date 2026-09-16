@@ -4,21 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01 - 554ms-8Mbps
+- name: 🇪🇸 西班牙 (Spain) 01 - 501ms-7Mbps
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 02 - 514ms-10Mbps
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - 589ms-8Mbps
+- name: 🇪🇸 西班牙 (Spain) 03 - 526ms-9Mbps
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03 - 675ms-11Mbps
+- name: 🇪🇸 西班牙 (Spain) 04 - 633ms-11Mbps
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -35,16 +43,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01 - 554ms-8Mbps
-  - 🇪🇸 西班牙 (Spain) 02 - 589ms-8Mbps
-  - 🇪🇸 西班牙 (Spain) 03 - 675ms-11Mbps
+  - 🇪🇸 西班牙 (Spain) 01 - 501ms-7Mbps
+  - 🇪🇸 西班牙 (Spain) 02 - 514ms-10Mbps
+  - 🇪🇸 西班牙 (Spain) 03 - 526ms-9Mbps
+  - 🇪🇸 西班牙 (Spain) 04 - 633ms-11Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01 - 554ms-8Mbps
-  - 🇪🇸 西班牙 (Spain) 02 - 589ms-8Mbps
-  - 🇪🇸 西班牙 (Spain) 03 - 675ms-11Mbps
+  - 🇪🇸 西班牙 (Spain) 01 - 501ms-7Mbps
+  - 🇪🇸 西班牙 (Spain) 02 - 514ms-10Mbps
+  - 🇪🇸 西班牙 (Spain) 03 - 526ms-9Mbps
+  - 🇪🇸 西班牙 (Spain) 04 - 633ms-11Mbps
 rules:
 - MATCH,PROXIES

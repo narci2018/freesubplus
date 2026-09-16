@@ -4,20 +4,48 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps",
+      "server": "104.18.47.113",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps",
+      "server": "162.159.24.131",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps",
       "server": "85.204.107.183",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -34,16 +62,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps",
-        "🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps"
+        "🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps",
+        "🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps",
+        "🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps",
+        "🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps",
-        "🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps"
+        "🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps",
+        "🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps",
+        "🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps",
+        "🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

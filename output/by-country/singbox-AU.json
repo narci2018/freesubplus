@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - 149ms-52Mbps",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01 - 398ms-35Mbps",
       "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - 820ms-9Mbps",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - 817ms-8Mbps",
       "server": "103.75.119.126",
       "server_port": 2087,
       "uuid": "731f177e-00aa-480c-b935-661456139a32",
@@ -23,18 +23,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - 887ms-9Mbps",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - 1076ms-7Mbps",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - 1147ms-7Mbps",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b",
+      "uuid": "7647b321-4bfe-43f3-b21f-926c5de8f9b6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,18 +60,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - 149ms-52Mbps",
-        "🇦🇺 澳大利亚 (Australia) 02 - 820ms-9Mbps",
-        "🇦🇺 澳大利亚 (Australia) 03 - 1076ms-7Mbps"
+        "🇦🇺 澳大利亚 (Australia) 01 - 398ms-35Mbps",
+        "🇦🇺 澳大利亚 (Australia) 02 - 817ms-8Mbps",
+        "🇦🇺 澳大利亚 (Australia) 03 - 887ms-9Mbps",
+        "🇦🇺 澳大利亚 (Australia) 04 - 1147ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - 149ms-52Mbps",
-        "🇦🇺 澳大利亚 (Australia) 02 - 820ms-9Mbps",
-        "🇦🇺 澳大利亚 (Australia) 03 - 1076ms-7Mbps"
+        "🇦🇺 澳大利亚 (Australia) 01 - 398ms-35Mbps",
+        "🇦🇺 澳大利亚 (Australia) 02 - 817ms-8Mbps",
+        "🇦🇺 澳大利亚 (Australia) 03 - 887ms-9Mbps",
+        "🇦🇺 澳大利亚 (Australia) 04 - 1147ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

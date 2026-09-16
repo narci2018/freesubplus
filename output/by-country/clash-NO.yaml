@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps
+- name: 🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps
   server: 151.242.168.125
   port: 390
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: b545fe8c5e22f92d
   servername: bowandbead.com
   client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps
+- name: 🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps
   server: 46.29.238.88
   port: 40443
   udp: true
@@ -28,8 +28,8 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps
+  client-fingerprint: chrome
+- name: 🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps
   server: aldebaran.yokkastars.com
   port: 40443
   udp: true
@@ -46,16 +46,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps
-  - 🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps
-  - 🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps
+  - 🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps
+  - 🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps
+  - 🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps
-  - 🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps
-  - 🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps
+  - 🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps
+  - 🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps
+  - 🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps
 rules:
 - MATCH,PROXIES

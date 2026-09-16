@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -17,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -37,20 +37,40 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps",
-        "🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps"
+        "🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps",
-        "🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps"
+        "🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

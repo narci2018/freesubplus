@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps
+- name: 🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps
   server: 185.156.44.99
   port: 443
   udp: true
@@ -12,7 +12,7 @@ proxies:
   password: gf1:gfhysteria2024
   sni: www.amazon.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps
   server: 46.28.67.55
   port: 443
   udp: true
@@ -25,19 +25,37 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps
-  - 🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - 907ms-13Mbps
-  - 🇷🇴 罗马尼亚 (Romania) 02 - 932ms-9Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 01 - 712ms-15Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 02 - 825ms-9Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 03 - 1637ms-3Mbps
+  - 🇷🇴 罗马尼亚 (Romania) 04 - 8713ms-2Mbps
 rules:
 - MATCH,PROXIES

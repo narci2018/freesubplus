@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps",
+      "tag": "🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps",
       "server": "151.242.168.125",
       "server_port": 390,
       "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
@@ -26,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps",
+      "tag": "🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -35,7 +35,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps",
+      "tag": "🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps",
       "server": "aldebaran.yokkastars.com",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
@@ -69,18 +69,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps",
-        "🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps"
+        "🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps",
+        "🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps",
+        "🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - 702ms-31Mbps",
-        "🇳🇴 挪威 (Norway) 02 - 783ms-9Mbps",
-        "🇳🇴 挪威 (Norway) 03 - 789ms-10Mbps"
+        "🇳🇴 挪威 (Norway) 01 - 555ms-10Mbps",
+        "🇳🇴 挪威 (Norway) 02 - 662ms-11Mbps",
+        "🇳🇴 挪威 (Norway) 03 - 752ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

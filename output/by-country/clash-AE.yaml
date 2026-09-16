@@ -4,15 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps
+- name: 🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps
+  server: 104.18.47.113
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps
+  server: 162.159.24.131
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps
   server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -28,14 +50,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps
-  - 🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps
+  - 🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps
+  - 🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps
+  - 🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps
+  - 🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - 851ms-9Mbps
-  - 🇦🇪 阿联酋 (UAE) 02 - 978ms-6Mbps
+  - 🇦🇪 阿联酋 (UAE) 01 - 155ms-25Mbps
+  - 🇦🇪 阿联酋 (UAE) 02 - 162ms-47Mbps
+  - 🇦🇪 阿联酋 (UAE) 03 - 963ms-7Mbps
+  - 🇦🇪 阿联酋 (UAE) 04 - 3995ms-5Mbps
 rules:
 - MATCH,PROXIES

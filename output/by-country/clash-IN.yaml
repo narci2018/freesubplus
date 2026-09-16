@@ -4,33 +4,77 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - 958ms-6Mbps
-  server: 5.253.42.164
+- name: 🇮🇳 印度 (India) 01 - 893ms-3Mbps
+  server: 5.253.42.163
   port: 40443
   udp: true
   type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 02 - 914ms-2Mbps
+  server: 5.253.28.242
+  port: 40443
+  udp: true
+  type: vless
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - 981ms-6Mbps
-  server: 5.253.28.218
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03 - 922ms-3Mbps
+  server: 5.253.30.99
   port: 40443
   udp: true
   type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
+  client-fingerprint: qq
+- name: 🇮🇳 印度 (India) 04 - 937ms-5Mbps
+  server: 5.253.28.218
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  tls: true
+  reality-opts:
+    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+    short-id: 92c32de179e5d908
+  servername: deepl.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇮🇳 印度 (India) 05 - 986ms-6Mbps
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 06 - 1021ms-7Mbps
+  server: 35.154.58.87
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 07 - 1105ms-2Mbps
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -42,73 +86,29 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
-  server: vpn-in-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
-  server: hydra.yokkastars.com
-  port: 2443
-  udp: true
-  type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
-  tls: true
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
-  server: preview.netraidly.ru
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  servername: deepl.com
-  client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
-  server: 35.154.58.87
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - 958ms-6Mbps
-  - 🇮🇳 印度 (India) 02 - 981ms-6Mbps
-  - 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
-  - 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
-  - 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
-  - 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
-  - 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
+  - 🇮🇳 印度 (India) 01 - 893ms-3Mbps
+  - 🇮🇳 印度 (India) 02 - 914ms-2Mbps
+  - 🇮🇳 印度 (India) 03 - 922ms-3Mbps
+  - 🇮🇳 印度 (India) 04 - 937ms-5Mbps
+  - 🇮🇳 印度 (India) 05 - 986ms-6Mbps
+  - 🇮🇳 印度 (India) 06 - 1021ms-7Mbps
+  - 🇮🇳 印度 (India) 07 - 1105ms-2Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - 958ms-6Mbps
-  - 🇮🇳 印度 (India) 02 - 981ms-6Mbps
-  - 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
-  - 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
-  - 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
-  - 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
-  - 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
+  - 🇮🇳 印度 (India) 01 - 893ms-3Mbps
+  - 🇮🇳 印度 (India) 02 - 914ms-2Mbps
+  - 🇮🇳 印度 (India) 03 - 922ms-3Mbps
+  - 🇮🇳 印度 (India) 04 - 937ms-5Mbps
+  - 🇮🇳 印度 (India) 05 - 986ms-6Mbps
+  - 🇮🇳 印度 (India) 06 - 1021ms-7Mbps
+  - 🇮🇳 印度 (India) 07 - 1105ms-2Mbps
 rules:
 - MATCH,PROXIES

@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇿 DZ 01 - 749ms-11Mbps
-  server: 85.204.107.171
+- name: 🇩🇿 DZ 01 - 616ms-9Mbps
+  server: 85.204.107.184
   port: 8443
   udp: true
   type: hysteria2
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇿 DZ 01 - 749ms-11Mbps
+  - 🇩🇿 DZ 01 - 616ms-9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇿 DZ 01 - 749ms-11Mbps
+  - 🇩🇿 DZ 01 - 616ms-9Mbps
 rules:
 - MATCH,PROXIES
