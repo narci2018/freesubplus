@@ -4,37 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 - 500ms-10Mbps
-  server: 172.104.186.18
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 02 - 568ms-11Mbps
-  server: 140.235.9.57
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - 572ms-37Mbps
+- name: 🇺🇸 美国 (United States) 01 - 160ms-37Mbps
   server: 83.229.123.11
   port: 8443
   udp: true
@@ -44,13 +14,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇸🇬 新加坡 (Singapore) 04 - 603ms-16Mbps
-  server: 152.42.247.235
+- name: 🇺🇸 美国 (United States) 02 - 177ms-37Mbps
+  server: 85.121.51.201
   port: 443
   udp: true
   type: vless
@@ -59,13 +30,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - 813ms-26Mbps
-  server: 209.33.161.104
+- name: 🇺🇸 美国 (United States) 03 - 261ms-37Mbps
+  server: 213.210.4.48
   port: 443
   udp: true
   type: vless
@@ -74,13 +46,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 06 - 929ms-24Mbps
-  server: 154.23.240.225
+- name: 🇺🇸 美国 (United States) 04 - 340ms-37Mbps
+  server: 138.2.64.229
   port: 443
   udp: true
   type: vless
@@ -89,148 +62,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 07 - 938ms-37Mbps
-  server: 38.54.4.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 08 - 1010ms-37Mbps
-  server: 45.32.80.214
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 09 - 1025ms-37Mbps
-  server: 185.195.69.200
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 10 - 1091ms-40Mbps
-  server: 202.182.114.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 11 - 1123ms-16Mbps
-  server: 188.255.157.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 12 - 1126ms-37Mbps
-  server: 45.202.243.88
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇬🇷 希腊 (Greece) 13 - 1207ms-16Mbps
-  server: 178.253.16.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇦🇪 阿联酋 (UAE) 14 - 1217ms-37Mbps
-  server: 217.60.0.168
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 15 - 1229ms-37Mbps
-  server: 45.77.185.184
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇩🇪 德国 (Germany) 16 - 1233ms-37Mbps
-  server: 202.61.226.121
+- name: 🇺🇸 美国 (United States) 05 - 355ms-37Mbps
+  server: 185.200.64.25
   port: 2053
   udp: true
   type: vless
@@ -239,13 +78,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 17 - 1242ms-16Mbps
-  server: 54.38.214.128
+- name: 🇺🇸 美国 (United States) 06 - 355ms-37Mbps
+  server: 139.59.192.91
   port: 443
   udp: true
   type: vless
@@ -254,13 +94,30 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇱🇹 立陶宛 (Lithuania) 18 - 1249ms-37Mbps
-  server: 194.135.83.166
+- name: 🇺🇸 美国 (United States) 07 - 360ms-37Mbps
+  server: 108.61.160.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 08 - 371ms-37Mbps
+  server: 82.27.116.56
   port: 8443
   udp: true
   type: vless
@@ -269,13 +126,78 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇲🇩 摩尔多瓦 (Moldova) 19 - 1252ms-21Mbps
-  server: 178.17.174.137
+- name: 🇺🇸 美国 (United States) 09 - 374ms-37Mbps
+  server: 167.179.117.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 10 - 376ms-37Mbps
+  server: 154.19.187.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 11 - 377ms-37Mbps
+  server: 134.209.98.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 12 - 399ms-37Mbps
+  server: 47.250.212.59
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 13 - 402ms-37Mbps
+  server: 172.104.186.18
   port: 8443
   udp: true
   type: vless
@@ -284,13 +206,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 20 - 1399ms-10Mbps
-  server: 82.115.19.252
+- name: 🇺🇸 美国 (United States) 14 - 418ms-37Mbps
+  server: 172.93.188.25
   port: 443
   udp: true
   type: vless
@@ -299,57 +222,13 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 21 - 1409ms-37Mbps
-  server: 46.8.224.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇱🇻 拉脱维亚 (Latvia) 22 - 1456ms-19Mbps
-  server: 62.60.234.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇱🇹 立陶宛 (Lithuania) 23 - 1457ms-16Mbps
-  server: 46.32.185.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
-  tls: true
-  servername: love.tk168.cc.cd
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: love.tk168.cc.cd
-- name: 🇯🇵 日本 (Japan) 24 - 1483ms-16Mbps
+- name: 🇺🇸 美国 (United States) 15 - 427ms-37Mbps
   server: 198.13.33.64
   port: 443
   udp: true
@@ -359,12 +238,1917 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 25 - 1558ms-37Mbps
+- name: 🇺🇸 美国 (United States) 16 - 446ms-37Mbps
+  server: 209.33.161.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 17 - 454ms-37Mbps
+  server: 202.182.114.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 18 - 477ms-37Mbps
+  server: 157.245.207.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 19 - 485ms-37Mbps
+  server: 68.183.186.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 20 - 569ms-37Mbps
+  server: 5.253.30.171
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 21 - 574ms-37Mbps
+  server: 168.107.40.4
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 22 - 575ms-37Mbps
+  server: 45.192.243.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 23 - 623ms-37Mbps
+  server: 158.247.222.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 24 - 634ms-37Mbps
+  server: 68.183.225.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 25 - 650ms-37Mbps
+  server: 130.94.29.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 26 - 737ms-37Mbps
+  server: 123.111.169.70
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 27 - 757ms-37Mbps
+  server: 5.253.29.241
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 28 - 817ms-37Mbps
+  server: 146.56.187.1
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 29 - 834ms-37Mbps
+  server: 5.253.28.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 30 - 840ms-37Mbps
+  server: 139.162.60.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 31 - 842ms-37Mbps
+  server: 38.148.253.82
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 32 - 851ms-37Mbps
+  server: 124.156.173.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 33 - 859ms-37Mbps
+  server: 154.23.240.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 34 - 868ms-37Mbps
+  server: 144.225.130.77
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 35 - 883ms-37Mbps
+  server: 188.255.157.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 36 - 902ms-37Mbps
+  server: 45.202.243.88
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 37 - 916ms-37Mbps
+  server: 89.127.203.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 38 - 932ms-37Mbps
+  server: 137.220.225.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 39 - 936ms-37Mbps
+  server: 45.32.80.214
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 40 - 938ms-37Mbps
+  server: 43.132.185.96
+  port: 5443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 41 - 945ms-37Mbps
+  server: 141.227.137.177
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 42 - 948ms-37Mbps
+  server: 43.103.4.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 43 - 954ms-37Mbps
+  server: 149.28.91.66
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 44 - 961ms-37Mbps
+  server: 45.203.217.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 45 - 965ms-37Mbps
+  server: 85.137.52.225
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 46 - 973ms-37Mbps
+  server: 38.60.89.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 47 - 975ms-37Mbps
+  server: 52.56.194.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 48 - 980ms-37Mbps
+  server: 165.245.184.76
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 49 - 981ms-37Mbps
+  server: 64.226.95.244
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 50 - 987ms-37Mbps
+  server: 72.56.109.45
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 51 - 992ms-37Mbps
+  server: 125.7.24.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 52 - 1012ms-37Mbps
+  server: 45.131.71.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 53 - 1020ms-37Mbps
+  server: 31.57.196.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 54 - 1030ms-37Mbps
+  server: 172.237.120.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 55 - 1031ms-37Mbps
+  server: 31.57.196.215
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 56 - 1031ms-37Mbps
+  server: 138.199.144.252
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 57 - 1032ms-37Mbps
+  server: 167.233.36.169
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 58 - 1039ms-37Mbps
+  server: 193.41.4.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 59 - 1046ms-37Mbps
+  server: 147.90.89.7
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 60 - 1050ms-37Mbps
+  server: 49.13.228.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 61 - 1052ms-37Mbps
+  server: 45.129.126.241
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 62 - 1060ms-37Mbps
+  server: 54.38.214.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 63 - 1063ms-37Mbps
+  server: 31.57.196.241
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 64 - 1074ms-37Mbps
+  server: 79.137.194.151
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇩🇪 德国 (Germany) 65 - 1078ms-37Mbps
+  server: 165.22.74.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 66 - 1079ms-37Mbps
+  server: 144.124.224.75
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 67 - 1082ms-37Mbps
+  server: 179.255.188.80
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 68 - 1083ms-37Mbps
+  server: 188.255.163.90
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 69 - 1083ms-37Mbps
+  server: 147.45.41.117
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 70 - 1089ms-37Mbps
+  server: 46.8.224.194
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 71 - 1090ms-37Mbps
+  server: 162.19.250.160
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 72 - 1090ms-37Mbps
+  server: 85.192.42.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 73 - 1090ms-37Mbps
+  server: 188.92.28.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 74 - 1093ms-37Mbps
+  server: 194.58.39.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇳🇱 荷兰 (Netherlands) 75 - 1093ms-37Mbps
+  server: 72.56.73.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 76 - 1096ms-37Mbps
+  server: 46.30.41.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 77 - 1096ms-37Mbps
+  server: 195.133.66.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 78 - 1098ms-37Mbps
+  server: 168.144.154.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 79 - 1100ms-37Mbps
+  server: 176.124.201.78
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 80 - 1104ms-37Mbps
+  server: 194.113.235.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 81 - 1104ms-37Mbps
+  server: 217.60.63.5
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 82 - 1104ms-37Mbps
+  server: 194.154.29.151
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 83 - 1105ms-37Mbps
+  server: 193.41.5.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 84 - 1105ms-37Mbps
+  server: 2.27.57.22
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 85 - 1106ms-37Mbps
+  server: 165.232.39.212
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 86 - 1108ms-37Mbps
+  server: 138.68.131.25
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 87 - 1110ms-37Mbps
+  server: 185.195.69.200
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 88 - 1115ms-37Mbps
+  server: 151.242.159.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 89 - 1116ms-37Mbps
+  server: 151.158.1.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 90 - 1117ms-37Mbps
+  server: 45.77.236.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 91 - 1118ms-37Mbps
+  server: 194.76.155.83
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 92 - 1124ms-37Mbps
+  server: 85.136.181.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 93 - 1126ms-37Mbps
+  server: 62.171.228.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇫🇷 法国 (France) 94 - 1126ms-37Mbps
+  server: 2.28.55.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 95 - 1127ms-37Mbps
+  server: 195.66.24.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 96 - 1132ms-37Mbps
+  server: 2.27.57.87
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 97 - 1133ms-37Mbps
+  server: 206.189.119.143
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 98 - 1133ms-37Mbps
+  server: 91.149.242.134
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 99 - 1134ms-37Mbps
+  server: 95.85.243.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 100 - 1134ms-37Mbps
+  server: 194.146.223.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 101 - 1134ms-37Mbps
+  server: 185.248.33.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 102 - 1135ms-37Mbps
+  server: 62.60.235.214
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 103 - 1135ms-37Mbps
+  server: 159.65.30.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 104 - 1135ms-37Mbps
+  server: 138.16.141.105
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 105 - 1137ms-37Mbps
+  server: 206.189.125.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 106 - 1138ms-37Mbps
+  server: 45.77.185.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 107 - 1138ms-37Mbps
+  server: 5.45.112.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 108 - 1138ms-37Mbps
+  server: 109.122.198.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 109 - 1139ms-37Mbps
+  server: 103.167.234.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 110 - 1139ms-37Mbps
+  server: 196.196.5.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 111 - 1141ms-37Mbps
+  server: 194.76.168.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 112 - 1141ms-37Mbps
+  server: 91.107.242.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 113 - 1143ms-37Mbps
+  server: 62.233.57.193
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 114 - 1144ms-37Mbps
+  server: 217.60.0.168
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 115 - 1147ms-37Mbps
+  server: 146.70.71.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 116 - 1147ms-37Mbps
+  server: 46.8.179.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 117 - 1150ms-37Mbps
+  server: 147.45.41.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 118 - 1151ms-37Mbps
+  server: 24.84.0.55
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 119 - 1151ms-37Mbps
+  server: 46.101.91.107
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 120 - 1157ms-37Mbps
+  server: 147.45.71.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 121 - 1160ms-37Mbps
+  server: 152.53.110.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 122 - 1161ms-37Mbps
+  server: 194.88.151.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 123 - 1163ms-37Mbps
+  server: 23.175.201.2
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 124 - 1164ms-37Mbps
+  server: 160.25.75.40
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 125 - 1164ms-37Mbps
+  server: 202.181.177.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 126 - 1164ms-37Mbps
+  server: 51.83.186.109
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 127 - 1165ms-37Mbps
+  server: 182.255.91.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 128 - 1166ms-37Mbps
+  server: 94.228.163.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 129 - 1170ms-37Mbps
+  server: 57.128.177.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 130 - 1175ms-37Mbps
+  server: 152.42.247.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 131 - 1179ms-37Mbps
+  server: 193.124.57.24
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 132 - 1183ms-10Mbps
+  server: 193.124.56.100
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇦🇹 奥地利 (Austria) 133 - 1183ms-37Mbps
+  server: 109.172.8.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 134 - 1186ms-9Mbps
+  server: 91.196.162.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 135 - 1186ms-37Mbps
   server: 45.194.66.88
   port: 443
   udp: true
@@ -374,13 +2158,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 26 - 1567ms-28Mbps
-  server: 213.21.235.168
+- name: 🇺🇸 美国 (United States) 136 - 1187ms-37Mbps
+  server: 193.163.170.180
   port: 443
   udp: true
   type: vless
@@ -389,13 +2174,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇺🇸 美国 (United States) 27 - 1582ms-16Mbps
-  server: 194.53.54.84
+- name: 🇺🇸 美国 (United States) 137 - 1191ms-37Mbps
+  server: 162.141.93.191
   port: 8443
   udp: true
   type: vless
@@ -404,13 +2190,14 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇨🇭 瑞士 (Switzerland) 28 - 1682ms-16Mbps
-  server: 82.38.64.162
+- name: 🇺🇸 美国 (United States) 138 - 1198ms-37Mbps
+  server: 93.113.214.39
   port: 443
   udp: true
   type: vless
@@ -419,13 +2206,62 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇩🇰 丹麦 (Denmark) 29 - 1723ms-10Mbps
-  server: 193.181.215.4
+- name: 🇸🇪 瑞典 (Sweden) 139 - 1198ms-37Mbps
+  server: 31.56.27.96
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 140 - 1201ms-37Mbps
+  server: 45.142.141.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 141 - 1203ms-37Mbps
+  server: 109.238.95.54
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 142 - 1204ms-37Mbps
+  server: 83.228.193.188
   port: 8443
   udp: true
   type: vless
@@ -434,12 +2270,269 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
     headers:
       Host: love.tk168.cc.cd
-- name: 🇱🇻 拉脱维亚 (Latvia) 30 - 1997ms-37Mbps
+- name: 🇺🇸 美国 (United States) 143 - 1204ms-37Mbps
+  server: 152.53.3.249
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 144 - 1205ms-37Mbps
+  server: 141.98.87.145
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇸🇪 瑞典 (Sweden) 145 - 1206ms-37Mbps
+  server: 185.135.86.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 146 - 1206ms-37Mbps
+  server: 62.60.234.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 147 - 1207ms-37Mbps
+  server: 91.247.37.117
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 148 - 1210ms-37Mbps
+  server: 185.82.126.185
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 149 - 1211ms-37Mbps
+  server: 57.128.183.138
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 150 - 1212ms-37Mbps
+  server: 194.87.222.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 151 - 1215ms-37Mbps
+  server: 144.31.2.121
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 152 - 1216ms-37Mbps
+  server: 185.125.171.128
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 153 - 1216ms-37Mbps
+  server: 46.36.216.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 154 - 1220ms-37Mbps
+  server: 31.59.41.182
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 155 - 1221ms-37Mbps
+  server: 46.32.185.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 156 - 1222ms-37Mbps
+  server: 194.135.83.166
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 157 - 1223ms-37Mbps
+  server: 188.213.5.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 158 - 1227ms-37Mbps
+  server: 129.151.198.3
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 159 - 1227ms-37Mbps
   server: 31.56.197.181
   port: 2053
   udp: true
@@ -449,6 +2542,1687 @@ proxies:
   servername: love.tk168.cc.cd
   skip-cert-verify: false
   client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 160 - 1227ms-37Mbps
+  server: 46.8.178.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 161 - 1228ms-37Mbps
+  server: 13.140.29.13
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 162 - 1229ms-37Mbps
+  server: 2.59.219.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 163 - 1230ms-37Mbps
+  server: 85.121.183.24
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 164 - 1231ms-37Mbps
+  server: 109.248.168.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 165 - 1231ms-37Mbps
+  server: 185.223.169.126
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 166 - 1234ms-37Mbps
+  server: 144.225.65.235
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 167 - 1235ms-37Mbps
+  server: 147.45.231.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 168 - 1236ms-37Mbps
+  server: 5.101.114.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 169 - 1243ms-37Mbps
+  server: 193.36.38.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 170 - 1245ms-37Mbps
+  server: 91.244.70.45
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 171 - 1247ms-37Mbps
+  server: 45.133.246.84
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 172 - 1248ms-37Mbps
+  server: 85.217.170.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 173 - 1250ms-37Mbps
+  server: 5.134.119.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 174 - 1250ms-37Mbps
+  server: 194.53.54.84
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 175 - 1252ms-37Mbps
+  server: 45.129.126.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 176 - 1252ms-37Mbps
+  server: 65.109.190.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 177 - 1255ms-37Mbps
+  server: 176.124.206.42
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 178 - 1255ms-37Mbps
+  server: 192.144.39.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 179 - 1259ms-37Mbps
+  server: 213.176.119.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 180 - 1260ms-37Mbps
+  server: 185.242.106.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 181 - 1260ms-37Mbps
+  server: 89.19.214.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 182 - 1261ms-37Mbps
+  server: 212.87.198.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇪🇪 爱沙尼亚 (Estonia) 183 - 1263ms-37Mbps
+  server: 82.47.22.177
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 184 - 1264ms-37Mbps
+  server: 46.36.217.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 185 - 1269ms-37Mbps
+  server: 91.186.210.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇭🇺 匈牙利 (Hungary) 186 - 1270ms-37Mbps
+  server: 38.180.225.247
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 187 - 1274ms-37Mbps
+  server: 81.180.92.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 188 - 1275ms-37Mbps
+  server: 132.243.203.212
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 189 - 1275ms-37Mbps
+  server: 202.61.226.121
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 190 - 1276ms-37Mbps
+  server: 139.99.155.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 191 - 1278ms-37Mbps
+  server: 154.46.31.118
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 192 - 1280ms-37Mbps
+  server: 35.210.99.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 193 - 1282ms-37Mbps
+  server: 79.137.206.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 194 - 1282ms-37Mbps
+  server: 176.223.66.73
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 195 - 1282ms-37Mbps
+  server: 5.45.114.210
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 196 - 1282ms-37Mbps
+  server: 178.17.174.137
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 197 - 1283ms-37Mbps
+  server: 79.124.7.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 198 - 1283ms-37Mbps
+  server: 217.142.133.226
+  port: 50001
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 199 - 1283ms-37Mbps
+  server: 103.102.229.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 200 - 1285ms-37Mbps
+  server: 91.197.3.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 201 - 1288ms-37Mbps
+  server: 77.110.97.230
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇩🇪 德国 (Germany) 202 - 1299ms-37Mbps
+  server: 45.137.60.165
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 203 - 1300ms-37Mbps
+  server: 91.250.248.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 204 - 1303ms-37Mbps
+  server: 85.90.197.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 205 - 1305ms-37Mbps
+  server: 141.227.129.211
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 206 - 1305ms-37Mbps
+  server: 93.115.10.237
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 207 - 1307ms-37Mbps
+  server: 78.135.77.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 208 - 1316ms-37Mbps
+  server: 89.45.45.144
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 209 - 1320ms-37Mbps
+  server: 57.128.176.82
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 210 - 1326ms-37Mbps
+  server: 38.180.253.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 211 - 1326ms-37Mbps
+  server: 188.116.40.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 212 - 1330ms-37Mbps
+  server: 144.217.92.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 213 - 1333ms-37Mbps
+  server: 84.22.148.196
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 214 - 1347ms-37Mbps
+  server: 64.188.81.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 215 - 1349ms-37Mbps
+  server: 85.90.197.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇨🇭 瑞士 (Switzerland) 216 - 1349ms-37Mbps
+  server: 140.238.208.210
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 217 - 1352ms-37Mbps
+  server: 82.115.24.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 218 - 1357ms-37Mbps
+  server: 24.141.96.92
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 219 - 1360ms-37Mbps
+  server: 40.233.99.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 220 - 1365ms-37Mbps
+  server: 62.60.248.23
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 221 - 1365ms-37Mbps
+  server: 179.237.105.131
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 222 - 1366ms-37Mbps
+  server: 185.21.11.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 223 - 1371ms-37Mbps
+  server: 99.229.67.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 224 - 1383ms-37Mbps
+  server: 132.243.241.12
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 225 - 1387ms-37Mbps
+  server: 62.60.153.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 226 - 1392ms-37Mbps
+  server: 82.115.19.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 227 - 1394ms-37Mbps
+  server: 193.181.215.4
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 228 - 1398ms-37Mbps
+  server: 5.129.213.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 229 - 1405ms-37Mbps
+  server: 84.234.16.169
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 230 - 1406ms-37Mbps
+  server: 45.150.195.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 231 - 1407ms-37Mbps
+  server: 13.143.139.31
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 232 - 1418ms-37Mbps
+  server: 82.38.64.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 233 - 1420ms-37Mbps
+  server: 45.150.195.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 234 - 1423ms-37Mbps
+  server: 213.21.235.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 235 - 1426ms-37Mbps
+  server: 89.23.115.18
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 236 - 1446ms-37Mbps
+  server: 62.60.250.185
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 237 - 1449ms-37Mbps
+  server: 193.181.212.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 238 - 1456ms-37Mbps
+  server: 130.94.1.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 239 - 1461ms-37Mbps
+  server: 147.45.72.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 240 - 1467ms-37Mbps
+  server: 5.42.221.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 241 - 1476ms-37Mbps
+  server: 181.36.229.212
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 242 - 1486ms-37Mbps
+  server: 38.54.4.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 243 - 1497ms-37Mbps
+  server: 144.217.162.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 244 - 1518ms-37Mbps
+  server: 176.42.68.134
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 245 - 1520ms-37Mbps
+  server: 169.128.116.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 246 - 1521ms-37Mbps
+  server: 85.237.207.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 247 - 1532ms-37Mbps
+  server: 45.136.175.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 248 - 1534ms-37Mbps
+  server: 201.24.115.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 249 - 1536ms-37Mbps
+  server: 206.168.133.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 250 - 1544ms-37Mbps
+  server: 178.157.15.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 251 - 1552ms-37Mbps
+  server: 150.241.86.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 252 - 1639ms-37Mbps
+  server: 139.84.202.177
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 253 - 1643ms-37Mbps
+  server: 103.169.206.131
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 254 - 1666ms-37Mbps
+  server: 85.121.176.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 255 - 1718ms-37Mbps
+  server: 77.91.68.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 256 - 1787ms-37Mbps
+  server: 213.165.46.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 257 - 1808ms-37Mbps
+  server: 77.91.68.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 258 - 1845ms-37Mbps
+  server: 213.155.29.37
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 259 - 1857ms-37Mbps
+  server: 94.43.238.112
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 260 - 1867ms-37Mbps
+  server: 91.195.254.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 261 - 1898ms-37Mbps
+  server: 140.235.9.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 262 - 1901ms-37Mbps
+  server: 193.169.228.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 263 - 1931ms-37Mbps
+  server: 192.71.27.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: love.tk168.cc.cd
+- name: 🇺🇸 美国 (United States) 264 - 1995ms-37Mbps
+  server: 109.248.199.113
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 07d2aca9-c060-4039-b265-454fc8510d4c
+  tls: true
+  servername: love.tk168.cc.cd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
   network: ws
   ws-opts:
     path: /?ed=2048
@@ -459,70 +4233,538 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 - 500ms-10Mbps
-  - 🇺🇸 美国 (United States) 02 - 568ms-11Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 572ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 04 - 603ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 813ms-26Mbps
-  - 🇺🇸 美国 (United States) 06 - 929ms-24Mbps
-  - 🇺🇸 美国 (United States) 07 - 938ms-37Mbps
-  - 🇺🇸 美国 (United States) 08 - 1010ms-37Mbps
-  - 🇺🇸 美国 (United States) 09 - 1025ms-37Mbps
-  - 🇺🇸 美国 (United States) 10 - 1091ms-40Mbps
-  - 🇺🇸 美国 (United States) 11 - 1123ms-16Mbps
-  - 🇺🇸 美国 (United States) 12 - 1126ms-37Mbps
-  - 🇬🇷 希腊 (Greece) 13 - 1207ms-16Mbps
-  - 🇦🇪 阿联酋 (UAE) 14 - 1217ms-37Mbps
-  - 🇺🇸 美国 (United States) 15 - 1229ms-37Mbps
-  - 🇩🇪 德国 (Germany) 16 - 1233ms-37Mbps
-  - 🇺🇸 美国 (United States) 17 - 1242ms-16Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 18 - 1249ms-37Mbps
-  - 🇲🇩 摩尔多瓦 (Moldova) 19 - 1252ms-21Mbps
-  - 🇺🇸 美国 (United States) 20 - 1399ms-10Mbps
-  - 🇺🇸 美国 (United States) 21 - 1409ms-37Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 22 - 1456ms-19Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 23 - 1457ms-16Mbps
-  - 🇯🇵 日本 (Japan) 24 - 1483ms-16Mbps
-  - 🇺🇸 美国 (United States) 25 - 1558ms-37Mbps
-  - 🇺🇸 美国 (United States) 26 - 1567ms-28Mbps
-  - 🇺🇸 美国 (United States) 27 - 1582ms-16Mbps
-  - 🇨🇭 瑞士 (Switzerland) 28 - 1682ms-16Mbps
-  - 🇩🇰 丹麦 (Denmark) 29 - 1723ms-10Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 30 - 1997ms-37Mbps
+  - 🇺🇸 美国 (United States) 01 - 160ms-37Mbps
+  - 🇺🇸 美国 (United States) 02 - 177ms-37Mbps
+  - 🇺🇸 美国 (United States) 03 - 261ms-37Mbps
+  - 🇺🇸 美国 (United States) 04 - 340ms-37Mbps
+  - 🇺🇸 美国 (United States) 05 - 355ms-37Mbps
+  - 🇺🇸 美国 (United States) 06 - 355ms-37Mbps
+  - 🇺🇸 美国 (United States) 07 - 360ms-37Mbps
+  - 🇺🇸 美国 (United States) 08 - 371ms-37Mbps
+  - 🇺🇸 美国 (United States) 09 - 374ms-37Mbps
+  - 🇺🇸 美国 (United States) 10 - 376ms-37Mbps
+  - 🇺🇸 美国 (United States) 11 - 377ms-37Mbps
+  - 🇺🇸 美国 (United States) 12 - 399ms-37Mbps
+  - 🇺🇸 美国 (United States) 13 - 402ms-37Mbps
+  - 🇺🇸 美国 (United States) 14 - 418ms-37Mbps
+  - 🇺🇸 美国 (United States) 15 - 427ms-37Mbps
+  - 🇺🇸 美国 (United States) 16 - 446ms-37Mbps
+  - 🇺🇸 美国 (United States) 17 - 454ms-37Mbps
+  - 🇺🇸 美国 (United States) 18 - 477ms-37Mbps
+  - 🇺🇸 美国 (United States) 19 - 485ms-37Mbps
+  - 🇺🇸 美国 (United States) 20 - 569ms-37Mbps
+  - 🇺🇸 美国 (United States) 21 - 574ms-37Mbps
+  - 🇺🇸 美国 (United States) 22 - 575ms-37Mbps
+  - 🇺🇸 美国 (United States) 23 - 623ms-37Mbps
+  - 🇺🇸 美国 (United States) 24 - 634ms-37Mbps
+  - 🇺🇸 美国 (United States) 25 - 650ms-37Mbps
+  - 🇺🇸 美国 (United States) 26 - 737ms-37Mbps
+  - 🇺🇸 美国 (United States) 27 - 757ms-37Mbps
+  - 🇺🇸 美国 (United States) 28 - 817ms-37Mbps
+  - 🇺🇸 美国 (United States) 29 - 834ms-37Mbps
+  - 🇺🇸 美国 (United States) 30 - 840ms-37Mbps
+  - 🇺🇸 美国 (United States) 31 - 842ms-37Mbps
+  - 🇺🇸 美国 (United States) 32 - 851ms-37Mbps
+  - 🇺🇸 美国 (United States) 33 - 859ms-37Mbps
+  - 🇺🇸 美国 (United States) 34 - 868ms-37Mbps
+  - 🇺🇸 美国 (United States) 35 - 883ms-37Mbps
+  - 🇺🇸 美国 (United States) 36 - 902ms-37Mbps
+  - 🇺🇸 美国 (United States) 37 - 916ms-37Mbps
+  - 🇺🇸 美国 (United States) 38 - 932ms-37Mbps
+  - 🇺🇸 美国 (United States) 39 - 936ms-37Mbps
+  - 🇺🇸 美国 (United States) 40 - 938ms-37Mbps
+  - 🇺🇸 美国 (United States) 41 - 945ms-37Mbps
+  - 🇺🇸 美国 (United States) 42 - 948ms-37Mbps
+  - 🇺🇸 美国 (United States) 43 - 954ms-37Mbps
+  - 🇺🇸 美国 (United States) 44 - 961ms-37Mbps
+  - 🇺🇸 美国 (United States) 45 - 965ms-37Mbps
+  - 🇺🇸 美国 (United States) 46 - 973ms-37Mbps
+  - 🇺🇸 美国 (United States) 47 - 975ms-37Mbps
+  - 🇺🇸 美国 (United States) 48 - 980ms-37Mbps
+  - 🇺🇸 美国 (United States) 49 - 981ms-37Mbps
+  - 🇺🇸 美国 (United States) 50 - 987ms-37Mbps
+  - 🇺🇸 美国 (United States) 51 - 992ms-37Mbps
+  - 🇺🇸 美国 (United States) 52 - 1012ms-37Mbps
+  - 🇺🇸 美国 (United States) 53 - 1020ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 54 - 1030ms-37Mbps
+  - 🇺🇸 美国 (United States) 55 - 1031ms-37Mbps
+  - 🇺🇸 美国 (United States) 56 - 1031ms-37Mbps
+  - 🇺🇸 美国 (United States) 57 - 1032ms-37Mbps
+  - 🇺🇸 美国 (United States) 58 - 1039ms-37Mbps
+  - 🇺🇸 美国 (United States) 59 - 1046ms-37Mbps
+  - 🇺🇸 美国 (United States) 60 - 1050ms-37Mbps
+  - 🇺🇸 美国 (United States) 61 - 1052ms-37Mbps
+  - 🇺🇸 美国 (United States) 62 - 1060ms-37Mbps
+  - 🇺🇸 美国 (United States) 63 - 1063ms-37Mbps
+  - 🇺🇸 美国 (United States) 64 - 1074ms-37Mbps
+  - 🇩🇪 德国 (Germany) 65 - 1078ms-37Mbps
+  - 🇺🇸 美国 (United States) 66 - 1079ms-37Mbps
+  - 🇺🇸 美国 (United States) 67 - 1082ms-37Mbps
+  - 🇺🇸 美国 (United States) 68 - 1083ms-37Mbps
+  - 🇺🇸 美国 (United States) 69 - 1083ms-37Mbps
+  - 🇺🇸 美国 (United States) 70 - 1089ms-37Mbps
+  - 🇺🇸 美国 (United States) 71 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 72 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 73 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 74 - 1093ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 75 - 1093ms-37Mbps
+  - 🇺🇸 美国 (United States) 76 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 77 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 78 - 1098ms-37Mbps
+  - 🇺🇸 美国 (United States) 79 - 1100ms-37Mbps
+  - 🇺🇸 美国 (United States) 80 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 81 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 82 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 83 - 1105ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 1105ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 85 - 1106ms-37Mbps
+  - 🇺🇸 美国 (United States) 86 - 1108ms-37Mbps
+  - 🇺🇸 美国 (United States) 87 - 1110ms-37Mbps
+  - 🇺🇸 美国 (United States) 88 - 1115ms-37Mbps
+  - 🇺🇸 美国 (United States) 89 - 1116ms-37Mbps
+  - 🇺🇸 美国 (United States) 90 - 1117ms-37Mbps
+  - 🇺🇸 美国 (United States) 91 - 1118ms-37Mbps
+  - 🇺🇸 美国 (United States) 92 - 1124ms-37Mbps
+  - 🇺🇸 美国 (United States) 93 - 1126ms-37Mbps
+  - 🇫🇷 法国 (France) 94 - 1126ms-37Mbps
+  - 🇺🇸 美国 (United States) 95 - 1127ms-37Mbps
+  - 🇺🇸 美国 (United States) 96 - 1132ms-37Mbps
+  - 🇺🇸 美国 (United States) 97 - 1133ms-37Mbps
+  - 🇺🇸 美国 (United States) 98 - 1133ms-37Mbps
+  - 🇺🇸 美国 (United States) 99 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 100 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 101 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 102 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 103 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 104 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 105 - 1137ms-37Mbps
+  - 🇺🇸 美国 (United States) 106 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 107 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 108 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 109 - 1139ms-37Mbps
+  - 🇺🇸 美国 (United States) 110 - 1139ms-37Mbps
+  - 🇺🇸 美国 (United States) 111 - 1141ms-37Mbps
+  - 🇺🇸 美国 (United States) 112 - 1141ms-37Mbps
+  - 🇺🇸 美国 (United States) 113 - 1143ms-37Mbps
+  - 🇺🇸 美国 (United States) 114 - 1144ms-37Mbps
+  - 🇺🇸 美国 (United States) 115 - 1147ms-37Mbps
+  - 🇺🇸 美国 (United States) 116 - 1147ms-37Mbps
+  - 🇺🇸 美国 (United States) 117 - 1150ms-37Mbps
+  - 🇺🇸 美国 (United States) 118 - 1151ms-37Mbps
+  - 🇺🇸 美国 (United States) 119 - 1151ms-37Mbps
+  - 🇺🇸 美国 (United States) 120 - 1157ms-37Mbps
+  - 🇺🇸 美国 (United States) 121 - 1160ms-37Mbps
+  - 🇺🇸 美国 (United States) 122 - 1161ms-37Mbps
+  - 🇺🇸 美国 (United States) 123 - 1163ms-37Mbps
+  - 🇺🇸 美国 (United States) 124 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 125 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 126 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 127 - 1165ms-37Mbps
+  - 🇺🇸 美国 (United States) 128 - 1166ms-37Mbps
+  - 🇺🇸 美国 (United States) 129 - 1170ms-37Mbps
+  - 🇺🇸 美国 (United States) 130 - 1175ms-37Mbps
+  - 🇺🇸 美国 (United States) 131 - 1179ms-37Mbps
+  - 🇺🇸 美国 (United States) 132 - 1183ms-10Mbps
+  - 🇦🇹 奥地利 (Austria) 133 - 1183ms-37Mbps
+  - 🇺🇸 美国 (United States) 134 - 1186ms-9Mbps
+  - 🇺🇸 美国 (United States) 135 - 1186ms-37Mbps
+  - 🇺🇸 美国 (United States) 136 - 1187ms-37Mbps
+  - 🇺🇸 美国 (United States) 137 - 1191ms-37Mbps
+  - 🇺🇸 美国 (United States) 138 - 1198ms-37Mbps
+  - 🇸🇪 瑞典 (Sweden) 139 - 1198ms-37Mbps
+  - 🇺🇸 美国 (United States) 140 - 1201ms-37Mbps
+  - 🇺🇸 美国 (United States) 141 - 1203ms-37Mbps
+  - 🇺🇸 美国 (United States) 142 - 1204ms-37Mbps
+  - 🇺🇸 美国 (United States) 143 - 1204ms-37Mbps
+  - 🇺🇸 美国 (United States) 144 - 1205ms-37Mbps
+  - 🇸🇪 瑞典 (Sweden) 145 - 1206ms-37Mbps
+  - 🇺🇸 美国 (United States) 146 - 1206ms-37Mbps
+  - 🇺🇸 美国 (United States) 147 - 1207ms-37Mbps
+  - 🇺🇸 美国 (United States) 148 - 1210ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 149 - 1211ms-37Mbps
+  - 🇺🇸 美国 (United States) 150 - 1212ms-37Mbps
+  - 🇺🇸 美国 (United States) 151 - 1215ms-37Mbps
+  - 🇺🇸 美国 (United States) 152 - 1216ms-37Mbps
+  - 🇺🇸 美国 (United States) 153 - 1216ms-37Mbps
+  - 🇺🇸 美国 (United States) 154 - 1220ms-37Mbps
+  - 🇺🇸 美国 (United States) 155 - 1221ms-37Mbps
+  - 🇺🇸 美国 (United States) 156 - 1222ms-37Mbps
+  - 🇺🇸 美国 (United States) 157 - 1223ms-37Mbps
+  - 🇺🇸 美国 (United States) 158 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 159 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 160 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 161 - 1228ms-37Mbps
+  - 🇺🇸 美国 (United States) 162 - 1229ms-37Mbps
+  - 🇺🇸 美国 (United States) 163 - 1230ms-37Mbps
+  - 🇺🇸 美国 (United States) 164 - 1231ms-37Mbps
+  - 🇺🇸 美国 (United States) 165 - 1231ms-37Mbps
+  - 🇺🇸 美国 (United States) 166 - 1234ms-37Mbps
+  - 🇺🇸 美国 (United States) 167 - 1235ms-37Mbps
+  - 🇺🇸 美国 (United States) 168 - 1236ms-37Mbps
+  - 🇺🇸 美国 (United States) 169 - 1243ms-37Mbps
+  - 🇺🇸 美国 (United States) 170 - 1245ms-37Mbps
+  - 🇺🇸 美国 (United States) 171 - 1247ms-37Mbps
+  - 🇺🇸 美国 (United States) 172 - 1248ms-37Mbps
+  - 🇺🇸 美国 (United States) 173 - 1250ms-37Mbps
+  - 🇺🇸 美国 (United States) 174 - 1250ms-37Mbps
+  - 🇺🇸 美国 (United States) 175 - 1252ms-37Mbps
+  - 🇺🇸 美国 (United States) 176 - 1252ms-37Mbps
+  - 🇺🇸 美国 (United States) 177 - 1255ms-37Mbps
+  - 🇺🇸 美国 (United States) 178 - 1255ms-37Mbps
+  - 🇺🇸 美国 (United States) 179 - 1259ms-37Mbps
+  - 🇺🇸 美国 (United States) 180 - 1260ms-37Mbps
+  - 🇺🇸 美国 (United States) 181 - 1260ms-37Mbps
+  - 🇺🇸 美国 (United States) 182 - 1261ms-37Mbps
+  - 🇪🇪 爱沙尼亚 (Estonia) 183 - 1263ms-37Mbps
+  - 🇺🇸 美国 (United States) 184 - 1264ms-37Mbps
+  - 🇺🇸 美国 (United States) 185 - 1269ms-37Mbps
+  - 🇭🇺 匈牙利 (Hungary) 186 - 1270ms-37Mbps
+  - 🇺🇸 美国 (United States) 187 - 1274ms-37Mbps
+  - 🇺🇸 美国 (United States) 188 - 1275ms-37Mbps
+  - 🇺🇸 美国 (United States) 189 - 1275ms-37Mbps
+  - 🇺🇸 美国 (United States) 190 - 1276ms-37Mbps
+  - 🇺🇸 美国 (United States) 191 - 1278ms-37Mbps
+  - 🇺🇸 美国 (United States) 192 - 1280ms-37Mbps
+  - 🇺🇸 美国 (United States) 193 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 194 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 195 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 196 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 197 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 198 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 199 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 200 - 1285ms-37Mbps
+  - 🇺🇸 美国 (United States) 201 - 1288ms-37Mbps
+  - 🇩🇪 德国 (Germany) 202 - 1299ms-37Mbps
+  - 🇺🇸 美国 (United States) 203 - 1300ms-37Mbps
+  - 🇺🇸 美国 (United States) 204 - 1303ms-37Mbps
+  - 🇺🇸 美国 (United States) 205 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 206 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 207 - 1307ms-37Mbps
+  - 🇺🇸 美国 (United States) 208 - 1316ms-37Mbps
+  - 🇺🇸 美国 (United States) 209 - 1320ms-37Mbps
+  - 🇺🇸 美国 (United States) 210 - 1326ms-37Mbps
+  - 🇺🇸 美国 (United States) 211 - 1326ms-37Mbps
+  - 🇺🇸 美国 (United States) 212 - 1330ms-37Mbps
+  - 🇺🇸 美国 (United States) 213 - 1333ms-37Mbps
+  - 🇺🇸 美国 (United States) 214 - 1347ms-37Mbps
+  - 🇺🇸 美国 (United States) 215 - 1349ms-37Mbps
+  - 🇨🇭 瑞士 (Switzerland) 216 - 1349ms-37Mbps
+  - 🇺🇸 美国 (United States) 217 - 1352ms-37Mbps
+  - 🇺🇸 美国 (United States) 218 - 1357ms-37Mbps
+  - 🇺🇸 美国 (United States) 219 - 1360ms-37Mbps
+  - 🇺🇸 美国 (United States) 220 - 1365ms-37Mbps
+  - 🇺🇸 美国 (United States) 221 - 1365ms-37Mbps
+  - 🇺🇸 美国 (United States) 222 - 1366ms-37Mbps
+  - 🇺🇸 美国 (United States) 223 - 1371ms-37Mbps
+  - 🇺🇸 美国 (United States) 224 - 1383ms-37Mbps
+  - 🇺🇸 美国 (United States) 225 - 1387ms-37Mbps
+  - 🇺🇸 美国 (United States) 226 - 1392ms-37Mbps
+  - 🇺🇸 美国 (United States) 227 - 1394ms-37Mbps
+  - 🇺🇸 美国 (United States) 228 - 1398ms-37Mbps
+  - 🇺🇸 美国 (United States) 229 - 1405ms-37Mbps
+  - 🇺🇸 美国 (United States) 230 - 1406ms-37Mbps
+  - 🇺🇸 美国 (United States) 231 - 1407ms-37Mbps
+  - 🇺🇸 美国 (United States) 232 - 1418ms-37Mbps
+  - 🇺🇸 美国 (United States) 233 - 1420ms-37Mbps
+  - 🇺🇸 美国 (United States) 234 - 1423ms-37Mbps
+  - 🇺🇸 美国 (United States) 235 - 1426ms-37Mbps
+  - 🇺🇸 美国 (United States) 236 - 1446ms-37Mbps
+  - 🇺🇸 美国 (United States) 237 - 1449ms-37Mbps
+  - 🇺🇸 美国 (United States) 238 - 1456ms-37Mbps
+  - 🇺🇸 美国 (United States) 239 - 1461ms-37Mbps
+  - 🇺🇸 美国 (United States) 240 - 1467ms-37Mbps
+  - 🇺🇸 美国 (United States) 241 - 1476ms-37Mbps
+  - 🇺🇸 美国 (United States) 242 - 1486ms-37Mbps
+  - 🇺🇸 美国 (United States) 243 - 1497ms-37Mbps
+  - 🇺🇸 美国 (United States) 244 - 1518ms-37Mbps
+  - 🇺🇸 美国 (United States) 245 - 1520ms-37Mbps
+  - 🇺🇸 美国 (United States) 246 - 1521ms-37Mbps
+  - 🇺🇸 美国 (United States) 247 - 1532ms-37Mbps
+  - 🇺🇸 美国 (United States) 248 - 1534ms-37Mbps
+  - 🇺🇸 美国 (United States) 249 - 1536ms-37Mbps
+  - 🇺🇸 美国 (United States) 250 - 1544ms-37Mbps
+  - 🇺🇸 美国 (United States) 251 - 1552ms-37Mbps
+  - 🇺🇸 美国 (United States) 252 - 1639ms-37Mbps
+  - 🇺🇸 美国 (United States) 253 - 1643ms-37Mbps
+  - 🇺🇸 美国 (United States) 254 - 1666ms-37Mbps
+  - 🇺🇸 美国 (United States) 255 - 1718ms-37Mbps
+  - 🇺🇸 美国 (United States) 256 - 1787ms-37Mbps
+  - 🇺🇸 美国 (United States) 257 - 1808ms-37Mbps
+  - 🇺🇸 美国 (United States) 258 - 1845ms-37Mbps
+  - 🇺🇸 美国 (United States) 259 - 1857ms-37Mbps
+  - 🇺🇸 美国 (United States) 260 - 1867ms-37Mbps
+  - 🇺🇸 美国 (United States) 261 - 1898ms-37Mbps
+  - 🇺🇸 美国 (United States) 262 - 1901ms-37Mbps
+  - 🇺🇸 美国 (United States) 263 - 1931ms-37Mbps
+  - 🇺🇸 美国 (United States) 264 - 1995ms-37Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 - 500ms-10Mbps
-  - 🇺🇸 美国 (United States) 02 - 568ms-11Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 572ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 04 - 603ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 813ms-26Mbps
-  - 🇺🇸 美国 (United States) 06 - 929ms-24Mbps
-  - 🇺🇸 美国 (United States) 07 - 938ms-37Mbps
-  - 🇺🇸 美国 (United States) 08 - 1010ms-37Mbps
-  - 🇺🇸 美国 (United States) 09 - 1025ms-37Mbps
-  - 🇺🇸 美国 (United States) 10 - 1091ms-40Mbps
-  - 🇺🇸 美国 (United States) 11 - 1123ms-16Mbps
-  - 🇺🇸 美国 (United States) 12 - 1126ms-37Mbps
-  - 🇬🇷 希腊 (Greece) 13 - 1207ms-16Mbps
-  - 🇦🇪 阿联酋 (UAE) 14 - 1217ms-37Mbps
-  - 🇺🇸 美国 (United States) 15 - 1229ms-37Mbps
-  - 🇩🇪 德国 (Germany) 16 - 1233ms-37Mbps
-  - 🇺🇸 美国 (United States) 17 - 1242ms-16Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 18 - 1249ms-37Mbps
-  - 🇲🇩 摩尔多瓦 (Moldova) 19 - 1252ms-21Mbps
-  - 🇺🇸 美国 (United States) 20 - 1399ms-10Mbps
-  - 🇺🇸 美国 (United States) 21 - 1409ms-37Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 22 - 1456ms-19Mbps
-  - 🇱🇹 立陶宛 (Lithuania) 23 - 1457ms-16Mbps
-  - 🇯🇵 日本 (Japan) 24 - 1483ms-16Mbps
-  - 🇺🇸 美国 (United States) 25 - 1558ms-37Mbps
-  - 🇺🇸 美国 (United States) 26 - 1567ms-28Mbps
-  - 🇺🇸 美国 (United States) 27 - 1582ms-16Mbps
-  - 🇨🇭 瑞士 (Switzerland) 28 - 1682ms-16Mbps
-  - 🇩🇰 丹麦 (Denmark) 29 - 1723ms-10Mbps
-  - 🇱🇻 拉脱维亚 (Latvia) 30 - 1997ms-37Mbps
+  - 🇺🇸 美国 (United States) 01 - 160ms-37Mbps
+  - 🇺🇸 美国 (United States) 02 - 177ms-37Mbps
+  - 🇺🇸 美国 (United States) 03 - 261ms-37Mbps
+  - 🇺🇸 美国 (United States) 04 - 340ms-37Mbps
+  - 🇺🇸 美国 (United States) 05 - 355ms-37Mbps
+  - 🇺🇸 美国 (United States) 06 - 355ms-37Mbps
+  - 🇺🇸 美国 (United States) 07 - 360ms-37Mbps
+  - 🇺🇸 美国 (United States) 08 - 371ms-37Mbps
+  - 🇺🇸 美国 (United States) 09 - 374ms-37Mbps
+  - 🇺🇸 美国 (United States) 10 - 376ms-37Mbps
+  - 🇺🇸 美国 (United States) 11 - 377ms-37Mbps
+  - 🇺🇸 美国 (United States) 12 - 399ms-37Mbps
+  - 🇺🇸 美国 (United States) 13 - 402ms-37Mbps
+  - 🇺🇸 美国 (United States) 14 - 418ms-37Mbps
+  - 🇺🇸 美国 (United States) 15 - 427ms-37Mbps
+  - 🇺🇸 美国 (United States) 16 - 446ms-37Mbps
+  - 🇺🇸 美国 (United States) 17 - 454ms-37Mbps
+  - 🇺🇸 美国 (United States) 18 - 477ms-37Mbps
+  - 🇺🇸 美国 (United States) 19 - 485ms-37Mbps
+  - 🇺🇸 美国 (United States) 20 - 569ms-37Mbps
+  - 🇺🇸 美国 (United States) 21 - 574ms-37Mbps
+  - 🇺🇸 美国 (United States) 22 - 575ms-37Mbps
+  - 🇺🇸 美国 (United States) 23 - 623ms-37Mbps
+  - 🇺🇸 美国 (United States) 24 - 634ms-37Mbps
+  - 🇺🇸 美国 (United States) 25 - 650ms-37Mbps
+  - 🇺🇸 美国 (United States) 26 - 737ms-37Mbps
+  - 🇺🇸 美国 (United States) 27 - 757ms-37Mbps
+  - 🇺🇸 美国 (United States) 28 - 817ms-37Mbps
+  - 🇺🇸 美国 (United States) 29 - 834ms-37Mbps
+  - 🇺🇸 美国 (United States) 30 - 840ms-37Mbps
+  - 🇺🇸 美国 (United States) 31 - 842ms-37Mbps
+  - 🇺🇸 美国 (United States) 32 - 851ms-37Mbps
+  - 🇺🇸 美国 (United States) 33 - 859ms-37Mbps
+  - 🇺🇸 美国 (United States) 34 - 868ms-37Mbps
+  - 🇺🇸 美国 (United States) 35 - 883ms-37Mbps
+  - 🇺🇸 美国 (United States) 36 - 902ms-37Mbps
+  - 🇺🇸 美国 (United States) 37 - 916ms-37Mbps
+  - 🇺🇸 美国 (United States) 38 - 932ms-37Mbps
+  - 🇺🇸 美国 (United States) 39 - 936ms-37Mbps
+  - 🇺🇸 美国 (United States) 40 - 938ms-37Mbps
+  - 🇺🇸 美国 (United States) 41 - 945ms-37Mbps
+  - 🇺🇸 美国 (United States) 42 - 948ms-37Mbps
+  - 🇺🇸 美国 (United States) 43 - 954ms-37Mbps
+  - 🇺🇸 美国 (United States) 44 - 961ms-37Mbps
+  - 🇺🇸 美国 (United States) 45 - 965ms-37Mbps
+  - 🇺🇸 美国 (United States) 46 - 973ms-37Mbps
+  - 🇺🇸 美国 (United States) 47 - 975ms-37Mbps
+  - 🇺🇸 美国 (United States) 48 - 980ms-37Mbps
+  - 🇺🇸 美国 (United States) 49 - 981ms-37Mbps
+  - 🇺🇸 美国 (United States) 50 - 987ms-37Mbps
+  - 🇺🇸 美国 (United States) 51 - 992ms-37Mbps
+  - 🇺🇸 美国 (United States) 52 - 1012ms-37Mbps
+  - 🇺🇸 美国 (United States) 53 - 1020ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 54 - 1030ms-37Mbps
+  - 🇺🇸 美国 (United States) 55 - 1031ms-37Mbps
+  - 🇺🇸 美国 (United States) 56 - 1031ms-37Mbps
+  - 🇺🇸 美国 (United States) 57 - 1032ms-37Mbps
+  - 🇺🇸 美国 (United States) 58 - 1039ms-37Mbps
+  - 🇺🇸 美国 (United States) 59 - 1046ms-37Mbps
+  - 🇺🇸 美国 (United States) 60 - 1050ms-37Mbps
+  - 🇺🇸 美国 (United States) 61 - 1052ms-37Mbps
+  - 🇺🇸 美国 (United States) 62 - 1060ms-37Mbps
+  - 🇺🇸 美国 (United States) 63 - 1063ms-37Mbps
+  - 🇺🇸 美国 (United States) 64 - 1074ms-37Mbps
+  - 🇩🇪 德国 (Germany) 65 - 1078ms-37Mbps
+  - 🇺🇸 美国 (United States) 66 - 1079ms-37Mbps
+  - 🇺🇸 美国 (United States) 67 - 1082ms-37Mbps
+  - 🇺🇸 美国 (United States) 68 - 1083ms-37Mbps
+  - 🇺🇸 美国 (United States) 69 - 1083ms-37Mbps
+  - 🇺🇸 美国 (United States) 70 - 1089ms-37Mbps
+  - 🇺🇸 美国 (United States) 71 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 72 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 73 - 1090ms-37Mbps
+  - 🇺🇸 美国 (United States) 74 - 1093ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 75 - 1093ms-37Mbps
+  - 🇺🇸 美国 (United States) 76 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 77 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 78 - 1098ms-37Mbps
+  - 🇺🇸 美国 (United States) 79 - 1100ms-37Mbps
+  - 🇺🇸 美国 (United States) 80 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 81 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 82 - 1104ms-37Mbps
+  - 🇺🇸 美国 (United States) 83 - 1105ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 1105ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 85 - 1106ms-37Mbps
+  - 🇺🇸 美国 (United States) 86 - 1108ms-37Mbps
+  - 🇺🇸 美国 (United States) 87 - 1110ms-37Mbps
+  - 🇺🇸 美国 (United States) 88 - 1115ms-37Mbps
+  - 🇺🇸 美国 (United States) 89 - 1116ms-37Mbps
+  - 🇺🇸 美国 (United States) 90 - 1117ms-37Mbps
+  - 🇺🇸 美国 (United States) 91 - 1118ms-37Mbps
+  - 🇺🇸 美国 (United States) 92 - 1124ms-37Mbps
+  - 🇺🇸 美国 (United States) 93 - 1126ms-37Mbps
+  - 🇫🇷 法国 (France) 94 - 1126ms-37Mbps
+  - 🇺🇸 美国 (United States) 95 - 1127ms-37Mbps
+  - 🇺🇸 美国 (United States) 96 - 1132ms-37Mbps
+  - 🇺🇸 美国 (United States) 97 - 1133ms-37Mbps
+  - 🇺🇸 美国 (United States) 98 - 1133ms-37Mbps
+  - 🇺🇸 美国 (United States) 99 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 100 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 101 - 1134ms-37Mbps
+  - 🇺🇸 美国 (United States) 102 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 103 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 104 - 1135ms-37Mbps
+  - 🇺🇸 美国 (United States) 105 - 1137ms-37Mbps
+  - 🇺🇸 美国 (United States) 106 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 107 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 108 - 1138ms-37Mbps
+  - 🇺🇸 美国 (United States) 109 - 1139ms-37Mbps
+  - 🇺🇸 美国 (United States) 110 - 1139ms-37Mbps
+  - 🇺🇸 美国 (United States) 111 - 1141ms-37Mbps
+  - 🇺🇸 美国 (United States) 112 - 1141ms-37Mbps
+  - 🇺🇸 美国 (United States) 113 - 1143ms-37Mbps
+  - 🇺🇸 美国 (United States) 114 - 1144ms-37Mbps
+  - 🇺🇸 美国 (United States) 115 - 1147ms-37Mbps
+  - 🇺🇸 美国 (United States) 116 - 1147ms-37Mbps
+  - 🇺🇸 美国 (United States) 117 - 1150ms-37Mbps
+  - 🇺🇸 美国 (United States) 118 - 1151ms-37Mbps
+  - 🇺🇸 美国 (United States) 119 - 1151ms-37Mbps
+  - 🇺🇸 美国 (United States) 120 - 1157ms-37Mbps
+  - 🇺🇸 美国 (United States) 121 - 1160ms-37Mbps
+  - 🇺🇸 美国 (United States) 122 - 1161ms-37Mbps
+  - 🇺🇸 美国 (United States) 123 - 1163ms-37Mbps
+  - 🇺🇸 美国 (United States) 124 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 125 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 126 - 1164ms-37Mbps
+  - 🇺🇸 美国 (United States) 127 - 1165ms-37Mbps
+  - 🇺🇸 美国 (United States) 128 - 1166ms-37Mbps
+  - 🇺🇸 美国 (United States) 129 - 1170ms-37Mbps
+  - 🇺🇸 美国 (United States) 130 - 1175ms-37Mbps
+  - 🇺🇸 美国 (United States) 131 - 1179ms-37Mbps
+  - 🇺🇸 美国 (United States) 132 - 1183ms-10Mbps
+  - 🇦🇹 奥地利 (Austria) 133 - 1183ms-37Mbps
+  - 🇺🇸 美国 (United States) 134 - 1186ms-9Mbps
+  - 🇺🇸 美国 (United States) 135 - 1186ms-37Mbps
+  - 🇺🇸 美国 (United States) 136 - 1187ms-37Mbps
+  - 🇺🇸 美国 (United States) 137 - 1191ms-37Mbps
+  - 🇺🇸 美国 (United States) 138 - 1198ms-37Mbps
+  - 🇸🇪 瑞典 (Sweden) 139 - 1198ms-37Mbps
+  - 🇺🇸 美国 (United States) 140 - 1201ms-37Mbps
+  - 🇺🇸 美国 (United States) 141 - 1203ms-37Mbps
+  - 🇺🇸 美国 (United States) 142 - 1204ms-37Mbps
+  - 🇺🇸 美国 (United States) 143 - 1204ms-37Mbps
+  - 🇺🇸 美国 (United States) 144 - 1205ms-37Mbps
+  - 🇸🇪 瑞典 (Sweden) 145 - 1206ms-37Mbps
+  - 🇺🇸 美国 (United States) 146 - 1206ms-37Mbps
+  - 🇺🇸 美国 (United States) 147 - 1207ms-37Mbps
+  - 🇺🇸 美国 (United States) 148 - 1210ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 149 - 1211ms-37Mbps
+  - 🇺🇸 美国 (United States) 150 - 1212ms-37Mbps
+  - 🇺🇸 美国 (United States) 151 - 1215ms-37Mbps
+  - 🇺🇸 美国 (United States) 152 - 1216ms-37Mbps
+  - 🇺🇸 美国 (United States) 153 - 1216ms-37Mbps
+  - 🇺🇸 美国 (United States) 154 - 1220ms-37Mbps
+  - 🇺🇸 美国 (United States) 155 - 1221ms-37Mbps
+  - 🇺🇸 美国 (United States) 156 - 1222ms-37Mbps
+  - 🇺🇸 美国 (United States) 157 - 1223ms-37Mbps
+  - 🇺🇸 美国 (United States) 158 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 159 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 160 - 1227ms-37Mbps
+  - 🇺🇸 美国 (United States) 161 - 1228ms-37Mbps
+  - 🇺🇸 美国 (United States) 162 - 1229ms-37Mbps
+  - 🇺🇸 美国 (United States) 163 - 1230ms-37Mbps
+  - 🇺🇸 美国 (United States) 164 - 1231ms-37Mbps
+  - 🇺🇸 美国 (United States) 165 - 1231ms-37Mbps
+  - 🇺🇸 美国 (United States) 166 - 1234ms-37Mbps
+  - 🇺🇸 美国 (United States) 167 - 1235ms-37Mbps
+  - 🇺🇸 美国 (United States) 168 - 1236ms-37Mbps
+  - 🇺🇸 美国 (United States) 169 - 1243ms-37Mbps
+  - 🇺🇸 美国 (United States) 170 - 1245ms-37Mbps
+  - 🇺🇸 美国 (United States) 171 - 1247ms-37Mbps
+  - 🇺🇸 美国 (United States) 172 - 1248ms-37Mbps
+  - 🇺🇸 美国 (United States) 173 - 1250ms-37Mbps
+  - 🇺🇸 美国 (United States) 174 - 1250ms-37Mbps
+  - 🇺🇸 美国 (United States) 175 - 1252ms-37Mbps
+  - 🇺🇸 美国 (United States) 176 - 1252ms-37Mbps
+  - 🇺🇸 美国 (United States) 177 - 1255ms-37Mbps
+  - 🇺🇸 美国 (United States) 178 - 1255ms-37Mbps
+  - 🇺🇸 美国 (United States) 179 - 1259ms-37Mbps
+  - 🇺🇸 美国 (United States) 180 - 1260ms-37Mbps
+  - 🇺🇸 美国 (United States) 181 - 1260ms-37Mbps
+  - 🇺🇸 美国 (United States) 182 - 1261ms-37Mbps
+  - 🇪🇪 爱沙尼亚 (Estonia) 183 - 1263ms-37Mbps
+  - 🇺🇸 美国 (United States) 184 - 1264ms-37Mbps
+  - 🇺🇸 美国 (United States) 185 - 1269ms-37Mbps
+  - 🇭🇺 匈牙利 (Hungary) 186 - 1270ms-37Mbps
+  - 🇺🇸 美国 (United States) 187 - 1274ms-37Mbps
+  - 🇺🇸 美国 (United States) 188 - 1275ms-37Mbps
+  - 🇺🇸 美国 (United States) 189 - 1275ms-37Mbps
+  - 🇺🇸 美国 (United States) 190 - 1276ms-37Mbps
+  - 🇺🇸 美国 (United States) 191 - 1278ms-37Mbps
+  - 🇺🇸 美国 (United States) 192 - 1280ms-37Mbps
+  - 🇺🇸 美国 (United States) 193 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 194 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 195 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 196 - 1282ms-37Mbps
+  - 🇺🇸 美国 (United States) 197 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 198 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 199 - 1283ms-37Mbps
+  - 🇺🇸 美国 (United States) 200 - 1285ms-37Mbps
+  - 🇺🇸 美国 (United States) 201 - 1288ms-37Mbps
+  - 🇩🇪 德国 (Germany) 202 - 1299ms-37Mbps
+  - 🇺🇸 美国 (United States) 203 - 1300ms-37Mbps
+  - 🇺🇸 美国 (United States) 204 - 1303ms-37Mbps
+  - 🇺🇸 美国 (United States) 205 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 206 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 207 - 1307ms-37Mbps
+  - 🇺🇸 美国 (United States) 208 - 1316ms-37Mbps
+  - 🇺🇸 美国 (United States) 209 - 1320ms-37Mbps
+  - 🇺🇸 美国 (United States) 210 - 1326ms-37Mbps
+  - 🇺🇸 美国 (United States) 211 - 1326ms-37Mbps
+  - 🇺🇸 美国 (United States) 212 - 1330ms-37Mbps
+  - 🇺🇸 美国 (United States) 213 - 1333ms-37Mbps
+  - 🇺🇸 美国 (United States) 214 - 1347ms-37Mbps
+  - 🇺🇸 美国 (United States) 215 - 1349ms-37Mbps
+  - 🇨🇭 瑞士 (Switzerland) 216 - 1349ms-37Mbps
+  - 🇺🇸 美国 (United States) 217 - 1352ms-37Mbps
+  - 🇺🇸 美国 (United States) 218 - 1357ms-37Mbps
+  - 🇺🇸 美国 (United States) 219 - 1360ms-37Mbps
+  - 🇺🇸 美国 (United States) 220 - 1365ms-37Mbps
+  - 🇺🇸 美国 (United States) 221 - 1365ms-37Mbps
+  - 🇺🇸 美国 (United States) 222 - 1366ms-37Mbps
+  - 🇺🇸 美国 (United States) 223 - 1371ms-37Mbps
+  - 🇺🇸 美国 (United States) 224 - 1383ms-37Mbps
+  - 🇺🇸 美国 (United States) 225 - 1387ms-37Mbps
+  - 🇺🇸 美国 (United States) 226 - 1392ms-37Mbps
+  - 🇺🇸 美国 (United States) 227 - 1394ms-37Mbps
+  - 🇺🇸 美国 (United States) 228 - 1398ms-37Mbps
+  - 🇺🇸 美国 (United States) 229 - 1405ms-37Mbps
+  - 🇺🇸 美国 (United States) 230 - 1406ms-37Mbps
+  - 🇺🇸 美国 (United States) 231 - 1407ms-37Mbps
+  - 🇺🇸 美国 (United States) 232 - 1418ms-37Mbps
+  - 🇺🇸 美国 (United States) 233 - 1420ms-37Mbps
+  - 🇺🇸 美国 (United States) 234 - 1423ms-37Mbps
+  - 🇺🇸 美国 (United States) 235 - 1426ms-37Mbps
+  - 🇺🇸 美国 (United States) 236 - 1446ms-37Mbps
+  - 🇺🇸 美国 (United States) 237 - 1449ms-37Mbps
+  - 🇺🇸 美国 (United States) 238 - 1456ms-37Mbps
+  - 🇺🇸 美国 (United States) 239 - 1461ms-37Mbps
+  - 🇺🇸 美国 (United States) 240 - 1467ms-37Mbps
+  - 🇺🇸 美国 (United States) 241 - 1476ms-37Mbps
+  - 🇺🇸 美国 (United States) 242 - 1486ms-37Mbps
+  - 🇺🇸 美国 (United States) 243 - 1497ms-37Mbps
+  - 🇺🇸 美国 (United States) 244 - 1518ms-37Mbps
+  - 🇺🇸 美国 (United States) 245 - 1520ms-37Mbps
+  - 🇺🇸 美国 (United States) 246 - 1521ms-37Mbps
+  - 🇺🇸 美国 (United States) 247 - 1532ms-37Mbps
+  - 🇺🇸 美国 (United States) 248 - 1534ms-37Mbps
+  - 🇺🇸 美国 (United States) 249 - 1536ms-37Mbps
+  - 🇺🇸 美国 (United States) 250 - 1544ms-37Mbps
+  - 🇺🇸 美国 (United States) 251 - 1552ms-37Mbps
+  - 🇺🇸 美国 (United States) 252 - 1639ms-37Mbps
+  - 🇺🇸 美国 (United States) 253 - 1643ms-37Mbps
+  - 🇺🇸 美国 (United States) 254 - 1666ms-37Mbps
+  - 🇺🇸 美国 (United States) 255 - 1718ms-37Mbps
+  - 🇺🇸 美国 (United States) 256 - 1787ms-37Mbps
+  - 🇺🇸 美国 (United States) 257 - 1808ms-37Mbps
+  - 🇺🇸 美国 (United States) 258 - 1845ms-37Mbps
+  - 🇺🇸 美国 (United States) 259 - 1857ms-37Mbps
+  - 🇺🇸 美国 (United States) 260 - 1867ms-37Mbps
+  - 🇺🇸 美国 (United States) 261 - 1898ms-37Mbps
+  - 🇺🇸 美国 (United States) 262 - 1901ms-37Mbps
+  - 🇺🇸 美国 (United States) 263 - 1931ms-37Mbps
+  - 🇺🇸 美国 (United States) 264 - 1995ms-37Mbps
 rules:
 - MATCH,PROXIES
