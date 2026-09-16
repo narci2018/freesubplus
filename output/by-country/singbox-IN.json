@@ -5,50 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 - 704ms-6Mbps",
-      "server": "172.67.208.1",
-      "server_port": 443,
-      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
+      "tag": "🇮🇳 印度 (India) 01 - 958ms-6Mbps",
+      "server": "5.253.42.164",
+      "server_port": 40443,
+      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "odd-violet-5440.asdgrweeee13.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - 936ms-7Mbps",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
+          "short_id": "68a8"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - 1035ms-5Mbps",
+      "tag": "🇮🇳 印度 (India) 02 - 981ms-6Mbps",
       "server": "5.253.28.218",
       "server_port": 40443,
       "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
@@ -58,7 +36,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +47,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - 1096ms-8Mbps",
+      "tag": "🇮🇳 印度 (India) 03 - 1043ms-5Mbps",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 04 - 1076ms-7Mbps",
+      "server": "vpn-in-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - 1107ms-7Mbps",
       "server": "hydra.yokkastars.com",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -93,7 +103,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - 1144ms-9Mbps",
+      "tag": "🇮🇳 印度 (India) 06 - 1243ms-10Mbps",
       "server": "preview.netraidly.ru",
       "server_port": 40443,
       "uuid": "15fd22d1-8931-4d41-af37-8ba6711e93fe",
@@ -114,35 +124,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 06 - 1295ms-7Mbps",
-      "server": "vpn-in-001.fastervpn.world",
+      "tag": "🇮🇳 印度 (India) 07 - 1329ms-6Mbps",
+      "server": "35.154.58.87",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "vpn-in-001.fastervpn.world",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 07 - 1298ms-3Mbps",
-      "server": "dorado.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
-        }
       }
     },
     {
@@ -150,26 +139,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - 704ms-6Mbps",
-        "🇮🇳 印度 (India) 02 - 936ms-7Mbps",
-        "🇮🇳 印度 (India) 03 - 1035ms-5Mbps",
-        "🇮🇳 印度 (India) 04 - 1096ms-8Mbps",
-        "🇮🇳 印度 (India) 05 - 1144ms-9Mbps",
-        "🇮🇳 印度 (India) 06 - 1295ms-7Mbps",
-        "🇮🇳 印度 (India) 07 - 1298ms-3Mbps"
+        "🇮🇳 印度 (India) 01 - 958ms-6Mbps",
+        "🇮🇳 印度 (India) 02 - 981ms-6Mbps",
+        "🇮🇳 印度 (India) 03 - 1043ms-5Mbps",
+        "🇮🇳 印度 (India) 04 - 1076ms-7Mbps",
+        "🇮🇳 印度 (India) 05 - 1107ms-7Mbps",
+        "🇮🇳 印度 (India) 06 - 1243ms-10Mbps",
+        "🇮🇳 印度 (India) 07 - 1329ms-6Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - 704ms-6Mbps",
-        "🇮🇳 印度 (India) 02 - 936ms-7Mbps",
-        "🇮🇳 印度 (India) 03 - 1035ms-5Mbps",
-        "🇮🇳 印度 (India) 04 - 1096ms-8Mbps",
-        "🇮🇳 印度 (India) 05 - 1144ms-9Mbps",
-        "🇮🇳 印度 (India) 06 - 1295ms-7Mbps",
-        "🇮🇳 印度 (India) 07 - 1298ms-3Mbps"
+        "🇮🇳 印度 (India) 01 - 958ms-6Mbps",
+        "🇮🇳 印度 (India) 02 - 981ms-6Mbps",
+        "🇮🇳 印度 (India) 03 - 1043ms-5Mbps",
+        "🇮🇳 印度 (India) 04 - 1076ms-7Mbps",
+        "🇮🇳 印度 (India) 05 - 1107ms-7Mbps",
+        "🇮🇳 印度 (India) 06 - 1243ms-10Mbps",
+        "🇮🇳 印度 (India) 07 - 1329ms-6Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

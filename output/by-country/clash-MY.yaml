@@ -4,15 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps
-  server: 47.250.84.25
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps
+  server: my2.miyazono-kaori.com
   port: 443
   udp: true
-  type: trojan
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: 47.250.84.25
-  skip-cert-verify: true
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps
+  type: vless
+  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM
+    short-id: ed77ac35a310
+  servername: www.setel.com
+  client-fingerprint: chrome
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps
   server: 56.69.159.191
   port: 53271
   udp: true
@@ -24,20 +29,20 @@ proxies:
     public-key: 1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc
     short-id: 0a9bd9db19578964
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps
 rules:
 - MATCH,PROXIES

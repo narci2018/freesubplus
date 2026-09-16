@@ -4,20 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps",
-      "server": "47.250.84.25",
+      "type": "vless",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps",
+      "server": "my2.miyazono-kaori.com",
       "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "uuid": "f3c10b66-6a02-499f-9ed5-e518be4dde61",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "47.250.84.25",
-        "insecure": true
+        "server_name": "www.setel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6q8qhMxgq3ynJPUgudaRkcDXj0qgoc_UU1N0SWGLwM",
+          "short_id": "ed77ac35a310"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps",
       "server": "56.69.159.191",
       "server_port": 53271,
       "uuid": "e8358eb5-7210-4cf8-982f-68af141b7694",
@@ -27,7 +36,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -41,16 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps",
-        "🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps"
+        "🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps",
+        "🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - 892ms-7Mbps",
-        "🇲🇾 马来西亚 (Malaysia) 02 - 1157ms-0.9Mbps"
+        "🇲🇾 马来西亚 (Malaysia) 01 - 867ms-5Mbps",
+        "🇲🇾 马来西亚 (Malaysia) 02 - 950ms-3Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

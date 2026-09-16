@@ -4,34 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - 704ms-6Mbps
-  server: 172.67.208.1
-  port: 443
+- name: 🇮🇳 印度 (India) 01 - 958ms-6Mbps
+  server: 5.253.42.164
+  port: 40443
   udp: true
   type: vless
-  uuid: 1443b7a1-7ba9-4ec9-b904-2e867367b5d7
-  tls: true
-  servername: odd-violet-5440.asdgrweeee13.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: odd-violet-5440.asdgrweeee13.workers.dev
-- name: 🇮🇳 印度 (India) 02 - 936ms-7Mbps
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 - 1035ms-5Mbps
+- name: 🇮🇳 印度 (India) 02 - 981ms-6Mbps
   server: 5.253.28.218
   port: 40443
   udp: true
@@ -43,8 +29,28 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - 1096ms-8Mbps
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
+  server: vpn-in-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
   server: hydra.yokkastars.com
   port: 2443
   udp: true
@@ -59,7 +65,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
-- name: 🇮🇳 印度 (India) 05 - 1144ms-9Mbps
+- name: 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
   server: preview.netraidly.ru
   port: 40443
   udp: true
@@ -72,50 +78,37 @@ proxies:
     short-id: 84fc
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 06 - 1295ms-7Mbps
-  server: vpn-in-001.fastervpn.world
+- name: 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
+  server: 35.154.58.87
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
+  sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 07 - 1298ms-3Mbps
-  server: dorado.yokkastars.com
-  port: 40443
-  udp: true
-  type: vless
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - 704ms-6Mbps
-  - 🇮🇳 印度 (India) 02 - 936ms-7Mbps
-  - 🇮🇳 印度 (India) 03 - 1035ms-5Mbps
-  - 🇮🇳 印度 (India) 04 - 1096ms-8Mbps
-  - 🇮🇳 印度 (India) 05 - 1144ms-9Mbps
-  - 🇮🇳 印度 (India) 06 - 1295ms-7Mbps
-  - 🇮🇳 印度 (India) 07 - 1298ms-3Mbps
+  - 🇮🇳 印度 (India) 01 - 958ms-6Mbps
+  - 🇮🇳 印度 (India) 02 - 981ms-6Mbps
+  - 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
+  - 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
+  - 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
+  - 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
+  - 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - 704ms-6Mbps
-  - 🇮🇳 印度 (India) 02 - 936ms-7Mbps
-  - 🇮🇳 印度 (India) 03 - 1035ms-5Mbps
-  - 🇮🇳 印度 (India) 04 - 1096ms-8Mbps
-  - 🇮🇳 印度 (India) 05 - 1144ms-9Mbps
-  - 🇮🇳 印度 (India) 06 - 1295ms-7Mbps
-  - 🇮🇳 印度 (India) 07 - 1298ms-3Mbps
+  - 🇮🇳 印度 (India) 01 - 958ms-6Mbps
+  - 🇮🇳 印度 (India) 02 - 981ms-6Mbps
+  - 🇮🇳 印度 (India) 03 - 1043ms-5Mbps
+  - 🇮🇳 印度 (India) 04 - 1076ms-7Mbps
+  - 🇮🇳 印度 (India) 05 - 1107ms-7Mbps
+  - 🇮🇳 印度 (India) 06 - 1243ms-10Mbps
+  - 🇮🇳 印度 (India) 07 - 1329ms-6Mbps
 rules:
 - MATCH,PROXIES

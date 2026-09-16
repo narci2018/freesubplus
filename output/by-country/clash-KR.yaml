@@ -4,7 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps
+- name: 🇰🇷 韩国 (South Korea) 01 - 598ms-8Mbps
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 02 - 611ms-10Mbps
   server: 140.238.2.250
   port: 443
   udp: true
@@ -12,7 +19,15 @@ proxies:
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps
+- name: 🇰🇷 韩国 (South Korea) 03 - 692ms-10Mbps
+  server: 3.36.93.74
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - 713ms-8Mbps
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -25,23 +40,48 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps
-  server: 132.226.226.189
+- name: 🇰🇷 韩国 (South Korea) 05 - 725ms-9Mbps
+  server: kr2.miyazono-kaori.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: f3c10b66-6a02-499f-9ed5-e518be4dde61
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6pZxjabeHoyJlsc2cP3Q5YK7G0bIOQwzWFyiarbUQXc
+    short-id: c8af1462debbc1
+  servername: www.coway.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 06 - 795ms-2Mbps
+  server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps
-  server: 3.36.93.74
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 07 - 795ms-8Mbps
+  server: 36.133.78.37
+  port: 50016
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps
+  type: vmess
+  uuid: 1235431b-b6b8-4add-bff4-a6d71bcc4d71
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 08 - 814ms-9Mbps
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 09 - 829ms-11Mbps
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -49,7 +89,15 @@ proxies:
   password: maintell
   sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps
+- name: 🇰🇷 韩国 (South Korea) 10 - 897ms-12Mbps
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - 1100ms-6Mbps
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -62,77 +110,46 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps
-  server: 151.245.106.49
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  tls: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps
-  server: 211.48.30.184
-  port: 30017
-  udp: true
-  type: vless
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps
-  server: 211.178.105.134
-  port: 6123
+- name: 🇰🇷 韩国 (South Korea) 12 - 10313ms-0.9Mbps
+  server: 141.164.45.187
+  port: 7001
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps
-  - 🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps
-  - 🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps
-  - 🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps
-  - 🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps
+  - 🇰🇷 韩国 (South Korea) 01 - 598ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 02 - 611ms-10Mbps
+  - 🇰🇷 韩国 (South Korea) 03 - 692ms-10Mbps
+  - 🇰🇷 韩国 (South Korea) 04 - 713ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 05 - 725ms-9Mbps
+  - 🇰🇷 韩国 (South Korea) 06 - 795ms-2Mbps
+  - 🇰🇷 韩国 (South Korea) 07 - 795ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 08 - 814ms-9Mbps
+  - 🇰🇷 韩国 (South Korea) 09 - 829ms-11Mbps
+  - 🇰🇷 韩国 (South Korea) 10 - 897ms-12Mbps
+  - 🇰🇷 韩国 (South Korea) 11 - 1100ms-6Mbps
+  - 🇰🇷 韩国 (South Korea) 12 - 10313ms-0.9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps
-  - 🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps
-  - 🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps
-  - 🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps
-  - 🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps
-  - 🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps
-  - 🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps
+  - 🇰🇷 韩国 (South Korea) 01 - 598ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 02 - 611ms-10Mbps
+  - 🇰🇷 韩国 (South Korea) 03 - 692ms-10Mbps
+  - 🇰🇷 韩国 (South Korea) 04 - 713ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 05 - 725ms-9Mbps
+  - 🇰🇷 韩国 (South Korea) 06 - 795ms-2Mbps
+  - 🇰🇷 韩国 (South Korea) 07 - 795ms-8Mbps
+  - 🇰🇷 韩国 (South Korea) 08 - 814ms-9Mbps
+  - 🇰🇷 韩国 (South Korea) 09 - 829ms-11Mbps
+  - 🇰🇷 韩国 (South Korea) 10 - 897ms-12Mbps
+  - 🇰🇷 韩国 (South Korea) 11 - 1100ms-6Mbps
+  - 🇰🇷 韩国 (South Korea) 12 - 10313ms-0.9Mbps
 rules:
 - MATCH,PROXIES

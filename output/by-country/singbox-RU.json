@@ -5,35 +5,27 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - 544ms-8Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - 574ms-0.8Mbps",
       "server": "195.133.23.200",
       "server_port": 7018,
       "method": "aes-256-gcm",
       "password": "81a20429165df87e"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - 561ms-7Mbps",
-      "server": "46.17.42.166",
-      "server_port": 50111,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - 926ms-10Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - 810ms-5Mbps",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
         "server_name": "hy.quattro-tech.ru",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - 962ms-13Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - 1025ms-13Mbps",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -44,24 +36,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - 1000ms-2Mbps",
-      "server": "144.31.49.138",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - 1359ms-6Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - 1320ms-6Mbps",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
@@ -80,7 +56,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - 1412ms-2Mbps",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - 4055ms-0.7Mbps",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -103,26 +79,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - 544ms-8Mbps",
-        "🇷🇺 俄罗斯 (Russia) 02 - 561ms-7Mbps",
-        "🇷🇺 俄罗斯 (Russia) 03 - 926ms-10Mbps",
-        "🇷🇺 俄罗斯 (Russia) 04 - 962ms-13Mbps",
-        "🇷🇺 俄罗斯 (Russia) 05 - 1000ms-2Mbps",
-        "🇷🇺 俄罗斯 (Russia) 06 - 1359ms-6Mbps",
-        "🇷🇺 俄罗斯 (Russia) 07 - 1412ms-2Mbps"
+        "🇷🇺 俄罗斯 (Russia) 01 - 574ms-0.8Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 810ms-5Mbps",
+        "🇷🇺 俄罗斯 (Russia) 03 - 1025ms-13Mbps",
+        "🇷🇺 俄罗斯 (Russia) 04 - 1320ms-6Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 4055ms-0.7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - 544ms-8Mbps",
-        "🇷🇺 俄罗斯 (Russia) 02 - 561ms-7Mbps",
-        "🇷🇺 俄罗斯 (Russia) 03 - 926ms-10Mbps",
-        "🇷🇺 俄罗斯 (Russia) 04 - 962ms-13Mbps",
-        "🇷🇺 俄罗斯 (Russia) 05 - 1000ms-2Mbps",
-        "🇷🇺 俄罗斯 (Russia) 06 - 1359ms-6Mbps",
-        "🇷🇺 俄罗斯 (Russia) 07 - 1412ms-2Mbps"
+        "🇷🇺 俄罗斯 (Russia) 01 - 574ms-0.8Mbps",
+        "🇷🇺 俄罗斯 (Russia) 02 - 810ms-5Mbps",
+        "🇷🇺 俄罗斯 (Russia) 03 - 1025ms-13Mbps",
+        "🇷🇺 俄罗斯 (Russia) 04 - 1320ms-6Mbps",
+        "🇷🇺 俄罗斯 (Russia) 05 - 4055ms-0.7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

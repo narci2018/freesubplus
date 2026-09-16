@@ -4,16 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1174ms-14Mbps
-  server: 189.74.97.43
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
-  network: ws
-  ws-opts:
-    path: /73b6faea2d00
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 1177ms-5Mbps
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps
   server: 189.74.97.47
   port: 2087
   udp: true
@@ -22,36 +13,17 @@ proxies:
   network: ws
   ws-opts:
     path: /755276b33b6f
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - 1600ms-7Mbps
-  server: 104.24.143.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
-  tls: true
-  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
-    headers:
-      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1174ms-14Mbps
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 1177ms-5Mbps
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - 1600ms-7Mbps
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 1174ms-14Mbps
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 02 - 1177ms-5Mbps
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 03 - 1600ms-7Mbps
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - 16592ms-0.8Mbps
 rules:
 - MATCH,PROXIES

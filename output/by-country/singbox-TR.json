@@ -5,28 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - 883ms-7Mbps",
-      "server": "31.214.152.140",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - 954ms-7Mbps",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - 935ms-7Mbps",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -46,70 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - 1010ms-5Mbps",
-      "server": "93.114.98.212",
-      "server_port": 443,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "kkkk-xcd.pages.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - 1357ms-9Mbps",
-      "server": "172.67.151.109",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - 883ms-7Mbps",
-        "🇹🇷 土耳其 (Turkey) 02 - 954ms-7Mbps",
-        "🇹🇷 土耳其 (Turkey) 03 - 1010ms-5Mbps",
-        "🇹🇷 土耳其 (Turkey) 04 - 1357ms-9Mbps"
+        "🇹🇷 土耳其 (Turkey) 01 - 935ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - 883ms-7Mbps",
-        "🇹🇷 土耳其 (Turkey) 02 - 954ms-7Mbps",
-        "🇹🇷 土耳其 (Turkey) 03 - 1010ms-5Mbps",
-        "🇹🇷 土耳其 (Turkey) 04 - 1357ms-9Mbps"
+        "🇹🇷 土耳其 (Turkey) 01 - 935ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
