@@ -4,18 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps
-  server: 150.241.72.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: austria-3.moritech.net
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps
-  server: 79.141.174.147
+- name: 🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps
+  server: 193.42.39.10
   port: 33743
   udp: true
   type: vless
@@ -24,23 +14,31 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps
-  - 🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps
+  - 🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps
+  - 🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps
-  - 🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps
+  - 🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps
+  - 🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps
 rules:
 - MATCH,PROXIES

@@ -4,49 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - 863ms-8Mbps",
-      "server": "lt.aether-runet.top",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lt.aether-runet.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
-          "short_id": "4fa44664f6a566d3"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - 1297ms-7Mbps",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - 598ms-9Mbps",
       "server": "144.31.243.2",
       "server_port": 16015,
       "method": "chacha20-ietf-poly1305",
       "password": "J1InuU6QRT5JOh1mQfkjU2"
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - 721ms-9Mbps",
+      "server": "181.214.147.216",
+      "server_port": 443,
+      "uuid": "8e403675-d020-4801-9520-9cba4bbfda0e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lith.2clash.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66DIn_CbsE4-fWeWpy3vrRLP-XN8D-axun3jbZzuPmk",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - 863ms-8Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 02 - 1297ms-7Mbps"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 598ms-9Mbps",
+        "🇱🇹 立陶宛 (Lithuania) 02 - 721ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - 863ms-8Mbps",
-        "🇱🇹 立陶宛 (Lithuania) 02 - 1297ms-7Mbps"
+        "🇱🇹 立陶宛 (Lithuania) 01 - 598ms-9Mbps",
+        "🇱🇹 立陶宛 (Lithuania) 02 - 721ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,36 +4,23 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - 654ms-5Mbps",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 - 851ms-13Mbps",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - 844ms-13Mbps",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "whatsapp.com",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - 857ms-9Mbps",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
       }
     },
     {
@@ -41,16 +28,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 - 851ms-13Mbps",
-        "🇷🇴 罗马尼亚 (Romania) 02 - 857ms-9Mbps"
+        "🇷🇴 罗马尼亚 (Romania) 01 - 654ms-5Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 02 - 844ms-13Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 - 851ms-13Mbps",
-        "🇷🇴 罗马尼亚 (Romania) 02 - 857ms-9Mbps"
+        "🇷🇴 罗马尼亚 (Romania) 01 - 654ms-5Mbps",
+        "🇷🇴 罗马尼亚 (Romania) 02 - 844ms-13Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,21 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps",
-      "server": "150.241.72.86",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "austria-3.moritech.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps",
-      "server": "79.141.174.147",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps",
+      "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -27,7 +14,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -41,20 +28,32 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps",
-        "🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps"
+        "🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps",
+        "🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - 685ms-6Mbps",
-        "🇸🇪 瑞典 (Sweden) 02 - 705ms-3Mbps"
+        "🇸🇪 瑞典 (Sweden) 01 - 622ms-10Mbps",
+        "🇸🇪 瑞典 (Sweden) 02 - 796ms-14Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

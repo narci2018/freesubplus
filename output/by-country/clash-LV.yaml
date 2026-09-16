@@ -4,25 +4,47 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
-  server: 104.165.205.42
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps
+  server: 104.165.205.40
   port: 8443
   udp: true
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: 104.165.205.42
-  skip-cert-verify: true
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps
+  server: atomic-prase23893.my-vm.work
+  port: 8088
+  udp: true
+  type: vless
+  uuid: tmp_user
+  network: ws
+  ws-opts:
+    path: /api
+    headers:
+      Host: queuev4.vk.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps
+  - 🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps
 rules:
 - MATCH,PROXIES

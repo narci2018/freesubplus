@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - 527ms-7Mbps",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - 614ms-6Mbps",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - 590ms-10Mbps",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - 667ms-10Mbps",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -14,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -24,38 +40,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - 602ms-8Mbps",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - 753ms-8Mbps",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - 590ms-10Mbps",
-        "🇪🇸 西班牙 (Spain) 02 - 602ms-8Mbps",
-        "🇪🇸 西班牙 (Spain) 03 - 753ms-8Mbps"
+        "🇪🇸 西班牙 (Spain) 01 - 527ms-7Mbps",
+        "🇪🇸 西班牙 (Spain) 02 - 614ms-6Mbps",
+        "🇪🇸 西班牙 (Spain) 03 - 667ms-10Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - 590ms-10Mbps",
-        "🇪🇸 西班牙 (Spain) 02 - 602ms-8Mbps",
-        "🇪🇸 西班牙 (Spain) 03 - 753ms-8Mbps"
+        "🇪🇸 西班牙 (Spain) 01 - 527ms-7Mbps",
+        "🇪🇸 西班牙 (Spain) 02 - 614ms-6Mbps",
+        "🇪🇸 西班牙 (Spain) 03 - 667ms-10Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

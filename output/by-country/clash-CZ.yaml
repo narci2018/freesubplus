@@ -4,32 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
-  server: 78.159.247.246
+- name: 🇨🇿 捷克 (Czech) 01 - 1006ms-13Mbps
+  server: cze-02.node.lumixnet.com
   port: 443
   udp: true
-  type: vless
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
-  tls: true
-  servername: sb2.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sb2.hat.onl
+  type: hysteria2
+  password: d1224950-ffab-4b9a-8696-431b40a6cfbd
+  sni: cze-02.node.lumixnet.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1006ms-13Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01 - 1728ms-0.6Mbps
+  - 🇨🇿 捷克 (Czech) 01 - 1006ms-13Mbps
 rules:
 - MATCH,PROXIES

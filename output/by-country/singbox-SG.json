@@ -4,32 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 - 593ms-7Mbps",
-      "server": "13.250.28.5",
-      "server_port": 31870,
-      "method": "aes-256-gcm",
-      "password": "e016d072-ed97-40d4-a83f-04c00f8df2a5"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - 596ms-8Mbps",
-      "server": "129.150.47.10",
-      "server_port": 56927,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "2qp7Use01vjL1J+F3HLyTc1qhBMOcaTUv5mR1ExQJ10="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - 608ms-6Mbps",
-      "server": "139.180.220.175",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "qpSevKaUXYQKvSjp"
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 - 351ms-8Mbps",
+      "server": "104.17.3.81",
+      "server_port": 443,
+      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
+      "tls": {
+        "enabled": true,
+        "server_name": "nautica-cff.kloningstrife002.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/138.2.74.219-28616",
+        "headers": {
+          "Host": "nautica-cff.kloningstrife002.workers.dev"
+        }
+      }
     },
     {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - 610ms-9Mbps",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - 641ms-8Mbps",
       "server": "149.88.23.207",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -37,109 +36,63 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 - 629ms-8Mbps",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - 653ms-3Mbps",
       "server": "149.88.23.202",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 - 653ms-8Mbps",
-      "server": "167.150.100.115",
-      "server_port": 27755,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0="
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - 721ms-8Mbps",
-      "server": "172.66.212.110",
-      "server_port": 2053,
-      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - 777ms-9Mbps",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
       "tls": {
         "enabled": true,
-        "server_name": "singapore.36109178.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/static/media/video-chunk.f4v",
-        "headers": {
-          "Host": "singapore.36109178.xyz"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - 782ms-8Mbps",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 - 780ms-6Mbps",
+      "server": "91.192.81.214",
+      "server_port": 443,
+      "uuid": "607801ac-dbdd-4938-a167-129015d9978e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
+          "public_key": "bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc",
+          "short_id": "d1742269"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - 792ms-8Mbps",
-      "server": "103.137.22.71",
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 - 831ms-8Mbps",
+      "server": "13.212.32.171",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "password": "qQe1z5kU8kN6SlKnDt9Ru3Qp",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "vpn-sg-001.fastervpn.world",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/register?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - 792ms-8Mbps",
-      "server": "146.235.16.130",
-      "server_port": 19825,
-      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg2-8sb.6121999.dpdns.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - 811ms-5Mbps",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - 832ms-7Mbps",
       "server": "sg-1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "1803e6f6-9da1-4b31-8cc5-ffa155771a14",
+      "uuid": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -156,8 +109,39 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - 854ms-7Mbps",
+      "server": "sg-2.gsafevpnapi.com",
+      "server_port": 31870,
+      "method": "aes-256-gcm",
+      "password": "5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - 895ms-8Mbps",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - 915ms-7Mbps",
+      "server": "68.64.179.129",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/code?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - 940ms-7Mbps",
       "server": "sg2-8sb.6121999.dpdns.org",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
@@ -178,39 +162,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - 896ms-6Mbps",
-      "server": "3.0.111.82",
-      "server_port": 10574,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - 957ms-5Mbps",
+      "server": "46.137.202.178",
+      "server_port": 12512,
+      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
+          "short_id": "e692a8250d2e2fd0"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - 901ms-8Mbps",
-      "server": "68.64.179.129",
-      "server_port": 443,
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - 1007ms-7Mbps",
+      "server": "140.245.38.33",
+      "server_port": 2096,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/code?ed=2560fp=chrome",
+        "path": "/class/season?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -218,29 +206,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - 915ms-6Mbps",
-      "server": "3.0.111.82",
-      "server_port": 17623,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇬 新加坡 (Singapore) 13 - 1101ms-7Mbps",
+      "server": "103.137.22.71",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "fingerprint": "android"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/register?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - 975ms-9Mbps",
-      "server": "104.16.10.234",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - 1179ms-8Mbps",
+      "server": "170.114.45.6",
+      "server_port": 80,
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - 1253ms-7Mbps",
+      "server": "104.24.0.184",
       "server_port": 443,
       "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
@@ -262,29 +266,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - 980ms-5Mbps",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - 1297ms-7Mbps",
+      "server": "217.217.254.126",
+      "server_port": 2053,
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
+          "short_id": "87829de0e2bb82cb"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - 994ms-8Mbps",
-      "server": "141.193.213.21",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - 1302ms-8Mbps",
+      "server": "141.193.213.20",
       "server_port": 8443,
       "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
       "tls": {
@@ -306,26 +309,139 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - 1267ms-9Mbps",
-      "server": "8.222.84.103",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - 1449ms-1Mbps",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 19 - 1473ms-7Mbps",
+      "server": "104.18.93.167",
+      "server_port": 2053,
+      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "singapore.36109178.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/member/discount?ed=2560fp=chrome",
+        "path": "/static/media/video-chunk.f4v",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "singapore.36109178.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - 1486ms-7Mbps",
+      "server": "104.16.86.10",
+      "server_port": 2053,
+      "uuid": "65c56e1f-5c41-40bc-b0b5-9346772476ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "singapore.36109178.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/static/media/video-chunk.f4v",
+        "headers": {
+          "Host": "singapore.36109178.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - 1500ms-5Mbps",
+      "server": "166.88.194.248",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkkk-xcd.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "kkkk-xcd.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - 1792ms-1Mbps",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 23 - 2861ms-0.8Mbps",
+      "server": "3.0.111.82",
+      "server_port": 10574,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 20 - 3927ms-8Mbps",
+      "tag": "🇸🇬 新加坡 (Singapore) 24 - 4842ms-2Mbps",
       "server": "mszz.mangshe.xyz",
       "server_port": 20562,
       "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
@@ -336,35 +452,23 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 21 - 3973ms-9Mbps",
-      "server": "sg1.xiaoliyu.cyou",
-      "server_port": 1933,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg1.xiaoliyu.cyou",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 22 - 6278ms-0.8Mbps",
-      "server": "91.192.81.214",
-      "server_port": 443,
-      "uuid": "607801ac-dbdd-4938-a167-129015d9978e",
+      "tag": "🇸🇬 新加坡 (Singapore) 25 - 12141ms-7Mbps",
+      "server": "146.235.16.130",
+      "server_port": 19825,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "sg2-8sb.6121999.dpdns.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc",
-          "short_id": "d1742269"
+          "public_key": "GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
@@ -373,56 +477,62 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 - 593ms-7Mbps",
-        "🇸🇬 新加坡 (Singapore) 02 - 596ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 03 - 608ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 04 - 610ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 05 - 629ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 06 - 653ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 07 - 721ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 08 - 782ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 09 - 792ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 10 - 792ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 11 - 811ms-5Mbps",
-        "🇸🇬 新加坡 (Singapore) 12 - 895ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 13 - 896ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 14 - 901ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 15 - 915ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 16 - 975ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 17 - 980ms-5Mbps",
-        "🇸🇬 新加坡 (Singapore) 18 - 994ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 19 - 1267ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 20 - 3927ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 21 - 3973ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 22 - 6278ms-0.8Mbps"
+        "🇸🇬 新加坡 (Singapore) 01 - 351ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 02 - 641ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 03 - 653ms-3Mbps",
+        "🇸🇬 新加坡 (Singapore) 04 - 777ms-9Mbps",
+        "🇸🇬 新加坡 (Singapore) 05 - 780ms-6Mbps",
+        "🇸🇬 新加坡 (Singapore) 06 - 831ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 07 - 832ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 08 - 854ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 09 - 915ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 10 - 940ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 11 - 957ms-5Mbps",
+        "🇸🇬 新加坡 (Singapore) 12 - 1007ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 13 - 1101ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 14 - 1179ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 15 - 1253ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 16 - 1297ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 17 - 1302ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 18 - 1449ms-1Mbps",
+        "🇸🇬 新加坡 (Singapore) 19 - 1473ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 20 - 1486ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 21 - 1500ms-5Mbps",
+        "🇸🇬 新加坡 (Singapore) 22 - 1792ms-1Mbps",
+        "🇸🇬 新加坡 (Singapore) 23 - 2861ms-0.8Mbps",
+        "🇸🇬 新加坡 (Singapore) 24 - 4842ms-2Mbps",
+        "🇸🇬 新加坡 (Singapore) 25 - 12141ms-7Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 - 593ms-7Mbps",
-        "🇸🇬 新加坡 (Singapore) 02 - 596ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 03 - 608ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 04 - 610ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 05 - 629ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 06 - 653ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 07 - 721ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 08 - 782ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 09 - 792ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 10 - 792ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 11 - 811ms-5Mbps",
-        "🇸🇬 新加坡 (Singapore) 12 - 895ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 13 - 896ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 14 - 901ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 15 - 915ms-6Mbps",
-        "🇸🇬 新加坡 (Singapore) 16 - 975ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 17 - 980ms-5Mbps",
-        "🇸🇬 新加坡 (Singapore) 18 - 994ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 19 - 1267ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 20 - 3927ms-8Mbps",
-        "🇸🇬 新加坡 (Singapore) 21 - 3973ms-9Mbps",
-        "🇸🇬 新加坡 (Singapore) 22 - 6278ms-0.8Mbps"
+        "🇸🇬 新加坡 (Singapore) 01 - 351ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 02 - 641ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 03 - 653ms-3Mbps",
+        "🇸🇬 新加坡 (Singapore) 04 - 777ms-9Mbps",
+        "🇸🇬 新加坡 (Singapore) 05 - 780ms-6Mbps",
+        "🇸🇬 新加坡 (Singapore) 06 - 831ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 07 - 832ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 08 - 854ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 09 - 915ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 10 - 940ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 11 - 957ms-5Mbps",
+        "🇸🇬 新加坡 (Singapore) 12 - 1007ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 13 - 1101ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 14 - 1179ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 15 - 1253ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 16 - 1297ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 17 - 1302ms-8Mbps",
+        "🇸🇬 新加坡 (Singapore) 18 - 1449ms-1Mbps",
+        "🇸🇬 新加坡 (Singapore) 19 - 1473ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 20 - 1486ms-7Mbps",
+        "🇸🇬 新加坡 (Singapore) 21 - 1500ms-5Mbps",
+        "🇸🇬 新加坡 (Singapore) 22 - 1792ms-1Mbps",
+        "🇸🇬 新加坡 (Singapore) 23 - 2861ms-0.8Mbps",
+        "🇸🇬 新加坡 (Singapore) 24 - 4842ms-2Mbps",
+        "🇸🇬 新加坡 (Singapore) 25 - 12141ms-7Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

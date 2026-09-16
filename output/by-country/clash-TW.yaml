@@ -4,14 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 - 482ms-10Mbps
-  server: 61.231.15.229
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - 601ms-10Mbps
+- name: 🇹🇼 中国台湾 (Taiwan) 01 - 683ms-9Mbps
   server: 35.201.230.136
   port: 443
   udp: true
@@ -24,7 +17,15 @@ proxies:
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - 608ms-11Mbps
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - 722ms-10Mbps
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - 776ms-9Mbps
   server: 103.115.109.49
   port: 443
   udp: true
@@ -32,41 +33,20 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - 693ms-5Mbps
-  server: 35.194.157.16
-  port: 43450
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - 969ms-0.7Mbps
+  server: 35.229.136.113
+  port: 35412
   udp: true
   type: vless
-  uuid: 64d77a12-ad6b-4d85-a349-bd287535af1c
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
-    short-id: e65d010354bdad73
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
   servername: www.amd.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - 794ms-11Mbps
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - 912ms-3Mbps
-  server: 104.199.134.231
-  port: 28364
-  udp: true
-  type: vless
-  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
-    short-id: 7241c359c2dfab
-  servername: www.sony.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - 972ms-5Mbps
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - 1175ms-0.9Mbps
   server: 104.199.219.172
   port: 40800
   udp: true
@@ -78,30 +58,26 @@ proxies:
     public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
     short-id: 186e4c2732d61a3d
   servername: www.intel.com
-  client-fingerprint: qq
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 - 482ms-10Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 - 601ms-10Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 03 - 608ms-11Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 04 - 693ms-5Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 05 - 794ms-11Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 06 - 912ms-3Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 07 - 972ms-5Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 01 - 683ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 02 - 722ms-10Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 03 - 776ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 04 - 969ms-0.7Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 05 - 1175ms-0.9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 - 482ms-10Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 - 601ms-10Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 03 - 608ms-11Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 04 - 693ms-5Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 05 - 794ms-11Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 06 - 912ms-3Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 07 - 972ms-5Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 01 - 683ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 02 - 722ms-10Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 03 - 776ms-9Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 04 - 969ms-0.7Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 05 - 1175ms-0.9Mbps
 rules:
 - MATCH,PROXIES

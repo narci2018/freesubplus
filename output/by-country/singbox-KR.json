@@ -5,31 +5,36 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - 555ms-10Mbps",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps",
       "server": "140.238.2.250",
       "server_port": 443,
       "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - 573ms-10Mbps",
-      "server": "221.139.79.57",
-      "server_port": 13979,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - 634ms-9Mbps",
-      "server": "146.56.112.110",
-      "server_port": 8888,
-      "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - 646ms-15Mbps",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps",
       "server": "132.226.226.189",
       "server_port": 50160,
       "password": "1671a252e2a97dc2bda4e515475931da",
@@ -40,18 +45,34 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - 651ms-10Mbps",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps",
+      "server": "3.36.93.74",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtest.tinkoff.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - 652ms-10Mbps",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps",
       "server": "3.39.4.109",
-      "server_port": 18967,
+      "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -69,41 +90,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - 654ms-11Mbps",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - 707ms-15Mbps",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - 796ms-9Mbps",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -112,7 +112,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -122,115 +122,67 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - 810ms-14Mbps",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - 931ms-5Mbps",
-      "server": "123.111.169.70",
-      "server_port": 443,
-      "uuid": "8102891d-7b37-4dc5-8261-9474b59b5c63",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps",
+      "server": "211.48.30.184",
+      "server_port": 30017,
+      "uuid": "beec57a5-8266-4279-b279-f495bdc70699",
       "tls": {
         "enabled": true,
-        "server_name": "vip.868068.xyz",
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "vip.868068.xyz"
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - 1176ms-9Mbps",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - 1584ms-4Mbps",
-      "server": "152-69-231-175.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - 1737ms-5Mbps",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - 555ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 02 - 573ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 03 - 634ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 04 - 646ms-15Mbps",
-        "🇰🇷 韩国 (South Korea) 05 - 651ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 06 - 652ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 07 - 654ms-11Mbps",
-        "🇰🇷 韩国 (South Korea) 08 - 707ms-15Mbps",
-        "🇰🇷 韩国 (South Korea) 09 - 796ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 10 - 810ms-14Mbps",
-        "🇰🇷 韩国 (South Korea) 11 - 931ms-5Mbps",
-        "🇰🇷 韩国 (South Korea) 12 - 1176ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 13 - 1584ms-4Mbps",
-        "🇰🇷 韩国 (South Korea) 14 - 1737ms-5Mbps"
+        "🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps",
+        "🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps",
+        "🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps",
+        "🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps",
+        "🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - 555ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 02 - 573ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 03 - 634ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 04 - 646ms-15Mbps",
-        "🇰🇷 韩国 (South Korea) 05 - 651ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 06 - 652ms-10Mbps",
-        "🇰🇷 韩国 (South Korea) 07 - 654ms-11Mbps",
-        "🇰🇷 韩国 (South Korea) 08 - 707ms-15Mbps",
-        "🇰🇷 韩国 (South Korea) 09 - 796ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 10 - 810ms-14Mbps",
-        "🇰🇷 韩国 (South Korea) 11 - 931ms-5Mbps",
-        "🇰🇷 韩国 (South Korea) 12 - 1176ms-9Mbps",
-        "🇰🇷 韩国 (South Korea) 13 - 1584ms-4Mbps",
-        "🇰🇷 韩国 (South Korea) 14 - 1737ms-5Mbps"
+        "🇰🇷 韩国 (South Korea) 01 - 587ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 02 - 692ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 03 - 694ms-14Mbps",
+        "🇰🇷 韩国 (South Korea) 04 - 698ms-10Mbps",
+        "🇰🇷 韩国 (South Korea) 05 - 761ms-14Mbps",
+        "🇰🇷 韩国 (South Korea) 06 - 775ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 07 - 864ms-2Mbps",
+        "🇰🇷 韩国 (South Korea) 08 - 867ms-9Mbps",
+        "🇰🇷 韩国 (South Korea) 09 - 1029ms-8Mbps",
+        "🇰🇷 韩国 (South Korea) 10 - 1963ms-0.6Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

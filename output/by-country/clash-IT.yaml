@@ -4,48 +4,48 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇹 意大利 (Italy) 01 - 542ms-9Mbps
+- name: 🇮🇹 意大利 (Italy) 01 - 603ms-10Mbps
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - 605ms-9Mbps
+- name: 🇮🇹 意大利 (Italy) 02 - 627ms-9Mbps
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03 - 748ms-9Mbps
-  server: 82.118.16.187
+- name: 🇮🇹 意大利 (Italy) 03 - 1093ms-0.9Mbps
+  server: 193.163.203.170
   port: 443
   udp: true
   type: vless
-  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
-    short-id: cd6065902eea7a02
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇹 意大利 (Italy) 01 - 542ms-9Mbps
-  - 🇮🇹 意大利 (Italy) 02 - 605ms-9Mbps
-  - 🇮🇹 意大利 (Italy) 03 - 748ms-9Mbps
+  - 🇮🇹 意大利 (Italy) 01 - 603ms-10Mbps
+  - 🇮🇹 意大利 (Italy) 02 - 627ms-9Mbps
+  - 🇮🇹 意大利 (Italy) 03 - 1093ms-0.9Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 (Italy) 01 - 542ms-9Mbps
-  - 🇮🇹 意大利 (Italy) 02 - 605ms-9Mbps
-  - 🇮🇹 意大利 (Italy) 03 - 748ms-9Mbps
+  - 🇮🇹 意大利 (Italy) 01 - 603ms-10Mbps
+  - 🇮🇹 意大利 (Italy) 02 - 627ms-9Mbps
+  - 🇮🇹 意大利 (Italy) 03 - 1093ms-0.9Mbps
 rules:
 - MATCH,PROXIES

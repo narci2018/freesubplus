@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇨🇱 智利 (Chile) 01 - 471ms-10Mbps",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
+      "tag": "🇦🇱 AL 01 - 682ms-4Mbps",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - 471ms-10Mbps"
+        "🇦🇱 AL 01 - 682ms-4Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - 471ms-10Mbps"
+        "🇦🇱 AL 01 - 682ms-4Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

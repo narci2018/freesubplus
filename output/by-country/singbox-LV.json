@@ -4,15 +4,37 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps",
-      "server": "104.165.205.42",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps",
+      "server": "104.165.205.40",
       "server_port": 8443,
       "password": "54d2f622-fd71-4f5f-8813-832b68f4ca3b",
       "tls": {
         "enabled": true,
-        "server_name": "104.165.205.42",
-        "insecure": true
+        "server_name": "speedtestmark.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps",
+      "server": "atomic-prase23893.my-vm.work",
+      "server_port": 8088,
+      "uuid": "tmp_user",
+      "transport": {
+        "type": "ws",
+        "path": "/api",
+        "headers": {
+          "Host": "queuev4.vk.com"
+        }
       }
     },
     {
@@ -20,14 +42,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - 865ms-12Mbps"
+        "🇱🇻 拉脱维亚 (Latvia) 01 - 586ms-9Mbps",
+        "🇱🇻 拉脱维亚 (Latvia) 02 - 765ms-15Mbps",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - 1080ms-9Mbps"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
