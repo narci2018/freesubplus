@@ -4,215 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - 128ms-37Mbps
-  server: 103.97.201.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /order/ads?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - 129ms-37Mbps
-  server: 47.83.14.42
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /product?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - 131ms-37Mbps
-  server: 45.149.186.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ja?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - 135ms-37Mbps
-  server: 156.224.79.83
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /videos/movies?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - 136ms-37Mbps
-  server: 45.149.186.154
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /clip?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - 142ms-37Mbps
-  server: 167.148.203.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /chat/games?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - 143ms-37Mbps
-  server: 47.242.162.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /uploads/image?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - 143ms-16Mbps
-  server: 167.148.203.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /classify?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - 143ms-16Mbps
-  server: 207.57.135.199
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /question/shows?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - 144ms-37Mbps
-  server: 156.226.168.206
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /knowledge?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - 144ms-37Mbps
-  server: 68.64.181.90
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /anime/members/intro?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - 145ms-37Mbps
-  server: 151.243.229.150
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /htm?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - 146ms-37Mbps
-  server: 103.97.201.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /film?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - 148ms-37Mbps
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - 136ms-37Mbps
   server: 155.117.82.92
   port: 443
   udp: true
@@ -225,11 +17,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /site?ed=2560
+    path: /thread?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 15 - 196ms-37Mbps
-  server: 140.235.39.19
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - 146ms-37Mbps
+  server: 85.121.245.104
   port: 443
   udp: true
   type: vless
@@ -241,794 +33,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /posts/task?ed=2560
+    path: /f/services/picture?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 16 - 212ms-37Mbps
-  server: 151.242.189.48
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /photos/wenku/img?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - 220ms-37Mbps
-  server: crocs.com.vn
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /map/favorite/category?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 18 - 222ms-37Mbps
-  server: 78.105.183.11
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /docs?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 19 - 229ms-37Mbps
-  server: 151.242.188.152
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /news?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 20 - 229ms-37Mbps
-  server: 141.11.87.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /static?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 21 - 236ms-37Mbps
-  server: 85.237.207.126
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /player?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 22 - 242ms-37Mbps
-  server: 83.147.12.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /groups/library/jump.html?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 23 - 247ms-37Mbps
-  server: 142.249.60.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /link/type/groups?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 24 - 258ms-37Mbps
-  server: 139.162.44.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /episode/links/chat?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 25 - 264ms-37Mbps
-  server: 160.187.141.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /acg/series?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 26 - 265ms-37Mbps
-  server: 172.237.81.42
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /vip/tools/temp?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 27 - 266ms-37Mbps
-  server: 141.11.43.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /services/ads/acg?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 28 - 271ms-37Mbps
-  server: 103.3.61.43
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /tags/shop/act?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 29 - 278ms-37Mbps
-  server: 43.156.181.203
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /page/ep?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 30 - 279ms-37Mbps
-  server: 43.160.240.180
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pics/topic?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 31 - 285ms-37Mbps
-  server: 172.237.81.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /docs/comic/f?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 32 - 316ms-37Mbps
-  server: 94.237.65.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /zh-cn/redirect.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 33 - 323ms-37Mbps
-  server: www.allianz.com.my
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /out.html/community?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 34 - 330ms-37Mbps
-  server: 156.226.168.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /acg/sort/products?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 35 - 348ms-37Mbps
-  server: 43.224.33.225
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /seller?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 36 - 353ms-37Mbps
-  server: 149.62.44.239
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /article/feedback/img?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 37 - 356ms-37Mbps
-  server: 103.201.130.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /community/map/classify?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 38 - 364ms-37Mbps
-  server: 23.147.232.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /outbound?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 39 - 374ms-37Mbps
-  server: 45.77.131.33
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /books/service?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 40 - 379ms-37Mbps
-  server: 82.108.155.108
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ad/collect?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 41 - 381ms-37Mbps
-  server: 154.19.187.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /channel?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 42 - 385ms-37Mbps
-  server: 202.144.194.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /files?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇲🇾 马来西亚 (Malaysia) 43 - 391ms-37Mbps
-  server: 164.52.2.99
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cn?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 44 - 393ms-37Mbps
-  server: 172.104.60.181
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /manhua?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 45 - 394ms-37Mbps
-  server: 50.114.113.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /out.html/online?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇲🇾 马来西亚 (Malaysia) 46 - 396ms-37Mbps
-  server: 164.52.2.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /services/post?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 47 - 397ms-37Mbps
-  server: 216.23.87.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /act/comic?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 48 - 401ms-37Mbps
-  server: 139.177.185.196
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /tag/temp/lessons?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 49 - 403ms-37Mbps
-  server: 54.249.226.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /product?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇲🇾 马来西亚 (Malaysia) 50 - 407ms-37Mbps
-  server: 164.52.2.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /drama?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 51 - 413ms-37Mbps
-  server: 172.104.59.228
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pics/photos/doc?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 52 - 414ms-37Mbps
-  server: 172.104.186.18
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /channel/v?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 53 - 418ms-37Mbps
-  server: 172.104.49.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /articles/movie/setting?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 54 - 429ms-37Mbps
-  server: 217.116.170.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /stars?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 55 - 429ms-37Mbps
-  server: 172.104.120.92
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /services/tools/zip?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 56 - 435ms-37Mbps
-  server: 192.124.176.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /reg/u/soft?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 57 - 440ms-37Mbps
-  server: 160.191.77.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /forums/pictures?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 58 - 446ms-37Mbps
-  server: 150.230.105.26
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /activity?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 59 - 475ms-37Mbps
-  server: 54.180.141.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /zh/collect/data?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 60 - 483ms-37Mbps
-  server: 13.124.169.29
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /map/apps?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 61 - 492ms-37Mbps
-  server: 202.182.104.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /zh/groups/archive?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 62 - 498ms-37Mbps
-  server: 209.33.174.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /forum/clip?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 63 - 504ms-37Mbps
-  server: 167.179.94.160
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /service/comic/archives?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 64 - 533ms-37Mbps
-  server: 45.32.26.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /site?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 65 - 548ms-37Mbps
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - 147ms-37Mbps
   server: 45.207.156.146
   port: 443
   udp: true
@@ -1041,11 +49,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /collection?ed=2560
+    path: /channel/account/app?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 66 - 566ms-37Mbps
-  server: 168.107.56.181
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - 148ms-37Mbps
+  server: 167.148.203.3
   port: 443
   udp: true
   type: vless
@@ -1057,44 +65,12 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /jump.html?ed=2560
+    path: /documents/messages?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 67 - 566ms-37Mbps
-  server: 158.247.240.138
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /settings?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 68 - 568ms-37Mbps
-  server: 158.247.253.111
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /p?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 69 - 569ms-37Mbps
-  server: 64.176.230.12
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - 157ms-37Mbps
+  server: 68.64.181.90
+  port: 8443
   udp: true
   type: vless
   uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
@@ -1108,8 +84,8 @@ proxies:
     path: /home?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 70 - 571ms-37Mbps
-  server: 152.69.229.110
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - 159ms-37Mbps
+  server: 151.243.229.150
   port: 443
   udp: true
   type: vless
@@ -1121,11 +97,187 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /document?ed=2560
+    path: /directory/pdf?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 71 - 595ms-37Mbps
-  server: 168.107.40.4
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - 162ms-37Mbps
+  server: 156.226.168.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /user/doujin?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - 165ms-37Mbps
+  server: 47.242.162.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /file/thread/lang?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - 170ms-37Mbps
+  server: 167.148.203.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /comics/mobile?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - 172ms-37Mbps
+  server: 47.57.233.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /mobile?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - 177ms-37Mbps
+  server: 103.97.201.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /wiki/type?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - 188ms-37Mbps
+  server: 103.97.201.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /hot/out.php/bbs?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - 195ms-37Mbps
+  server: 39.109.50.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pdf/out/m?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 14 - 230ms-37Mbps
+  server: 23.146.248.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /channels?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - 244ms-37Mbps
+  server: 156.226.168.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /episodes/pictures/temp?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 16 - 246ms-37Mbps
+  server: 142.249.60.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /season/buy?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - 254ms-37Mbps
+  server: crocs.com.vn
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /project/html/feedback?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 18 - 266ms-37Mbps
+  server: 141.11.87.48
   port: 8443
   udp: true
   type: vless
@@ -1137,123 +289,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /user/events/star?ed=2560
+    path: /forums/doc?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 72 - 621ms-37Mbps
-  server: 47.82.155.79
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /redirect.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇸🇬 新加坡 (Singapore) 73 - 635ms-37Mbps
-  server: 43.156.142.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /drama/page/tools?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 74 - 641ms-37Mbps
-  server: 130.94.29.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /jump.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 75 - 671ms-37Mbps
-  server: 152.67.208.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /txt/travel/channel?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 76 - 692ms-37Mbps
-  server: 158.247.224.240
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /bbs/doc?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 77 - 710ms-37Mbps
-  server: 47.80.63.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cb/my/chat?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 78 - 714ms-22Mbps
-  server: 47.80.61.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /show/jumping/doc?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 79 - 810ms-37Mbps
-  server: 191.223.217.68
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - 271ms-37Mbps
+  server: 207.57.135.199
   port: 8443
   udp: true
   type: vless
@@ -1265,11 +305,27 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /classify?ed=2560
+    path: /china/photos?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 80 - 816ms-37Mbps
-  server: 213.145.87.54
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - 281ms-37Mbps
+  server: 167.148.203.107
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /gif/out.php/stars?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 21 - 282ms-37Mbps
+  server: 172.104.186.18
   port: 8443
   udp: true
   type: vless
@@ -1281,12 +337,12 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /channel/online/torrent?ed=2560
+    path: /source?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 81 - 824ms-37Mbps
-  server: 45.62.118.45
-  port: 2053
+- name: 🇸🇬 新加坡 (Singapore) 22 - 284ms-37Mbps
+  server: 172.237.81.164
+  port: 443
   udp: true
   type: vless
   uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
@@ -1297,11 +353,27 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /link/chat?ed=2560
+    path: /resource/photos?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 82 - 826ms-37Mbps
-  server: 146.56.187.1
+- name: 🇸🇬 新加坡 (Singapore) 23 - 289ms-37Mbps
+  server: 217.116.170.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /playlist/txt?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 24 - 291ms-37Mbps
+  server: 172.104.60.181
   port: 8443
   udp: true
   type: vless
@@ -1313,11 +385,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /forums/image/episodes?ed=2560
+    path: /mag?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 83 - 826ms-37Mbps
-  server: 186.241.106.11
+- name: 🇸🇬 新加坡 (Singapore) 25 - 293ms-37Mbps
+  server: 43.156.92.214
   port: 443
   udp: true
   type: vless
@@ -1329,11 +401,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /documents/categories/jump.php?ed=2560
+    path: /library/config?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 84 - 826ms-37Mbps
-  server: 85.121.245.104
+- name: 🇸🇬 新加坡 (Singapore) 26 - 295ms-37Mbps
+  server: 172.104.49.9
   port: 443
   udp: true
   type: vless
@@ -1345,11 +417,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /jumping?ed=2560
+    path: /api/watch/downloads?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 85 - 827ms-37Mbps
-  server: 208.68.180.63
+- name: 🇸🇬 新加坡 (Singapore) 27 - 299ms-37Mbps
+  server: 43.156.181.203
   port: 443
   udp: true
   type: vless
@@ -1361,11 +433,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /app?ed=2560
+    path: /forum?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 86 - 827ms-37Mbps
-  server: 140.238.5.86
+- name: 🇸🇬 新加坡 (Singapore) 28 - 306ms-37Mbps
+  server: 103.3.61.43
   port: 443
   udp: true
   type: vless
@@ -1377,11 +449,155 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /film/teacher?ed=2560
+    path: /source/play?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 87 - 834ms-37Mbps
-  server: 104.245.13.161
+- name: 🇹🇼 中国台湾 (Taiwan) 29 - 315ms-37Mbps
+  server: 151.242.188.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /feedback/html?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 30 - 316ms-37Mbps
+  server: 139.177.185.196
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /go/friend?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 31 - 358ms-37Mbps
+  server: 160.191.77.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pictures/auth?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 32 - 370ms-37Mbps
+  server: 103.201.130.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /reg/help/favorite?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 33 - 372ms-37Mbps
+  server: 202.182.104.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /my?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 34 - 372ms-37Mbps
+  server: 154.19.187.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /upload/knowledge/details?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 35 - 376ms-37Mbps
+  server: 149.62.44.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /about/apps?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 36 - 383ms-37Mbps
+  server: 45.149.186.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /service/note?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 37 - 386ms-37Mbps
+  server: 50.114.113.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /archives?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 38 - 389ms-25Mbps
+  server: 167.179.94.160
   port: 443
   udp: true
   type: vless
@@ -1396,8 +612,248 @@ proxies:
     path: /test?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 88 - 835ms-37Mbps
-  server: 154.23.240.208
+- name: 🇯🇵 日本 (Japan) 39 - 391ms-37Mbps
+  server: 45.77.131.33
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /resource/project?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 40 - 406ms-37Mbps
+  server: 43.224.33.225
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /wiki?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 41 - 406ms-37Mbps
+  server: 141.11.43.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /lessons?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 42 - 412ms-37Mbps
+  server: 202.144.194.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /data?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 43 - 413ms-37Mbps
+  server: 156.224.79.83
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /doc/picture?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 44 - 418ms-37Mbps
+  server: 54.249.226.241
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /u?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 45 - 426ms-37Mbps
+  server: 209.33.174.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /list/favs/edu?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 46 - 429ms-37Mbps
+  server: 23.147.232.216
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /comic/pages?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 47 - 431ms-37Mbps
+  server: 82.108.155.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /faq/project?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 48 - 431ms-37Mbps
+  server: 172.104.120.92
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /season?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 49 - 434ms-37Mbps
+  server: 43.156.142.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /edu?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇲🇾 马来西亚 (Malaysia) 50 - 435ms-37Mbps
+  server: 164.52.2.100
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /picture/anime/season?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇲🇾 马来西亚 (Malaysia) 51 - 441ms-37Mbps
+  server: 164.52.2.99
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /books/channel/docs?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 52 - 442ms-37Mbps
+  server: 94.237.65.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /site/data?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 53 - 443ms-37Mbps
+  server: 172.104.59.228
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /list/thread?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 54 - 453ms-37Mbps
+  server: 139.162.44.222
   port: 443
   udp: true
   type: vless
@@ -1412,8 +868,8 @@ proxies:
     path: /comics?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 89 - 843ms-37Mbps
-  server: 83.147.12.20
+- name: 🇸🇬 新加坡 (Singapore) 55 - 462ms-37Mbps
+  server: 160.187.141.61
   port: 443
   udp: true
   type: vless
@@ -1425,75 +881,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /seller/detail/bd?ed=2560
+    path: /www?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 90 - 845ms-37Mbps
-  server: 166.88.33.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /app/documents?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 91 - 846ms-37Mbps
-  server: 144.225.255.169
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /clip/events/lang?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 92 - 848ms-37Mbps
-  server: 216.40.86.49
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /out?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 93 - 853ms-37Mbps
-  server: 82.139.242.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /settings/playlist/sale?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 94 - 857ms-37Mbps
-  server: 179.255.110.66
+- name: 🇯🇵 日本 (Japan) 56 - 465ms-37Mbps
+  server: 150.230.105.26
   port: 8443
   udp: true
   type: vless
@@ -1505,11 +897,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /task/content?ed=2560
+    path: /auth?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 95 - 858ms-37Mbps
-  server: 166.88.33.113
+- name: 🇰🇷 韩国 (South Korea) 57 - 479ms-37Mbps
+  server: 13.124.169.29
   port: 443
   udp: true
   type: vless
@@ -1521,27 +913,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /star/films?ed=2560
+    path: /picture/soft/view?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 96 - 860ms-37Mbps
-  server: 144.225.255.169
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /shop?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 97 - 866ms-37Mbps
-  server: 38.60.89.138
+- name: 🇲🇾 马来西亚 (Malaysia) 58 - 487ms-37Mbps
+  server: 164.52.2.98
   port: 443
   udp: true
   type: vless
@@ -1553,11 +929,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /photo?ed=2560
+    path: /detail?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 98 - 872ms-37Mbps
-  server: 88.218.193.1
+- name: 🇯🇵 日本 (Japan) 59 - 496ms-37Mbps
+  server: 45.32.26.111
   port: 443
   udp: true
   type: vless
@@ -1569,27 +945,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /config/series?ed=2560
+    path: /online/playlist?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 99 - 875ms-37Mbps
-  server: 179.255.124.207
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pay/ads/vod?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 100 - 878ms-37Mbps
-  server: 188.253.6.249
+- name: 🇰🇷 韩国 (South Korea) 60 - 540ms-37Mbps
+  server: 54.180.141.246
   port: 443
   udp: true
   type: vless
@@ -1601,122 +961,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /seller/urls?ed=2560
+    path: /redirect.php/sort/section?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 101 - 884ms-37Mbps
-  server: 151.242.189.184
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /playlist?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 102 - 885ms-37Mbps
-  server: 179.253.236.209
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /company/anime/comics?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 103 - 886ms-37Mbps
-  server: 162.211.231.120
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /downloads/uploads/m?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 104 - 887ms-37Mbps
-  server: 141.11.87.48
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /go.php/download?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 105 - 888ms-37Mbps
-  server: 45.62.115.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /apps?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 106 - 891ms-37Mbps
-  server: 144.34.237.48
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /dh/details/community?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 107 - 905ms-37Mbps
-  server: 154.21.197.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /chat/register/document?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇯🇵 日本 (Japan) 108 - 909ms-37Mbps
+- name: 🇯🇵 日本 (Japan) 61 - 557ms-37Mbps
   server: 131.186.32.99
   port: 8443
   udp: true
@@ -1729,11 +977,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /v/stream/dl?ed=2560
+    path: /help/event/product?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 109 - 910ms-37Mbps
-  server: 165.232.159.229
+- name: 🇰🇷 韩国 (South Korea) 62 - 566ms-37Mbps
+  server: 168.107.56.181
   port: 443
   udp: true
   type: vless
@@ -1745,11 +993,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /events/films/images?ed=2560
+    path: /code?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 110 - 928ms-37Mbps
-  server: 91.193.59.98
+- name: 🇯🇵 日本 (Japan) 63 - 566ms-37Mbps
+  server: 103.47.186.31
   port: 443
   udp: true
   type: vless
@@ -1761,11 +1009,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /gif?ed=2560
+    path: /file/payment?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 111 - 939ms-37Mbps
-  server: lac.com.tw
+- name: 🇰🇷 韩国 (South Korea) 64 - 610ms-37Mbps
+  server: 152.67.208.47
   port: 443
   udp: true
   type: vless
@@ -1777,746 +1025,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /upload?ed=2560
+    path: /go.php?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 112 - 945ms-37Mbps
-  server: 130.94.36.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /china/game/bbs?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 113 - 946ms-37Mbps
-  server: 85.155.180.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pictures/files/game?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 114 - 965ms-37Mbps
-  server: www.pcone.com.tw
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /order?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 115 - 971ms-37Mbps
-  server: 185.49.33.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /m/tv?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 116 - 973ms-37Mbps
-  server: 82.117.245.166
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /services/qa?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 117 - 977ms-37Mbps
-  server: 64.226.95.244
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /online/dload/seller?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 118 - 977ms-37Mbps
-  server: 185.210.154.62
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /city/item/ajax?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 119 - 980ms-16Mbps
-  server: 167.148.203.107
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /groups/members?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 120 - 982ms-37Mbps
-  server: 185.49.33.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /site?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 121 - 984ms-37Mbps
-  server: 47.57.233.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /music/groups?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 122 - 989ms-37Mbps
-  server: 64.226.95.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pdf?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 123 - 991ms-37Mbps
-  server: 172.105.68.42
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cart/account?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 124 - 992ms-37Mbps
-  server: 64.226.88.144
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /soft/act?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 125 - 995ms-37Mbps
-  server: 8.211.19.24
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /work/pictures?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 126 - 999ms-37Mbps
-  server: 5.230.194.229
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /category/member?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 127 - 1004ms-37Mbps
-  server: 194.76.173.22
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /link/posts/book?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 128 - 1010ms-37Mbps
-  server: 185.169.234.13
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /member/outbound?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 129 - 1010ms-37Mbps
-  server: 139.162.141.205
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ja?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 130 - 1015ms-37Mbps
-  server: 18.197.218.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /thread/go.php/jump.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 131 - 1024ms-37Mbps
-  server: 39.109.50.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /docs/album/details?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 132 - 1033ms-37Mbps
-  server: 217.144.187.233
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /content/urls/test?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 133 - 1036ms-37Mbps
-  server: 109.120.138.102
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /tools/film/stream?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 134 - 1051ms-37Mbps
-  server: 198.244.234.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archives/course?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 135 - 1055ms-37Mbps
-  server: 91.107.153.129
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /img?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 136 - 1058ms-37Mbps
-  server: 91.99.161.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /help/urls/index?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇳🇱 荷兰 (Netherlands) 137 - 1064ms-37Mbps
-  server: 194.36.190.124
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /home?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 138 - 1065ms-37Mbps
-  server: 5.75.199.116
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /collect/download?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 139 - 1067ms-37Mbps
-  server: 168.110.121.126
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /user/www/directory?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 140 - 1070ms-37Mbps
-  server: 46.224.207.178
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cp/members/online?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 141 - 1072ms-37Mbps
-  server: 172.166.113.27
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /m/ranking?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 142 - 1101ms-37Mbps
-  server: 104.252.111.38
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /download/pdf?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 143 - 1103ms-37Mbps
-  server: 31.56.176.239
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /setting?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 144 - 1107ms-37Mbps
-  server: 109.172.55.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /forum/game/seller?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 145 - 1107ms-37Mbps
-  server: 217.60.37.28
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /mag/ep?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 146 - 1113ms-37Mbps
-  server: 217.60.252.115
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /web/books/details?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 147 - 1128ms-37Mbps
-  server: 147.90.26.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /page/help?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 148 - 1131ms-37Mbps
-  server: 194.13.81.234
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /anime/watch?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 149 - 1135ms-37Mbps
-  server: 31.59.103.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /mag/ep?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 150 - 1139ms-37Mbps
-  server: 57.131.143.10
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /member/streams?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 151 - 1146ms-37Mbps
-  server: 57.128.181.221
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /doc/content/data?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 152 - 1146ms-37Mbps
-  server: 47.245.135.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /content/channel/outbound?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 153 - 1146ms-37Mbps
-  server: 31.56.146.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /jump.php/www/play?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 154 - 1146ms-37Mbps
-  server: 57.128.183.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /out.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇺🇸 美国 (United States) 155 - 1147ms-37Mbps
-  server: locknlock.vn
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /v?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 156 - 1152ms-37Mbps
-  server: 37.59.127.22
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /note/read?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 157 - 1154ms-37Mbps
-  server: 45.39.255.134
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pics?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇰🇷 韩国 (South Korea) 158 - 1157ms-37Mbps
+- name: 🇰🇷 韩国 (South Korea) 65 - 629ms-37Mbps
   server: 152.67.210.234
   port: 443
   udp: true
@@ -2529,10 +1041,874 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /channel/my/edu?ed=2560
+    path: /docs/picture/stream?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇩🇪 德国 (Germany) 159 - 1158ms-37Mbps
+- name: 🇰🇷 韩国 (South Korea) 66 - 655ms-37Mbps
+  server: 152.69.229.110
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /members/music?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 67 - 664ms-37Mbps
+  server: 47.82.155.79
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /upload/chat/about?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 68 - 715ms-37Mbps
+  server: 130.94.29.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /web/share/watch?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 69 - 727ms-37Mbps
+  server: 123.111.169.70
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /map?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 70 - 763ms-37Mbps
+  server: 47.80.61.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /course/videos?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 71 - 790ms-37Mbps
+  server: 166.88.33.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /shop/member?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 72 - 790ms-37Mbps
+  server: 38.60.89.138
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /music/reg?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 73 - 794ms-37Mbps
+  server: 104.245.13.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /class/drama?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 74 - 828ms-37Mbps
+  server: 186.241.106.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /travel?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 75 - 828ms-37Mbps
+  server: 144.225.255.169
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /wenku?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 76 - 838ms-37Mbps
+  server: 179.255.110.66
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /photos/html?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 77 - 843ms-37Mbps
+  server: 166.88.33.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /shows/collect?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 78 - 846ms-37Mbps
+  server: 64.176.230.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /tools?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 79 - 850ms-37Mbps
+  server: 158.247.240.138
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /redirect/library/config?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 80 - 850ms-37Mbps
+  server: 144.225.255.169
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /episodes/docs/channel?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 81 - 851ms-37Mbps
+  server: 154.23.240.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /service/en/thread?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 82 - 853ms-37Mbps
+  server: 151.242.189.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /hot?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 83 - 855ms-37Mbps
+  server: 83.147.12.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /show/albums?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 84 - 855ms-37Mbps
+  server: 45.62.115.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /qa/faq?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 85 - 856ms-37Mbps
+  server: 208.68.180.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /upload/code?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 86 - 858ms-37Mbps
+  server: 85.237.207.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /edu/movies/contact?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 87 - 859ms-37Mbps
+  server: 191.223.217.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /tv/members?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 88 - 871ms-37Mbps
+  server: 47.83.14.42
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /channel/api/cn?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 89 - 871ms-37Mbps
+  server: 158.247.224.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ajax/mall/movie?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 90 - 873ms-37Mbps
+  server: 151.242.188.249
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /settings?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 91 - 875ms-37Mbps
+  server: 154.21.197.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /go?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 92 - 878ms-37Mbps
+  server: 216.40.86.49
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /team/members/redirect?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇯🇵 日本 (Japan) 93 - 882ms-37Mbps
+  server: 45.192.200.136
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /tool?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 94 - 883ms-37Mbps
+  server: lac.com.tw
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /clip?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 95 - 891ms-16Mbps
+  server: 141.11.87.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /travel/register/photo?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 96 - 893ms-37Mbps
+  server: 179.255.124.207
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /books?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 97 - 900ms-37Mbps
+  server: 47.80.63.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /class/web/question?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 98 - 900ms-37Mbps
+  server: 144.34.237.48
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /share/m/url?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 99 - 903ms-37Mbps
+  server: 83.147.12.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pic?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 100 - 911ms-37Mbps
+  server: 91.193.59.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /posts/reg?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 101 - 930ms-37Mbps
+  server: www.pcone.com.tw
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /program/archives/resource?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 102 - 936ms-37Mbps
+  server: 140.238.5.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /html/avatar?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 103 - 944ms-37Mbps
+  server: 213.145.87.54
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /torrent/groups/ajax?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 104 - 944ms-37Mbps
+  server: 165.232.159.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /film?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 105 - 947ms-37Mbps
+  server: 185.210.154.62
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /htm/magnet/album?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 106 - 947ms-37Mbps
+  server: 130.94.36.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /student/image/detail?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 107 - 961ms-37Mbps
+  server: 158.247.253.111
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /travel/wenku/ads?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 108 - 969ms-37Mbps
+  server: 88.218.193.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /comic/comics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 109 - 976ms-37Mbps
+  server: 64.118.159.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ajax/category?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇸🇬 新加坡 (Singapore) 110 - 993ms-37Mbps
+  server: 192.124.176.70
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /books/pics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 111 - 994ms-37Mbps
+  server: 172.105.68.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /act/posts/doc?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 112 - 999ms-37Mbps
+  server: 82.117.245.166
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /cn/groups?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 113 - 999ms-37Mbps
+  server: 139.162.141.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /stock/new?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 114 - 1002ms-37Mbps
+  server: 217.60.37.28
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /index?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 115 - 1005ms-37Mbps
+  server: 64.226.88.144
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /index?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 116 - 1011ms-37Mbps
+  server: 18.197.218.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /m/star?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 117 - 1012ms-37Mbps
+  server: www.allianz.com.my
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /seasons/photos/tag?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 118 - 1017ms-37Mbps
+  server: 45.62.118.45
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /act/play?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 119 - 1024ms-37Mbps
+  server: 57.128.183.82
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /p/user/ajax?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 120 - 1027ms-37Mbps
   server: 8.209.83.19
   port: 443
   udp: true
@@ -2545,75 +1921,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /episode?ed=2560
+    path: /game?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 160 - 1161ms-37Mbps
-  server: 128.140.73.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /act/thread?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 161 - 1161ms-37Mbps
-  server: 45.86.229.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /channel/bbs?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 162 - 1163ms-37Mbps
-  server: 178.105.174.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cart/rank/pictures?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 163 - 1175ms-37Mbps
-  server: 57.128.181.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archives/soft/payment?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 164 - 1177ms-37Mbps
-  server: 57.128.172.125
+- name: 🇰🇷 韩国 (South Korea) 121 - 1029ms-37Mbps
+  server: 168.110.121.126
   port: 8443
   udp: true
   type: vless
@@ -2625,11 +1937,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /friends/ad/document?ed=2560
+    path: /program?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 165 - 1187ms-37Mbps
-  server: 82.223.196.199
+- name: 🇳🇱 荷兰 (Netherlands) 122 - 1029ms-37Mbps
+  server: 162.211.231.120
   port: 443
   udp: true
   type: vless
@@ -2641,11 +1953,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /streams/player/doc?ed=2560
+    path: /source?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 166 - 1196ms-37Mbps
-  server: 35.176.187.206
+- name: 🇯🇵 日本 (Japan) 123 - 1030ms-37Mbps
+  server: 216.23.87.93
   port: 443
   udp: true
   type: vless
@@ -2657,187 +1969,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /album?ed=2560
+    path: /game/ja?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 167 - 1202ms-37Mbps
-  server: 93.93.118.60
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /music/pics/out.php?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 168 - 1205ms-37Mbps
-  server: 78.17.180.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archive/home?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 169 - 1205ms-37Mbps
-  server: 162.141.93.191
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /doc?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 170 - 1228ms-37Mbps
-  server: 146.70.30.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /detail/page?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 171 - 1240ms-37Mbps
-  server: 94.143.138.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /messages/collect/lib?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 172 - 1248ms-37Mbps
-  server: 57.128.176.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /jp?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 173 - 1258ms-37Mbps
-  server: 57.128.178.42
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /task/blogs/downloads?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 174 - 1263ms-37Mbps
-  server: 57.128.183.59
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /message/contact/document?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇫🇷 法国 (France) 175 - 1270ms-37Mbps
-  server: 178.105.181.55
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /group/outbound/dl?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 176 - 1279ms-37Mbps
-  server: 193.24.235.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /lib/service/zh-tw?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 177 - 1280ms-37Mbps
-  server: 92.178.109.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /htm?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 178 - 1282ms-37Mbps
-  server: 162.141.93.191
+- name: 🇰🇷 韩国 (South Korea) 124 - 1036ms-37Mbps
+  server: 146.56.187.1
   port: 8443
   udp: true
   type: vless
@@ -2852,24 +1988,8 @@ proxies:
     path: /mall?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 179 - 1309ms-37Mbps
-  server: 139.59.190.23
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: forfreesub.tclucky.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /redirect.html/live?ed=2560
-    headers:
-      Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 180 - 1338ms-37Mbps
-  server: 31.57.190.26
+- name: 🇬🇧 英国 (United Kingdom) 125 - 1036ms-37Mbps
+  server: 185.49.33.54
   port: 443
   udp: true
   type: vless
@@ -2881,11 +2001,43 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /intro/zh-cn?ed=2560
+    path: /teacher/jp?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 181 - 1341ms-37Mbps
-  server: 65.20.105.75
+- name: 🇫🇷 法国 (France) 126 - 1037ms-37Mbps
+  server: 104.252.111.38
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /cn?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 127 - 1045ms-37Mbps
+  server: 57.128.172.125
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /zh/acg/api?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 128 - 1048ms-37Mbps
+  server: 8.211.19.24
   port: 443
   udp: true
   type: vless
@@ -2897,11 +2049,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /web?ed=2560
+    path: /series/downloads/company?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 182 - 1347ms-37Mbps
-  server: 31.57.190.94
+- name: 🇬🇧 英国 (United Kingdom) 129 - 1049ms-37Mbps
+  server: 85.155.180.247
   port: 443
   udp: true
   type: vless
@@ -2913,11 +2065,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /friends/favorite/music?ed=2560
+    path: /go.php/settings?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 183 - 1365ms-37Mbps
-  server: 185.237.234.67
+- name: 🇫🇷 法国 (France) 130 - 1069ms-37Mbps
+  server: 147.90.26.61
   port: 443
   udp: true
   type: vless
@@ -2929,11 +2081,27 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /tag/ajax?ed=2560
+    path: /china/club?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 184 - 1378ms-37Mbps
-  server: 31.57.190.40
+- name: 🇩🇪 德国 (Germany) 131 - 1071ms-37Mbps
+  server: 5.230.194.229
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /cart/ask?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 132 - 1073ms-37Mbps
+  server: 109.172.55.133
   port: 443
   udp: true
   type: vless
@@ -2945,10 +2113,74 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /web/info/films?ed=2560
+    path: /company?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇬🇧 英国 (United Kingdom) 185 - 1378ms-37Mbps
+- name: 🇬🇧 英国 (United Kingdom) 133 - 1075ms-37Mbps
+  server: 57.128.181.221
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pay/view?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 134 - 1077ms-37Mbps
+  server: 31.56.146.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /htm/blogs?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 135 - 1092ms-37Mbps
+  server: 185.169.234.13
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /stream/episode/play?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 136 - 1113ms-37Mbps
+  server: 31.59.103.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /play?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 137 - 1119ms-37Mbps
   server: 178.128.168.108
   port: 2087
   udp: true
@@ -2961,11 +2193,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /seller/pay/activity?ed=2560
+    path: /soft/jump?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 186 - 1490ms-37Mbps
-  server: 151.242.188.249
+- name: 🇬🇧 英国 (United Kingdom) 138 - 1119ms-37Mbps
+  server: 146.70.30.39
   port: 443
   udp: true
   type: vless
@@ -2977,10 +2209,522 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /episodes?ed=2560
+    path: /index/mag/drama?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇪🇸 西班牙 (Spain) 187 - 1538ms-37Mbps
+- name: 🇫🇷 法国 (France) 139 - 1120ms-37Mbps
+  server: 45.39.255.134
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /documents/groups/photos?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 140 - 1122ms-37Mbps
+  server: 139.59.190.23
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /mag/stream/message?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 141 - 1127ms-37Mbps
+  server: 185.49.33.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /mobile/redirect.php?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 142 - 1130ms-37Mbps
+  server: 47.245.135.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pay/tool/channels?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 143 - 1135ms-37Mbps
+  server: 57.128.181.14
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /jumping/topics/mobile?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 144 - 1137ms-37Mbps
+  server: 45.86.229.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /student/forum?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 145 - 1140ms-37Mbps
+  server: 57.128.178.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /torrent?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 146 - 1151ms-37Mbps
+  server: 178.105.174.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /archive?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 147 - 1152ms-37Mbps
+  server: 82.139.242.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /travel?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 148 - 1156ms-37Mbps
+  server: 57.128.183.59
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /favorite/members/picture?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 149 - 1158ms-37Mbps
+  server: 94.143.138.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /document?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇳🇱 荷兰 (Netherlands) 150 - 1166ms-37Mbps
+  server: 194.36.190.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /photos?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇰🇷 韩国 (South Korea) 151 - 1168ms-37Mbps
+  server: 168.107.40.4
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /china/users?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 152 - 1182ms-37Mbps
+  server: 217.60.252.115
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /home/documents?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 153 - 1183ms-37Mbps
+  server: 162.141.93.191
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /setting/films?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 154 - 1184ms-37Mbps
+  server: 31.56.176.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /products?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 155 - 1189ms-37Mbps
+  server: 198.244.234.13
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /channel/htm?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 156 - 1199ms-37Mbps
+  server: 82.223.196.199
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /topics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇩🇪 德国 (Germany) 157 - 1209ms-37Mbps
+  server: 194.13.81.234
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 158 - 1210ms-37Mbps
+  server: 172.166.113.27
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /archives/play?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 159 - 1217ms-37Mbps
+  server: 93.93.118.60
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /photo/streams/order?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 160 - 1224ms-37Mbps
+  server: 78.17.180.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /forum/favourites?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 161 - 1224ms-37Mbps
+  server: 92.178.109.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /books?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 162 - 1227ms-37Mbps
+  server: 91.107.153.129
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ranking/comics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 163 - 1237ms-37Mbps
+  server: 35.176.187.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /index/details?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 164 - 1239ms-37Mbps
+  server: 193.24.235.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /favorite?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 165 - 1246ms-37Mbps
+  server: 162.141.93.191
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /my?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 166 - 1255ms-37Mbps
+  server: 18.134.196.127
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /activity/account/discuss?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 167 - 1266ms-37Mbps
+  server: 51.75.27.43
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /archive?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 168 - 1283ms-37Mbps
+  server: 37.59.127.22
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /favorite?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 169 - 1316ms-37Mbps
+  server: 31.57.190.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /mag/games/download?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇬🇧 英国 (United Kingdom) 170 - 1322ms-37Mbps
+  server: 57.128.176.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /magnet/site/acg?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 171 - 1325ms-37Mbps
   server: 194.154.28.227
   port: 443
   udp: true
@@ -2993,11 +2737,27 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /service/category/resource?ed=2560
+    path: /services/playlist/picture?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 188 - 1590ms-37Mbps
-  server: 23.146.248.149
+- name: 🇫🇷 法国 (France) 172 - 1327ms-37Mbps
+  server: 31.56.146.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /torrent/zip/films?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 173 - 1332ms-37Mbps
+  server: 31.57.190.94
   port: 443
   udp: true
   type: vless
@@ -3009,10 +2769,202 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /anime/trade/sale?ed=2560
+    path: /v/categories?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
-- name: 🇿🇦 南非 (South Africa) 189 - 1960ms-37Mbps
+- name: 🇩🇪 德国 (Germany) 174 - 1341ms-37Mbps
+  server: 109.120.138.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /downloads/setting/tv?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 175 - 1356ms-37Mbps
+  server: 5.75.199.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /page?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 176 - 1363ms-37Mbps
+  server: locknlock.vn
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /service/comics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇲🇽 墨西哥 (Mexico) 177 - 1425ms-37Mbps
+  server: 216.238.79.83
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /article/favourites/comics?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 178 - 1493ms-37Mbps
+  server: 91.99.161.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ajax/acg/app?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 179 - 1498ms-37Mbps
+  server: 151.242.189.48
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pictures?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 180 - 1502ms-24Mbps
+  server: 188.253.6.249
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /library/course?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 181 - 1529ms-37Mbps
+  server: 45.149.186.154
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /source/pics/comic?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇪🇸 西班牙 (Spain) 182 - 1529ms-37Mbps
+  server: 185.237.234.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /category?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇺🇸 美国 (United States) 183 - 1634ms-37Mbps
+  server: 179.253.236.209
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /readme/account?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 184 - 1715ms-37Mbps
+  server: 128.140.73.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /articles?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇫🇷 法国 (France) 185 - 1869ms-37Mbps
+  server: 46.224.207.178
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: forfreesub.tclucky.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ep?ed=2560
+    headers:
+      Host: forfreesub.tclucky.eu.cc
+- name: 🇿🇦 南非 (South Africa) 186 - 1906ms-37Mbps
   server: 45.86.228.104
   port: 443
   udp: true
@@ -3025,7 +2977,7 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /downloads?ed=2560
+    path: /channels/movies?ed=2560
     headers:
       Host: forfreesub.tclucky.eu.cc
 proxy-groups:
@@ -3033,388 +2985,382 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - 128ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 - 129ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 131ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 04 - 135ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 136ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 06 - 142ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 07 - 143ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 08 - 143ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 09 - 143ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 10 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 11 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 12 - 145ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 13 - 146ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 14 - 148ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 15 - 196ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 16 - 212ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 17 - 220ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 18 - 222ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 19 - 229ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 20 - 229ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 21 - 236ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 22 - 242ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 23 - 247ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 24 - 258ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 25 - 264ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 26 - 265ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 27 - 266ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 28 - 271ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 29 - 278ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 30 - 279ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 31 - 285ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 32 - 316ms-37Mbps
-  - 🇺🇸 美国 (United States) 33 - 323ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 34 - 330ms-37Mbps
-  - 🇯🇵 日本 (Japan) 35 - 348ms-37Mbps
-  - 🇯🇵 日本 (Japan) 36 - 353ms-37Mbps
-  - 🇯🇵 日本 (Japan) 37 - 356ms-37Mbps
-  - 🇯🇵 日本 (Japan) 38 - 364ms-37Mbps
-  - 🇯🇵 日本 (Japan) 39 - 374ms-37Mbps
-  - 🇯🇵 日本 (Japan) 40 - 379ms-37Mbps
-  - 🇯🇵 日本 (Japan) 41 - 381ms-37Mbps
-  - 🇯🇵 日本 (Japan) 42 - 385ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 43 - 391ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 44 - 393ms-37Mbps
-  - 🇯🇵 日本 (Japan) 45 - 394ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 46 - 396ms-37Mbps
-  - 🇯🇵 日本 (Japan) 47 - 397ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 48 - 401ms-37Mbps
-  - 🇯🇵 日本 (Japan) 49 - 403ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 50 - 407ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 51 - 413ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 52 - 414ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 53 - 418ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 54 - 429ms-37Mbps
-  - 🇯🇵 日本 (Japan) 55 - 429ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 56 - 435ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 57 - 440ms-37Mbps
-  - 🇯🇵 日本 (Japan) 58 - 446ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 59 - 475ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 60 - 483ms-37Mbps
-  - 🇯🇵 日本 (Japan) 61 - 492ms-37Mbps
-  - 🇯🇵 日本 (Japan) 62 - 498ms-37Mbps
-  - 🇯🇵 日本 (Japan) 63 - 504ms-37Mbps
-  - 🇯🇵 日本 (Japan) 64 - 533ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 65 - 548ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 66 - 566ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 67 - 566ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 68 - 568ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 69 - 569ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 70 - 571ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 71 - 595ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 72 - 621ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 73 - 635ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 74 - 641ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 75 - 671ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 76 - 692ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 77 - 710ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 78 - 714ms-22Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 79 - 810ms-37Mbps
-  - 🇩🇪 德国 (Germany) 80 - 816ms-37Mbps
-  - 🇺🇸 美国 (United States) 81 - 824ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 82 - 826ms-37Mbps
-  - 🇺🇸 美国 (United States) 83 - 826ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 84 - 826ms-37Mbps
-  - 🇺🇸 美国 (United States) 85 - 827ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 86 - 827ms-37Mbps
-  - 🇺🇸 美国 (United States) 87 - 834ms-37Mbps
-  - 🇺🇸 美国 (United States) 88 - 835ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 89 - 843ms-37Mbps
-  - 🇺🇸 美国 (United States) 90 - 845ms-37Mbps
-  - 🇺🇸 美国 (United States) 91 - 846ms-37Mbps
-  - 🇺🇸 美国 (United States) 92 - 848ms-37Mbps
-  - 🇩🇪 德国 (Germany) 93 - 853ms-37Mbps
-  - 🇺🇸 美国 (United States) 94 - 857ms-37Mbps
-  - 🇺🇸 美国 (United States) 95 - 858ms-37Mbps
-  - 🇺🇸 美国 (United States) 96 - 860ms-37Mbps
-  - 🇺🇸 美国 (United States) 97 - 866ms-37Mbps
-  - 🇩🇪 德国 (Germany) 98 - 872ms-37Mbps
-  - 🇺🇸 美国 (United States) 99 - 875ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 100 - 878ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 101 - 884ms-37Mbps
-  - 🇺🇸 美国 (United States) 102 - 885ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 103 - 886ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 104 - 887ms-37Mbps
-  - 🇺🇸 美国 (United States) 105 - 888ms-37Mbps
-  - 🇺🇸 美国 (United States) 106 - 891ms-37Mbps
-  - 🇺🇸 美国 (United States) 107 - 905ms-37Mbps
-  - 🇯🇵 日本 (Japan) 108 - 909ms-37Mbps
-  - 🇺🇸 美国 (United States) 109 - 910ms-37Mbps
-  - 🇺🇸 美国 (United States) 110 - 928ms-37Mbps
-  - 🇺🇸 美国 (United States) 111 - 939ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 112 - 945ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 113 - 946ms-37Mbps
-  - 🇺🇸 美国 (United States) 114 - 965ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 115 - 971ms-37Mbps
-  - 🇩🇪 德国 (Germany) 116 - 973ms-37Mbps
-  - 🇩🇪 德国 (Germany) 117 - 977ms-37Mbps
-  - 🇩🇪 德国 (Germany) 118 - 977ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 119 - 980ms-16Mbps
-  - 🇬🇧 英国 (United Kingdom) 120 - 982ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 121 - 984ms-37Mbps
-  - 🇩🇪 德国 (Germany) 122 - 989ms-37Mbps
-  - 🇩🇪 德国 (Germany) 123 - 991ms-37Mbps
-  - 🇩🇪 德国 (Germany) 124 - 992ms-37Mbps
-  - 🇩🇪 德国 (Germany) 125 - 995ms-37Mbps
-  - 🇩🇪 德国 (Germany) 126 - 999ms-37Mbps
-  - 🇩🇪 德国 (Germany) 127 - 1004ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 128 - 1010ms-37Mbps
-  - 🇩🇪 德国 (Germany) 129 - 1010ms-37Mbps
-  - 🇩🇪 德国 (Germany) 130 - 1015ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 131 - 1024ms-37Mbps
-  - 🇩🇪 德国 (Germany) 132 - 1033ms-37Mbps
-  - 🇩🇪 德国 (Germany) 133 - 1036ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 134 - 1051ms-37Mbps
-  - 🇫🇷 法国 (France) 135 - 1055ms-37Mbps
-  - 🇫🇷 法国 (France) 136 - 1058ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 137 - 1064ms-37Mbps
-  - 🇫🇷 法国 (France) 138 - 1065ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 139 - 1067ms-37Mbps
-  - 🇫🇷 法国 (France) 140 - 1070ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 141 - 1072ms-37Mbps
-  - 🇫🇷 法国 (France) 142 - 1101ms-37Mbps
-  - 🇫🇷 法国 (France) 143 - 1103ms-37Mbps
-  - 🇫🇷 法国 (France) 144 - 1107ms-37Mbps
-  - 🇫🇷 法国 (France) 145 - 1107ms-37Mbps
-  - 🇫🇷 法国 (France) 146 - 1113ms-37Mbps
-  - 🇫🇷 法国 (France) 147 - 1128ms-37Mbps
-  - 🇩🇪 德国 (Germany) 148 - 1131ms-37Mbps
-  - 🇫🇷 法国 (France) 149 - 1135ms-37Mbps
-  - 🇩🇪 德国 (Germany) 150 - 1139ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 151 - 1146ms-37Mbps
-  - 🇩🇪 德国 (Germany) 152 - 1146ms-37Mbps
-  - 🇫🇷 法国 (France) 153 - 1146ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 154 - 1146ms-37Mbps
-  - 🇺🇸 美国 (United States) 155 - 1147ms-37Mbps
-  - 🇫🇷 法国 (France) 156 - 1152ms-37Mbps
-  - 🇫🇷 法国 (France) 157 - 1154ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 158 - 1157ms-37Mbps
-  - 🇩🇪 德国 (Germany) 159 - 1158ms-37Mbps
-  - 🇫🇷 法国 (France) 160 - 1161ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 161 - 1161ms-37Mbps
-  - 🇫🇷 法国 (France) 162 - 1163ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 163 - 1175ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 164 - 1177ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 165 - 1187ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 166 - 1196ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 167 - 1202ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 168 - 1205ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 169 - 1205ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 170 - 1228ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 171 - 1240ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 172 - 1248ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 173 - 1258ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 174 - 1263ms-37Mbps
-  - 🇫🇷 法国 (France) 175 - 1270ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 176 - 1279ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 177 - 1280ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 178 - 1282ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 179 - 1309ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 180 - 1338ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 181 - 1341ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 182 - 1347ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 183 - 1365ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 184 - 1378ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 185 - 1378ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 186 - 1490ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 187 - 1538ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 188 - 1590ms-37Mbps
-  - 🇿🇦 南非 (South Africa) 189 - 1960ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 136ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 146ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 03 - 147ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 04 - 148ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 05 - 157ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 06 - 159ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 07 - 162ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 165ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 09 - 170ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 10 - 172ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 11 - 177ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 12 - 188ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 13 - 195ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 14 - 230ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 15 - 244ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 16 - 246ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 17 - 254ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 18 - 266ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 19 - 271ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 20 - 281ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 21 - 282ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 22 - 284ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 23 - 289ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 24 - 291ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 25 - 293ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 26 - 295ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 27 - 299ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 28 - 306ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 29 - 315ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 30 - 316ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 31 - 358ms-37Mbps
+  - 🇯🇵 日本 (Japan) 32 - 370ms-37Mbps
+  - 🇯🇵 日本 (Japan) 33 - 372ms-37Mbps
+  - 🇯🇵 日本 (Japan) 34 - 372ms-37Mbps
+  - 🇯🇵 日本 (Japan) 35 - 376ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 36 - 383ms-37Mbps
+  - 🇯🇵 日本 (Japan) 37 - 386ms-37Mbps
+  - 🇯🇵 日本 (Japan) 38 - 389ms-25Mbps
+  - 🇯🇵 日本 (Japan) 39 - 391ms-37Mbps
+  - 🇯🇵 日本 (Japan) 40 - 406ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 41 - 406ms-37Mbps
+  - 🇯🇵 日本 (Japan) 42 - 412ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 43 - 413ms-37Mbps
+  - 🇯🇵 日本 (Japan) 44 - 418ms-37Mbps
+  - 🇯🇵 日本 (Japan) 45 - 426ms-37Mbps
+  - 🇯🇵 日本 (Japan) 46 - 429ms-37Mbps
+  - 🇯🇵 日本 (Japan) 47 - 431ms-37Mbps
+  - 🇯🇵 日本 (Japan) 48 - 431ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 49 - 434ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 50 - 435ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 51 - 441ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 52 - 442ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 53 - 443ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 54 - 453ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 55 - 462ms-37Mbps
+  - 🇯🇵 日本 (Japan) 56 - 465ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 57 - 479ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 58 - 487ms-37Mbps
+  - 🇯🇵 日本 (Japan) 59 - 496ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 60 - 540ms-37Mbps
+  - 🇯🇵 日本 (Japan) 61 - 557ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 62 - 566ms-37Mbps
+  - 🇯🇵 日本 (Japan) 63 - 566ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 64 - 610ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 65 - 629ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 66 - 655ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 67 - 664ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 68 - 715ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 69 - 727ms-37Mbps
+  - 🇯🇵 日本 (Japan) 70 - 763ms-37Mbps
+  - 🇺🇸 美国 (United States) 71 - 790ms-37Mbps
+  - 🇺🇸 美国 (United States) 72 - 790ms-37Mbps
+  - 🇺🇸 美国 (United States) 73 - 794ms-37Mbps
+  - 🇺🇸 美国 (United States) 74 - 828ms-37Mbps
+  - 🇺🇸 美国 (United States) 75 - 828ms-37Mbps
+  - 🇺🇸 美国 (United States) 76 - 838ms-37Mbps
+  - 🇺🇸 美国 (United States) 77 - 843ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 78 - 846ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 79 - 850ms-37Mbps
+  - 🇺🇸 美国 (United States) 80 - 850ms-37Mbps
+  - 🇺🇸 美国 (United States) 81 - 851ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 82 - 853ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 83 - 855ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 855ms-37Mbps
+  - 🇺🇸 美国 (United States) 85 - 856ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 86 - 858ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 87 - 859ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 88 - 871ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 89 - 871ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 90 - 873ms-37Mbps
+  - 🇺🇸 美国 (United States) 91 - 875ms-37Mbps
+  - 🇺🇸 美国 (United States) 92 - 878ms-37Mbps
+  - 🇯🇵 日本 (Japan) 93 - 882ms-37Mbps
+  - 🇺🇸 美国 (United States) 94 - 883ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 95 - 891ms-16Mbps
+  - 🇺🇸 美国 (United States) 96 - 893ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 97 - 900ms-37Mbps
+  - 🇺🇸 美国 (United States) 98 - 900ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 99 - 903ms-37Mbps
+  - 🇺🇸 美国 (United States) 100 - 911ms-37Mbps
+  - 🇺🇸 美国 (United States) 101 - 930ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 102 - 936ms-37Mbps
+  - 🇩🇪 德国 (Germany) 103 - 944ms-37Mbps
+  - 🇺🇸 美国 (United States) 104 - 944ms-37Mbps
+  - 🇩🇪 德国 (Germany) 105 - 947ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 106 - 947ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 107 - 961ms-37Mbps
+  - 🇩🇪 德国 (Germany) 108 - 969ms-37Mbps
+  - 🇫🇷 法国 (France) 109 - 976ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 110 - 993ms-37Mbps
+  - 🇩🇪 德国 (Germany) 111 - 994ms-37Mbps
+  - 🇩🇪 德国 (Germany) 112 - 999ms-37Mbps
+  - 🇩🇪 德国 (Germany) 113 - 999ms-37Mbps
+  - 🇫🇷 法国 (France) 114 - 1002ms-37Mbps
+  - 🇩🇪 德国 (Germany) 115 - 1005ms-37Mbps
+  - 🇩🇪 德国 (Germany) 116 - 1011ms-37Mbps
+  - 🇺🇸 美国 (United States) 117 - 1012ms-37Mbps
+  - 🇺🇸 美国 (United States) 118 - 1017ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 119 - 1024ms-37Mbps
+  - 🇩🇪 德国 (Germany) 120 - 1027ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 121 - 1029ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 122 - 1029ms-37Mbps
+  - 🇯🇵 日本 (Japan) 123 - 1030ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 124 - 1036ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 125 - 1036ms-37Mbps
+  - 🇫🇷 法国 (France) 126 - 1037ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 127 - 1045ms-37Mbps
+  - 🇩🇪 德国 (Germany) 128 - 1048ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 129 - 1049ms-37Mbps
+  - 🇫🇷 法国 (France) 130 - 1069ms-37Mbps
+  - 🇩🇪 德国 (Germany) 131 - 1071ms-37Mbps
+  - 🇫🇷 法国 (France) 132 - 1073ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 133 - 1075ms-37Mbps
+  - 🇫🇷 法国 (France) 134 - 1077ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 135 - 1092ms-37Mbps
+  - 🇫🇷 法国 (France) 136 - 1113ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 137 - 1119ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 138 - 1119ms-37Mbps
+  - 🇫🇷 法国 (France) 139 - 1120ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 140 - 1122ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 141 - 1127ms-37Mbps
+  - 🇩🇪 德国 (Germany) 142 - 1130ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 143 - 1135ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 144 - 1137ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 145 - 1140ms-37Mbps
+  - 🇫🇷 法国 (France) 146 - 1151ms-37Mbps
+  - 🇩🇪 德国 (Germany) 147 - 1152ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 148 - 1156ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 149 - 1158ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 150 - 1166ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 151 - 1168ms-37Mbps
+  - 🇫🇷 法国 (France) 152 - 1182ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 153 - 1183ms-37Mbps
+  - 🇫🇷 法国 (France) 154 - 1184ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 155 - 1189ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 156 - 1199ms-37Mbps
+  - 🇩🇪 德国 (Germany) 157 - 1209ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 158 - 1210ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 159 - 1217ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 160 - 1224ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 161 - 1224ms-37Mbps
+  - 🇫🇷 法国 (France) 162 - 1227ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 163 - 1237ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 164 - 1239ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 165 - 1246ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 166 - 1255ms-37Mbps
+  - 🇫🇷 法国 (France) 167 - 1266ms-37Mbps
+  - 🇫🇷 法国 (France) 168 - 1283ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 169 - 1316ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 170 - 1322ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 171 - 1325ms-37Mbps
+  - 🇫🇷 法国 (France) 172 - 1327ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 173 - 1332ms-37Mbps
+  - 🇩🇪 德国 (Germany) 174 - 1341ms-37Mbps
+  - 🇫🇷 法国 (France) 175 - 1356ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 176 - 1363ms-37Mbps
+  - 🇲🇽 墨西哥 (Mexico) 177 - 1425ms-37Mbps
+  - 🇫🇷 法国 (France) 178 - 1493ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 179 - 1498ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 180 - 1502ms-24Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 181 - 1529ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 182 - 1529ms-37Mbps
+  - 🇺🇸 美国 (United States) 183 - 1634ms-37Mbps
+  - 🇫🇷 法国 (France) 184 - 1715ms-37Mbps
+  - 🇫🇷 法国 (France) 185 - 1869ms-37Mbps
+  - 🇿🇦 南非 (South Africa) 186 - 1906ms-37Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - 128ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 02 - 129ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 131ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 04 - 135ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 136ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 06 - 142ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 07 - 143ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 08 - 143ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 09 - 143ms-16Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 10 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 11 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 12 - 145ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 13 - 146ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 14 - 148ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 15 - 196ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 16 - 212ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 17 - 220ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 18 - 222ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 19 - 229ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 20 - 229ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 21 - 236ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 22 - 242ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 23 - 247ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 24 - 258ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 25 - 264ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 26 - 265ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 27 - 266ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 28 - 271ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 29 - 278ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 30 - 279ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 31 - 285ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 32 - 316ms-37Mbps
-  - 🇺🇸 美国 (United States) 33 - 323ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 34 - 330ms-37Mbps
-  - 🇯🇵 日本 (Japan) 35 - 348ms-37Mbps
-  - 🇯🇵 日本 (Japan) 36 - 353ms-37Mbps
-  - 🇯🇵 日本 (Japan) 37 - 356ms-37Mbps
-  - 🇯🇵 日本 (Japan) 38 - 364ms-37Mbps
-  - 🇯🇵 日本 (Japan) 39 - 374ms-37Mbps
-  - 🇯🇵 日本 (Japan) 40 - 379ms-37Mbps
-  - 🇯🇵 日本 (Japan) 41 - 381ms-37Mbps
-  - 🇯🇵 日本 (Japan) 42 - 385ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 43 - 391ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 44 - 393ms-37Mbps
-  - 🇯🇵 日本 (Japan) 45 - 394ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 46 - 396ms-37Mbps
-  - 🇯🇵 日本 (Japan) 47 - 397ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 48 - 401ms-37Mbps
-  - 🇯🇵 日本 (Japan) 49 - 403ms-37Mbps
-  - 🇲🇾 马来西亚 (Malaysia) 50 - 407ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 51 - 413ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 52 - 414ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 53 - 418ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 54 - 429ms-37Mbps
-  - 🇯🇵 日本 (Japan) 55 - 429ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 56 - 435ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 57 - 440ms-37Mbps
-  - 🇯🇵 日本 (Japan) 58 - 446ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 59 - 475ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 60 - 483ms-37Mbps
-  - 🇯🇵 日本 (Japan) 61 - 492ms-37Mbps
-  - 🇯🇵 日本 (Japan) 62 - 498ms-37Mbps
-  - 🇯🇵 日本 (Japan) 63 - 504ms-37Mbps
-  - 🇯🇵 日本 (Japan) 64 - 533ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 65 - 548ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 66 - 566ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 67 - 566ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 68 - 568ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 69 - 569ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 70 - 571ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 71 - 595ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 72 - 621ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 73 - 635ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 74 - 641ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 75 - 671ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 76 - 692ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 77 - 710ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 78 - 714ms-22Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 79 - 810ms-37Mbps
-  - 🇩🇪 德国 (Germany) 80 - 816ms-37Mbps
-  - 🇺🇸 美国 (United States) 81 - 824ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 82 - 826ms-37Mbps
-  - 🇺🇸 美国 (United States) 83 - 826ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 84 - 826ms-37Mbps
-  - 🇺🇸 美国 (United States) 85 - 827ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 86 - 827ms-37Mbps
-  - 🇺🇸 美国 (United States) 87 - 834ms-37Mbps
-  - 🇺🇸 美国 (United States) 88 - 835ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 89 - 843ms-37Mbps
-  - 🇺🇸 美国 (United States) 90 - 845ms-37Mbps
-  - 🇺🇸 美国 (United States) 91 - 846ms-37Mbps
-  - 🇺🇸 美国 (United States) 92 - 848ms-37Mbps
-  - 🇩🇪 德国 (Germany) 93 - 853ms-37Mbps
-  - 🇺🇸 美国 (United States) 94 - 857ms-37Mbps
-  - 🇺🇸 美国 (United States) 95 - 858ms-37Mbps
-  - 🇺🇸 美国 (United States) 96 - 860ms-37Mbps
-  - 🇺🇸 美国 (United States) 97 - 866ms-37Mbps
-  - 🇩🇪 德国 (Germany) 98 - 872ms-37Mbps
-  - 🇺🇸 美国 (United States) 99 - 875ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 100 - 878ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 101 - 884ms-37Mbps
-  - 🇺🇸 美国 (United States) 102 - 885ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 103 - 886ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 104 - 887ms-37Mbps
-  - 🇺🇸 美国 (United States) 105 - 888ms-37Mbps
-  - 🇺🇸 美国 (United States) 106 - 891ms-37Mbps
-  - 🇺🇸 美国 (United States) 107 - 905ms-37Mbps
-  - 🇯🇵 日本 (Japan) 108 - 909ms-37Mbps
-  - 🇺🇸 美国 (United States) 109 - 910ms-37Mbps
-  - 🇺🇸 美国 (United States) 110 - 928ms-37Mbps
-  - 🇺🇸 美国 (United States) 111 - 939ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 112 - 945ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 113 - 946ms-37Mbps
-  - 🇺🇸 美国 (United States) 114 - 965ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 115 - 971ms-37Mbps
-  - 🇩🇪 德国 (Germany) 116 - 973ms-37Mbps
-  - 🇩🇪 德国 (Germany) 117 - 977ms-37Mbps
-  - 🇩🇪 德国 (Germany) 118 - 977ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 119 - 980ms-16Mbps
-  - 🇬🇧 英国 (United Kingdom) 120 - 982ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 121 - 984ms-37Mbps
-  - 🇩🇪 德国 (Germany) 122 - 989ms-37Mbps
-  - 🇩🇪 德国 (Germany) 123 - 991ms-37Mbps
-  - 🇩🇪 德国 (Germany) 124 - 992ms-37Mbps
-  - 🇩🇪 德国 (Germany) 125 - 995ms-37Mbps
-  - 🇩🇪 德国 (Germany) 126 - 999ms-37Mbps
-  - 🇩🇪 德国 (Germany) 127 - 1004ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 128 - 1010ms-37Mbps
-  - 🇩🇪 德国 (Germany) 129 - 1010ms-37Mbps
-  - 🇩🇪 德国 (Germany) 130 - 1015ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 131 - 1024ms-37Mbps
-  - 🇩🇪 德国 (Germany) 132 - 1033ms-37Mbps
-  - 🇩🇪 德国 (Germany) 133 - 1036ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 134 - 1051ms-37Mbps
-  - 🇫🇷 法国 (France) 135 - 1055ms-37Mbps
-  - 🇫🇷 法国 (France) 136 - 1058ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 137 - 1064ms-37Mbps
-  - 🇫🇷 法国 (France) 138 - 1065ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 139 - 1067ms-37Mbps
-  - 🇫🇷 法国 (France) 140 - 1070ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 141 - 1072ms-37Mbps
-  - 🇫🇷 法国 (France) 142 - 1101ms-37Mbps
-  - 🇫🇷 法国 (France) 143 - 1103ms-37Mbps
-  - 🇫🇷 法国 (France) 144 - 1107ms-37Mbps
-  - 🇫🇷 法国 (France) 145 - 1107ms-37Mbps
-  - 🇫🇷 法国 (France) 146 - 1113ms-37Mbps
-  - 🇫🇷 法国 (France) 147 - 1128ms-37Mbps
-  - 🇩🇪 德国 (Germany) 148 - 1131ms-37Mbps
-  - 🇫🇷 法国 (France) 149 - 1135ms-37Mbps
-  - 🇩🇪 德国 (Germany) 150 - 1139ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 151 - 1146ms-37Mbps
-  - 🇩🇪 德国 (Germany) 152 - 1146ms-37Mbps
-  - 🇫🇷 法国 (France) 153 - 1146ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 154 - 1146ms-37Mbps
-  - 🇺🇸 美国 (United States) 155 - 1147ms-37Mbps
-  - 🇫🇷 法国 (France) 156 - 1152ms-37Mbps
-  - 🇫🇷 法国 (France) 157 - 1154ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 158 - 1157ms-37Mbps
-  - 🇩🇪 德国 (Germany) 159 - 1158ms-37Mbps
-  - 🇫🇷 法国 (France) 160 - 1161ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 161 - 1161ms-37Mbps
-  - 🇫🇷 法国 (France) 162 - 1163ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 163 - 1175ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 164 - 1177ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 165 - 1187ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 166 - 1196ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 167 - 1202ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 168 - 1205ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 169 - 1205ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 170 - 1228ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 171 - 1240ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 172 - 1248ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 173 - 1258ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 174 - 1263ms-37Mbps
-  - 🇫🇷 法国 (France) 175 - 1270ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 176 - 1279ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 177 - 1280ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 178 - 1282ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 179 - 1309ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 180 - 1338ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 181 - 1341ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 182 - 1347ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 183 - 1365ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 184 - 1378ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 185 - 1378ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 186 - 1490ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 187 - 1538ms-37Mbps
-  - 🇹🇼 中国台湾 (Taiwan) 188 - 1590ms-37Mbps
-  - 🇿🇦 南非 (South Africa) 189 - 1960ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 136ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 146ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 03 - 147ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 04 - 148ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 05 - 157ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 06 - 159ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 07 - 162ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 165ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 09 - 170ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 10 - 172ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 11 - 177ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 12 - 188ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 13 - 195ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 14 - 230ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 15 - 244ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 16 - 246ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 17 - 254ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 18 - 266ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 19 - 271ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 20 - 281ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 21 - 282ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 22 - 284ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 23 - 289ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 24 - 291ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 25 - 293ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 26 - 295ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 27 - 299ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 28 - 306ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 29 - 315ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 30 - 316ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 31 - 358ms-37Mbps
+  - 🇯🇵 日本 (Japan) 32 - 370ms-37Mbps
+  - 🇯🇵 日本 (Japan) 33 - 372ms-37Mbps
+  - 🇯🇵 日本 (Japan) 34 - 372ms-37Mbps
+  - 🇯🇵 日本 (Japan) 35 - 376ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 36 - 383ms-37Mbps
+  - 🇯🇵 日本 (Japan) 37 - 386ms-37Mbps
+  - 🇯🇵 日本 (Japan) 38 - 389ms-25Mbps
+  - 🇯🇵 日本 (Japan) 39 - 391ms-37Mbps
+  - 🇯🇵 日本 (Japan) 40 - 406ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 41 - 406ms-37Mbps
+  - 🇯🇵 日本 (Japan) 42 - 412ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 43 - 413ms-37Mbps
+  - 🇯🇵 日本 (Japan) 44 - 418ms-37Mbps
+  - 🇯🇵 日本 (Japan) 45 - 426ms-37Mbps
+  - 🇯🇵 日本 (Japan) 46 - 429ms-37Mbps
+  - 🇯🇵 日本 (Japan) 47 - 431ms-37Mbps
+  - 🇯🇵 日本 (Japan) 48 - 431ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 49 - 434ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 50 - 435ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 51 - 441ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 52 - 442ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 53 - 443ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 54 - 453ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 55 - 462ms-37Mbps
+  - 🇯🇵 日本 (Japan) 56 - 465ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 57 - 479ms-37Mbps
+  - 🇲🇾 马来西亚 (Malaysia) 58 - 487ms-37Mbps
+  - 🇯🇵 日本 (Japan) 59 - 496ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 60 - 540ms-37Mbps
+  - 🇯🇵 日本 (Japan) 61 - 557ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 62 - 566ms-37Mbps
+  - 🇯🇵 日本 (Japan) 63 - 566ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 64 - 610ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 65 - 629ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 66 - 655ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 67 - 664ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 68 - 715ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 69 - 727ms-37Mbps
+  - 🇯🇵 日本 (Japan) 70 - 763ms-37Mbps
+  - 🇺🇸 美国 (United States) 71 - 790ms-37Mbps
+  - 🇺🇸 美国 (United States) 72 - 790ms-37Mbps
+  - 🇺🇸 美国 (United States) 73 - 794ms-37Mbps
+  - 🇺🇸 美国 (United States) 74 - 828ms-37Mbps
+  - 🇺🇸 美国 (United States) 75 - 828ms-37Mbps
+  - 🇺🇸 美国 (United States) 76 - 838ms-37Mbps
+  - 🇺🇸 美国 (United States) 77 - 843ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 78 - 846ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 79 - 850ms-37Mbps
+  - 🇺🇸 美国 (United States) 80 - 850ms-37Mbps
+  - 🇺🇸 美国 (United States) 81 - 851ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 82 - 853ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 83 - 855ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 855ms-37Mbps
+  - 🇺🇸 美国 (United States) 85 - 856ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 86 - 858ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 87 - 859ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 88 - 871ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 89 - 871ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 90 - 873ms-37Mbps
+  - 🇺🇸 美国 (United States) 91 - 875ms-37Mbps
+  - 🇺🇸 美国 (United States) 92 - 878ms-37Mbps
+  - 🇯🇵 日本 (Japan) 93 - 882ms-37Mbps
+  - 🇺🇸 美国 (United States) 94 - 883ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 95 - 891ms-16Mbps
+  - 🇺🇸 美国 (United States) 96 - 893ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 97 - 900ms-37Mbps
+  - 🇺🇸 美国 (United States) 98 - 900ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 99 - 903ms-37Mbps
+  - 🇺🇸 美国 (United States) 100 - 911ms-37Mbps
+  - 🇺🇸 美国 (United States) 101 - 930ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 102 - 936ms-37Mbps
+  - 🇩🇪 德国 (Germany) 103 - 944ms-37Mbps
+  - 🇺🇸 美国 (United States) 104 - 944ms-37Mbps
+  - 🇩🇪 德国 (Germany) 105 - 947ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 106 - 947ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 107 - 961ms-37Mbps
+  - 🇩🇪 德国 (Germany) 108 - 969ms-37Mbps
+  - 🇫🇷 法国 (France) 109 - 976ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 110 - 993ms-37Mbps
+  - 🇩🇪 德国 (Germany) 111 - 994ms-37Mbps
+  - 🇩🇪 德国 (Germany) 112 - 999ms-37Mbps
+  - 🇩🇪 德国 (Germany) 113 - 999ms-37Mbps
+  - 🇫🇷 法国 (France) 114 - 1002ms-37Mbps
+  - 🇩🇪 德国 (Germany) 115 - 1005ms-37Mbps
+  - 🇩🇪 德国 (Germany) 116 - 1011ms-37Mbps
+  - 🇺🇸 美国 (United States) 117 - 1012ms-37Mbps
+  - 🇺🇸 美国 (United States) 118 - 1017ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 119 - 1024ms-37Mbps
+  - 🇩🇪 德国 (Germany) 120 - 1027ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 121 - 1029ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 122 - 1029ms-37Mbps
+  - 🇯🇵 日本 (Japan) 123 - 1030ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 124 - 1036ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 125 - 1036ms-37Mbps
+  - 🇫🇷 法国 (France) 126 - 1037ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 127 - 1045ms-37Mbps
+  - 🇩🇪 德国 (Germany) 128 - 1048ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 129 - 1049ms-37Mbps
+  - 🇫🇷 法国 (France) 130 - 1069ms-37Mbps
+  - 🇩🇪 德国 (Germany) 131 - 1071ms-37Mbps
+  - 🇫🇷 法国 (France) 132 - 1073ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 133 - 1075ms-37Mbps
+  - 🇫🇷 法国 (France) 134 - 1077ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 135 - 1092ms-37Mbps
+  - 🇫🇷 法国 (France) 136 - 1113ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 137 - 1119ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 138 - 1119ms-37Mbps
+  - 🇫🇷 法国 (France) 139 - 1120ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 140 - 1122ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 141 - 1127ms-37Mbps
+  - 🇩🇪 德国 (Germany) 142 - 1130ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 143 - 1135ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 144 - 1137ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 145 - 1140ms-37Mbps
+  - 🇫🇷 法国 (France) 146 - 1151ms-37Mbps
+  - 🇩🇪 德国 (Germany) 147 - 1152ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 148 - 1156ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 149 - 1158ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 150 - 1166ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 151 - 1168ms-37Mbps
+  - 🇫🇷 法国 (France) 152 - 1182ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 153 - 1183ms-37Mbps
+  - 🇫🇷 法国 (France) 154 - 1184ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 155 - 1189ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 156 - 1199ms-37Mbps
+  - 🇩🇪 德国 (Germany) 157 - 1209ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 158 - 1210ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 159 - 1217ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 160 - 1224ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 161 - 1224ms-37Mbps
+  - 🇫🇷 法国 (France) 162 - 1227ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 163 - 1237ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 164 - 1239ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 165 - 1246ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 166 - 1255ms-37Mbps
+  - 🇫🇷 法国 (France) 167 - 1266ms-37Mbps
+  - 🇫🇷 法国 (France) 168 - 1283ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 169 - 1316ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 170 - 1322ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 171 - 1325ms-37Mbps
+  - 🇫🇷 法国 (France) 172 - 1327ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 173 - 1332ms-37Mbps
+  - 🇩🇪 德国 (Germany) 174 - 1341ms-37Mbps
+  - 🇫🇷 法国 (France) 175 - 1356ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 176 - 1363ms-37Mbps
+  - 🇲🇽 墨西哥 (Mexico) 177 - 1425ms-37Mbps
+  - 🇫🇷 法国 (France) 178 - 1493ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 179 - 1498ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 180 - 1502ms-24Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 181 - 1529ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 182 - 1529ms-37Mbps
+  - 🇺🇸 美国 (United States) 183 - 1634ms-37Mbps
+  - 🇫🇷 法国 (France) 184 - 1715ms-37Mbps
+  - 🇫🇷 法国 (France) 185 - 1869ms-37Mbps
+  - 🇿🇦 南非 (South Africa) 186 - 1906ms-37Mbps
 rules:
 - MATCH,PROXIES
