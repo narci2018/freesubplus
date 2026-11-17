@@ -4,471 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - 144ms-37Mbps
-  server: 47.86.176.143
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /upload/zh-cn/articles?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - 157ms-37Mbps
-  server: 149.104.30.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ask/edu?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - 206ms-37Mbps
-  server: 149.104.25.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /channel?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - 210ms-37Mbps
-  server: 193.134.209.165
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /anime/images?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - 277ms-37Mbps
-  server: tomleemusic.com.hk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /m/html?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 06 - 297ms-37Mbps
-  server: 38.244.150.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /list?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 07 - 300ms-37Mbps
-  server: 172.237.81.42
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /student/wenku/lang?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 08 - 306ms-37Mbps
-  server: 167.99.77.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /buy/reg?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 09 - 308ms-37Mbps
-  server: 172.236.132.46
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /doc/dl?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 10 - 311ms-37Mbps
-  server: 152.42.173.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /products/star/mall?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 11 - 317ms-37Mbps
-  server: 178.128.82.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /zh-tw?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 12 - 318ms-37Mbps
-  server: 43.134.104.39
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /view/class/movies?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 13 - 320ms-37Mbps
-  server: 129.212.229.240
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /program/channel/message?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 14 - 332ms-37Mbps
-  server: 168.144.41.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /settings?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 15 - 333ms-37Mbps
-  server: 168.144.47.94
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /chat?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - 343ms-16Mbps
-  server: 160.22.74.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /acg?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 17 - 377ms-37Mbps
-  server: 157.228.130.240
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /photo/messages/documents?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 18 - 380ms-37Mbps
-  server: 104.238.148.149
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /index/share/ajax?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 19 - 382ms-37Mbps
-  server: 167.179.119.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /url/events/member?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 20 - 385ms-37Mbps
-  server: 45.63.124.130
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /jumping?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 21 - 388ms-37Mbps
-  server: 139.180.202.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /share/data?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 22 - 389ms-37Mbps
-  server: 103.201.130.126
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 23 - 389ms-37Mbps
-  server: 167.179.117.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /help/travel?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 24 - 394ms-37Mbps
-  server: 45.77.11.68
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /apps?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 25 - 395ms-37Mbps
-  server: 43.174.194.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /collect/read/ads?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 26 - 397ms-37Mbps
-  server: 167.179.90.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archive/books/channel?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 27 - 403ms-37Mbps
-  server: 202.182.97.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /message/stock/player?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 28 - 406ms-37Mbps
-  server: 167.179.99.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /act/films?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 29 - 415ms-37Mbps
-  server: 43.174.193.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /www/knowledge/chat?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 30 - 433ms-37Mbps
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - 169ms-37Mbps
   server: 85.121.245.104
   port: 443
   udp: true
@@ -481,11 +17,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /student?ed=2560
+    path: /picture?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 31 - 433ms-37Mbps
-  server: 172.237.0.160
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - 183ms-37Mbps
+  server: 149.104.25.194
   port: 443
   udp: true
   type: vless
@@ -497,11 +33,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /setting?ed=2560
+    path: /help/services?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 32 - 470ms-37Mbps
-  server: 103.143.81.178
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - 249ms-37Mbps
+  server: 149.104.30.51
   port: 443
   udp: true
   type: vless
@@ -513,11 +49,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /page/documents?ed=2560
+    path: /picture/new/contact?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 33 - 501ms-37Mbps
-  server: 172.93.188.25
+- name: 🇸🇬 新加坡 (Singapore) 04 - 320ms-37Mbps
+  server: 129.212.229.240
   port: 443
   udp: true
   type: vless
@@ -529,346 +65,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /city/go.html?ed=2560
+    path: /playlist/knowledge/config?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 34 - 564ms-37Mbps
-  server: 43.174.218.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /document/tool?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 35 - 645ms-37Mbps
-  server: 130.94.29.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /playlist/shop/news?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 36 - 703ms-37Mbps
-  server: 123.111.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /item/mall?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 37 - 714ms-37Mbps
-  server: 146.56.188.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /videos/jump.php/music?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 38 - 789ms-37Mbps
-  server: 140.238.5.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /out.php/tv/act?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 39 - 806ms-37Mbps
-  server: 185.65.151.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /redirect/club?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 40 - 867ms-37Mbps
-  server: 131.186.25.156
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /p?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 41 - 874ms-37Mbps
-  server: 161.33.205.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /discount/doc?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 42 - 883ms-37Mbps
-  server: 149.248.39.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /detail/books/ajax?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 43 - 889ms-37Mbps
-  server: 104.156.239.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pictures/account?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 44 - 889ms-37Mbps
-  server: 104.com.tw
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /bt/avatar?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 45 - 910ms-37Mbps
-  server: 186.241.106.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /movie/img/archives?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 46 - 912ms-37Mbps
-  server: 38.60.91.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /members/comic/act?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 47 - 920ms-37Mbps
-  server: 147.182.242.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /cart/register/post?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 48 - 928ms-37Mbps
-  server: 45.79.227.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /note/program/player?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 49 - 937ms-37Mbps
-  server: 64.23.153.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /bt?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 50 - 944ms-37Mbps
-  server: 45.63.89.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /u?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 51 - 944ms-37Mbps
-  server: 159.65.8.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /auth/films?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 52 - 968ms-37Mbps
-  server: 201.4.14.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /download?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 53 - 971ms-37Mbps
-  server: 167.172.223.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /u/go.php?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 54 - 978ms-37Mbps
-  server: guardian.com.vn
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /china/jump.html?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 55 - 980ms-37Mbps
+- name: 🇸🇬 新加坡 (Singapore) 05 - 321ms-37Mbps
   server: 178.128.56.59
   port: 443
   udp: true
@@ -881,11 +81,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /ranking?ed=2560
+    path: /event/go.html/docs?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 56 - 983ms-37Mbps
-  server: 45.147.48.147
+- name: 🇸🇬 新加坡 (Singapore) 06 - 330ms-37Mbps
+  server: 168.144.41.69
   port: 443
   udp: true
   type: vless
@@ -897,186 +97,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /new/index?ed=2560
+    path: /go.php/company/details?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇯🇵 日本 (Japan) 57 - 996ms-37Mbps
-  server: 13.158.86.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /post/doc/drama?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 58 - 997ms-37Mbps
-  server: 45.63.90.101
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archive/act?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 59 - 999ms-37Mbps
-  server: 168.107.90.208
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /discount?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 60 - 999ms-23Mbps
-  server: 192.155.85.108
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /act/forum/clips?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 61 - 1001ms-37Mbps
-  server: 45.93.30.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /clips/group/acg?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 62 - 1005ms-37Mbps
-  server: 107.161.24.195
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /go.php/category?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 63 - 1006ms-37Mbps
-  server: 165.227.3.101
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /uploads/discount/home?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 64 - 1013ms-37Mbps
-  server: 104.248.152.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /m/ajax?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 65 - 1014ms-37Mbps
-  server: 139.59.114.19
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ep?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 66 - 1029ms-37Mbps
-  server: 24.199.122.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /anime/bbs?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 67 - 1033ms-37Mbps
-  server: 45.77.7.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ad/u/directory?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 68 - 1042ms-37Mbps
+- name: 🇸🇬 新加坡 (Singapore) 07 - 336ms-37Mbps
   server: 129.212.232.171
   port: 443
   udp: true
@@ -1089,10 +113,714 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /sort/vod?ed=2560
+    path: /api?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 69 - 1042ms-37Mbps
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - 338ms-37Mbps
+  server: tomleemusic.com.hk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pages/data/map?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 09 - 339ms-37Mbps
+  server: 152.42.173.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /site/manhua?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 10 - 342ms-37Mbps
+  server: 168.107.90.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /f/jump.php?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 11 - 342ms-37Mbps
+  server: 168.144.47.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /team?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 12 - 366ms-37Mbps
+  server: 38.244.150.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ep/links/photos?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 13 - 382ms-37Mbps
+  server: 172.236.132.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /code?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 14 - 390ms-37Mbps
+  server: 167.99.77.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /friend?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 15 - 390ms-37Mbps
+  server: 103.201.130.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /courses?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 16 - 407ms-37Mbps
+  server: 139.59.114.19
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /share/section/page?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 17 - 409ms-37Mbps
+  server: 104.248.152.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /wenku/topics/archive?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - 412ms-37Mbps
+  server: 43.174.193.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ads?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 19 - 414ms-37Mbps
+  server: 43.134.104.39
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /lang/company/articles?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 20 - 422ms-37Mbps
+  server: 167.179.90.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /anime/static/services?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 21 - 427ms-37Mbps
+  server: 157.228.130.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /about/jp?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 22 - 429ms-37Mbps
+  server: 172.237.81.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /about/activity/bd?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - 455ms-37Mbps
+  server: 43.174.218.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /go.php/store?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 24 - 459ms-37Mbps
+  server: 167.179.119.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /readme/tools/tool?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - 492ms-37Mbps
+  server: 160.22.74.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /thread/avatar?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - 516ms-37Mbps
+  server: 43.174.194.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ep/playlist?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 27 - 521ms-37Mbps
+  server: 139.180.202.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /app?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 28 - 527ms-37Mbps
+  server: 167.179.117.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /program?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 29 - 540ms-37Mbps
+  server: 202.182.97.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ja?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 30 - 557ms-37Mbps
+  server: 167.179.99.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /music?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 31 - 584ms-37Mbps
+  server: 104.238.148.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /discount/drama?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 32 - 617ms-16Mbps
+  server: 47.86.176.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /members/map/payment?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 33 - 637ms-37Mbps
+  server: 104.156.239.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /topic/torrent?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 34 - 650ms-37Mbps
+  server: 45.77.11.68
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /comics?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 35 - 670ms-37Mbps
+  server: 130.94.29.155
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /member/wenku?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇯🇵 日本 (Japan) 36 - 671ms-37Mbps
+  server: 45.63.124.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ja/blogs?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 37 - 687ms-37Mbps
+  server: 140.235.39.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /games/htm?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 38 - 727ms-37Mbps
+  server: 178.128.82.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /drama/outbound?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 39 - 757ms-37Mbps
+  server: 123.111.169.70
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /library/f/wiki?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 40 - 861ms-37Mbps
+  server: 64.23.153.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /vip?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 41 - 901ms-37Mbps
+  server: 167.172.223.14
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /season/movie/account?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 42 - 915ms-37Mbps
+  server: 186.241.106.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /news/favorite/china?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 43 - 927ms-37Mbps
+  server: 24.199.122.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /item/cb/act?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 44 - 943ms-37Mbps
+  server: 165.227.3.101
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /collection/item/doc?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 45 - 957ms-37Mbps
+  server: 45.79.227.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /data?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 46 - 960ms-37Mbps
+  server: 140.238.5.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /event/vip/comic?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 47 - 964ms-37Mbps
+  server: 201.4.14.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /shop/links/act?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 48 - 966ms-37Mbps
+  server: 146.56.188.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /article?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 49 - 977ms-37Mbps
+  server: 45.63.89.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /cn/about/course?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 50 - 983ms-37Mbps
+  server: 45.77.7.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /type/group?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 51 - 987ms-37Mbps
+  server: 192.155.85.108
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /albums/go/stars?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 52 - 998ms-37Mbps
   server: 198.199.115.61
   port: 443
   udp: true
@@ -1105,27 +833,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /intro/favs?ed=2560
+    path: /clip/shows?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 70 - 1075ms-37Mbps
-  server: 64.226.95.244
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /topics?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 71 - 1084ms-37Mbps
-  server: 43.155.208.254
+- name: 🇭🇰 中国香港 (Hong Kong) 53 - 1001ms-37Mbps
+  server: 172.93.188.25
   port: 443
   udp: true
   type: vless
@@ -1137,346 +849,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /m?ed=2560
+    path: /account?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 72 - 1089ms-37Mbps
-  server: 64.226.88.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archive/pics/temp?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 73 - 1093ms-37Mbps
-  server: 157.90.175.48
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /comic?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 74 - 1103ms-37Mbps
-  server: 46.225.31.235
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /settings?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 75 - 1109ms-37Mbps
-  server: 94.183.187.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /wenku/tool/link?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 76 - 1115ms-37Mbps
-  server: 207.154.213.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /vod/faq/account?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 77 - 1135ms-37Mbps
-  server: 140.235.39.19
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /feedback/classify?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 78 - 1144ms-37Mbps
-  server: 161.35.22.108
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /m?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 79 - 1147ms-37Mbps
-  server: 84.75.76.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /new/my?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 80 - 1151ms-37Mbps
-  server: 194.59.245.245
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /pdf/products?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 81 - 1152ms-37Mbps
-  server: 167.99.255.159
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /classify?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 82 - 1155ms-37Mbps
-  server: 165.22.80.22
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /thread/tool/mall?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 83 - 1162ms-37Mbps
-  server: 159.223.18.82
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /magnet?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 84 - 1162ms-37Mbps
-  server: 46.101.172.79
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /player/about/activity?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 85 - 1168ms-37Mbps
-  server: 51.195.45.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /retrieve/show/register?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 86 - 1175ms-37Mbps
-  server: 159.89.29.231
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /events/thread?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 87 - 1186ms-37Mbps
-  server: 159.65.51.189
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /apps/favorite?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 88 - 1187ms-37Mbps
-  server: 159.65.57.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ad/img/collect?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 89 - 1189ms-37Mbps
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /drama?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 90 - 1192ms-37Mbps
-  server: 157.245.38.182
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /blogs/f?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 91 - 1198ms-37Mbps
-  server: locknlock.vn
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /feedback?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 92 - 1202ms-37Mbps
-  server: 159.65.51.105
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /lib/web?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 93 - 1205ms-37Mbps
+- name: 🇩🇪 德国 (Germany) 54 - 1003ms-37Mbps
   server: 47.245.134.84
   port: 443
   udp: true
@@ -1489,11 +865,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /albums/group?ed=2560
+    path: /trade?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 94 - 1207ms-37Mbps
-  server: 167.99.95.193
+- name: 🇸🇬 新加坡 (Singapore) 55 - 1007ms-37Mbps
+  server: 159.65.8.14
   port: 443
   udp: true
   type: vless
@@ -1505,155 +881,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /buy?ed=2560
+    path: /uploads/intro?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 95 - 1209ms-37Mbps
-  server: 91.149.218.88
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /dl/message/drama?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 96 - 1210ms-37Mbps
-  server: 209.97.134.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /temp?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 97 - 1213ms-37Mbps
-  server: 138.68.178.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /links?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 98 - 1218ms-37Mbps
-  server: 5.75.201.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /blog/bbs?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 99 - 1222ms-37Mbps
-  server: uplus.co.kr
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /doc?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 100 - 1223ms-37Mbps
-  server: 167.172.48.224
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /docs/torrent/player?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 101 - 1225ms-37Mbps
-  server: 165.232.43.156
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /archives/directory/ad?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 102 - 1225ms-37Mbps
-  server: 185.114.73.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /link?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 103 - 1225ms-37Mbps
-  server: 178.104.164.45
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /detail/programs/task?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 104 - 1226ms-37Mbps
-  server: 78.47.203.106
+- name: 🇺🇸 美国 (United States) 56 - 1019ms-37Mbps
+  server: 45.63.90.101
   port: 8443
   udp: true
   type: vless
@@ -1665,11 +897,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /star?ed=2560
+    path: /group/go.php?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 105 - 1226ms-37Mbps
-  server: 46.224.154.118
+- name: 🇭🇰 中国香港 (Hong Kong) 57 - 1022ms-37Mbps
+  server: 103.143.81.178
   port: 443
   udp: true
   type: vless
@@ -1681,11 +913,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /class?ed=2560
+    path: /archive/item?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 106 - 1227ms-37Mbps
-  server: 104.248.160.220
+- name: 🇭🇰 中国香港 (Hong Kong) 58 - 1072ms-37Mbps
+  server: 140.235.39.19
   port: 443
   udp: true
   type: vless
@@ -1697,11 +929,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /category/trade/redirect?ed=2560
+    path: /downloads?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 107 - 1227ms-37Mbps
-  server: 5.75.184.2
+- name: 🇩🇪 德国 (Germany) 59 - 1096ms-37Mbps
+  server: 165.245.214.113
   port: 443
   udp: true
   type: vless
@@ -1713,11 +945,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /drama?ed=2560
+    path: /v/message/mall?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 108 - 1227ms-37Mbps
-  server: 94.16.114.184
+- name: 🇺🇸 美国 (United States) 60 - 1108ms-37Mbps
+  server: 149.248.39.148
   port: 443
   udp: true
   type: vless
@@ -1729,11 +961,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /uploads?ed=2560
+    path: /f/tags?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 109 - 1228ms-37Mbps
-  server: 178.62.93.76
+- name: 🇩🇪 德国 (Germany) 61 - 1111ms-37Mbps
+  server: 46.101.172.79
   port: 2053
   udp: true
   type: vless
@@ -1745,11 +977,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /zh-cn/ja/f?ed=2560
+    path: /lesson?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 110 - 1231ms-37Mbps
-  server: 217.60.39.188
+- name: 🇩🇪 德国 (Germany) 62 - 1122ms-37Mbps
+  server: 64.226.88.144
   port: 443
   udp: true
   type: vless
@@ -1761,27 +993,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /details/series?ed=2560
+    path: /file?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 111 - 1232ms-37Mbps
-  server: 138.68.179.125
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /movies?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 112 - 1242ms-37Mbps
-  server: 5.75.200.172
+- name: 🇫🇷 法国 (France) 63 - 1136ms-37Mbps
+  server: 157.90.175.48
   port: 2053
   udp: true
   type: vless
@@ -1793,43 +1009,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /china/mobile?ed=2560
+    path: /image?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 113 - 1242ms-37Mbps
-  server: 165.232.39.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /resource/club/zh?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 114 - 1244ms-37Mbps
+- name: 🇪🇸 西班牙 (Spain) 64 - 1137ms-37Mbps
   server: 91.149.242.134
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /episode?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 115 - 1245ms-37Mbps
-  server: 185.170.113.164
   port: 443
   udp: true
   type: vless
@@ -1844,8 +1028,8 @@ proxies:
     path: /archive?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 116 - 1247ms-37Mbps
-  server: 91.99.132.207
+- name: 🇭🇰 中国香港 (Hong Kong) 65 - 1144ms-37Mbps
+  server: 193.134.209.165
   port: 443
   udp: true
   type: vless
@@ -1857,27 +1041,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /gif/payment?ed=2560
+    path: /tools?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 117 - 1249ms-37Mbps
-  server: 46.101.81.78
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /act?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 118 - 1263ms-37Mbps
-  server: 85.237.207.126
+- name: 🇰🇷 韩国 (South Korea) 66 - 1158ms-11Mbps
+  server: 43.155.208.254
   port: 443
   udp: true
   type: vless
@@ -1889,394 +1057,10 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /thread/link?ed=2560
+    path: /dh?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 119 - 1267ms-37Mbps
-  server: 178.62.38.224
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /streams?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 120 - 1276ms-37Mbps
-  server: 159.65.26.21
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /seller?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 121 - 1283ms-37Mbps
-  server: 54.37.96.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /seller/movies/player?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇺🇸 美国 (United States) 122 - 1291ms-37Mbps
-  server: 153.56.171.97
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /payment?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 123 - 1293ms-37Mbps
-  server: 159.65.16.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /docs/service/site?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 124 - 1295ms-37Mbps
-  server: 178.79.131.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /topic/tag?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 125 - 1331ms-37Mbps
-  server: 82.223.109.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /intro/comics?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 126 - 1363ms-37Mbps
-  server: 91.107.155.211
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /users?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 127 - 1372ms-37Mbps
-  server: 209.38.192.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /playlist/cb?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 128 - 1374ms-37Mbps
-  server: 188.92.28.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /version/ask?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇳🇱 荷兰 (Netherlands) 129 - 1405ms-37Mbps
-  server: 92.118.8.248
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /manhua/ja?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇰🇷 韩国 (South Korea) 130 - 1420ms-37Mbps
-  server: 123.111.169.70
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /movie?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 131 - 1430ms-37Mbps
-  server: 165.245.214.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /travel/new?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 132 - 1449ms-37Mbps
-  server: 93.93.119.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /library/file/docs?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 133 - 1453ms-37Mbps
-  server: 165.232.39.158
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /products?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇩🇪 德国 (Germany) 134 - 1473ms-37Mbps
-  server: 159.65.125.162
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /collection/seasons?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 135 - 1487ms-37Mbps
-  server: 195.96.132.175
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /show/view?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇬🇧 英国 (United Kingdom) 136 - 1496ms-37Mbps
-  server: 178.62.106.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /payment?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 137 - 1498ms-16Mbps
-  server: 193.17.183.169
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /films/images?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 138 - 1518ms-37Mbps
-  server: 185.232.205.200
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /payment/book?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 139 - 1531ms-37Mbps
-  server: 185.121.15.33
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /film?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇨🇦 加拿大 (Canada) 140 - 1544ms-10Mbps
-  server: 84.246.215.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /source?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 141 - 1549ms-37Mbps
-  server: 185.232.205.100
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /f?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 142 - 1553ms-37Mbps
-  server: 34.175.46.70
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /retrieve?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 143 - 1596ms-37Mbps
+- name: 🇫🇷 法国 (France) 67 - 1164ms-37Mbps
   server: 46.225.136.91
   port: 2053
   udp: true
@@ -2289,10 +1073,282 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /online?ed=2560
+    path: /seller/comics/redirect.html?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 144 - 1656ms-37Mbps
+- name: 🇹🇼 中国台湾 (Taiwan) 68 - 1164ms-37Mbps
+  server: 85.237.207.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /friends/favorite?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 69 - 1164ms-37Mbps
+  server: 185.114.73.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /seller/clips?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 70 - 1165ms-37Mbps
+  server: 188.92.28.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /detail/link?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 71 - 1166ms-37Mbps
+  server: 5.75.184.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ask?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇩🇪 德国 (Germany) 72 - 1168ms-37Mbps
+  server: 207.154.213.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /thread?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 73 - 1173ms-37Mbps
+  server: 159.65.26.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /mall/cart?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 74 - 1176ms-37Mbps
+  server: 46.224.154.118
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pdf/classify/mag?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 75 - 1182ms-37Mbps
+  server: 185.65.151.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /photos/ad/china?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 76 - 1183ms-37Mbps
+  server: 91.99.132.207
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /bt/page/home?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 77 - 1187ms-37Mbps
+  server: 165.232.39.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pay?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇩🇪 德国 (Germany) 78 - 1216ms-37Mbps
+  server: 51.195.45.232
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /order/out?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇩🇪 德国 (Germany) 79 - 1235ms-37Mbps
+  server: 185.170.113.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /qa?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 80 - 1242ms-37Mbps
+  server: 91.107.155.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /albums/f?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇩🇪 德国 (Germany) 81 - 1249ms-37Mbps
+  server: 94.16.114.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /ajax/torrent/about?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 82 - 1263ms-37Mbps
+  server: 5.75.201.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /courses?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 83 - 1276ms-37Mbps
+  server: 217.60.39.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /code?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 84 - 1281ms-37Mbps
+  server: 38.60.91.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /question/help?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 85 - 1299ms-37Mbps
   server: 185.237.234.67
   port: 443
   udp: true
@@ -2305,11 +1361,27 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /archives?ed=2560
+    path: /clip/go.php?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇪 爱沙尼亚 (Estonia) 145 - 1697ms-37Mbps
-  server: 213.165.58.111
+- name: 🇺🇸 美国 (United States) 86 - 1305ms-37Mbps
+  server: 153.56.171.97
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /zh-cn?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 87 - 1325ms-37Mbps
+  server: 107.161.24.195
   port: 443
   udp: true
   type: vless
@@ -2321,27 +1393,11 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /html?ed=2560
+    path: /seller/shop?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 146 - 1754ms-37Mbps
-  server: 37.59.114.40
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
-  tls: true
-  servername: ilyou.lkhotrich.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  ech: true
-  network: ws
-  ws-opts:
-    path: /ads/blog?ed=2560
-    headers:
-      Host: ilyou.lkhotrich.kdns.fr
-- name: 🇪🇸 西班牙 (Spain) 147 - 1766ms-37Mbps
-  server: 162.141.93.191
+- name: 🇬🇧 英国 (United Kingdom) 88 - 1334ms-37Mbps
+  server: 138.68.178.185
   port: 443
   udp: true
   type: vless
@@ -2353,10 +1409,26 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /comic?ed=2560
+    path: /doc/pages/travel?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
-- name: 🇫🇷 法国 (France) 148 - 1888ms-37Mbps
+- name: 🇳🇱 荷兰 (Netherlands) 89 - 1335ms-37Mbps
+  server: 92.118.8.248
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /config/jump.html?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 90 - 1337ms-37Mbps
   server: 194.59.221.122
   port: 443
   udp: true
@@ -2369,7 +1441,327 @@ proxies:
   ech: true
   network: ws
   ws-opts:
-    path: /event/doc?ed=2560
+    path: /cp?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇩🇪 德国 (Germany) 91 - 1337ms-37Mbps
+  server: 209.38.192.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /pages/go/events?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 92 - 1338ms-37Mbps
+  server: 159.65.57.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /photos/ads/novel?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 93 - 1345ms-37Mbps
+  server: 159.65.51.105
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /users/play?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 94 - 1346ms-37Mbps
+  server: 178.62.38.224
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /student/doc?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 95 - 1347ms-37Mbps
+  server: 82.223.109.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /vip/pay/groups?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 96 - 1372ms-37Mbps
+  server: 178.62.93.76
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /zh/friend?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 97 - 1398ms-37Mbps
+  server: 209.97.134.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /picture/player/archives?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 98 - 1428ms-37Mbps
+  server: 159.65.16.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /discuss?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 99 - 1428ms-37Mbps
+  server: 193.17.183.169
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /clip?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 100 - 1434ms-37Mbps
+  server: 167.99.95.193
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /manhua/jump.php/live?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇨🇦 加拿大 (Canada) 101 - 1459ms-37Mbps
+  server: 93.93.119.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /documents?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 102 - 1498ms-37Mbps
+  server: 104.248.160.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /stars/zh-tw?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 103 - 1501ms-37Mbps
+  server: 195.96.132.175
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /apps/shop?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇪 爱沙尼亚 (Estonia) 104 - 1558ms-37Mbps
+  server: 213.165.58.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /film/app/seasons?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 105 - 1581ms-37Mbps
+  server: 94.183.187.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /programs/watch/activity?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇫🇷 法国 (France) 106 - 1629ms-37Mbps
+  server: 178.104.164.45
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /api?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇬🇧 英国 (United Kingdom) 107 - 1738ms-37Mbps
+  server: 178.79.131.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /type?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 108 - 1789ms-37Mbps
+  server: 34.175.46.70
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /games/source?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇪🇸 西班牙 (Spain) 109 - 1796ms-37Mbps
+  server: 185.121.15.33
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /thread/htm/web?ed=2560
+    headers:
+      Host: ilyou.lkhotrich.kdns.fr
+- name: 🇺🇸 美国 (United States) 110 - 1815ms-37Mbps
+  server: 147.182.242.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 08ea5abf-fbe9-4c40-983d-099076942b93
+  tls: true
+  servername: ilyou.lkhotrich.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  ech: true
+  network: ws
+  ws-opts:
+    path: /game?ed=2560
     headers:
       Host: ilyou.lkhotrich.kdns.fr
 proxy-groups:
@@ -2377,306 +1769,230 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 02 - 157ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 206ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 04 - 210ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 277ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 06 - 297ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 07 - 300ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 08 - 306ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 09 - 308ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 10 - 311ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 11 - 317ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 12 - 318ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 13 - 320ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 14 - 332ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 15 - 333ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 16 - 343ms-16Mbps
-  - 🇸🇬 新加坡 (Singapore) 17 - 377ms-37Mbps
-  - 🇯🇵 日本 (Japan) 18 - 380ms-37Mbps
-  - 🇯🇵 日本 (Japan) 19 - 382ms-37Mbps
-  - 🇯🇵 日本 (Japan) 20 - 385ms-37Mbps
-  - 🇯🇵 日本 (Japan) 21 - 388ms-37Mbps
-  - 🇯🇵 日本 (Japan) 22 - 389ms-37Mbps
-  - 🇯🇵 日本 (Japan) 23 - 389ms-37Mbps
-  - 🇯🇵 日本 (Japan) 24 - 394ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 25 - 395ms-37Mbps
-  - 🇯🇵 日本 (Japan) 26 - 397ms-37Mbps
-  - 🇯🇵 日本 (Japan) 27 - 403ms-37Mbps
-  - 🇯🇵 日本 (Japan) 28 - 406ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 29 - 415ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 30 - 433ms-37Mbps
-  - 🇯🇵 日本 (Japan) 31 - 433ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 32 - 470ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 33 - 501ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 34 - 564ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 35 - 645ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 36 - 703ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 37 - 714ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 38 - 789ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 39 - 806ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 40 - 867ms-37Mbps
-  - 🇯🇵 日本 (Japan) 41 - 874ms-37Mbps
-  - 🇺🇸 美国 (United States) 42 - 883ms-37Mbps
-  - 🇯🇵 日本 (Japan) 43 - 889ms-37Mbps
-  - 🇺🇸 美国 (United States) 44 - 889ms-37Mbps
-  - 🇺🇸 美国 (United States) 45 - 910ms-37Mbps
-  - 🇺🇸 美国 (United States) 46 - 912ms-37Mbps
-  - 🇺🇸 美国 (United States) 47 - 920ms-37Mbps
-  - 🇺🇸 美国 (United States) 48 - 928ms-37Mbps
-  - 🇺🇸 美国 (United States) 49 - 937ms-37Mbps
-  - 🇺🇸 美国 (United States) 50 - 944ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 51 - 944ms-37Mbps
-  - 🇺🇸 美国 (United States) 52 - 968ms-37Mbps
-  - 🇺🇸 美国 (United States) 53 - 971ms-37Mbps
-  - 🇺🇸 美国 (United States) 54 - 978ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 55 - 980ms-37Mbps
-  - 🇩🇪 德国 (Germany) 56 - 983ms-37Mbps
-  - 🇯🇵 日本 (Japan) 57 - 996ms-37Mbps
-  - 🇺🇸 美国 (United States) 58 - 997ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 59 - 999ms-37Mbps
-  - 🇺🇸 美国 (United States) 60 - 999ms-23Mbps
-  - 🇰🇷 韩国 (South Korea) 61 - 1001ms-37Mbps
-  - 🇺🇸 美国 (United States) 62 - 1005ms-37Mbps
-  - 🇺🇸 美国 (United States) 63 - 1006ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 64 - 1013ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 65 - 1014ms-37Mbps
-  - 🇺🇸 美国 (United States) 66 - 1029ms-37Mbps
-  - 🇺🇸 美国 (United States) 67 - 1033ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 68 - 1042ms-37Mbps
-  - 🇺🇸 美国 (United States) 69 - 1042ms-37Mbps
-  - 🇩🇪 德国 (Germany) 70 - 1075ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 71 - 1084ms-37Mbps
-  - 🇩🇪 德国 (Germany) 72 - 1089ms-37Mbps
-  - 🇫🇷 法国 (France) 73 - 1093ms-37Mbps
-  - 🇫🇷 法国 (France) 74 - 1103ms-37Mbps
-  - 🇫🇷 法国 (France) 75 - 1109ms-37Mbps
-  - 🇩🇪 德国 (Germany) 76 - 1115ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 77 - 1135ms-37Mbps
-  - 🇩🇪 德国 (Germany) 78 - 1144ms-37Mbps
-  - 🇩🇪 德国 (Germany) 79 - 1147ms-37Mbps
-  - 🇫🇷 法国 (France) 80 - 1151ms-37Mbps
-  - 🇩🇪 德国 (Germany) 81 - 1152ms-37Mbps
-  - 🇩🇪 德国 (Germany) 82 - 1155ms-37Mbps
-  - 🇩🇪 德国 (Germany) 83 - 1162ms-37Mbps
-  - 🇩🇪 德国 (Germany) 84 - 1162ms-37Mbps
-  - 🇩🇪 德国 (Germany) 85 - 1168ms-37Mbps
-  - 🇩🇪 德国 (Germany) 86 - 1175ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 87 - 1186ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 88 - 1187ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 89 - 1189ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 90 - 1192ms-37Mbps
-  - 🇺🇸 美国 (United States) 91 - 1198ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 92 - 1202ms-37Mbps
-  - 🇩🇪 德国 (Germany) 93 - 1205ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 94 - 1207ms-37Mbps
-  - 🇫🇷 法国 (France) 95 - 1209ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 96 - 1210ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 97 - 1213ms-37Mbps
-  - 🇫🇷 法国 (France) 98 - 1218ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 99 - 1222ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 100 - 1223ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 101 - 1225ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 102 - 1225ms-37Mbps
-  - 🇫🇷 法国 (France) 103 - 1225ms-37Mbps
-  - 🇫🇷 法国 (France) 104 - 1226ms-37Mbps
-  - 🇺🇸 美国 (United States) 105 - 1226ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 106 - 1227ms-37Mbps
-  - 🇫🇷 法国 (France) 107 - 1227ms-37Mbps
-  - 🇩🇪 德国 (Germany) 108 - 1227ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 109 - 1228ms-37Mbps
-  - 🇫🇷 法国 (France) 110 - 1231ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 111 - 1232ms-37Mbps
-  - 🇫🇷 法国 (France) 112 - 1242ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 113 - 1242ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 114 - 1244ms-37Mbps
-  - 🇩🇪 德国 (Germany) 115 - 1245ms-37Mbps
-  - 🇫🇷 法国 (France) 116 - 1247ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 117 - 1249ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 118 - 1263ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 119 - 1267ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 120 - 1276ms-37Mbps
-  - 🇺🇸 美国 (United States) 121 - 1283ms-37Mbps
-  - 🇺🇸 美国 (United States) 122 - 1291ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 123 - 1293ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 124 - 1295ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 125 - 1331ms-37Mbps
-  - 🇫🇷 法国 (France) 126 - 1363ms-37Mbps
-  - 🇩🇪 德国 (Germany) 127 - 1372ms-37Mbps
-  - 🇫🇷 法国 (France) 128 - 1374ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 129 - 1405ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 130 - 1420ms-37Mbps
-  - 🇩🇪 德国 (Germany) 131 - 1430ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 132 - 1449ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 133 - 1453ms-37Mbps
-  - 🇩🇪 德国 (Germany) 134 - 1473ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 135 - 1487ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 136 - 1496ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 137 - 1498ms-16Mbps
-  - 🇪🇸 西班牙 (Spain) 138 - 1518ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 139 - 1531ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 140 - 1544ms-10Mbps
-  - 🇪🇸 西班牙 (Spain) 141 - 1549ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 142 - 1553ms-37Mbps
-  - 🇫🇷 法国 (France) 143 - 1596ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 144 - 1656ms-37Mbps
-  - 🇪🇪 爱沙尼亚 (Estonia) 145 - 1697ms-37Mbps
-  - 🇫🇷 法国 (France) 146 - 1754ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 147 - 1766ms-37Mbps
-  - 🇫🇷 法国 (France) 148 - 1888ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 169ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 183ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 03 - 249ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 04 - 320ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 05 - 321ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 06 - 330ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 07 - 336ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 338ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 09 - 339ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 10 - 342ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 11 - 342ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 12 - 366ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 382ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 390ms-37Mbps
+  - 🇯🇵 日本 (Japan) 15 - 390ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 16 - 407ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 17 - 409ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 18 - 412ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 19 - 414ms-37Mbps
+  - 🇯🇵 日本 (Japan) 20 - 422ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 21 - 427ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 22 - 429ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 23 - 455ms-37Mbps
+  - 🇯🇵 日本 (Japan) 24 - 459ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 25 - 492ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 26 - 516ms-37Mbps
+  - 🇯🇵 日本 (Japan) 27 - 521ms-37Mbps
+  - 🇯🇵 日本 (Japan) 28 - 527ms-37Mbps
+  - 🇯🇵 日本 (Japan) 29 - 540ms-37Mbps
+  - 🇯🇵 日本 (Japan) 30 - 557ms-37Mbps
+  - 🇯🇵 日本 (Japan) 31 - 584ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 32 - 617ms-16Mbps
+  - 🇯🇵 日本 (Japan) 33 - 637ms-37Mbps
+  - 🇯🇵 日本 (Japan) 34 - 650ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 35 - 670ms-37Mbps
+  - 🇯🇵 日本 (Japan) 36 - 671ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 37 - 687ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 38 - 727ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 39 - 757ms-37Mbps
+  - 🇺🇸 美国 (United States) 40 - 861ms-37Mbps
+  - 🇺🇸 美国 (United States) 41 - 901ms-37Mbps
+  - 🇺🇸 美国 (United States) 42 - 915ms-37Mbps
+  - 🇺🇸 美国 (United States) 43 - 927ms-37Mbps
+  - 🇺🇸 美国 (United States) 44 - 943ms-37Mbps
+  - 🇺🇸 美国 (United States) 45 - 957ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 46 - 960ms-37Mbps
+  - 🇺🇸 美国 (United States) 47 - 964ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 48 - 966ms-37Mbps
+  - 🇺🇸 美国 (United States) 49 - 977ms-37Mbps
+  - 🇺🇸 美国 (United States) 50 - 983ms-37Mbps
+  - 🇺🇸 美国 (United States) 51 - 987ms-37Mbps
+  - 🇺🇸 美国 (United States) 52 - 998ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 53 - 1001ms-37Mbps
+  - 🇩🇪 德国 (Germany) 54 - 1003ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 55 - 1007ms-37Mbps
+  - 🇺🇸 美国 (United States) 56 - 1019ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 57 - 1022ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 58 - 1072ms-37Mbps
+  - 🇩🇪 德国 (Germany) 59 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 60 - 1108ms-37Mbps
+  - 🇩🇪 德国 (Germany) 61 - 1111ms-37Mbps
+  - 🇩🇪 德国 (Germany) 62 - 1122ms-37Mbps
+  - 🇫🇷 法国 (France) 63 - 1136ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 64 - 1137ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 65 - 1144ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 66 - 1158ms-11Mbps
+  - 🇫🇷 法国 (France) 67 - 1164ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 68 - 1164ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 69 - 1164ms-37Mbps
+  - 🇫🇷 法国 (France) 70 - 1165ms-37Mbps
+  - 🇫🇷 法国 (France) 71 - 1166ms-37Mbps
+  - 🇩🇪 德国 (Germany) 72 - 1168ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 73 - 1173ms-37Mbps
+  - 🇫🇷 法国 (France) 74 - 1176ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 75 - 1182ms-37Mbps
+  - 🇫🇷 法国 (France) 76 - 1183ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 77 - 1187ms-37Mbps
+  - 🇩🇪 德国 (Germany) 78 - 1216ms-37Mbps
+  - 🇩🇪 德国 (Germany) 79 - 1235ms-37Mbps
+  - 🇫🇷 法国 (France) 80 - 1242ms-37Mbps
+  - 🇩🇪 德国 (Germany) 81 - 1249ms-37Mbps
+  - 🇫🇷 法国 (France) 82 - 1263ms-37Mbps
+  - 🇫🇷 法国 (France) 83 - 1276ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 1281ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 85 - 1299ms-37Mbps
+  - 🇺🇸 美国 (United States) 86 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 87 - 1325ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 88 - 1334ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 89 - 1335ms-37Mbps
+  - 🇫🇷 法国 (France) 90 - 1337ms-37Mbps
+  - 🇩🇪 德国 (Germany) 91 - 1337ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 92 - 1338ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 93 - 1345ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 94 - 1346ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 95 - 1347ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 96 - 1372ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 97 - 1398ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 98 - 1428ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 99 - 1428ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 100 - 1434ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 101 - 1459ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 102 - 1498ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 103 - 1501ms-37Mbps
+  - 🇪🇪 爱沙尼亚 (Estonia) 104 - 1558ms-37Mbps
+  - 🇫🇷 法国 (France) 105 - 1581ms-37Mbps
+  - 🇫🇷 法国 (France) 106 - 1629ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 107 - 1738ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 108 - 1789ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 109 - 1796ms-37Mbps
+  - 🇺🇸 美国 (United States) 110 - 1815ms-37Mbps
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - 144ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 02 - 157ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 03 - 206ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 04 - 210ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 05 - 277ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 06 - 297ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 07 - 300ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 08 - 306ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 09 - 308ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 10 - 311ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 11 - 317ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 12 - 318ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 13 - 320ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 14 - 332ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 15 - 333ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 16 - 343ms-16Mbps
-  - 🇸🇬 新加坡 (Singapore) 17 - 377ms-37Mbps
-  - 🇯🇵 日本 (Japan) 18 - 380ms-37Mbps
-  - 🇯🇵 日本 (Japan) 19 - 382ms-37Mbps
-  - 🇯🇵 日本 (Japan) 20 - 385ms-37Mbps
-  - 🇯🇵 日本 (Japan) 21 - 388ms-37Mbps
-  - 🇯🇵 日本 (Japan) 22 - 389ms-37Mbps
-  - 🇯🇵 日本 (Japan) 23 - 389ms-37Mbps
-  - 🇯🇵 日本 (Japan) 24 - 394ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 25 - 395ms-37Mbps
-  - 🇯🇵 日本 (Japan) 26 - 397ms-37Mbps
-  - 🇯🇵 日本 (Japan) 27 - 403ms-37Mbps
-  - 🇯🇵 日本 (Japan) 28 - 406ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 29 - 415ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 30 - 433ms-37Mbps
-  - 🇯🇵 日本 (Japan) 31 - 433ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 32 - 470ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 33 - 501ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 34 - 564ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 35 - 645ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 36 - 703ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 37 - 714ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 38 - 789ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 39 - 806ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 40 - 867ms-37Mbps
-  - 🇯🇵 日本 (Japan) 41 - 874ms-37Mbps
-  - 🇺🇸 美国 (United States) 42 - 883ms-37Mbps
-  - 🇯🇵 日本 (Japan) 43 - 889ms-37Mbps
-  - 🇺🇸 美国 (United States) 44 - 889ms-37Mbps
-  - 🇺🇸 美国 (United States) 45 - 910ms-37Mbps
-  - 🇺🇸 美国 (United States) 46 - 912ms-37Mbps
-  - 🇺🇸 美国 (United States) 47 - 920ms-37Mbps
-  - 🇺🇸 美国 (United States) 48 - 928ms-37Mbps
-  - 🇺🇸 美国 (United States) 49 - 937ms-37Mbps
-  - 🇺🇸 美国 (United States) 50 - 944ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 51 - 944ms-37Mbps
-  - 🇺🇸 美国 (United States) 52 - 968ms-37Mbps
-  - 🇺🇸 美国 (United States) 53 - 971ms-37Mbps
-  - 🇺🇸 美国 (United States) 54 - 978ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 55 - 980ms-37Mbps
-  - 🇩🇪 德国 (Germany) 56 - 983ms-37Mbps
-  - 🇯🇵 日本 (Japan) 57 - 996ms-37Mbps
-  - 🇺🇸 美国 (United States) 58 - 997ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 59 - 999ms-37Mbps
-  - 🇺🇸 美国 (United States) 60 - 999ms-23Mbps
-  - 🇰🇷 韩国 (South Korea) 61 - 1001ms-37Mbps
-  - 🇺🇸 美国 (United States) 62 - 1005ms-37Mbps
-  - 🇺🇸 美国 (United States) 63 - 1006ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 64 - 1013ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 65 - 1014ms-37Mbps
-  - 🇺🇸 美国 (United States) 66 - 1029ms-37Mbps
-  - 🇺🇸 美国 (United States) 67 - 1033ms-37Mbps
-  - 🇸🇬 新加坡 (Singapore) 68 - 1042ms-37Mbps
-  - 🇺🇸 美国 (United States) 69 - 1042ms-37Mbps
-  - 🇩🇪 德国 (Germany) 70 - 1075ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 71 - 1084ms-37Mbps
-  - 🇩🇪 德国 (Germany) 72 - 1089ms-37Mbps
-  - 🇫🇷 法国 (France) 73 - 1093ms-37Mbps
-  - 🇫🇷 法国 (France) 74 - 1103ms-37Mbps
-  - 🇫🇷 法国 (France) 75 - 1109ms-37Mbps
-  - 🇩🇪 德国 (Germany) 76 - 1115ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 77 - 1135ms-37Mbps
-  - 🇩🇪 德国 (Germany) 78 - 1144ms-37Mbps
-  - 🇩🇪 德国 (Germany) 79 - 1147ms-37Mbps
-  - 🇫🇷 法国 (France) 80 - 1151ms-37Mbps
-  - 🇩🇪 德国 (Germany) 81 - 1152ms-37Mbps
-  - 🇩🇪 德国 (Germany) 82 - 1155ms-37Mbps
-  - 🇩🇪 德国 (Germany) 83 - 1162ms-37Mbps
-  - 🇩🇪 德国 (Germany) 84 - 1162ms-37Mbps
-  - 🇩🇪 德国 (Germany) 85 - 1168ms-37Mbps
-  - 🇩🇪 德国 (Germany) 86 - 1175ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 87 - 1186ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 88 - 1187ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 89 - 1189ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 90 - 1192ms-37Mbps
-  - 🇺🇸 美国 (United States) 91 - 1198ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 92 - 1202ms-37Mbps
-  - 🇩🇪 德国 (Germany) 93 - 1205ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 94 - 1207ms-37Mbps
-  - 🇫🇷 法国 (France) 95 - 1209ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 96 - 1210ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 97 - 1213ms-37Mbps
-  - 🇫🇷 法国 (France) 98 - 1218ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 99 - 1222ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 100 - 1223ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 101 - 1225ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 102 - 1225ms-37Mbps
-  - 🇫🇷 法国 (France) 103 - 1225ms-37Mbps
-  - 🇫🇷 法国 (France) 104 - 1226ms-37Mbps
-  - 🇺🇸 美国 (United States) 105 - 1226ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 106 - 1227ms-37Mbps
-  - 🇫🇷 法国 (France) 107 - 1227ms-37Mbps
-  - 🇩🇪 德国 (Germany) 108 - 1227ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 109 - 1228ms-37Mbps
-  - 🇫🇷 法国 (France) 110 - 1231ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 111 - 1232ms-37Mbps
-  - 🇫🇷 法国 (France) 112 - 1242ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 113 - 1242ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 114 - 1244ms-37Mbps
-  - 🇩🇪 德国 (Germany) 115 - 1245ms-37Mbps
-  - 🇫🇷 法国 (France) 116 - 1247ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 117 - 1249ms-37Mbps
-  - 🇭🇰 中国香港 (Hong Kong) 118 - 1263ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 119 - 1267ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 120 - 1276ms-37Mbps
-  - 🇺🇸 美国 (United States) 121 - 1283ms-37Mbps
-  - 🇺🇸 美国 (United States) 122 - 1291ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 123 - 1293ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 124 - 1295ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 125 - 1331ms-37Mbps
-  - 🇫🇷 法国 (France) 126 - 1363ms-37Mbps
-  - 🇩🇪 德国 (Germany) 127 - 1372ms-37Mbps
-  - 🇫🇷 法国 (France) 128 - 1374ms-37Mbps
-  - 🇳🇱 荷兰 (Netherlands) 129 - 1405ms-37Mbps
-  - 🇰🇷 韩国 (South Korea) 130 - 1420ms-37Mbps
-  - 🇩🇪 德国 (Germany) 131 - 1430ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 132 - 1449ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 133 - 1453ms-37Mbps
-  - 🇩🇪 德国 (Germany) 134 - 1473ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 135 - 1487ms-37Mbps
-  - 🇬🇧 英国 (United Kingdom) 136 - 1496ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 137 - 1498ms-16Mbps
-  - 🇪🇸 西班牙 (Spain) 138 - 1518ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 139 - 1531ms-37Mbps
-  - 🇨🇦 加拿大 (Canada) 140 - 1544ms-10Mbps
-  - 🇪🇸 西班牙 (Spain) 141 - 1549ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 142 - 1553ms-37Mbps
-  - 🇫🇷 法国 (France) 143 - 1596ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 144 - 1656ms-37Mbps
-  - 🇪🇪 爱沙尼亚 (Estonia) 145 - 1697ms-37Mbps
-  - 🇫🇷 法国 (France) 146 - 1754ms-37Mbps
-  - 🇪🇸 西班牙 (Spain) 147 - 1766ms-37Mbps
-  - 🇫🇷 法国 (France) 148 - 1888ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 01 - 169ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 02 - 183ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 03 - 249ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 04 - 320ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 05 - 321ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 06 - 330ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 07 - 336ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 08 - 338ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 09 - 339ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 10 - 342ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 11 - 342ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 12 - 366ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 13 - 382ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 14 - 390ms-37Mbps
+  - 🇯🇵 日本 (Japan) 15 - 390ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 16 - 407ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 17 - 409ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 18 - 412ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 19 - 414ms-37Mbps
+  - 🇯🇵 日本 (Japan) 20 - 422ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 21 - 427ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 22 - 429ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 23 - 455ms-37Mbps
+  - 🇯🇵 日本 (Japan) 24 - 459ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 25 - 492ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 26 - 516ms-37Mbps
+  - 🇯🇵 日本 (Japan) 27 - 521ms-37Mbps
+  - 🇯🇵 日本 (Japan) 28 - 527ms-37Mbps
+  - 🇯🇵 日本 (Japan) 29 - 540ms-37Mbps
+  - 🇯🇵 日本 (Japan) 30 - 557ms-37Mbps
+  - 🇯🇵 日本 (Japan) 31 - 584ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 32 - 617ms-16Mbps
+  - 🇯🇵 日本 (Japan) 33 - 637ms-37Mbps
+  - 🇯🇵 日本 (Japan) 34 - 650ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 35 - 670ms-37Mbps
+  - 🇯🇵 日本 (Japan) 36 - 671ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 37 - 687ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 38 - 727ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 39 - 757ms-37Mbps
+  - 🇺🇸 美国 (United States) 40 - 861ms-37Mbps
+  - 🇺🇸 美国 (United States) 41 - 901ms-37Mbps
+  - 🇺🇸 美国 (United States) 42 - 915ms-37Mbps
+  - 🇺🇸 美国 (United States) 43 - 927ms-37Mbps
+  - 🇺🇸 美国 (United States) 44 - 943ms-37Mbps
+  - 🇺🇸 美国 (United States) 45 - 957ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 46 - 960ms-37Mbps
+  - 🇺🇸 美国 (United States) 47 - 964ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 48 - 966ms-37Mbps
+  - 🇺🇸 美国 (United States) 49 - 977ms-37Mbps
+  - 🇺🇸 美国 (United States) 50 - 983ms-37Mbps
+  - 🇺🇸 美国 (United States) 51 - 987ms-37Mbps
+  - 🇺🇸 美国 (United States) 52 - 998ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 53 - 1001ms-37Mbps
+  - 🇩🇪 德国 (Germany) 54 - 1003ms-37Mbps
+  - 🇸🇬 新加坡 (Singapore) 55 - 1007ms-37Mbps
+  - 🇺🇸 美国 (United States) 56 - 1019ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 57 - 1022ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 58 - 1072ms-37Mbps
+  - 🇩🇪 德国 (Germany) 59 - 1096ms-37Mbps
+  - 🇺🇸 美国 (United States) 60 - 1108ms-37Mbps
+  - 🇩🇪 德国 (Germany) 61 - 1111ms-37Mbps
+  - 🇩🇪 德国 (Germany) 62 - 1122ms-37Mbps
+  - 🇫🇷 法国 (France) 63 - 1136ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 64 - 1137ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 65 - 1144ms-37Mbps
+  - 🇰🇷 韩国 (South Korea) 66 - 1158ms-11Mbps
+  - 🇫🇷 法国 (France) 67 - 1164ms-37Mbps
+  - 🇹🇼 中国台湾 (Taiwan) 68 - 1164ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 69 - 1164ms-37Mbps
+  - 🇫🇷 法国 (France) 70 - 1165ms-37Mbps
+  - 🇫🇷 法国 (France) 71 - 1166ms-37Mbps
+  - 🇩🇪 德国 (Germany) 72 - 1168ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 73 - 1173ms-37Mbps
+  - 🇫🇷 法国 (France) 74 - 1176ms-37Mbps
+  - 🇭🇰 中国香港 (Hong Kong) 75 - 1182ms-37Mbps
+  - 🇫🇷 法国 (France) 76 - 1183ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 77 - 1187ms-37Mbps
+  - 🇩🇪 德国 (Germany) 78 - 1216ms-37Mbps
+  - 🇩🇪 德国 (Germany) 79 - 1235ms-37Mbps
+  - 🇫🇷 法国 (France) 80 - 1242ms-37Mbps
+  - 🇩🇪 德国 (Germany) 81 - 1249ms-37Mbps
+  - 🇫🇷 法国 (France) 82 - 1263ms-37Mbps
+  - 🇫🇷 法国 (France) 83 - 1276ms-37Mbps
+  - 🇺🇸 美国 (United States) 84 - 1281ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 85 - 1299ms-37Mbps
+  - 🇺🇸 美国 (United States) 86 - 1305ms-37Mbps
+  - 🇺🇸 美国 (United States) 87 - 1325ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 88 - 1334ms-37Mbps
+  - 🇳🇱 荷兰 (Netherlands) 89 - 1335ms-37Mbps
+  - 🇫🇷 法国 (France) 90 - 1337ms-37Mbps
+  - 🇩🇪 德国 (Germany) 91 - 1337ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 92 - 1338ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 93 - 1345ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 94 - 1346ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 95 - 1347ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 96 - 1372ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 97 - 1398ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 98 - 1428ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 99 - 1428ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 100 - 1434ms-37Mbps
+  - 🇨🇦 加拿大 (Canada) 101 - 1459ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 102 - 1498ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 103 - 1501ms-37Mbps
+  - 🇪🇪 爱沙尼亚 (Estonia) 104 - 1558ms-37Mbps
+  - 🇫🇷 法国 (France) 105 - 1581ms-37Mbps
+  - 🇫🇷 法国 (France) 106 - 1629ms-37Mbps
+  - 🇬🇧 英国 (United Kingdom) 107 - 1738ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 108 - 1789ms-37Mbps
+  - 🇪🇸 西班牙 (Spain) 109 - 1796ms-37Mbps
+  - 🇺🇸 美国 (United States) 110 - 1815ms-37Mbps
 rules:
 - MATCH,PROXIES
